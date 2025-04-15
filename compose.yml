@@ -6,12 +6,18 @@ services:
       dockerfile: docker/Dockerfile
       target: dev
     restart: unless-stopped
-    ports:
-      - '3000:3000'
+    expose:
+      - '3000'
     volumes:
       - ./site:/app
     environment:
       - NODE_ENV=development
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      Vaultwarden:
+        ipv4_address: 192.168.5.3
+
 
   # Production service
   docusaurus-prod:
@@ -20,7 +26,16 @@ services:
       dockerfile: docker/Dockerfile
       target: serve
     restart: unless-stopped
-    ports:
-      - '3000:3000'
+    expose:
+      - '3000'
     environment:
       - NODE_ENV=production
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      Vaultwarden:
+        ipv4_address: 192.168.5.3
+
+networks:
+  Vaultwarden:
+    external: true
