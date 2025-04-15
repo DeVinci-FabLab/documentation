@@ -51,7 +51,6 @@ clean:
 	
 
 	@rm -rf node_modules
-	@rm -rf package-lock.json
 	@rm -rf .docusaurus
 
 	@echo "All packages and containers cleaned up"

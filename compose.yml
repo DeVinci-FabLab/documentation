@@ -15,7 +15,7 @@ services:
     security_opt:
       - no-new-privileges:true
     networks:
-      Vaultwarden:
+      Documentation:
         ipv4_address: 192.168.5.3
 
 
@@ -33,9 +33,9 @@ services:
     security_opt:
       - no-new-privileges:true
     networks:
-      Vaultwarden:
+      Documentation:
         ipv4_address: 192.168.5.3
 
 networks:
-  Vaultwarden:
+  Documentation:
     external: true
