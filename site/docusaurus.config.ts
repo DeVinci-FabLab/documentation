@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'CEDIA Fablab tools index',
+  title: 'DVFL Documentation',
   // tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon-light.ico',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'http://localhost:3000',
@@ -17,8 +17,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Cedia', // Usually your GitHub org/user name.
-  projectName: 'tools index', // Usually your repo name.
+  organizationName: 'DeVinci Fablab', // Usually your GitHub org/user name.
+  projectName: 'Documentation', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -38,7 +38,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          routeBasePath: '/',
+          routeBasePath: '/'
         },
         theme: {
           customCss: './src/css/custom.css'
@@ -48,12 +48,11 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
     navbar: {
       logo: {
-        alt: 'Cedia logo',
-        src: 'img/logo-light.svg',
-        srcDark: 'img/logo-dark.svg'
+        alt: 'DVFL logo',
+        src: 'img/favicon.svg',
+        srcDark: 'img/favicon.svg'
       },
       items: [
         {
@@ -75,7 +74,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} CEDIA, ministère des Armées.`
+      copyright: `Copyright © ${new Date().getFullYear()} DeVinci Fablab.`
     },
     prism: {
       theme: prismThemes.github,
