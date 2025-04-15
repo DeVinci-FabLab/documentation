@@ -25,7 +25,7 @@ FROM base AS prod
 COPY ./site/ /app/
 ## Install dependencies with `--frozen-lockfile` to ensure reproducibility.
 WORKDIR /app
-RUN pnpm install --reporter=ndjson --frozen-lockfile
+RUN pnpm install --reporter=ndjson --frozen-lockfile --force
 ## Build the static site.
 RUN pnpm build
 
