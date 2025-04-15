@@ -16,7 +16,7 @@ services:
       - no-new-privileges:true
     networks:
       Documentation:
-        ipv4_address: 192.168.5.3
+        ipv4_address: 192.168.6.2
 
 
   # Production service
@@ -34,7 +34,7 @@ services:
       - no-new-privileges:true
     networks:
       Documentation:
-        ipv4_address: 192.168.5.3
+        ipv4_address: 192.168.6.2
 
 networks:
   Documentation:
