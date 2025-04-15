@@ -1,0 +1,5 @@
+site/node_modules
+site/.docusaurus
+site/build
+.git
+.gitignore

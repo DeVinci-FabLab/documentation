@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.3D Printing": {
+    "message": "Impression 3D",
+    "description": "The label for category 3D Printing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Laser and CNC": {
+    "message": "Laser et CNC",
+    "description": "The label for category Laser and CNC in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Electronic Hardware": {
+    "message": "Matériel électronique",
+    "description": "The label for category Electronic Hardware in sidebar tutorialSidebar"
+  }
+}

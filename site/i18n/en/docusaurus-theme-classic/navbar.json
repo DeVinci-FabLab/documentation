@@ -1,0 +1,14 @@
+{
+  "logo.alt": {
+    "message": "Cedia logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Workshops": {
+    "message": "Workshops",
+    "description": "Navbar item with label Workshops"
+  }
+}
