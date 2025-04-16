@@ -4,6 +4,7 @@ description: An introduction to Fablabs, 3D printing, and embedded AI.
 authors: [yann_v]
 tags: [fablab, ai, 3d printing, robotics]
 hide_table_of_contents: false
+slug: /welcome-fablabs
 ---
 
 # Workshop: Discovering Fablabs, 3D Printing, and Embedded AI

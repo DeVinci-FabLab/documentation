@@ -4,6 +4,7 @@ description: Un guide pour découvrir les bases du Fablab et de la fabrication n
 authors: [yann_v]
 tags: [fablab, ai, 3d printing, robotics]
 hide_table_of_contents: false
+slug: welcome-fablabs
 ---
 
 # Workshop : Découverte des Fablabs, de l'Impression 3D et de l'IA Embarquée
