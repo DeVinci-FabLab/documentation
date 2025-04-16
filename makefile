@@ -1,5 +1,10 @@
 PROJECT_NAME := docs_project
 
+update:
+	@echo "Pulling latest changes from the repository"
+	@git pull origin main
+	@echo "Repository updated"
+
 dev:
 	@echo "Targetting development environment"
 	@docker compose -p $(PROJECT_NAME) up -d docusaurus-dev --build
