@@ -37,7 +37,7 @@ restart-prod:
 
 clean:
 	@echo "Cleaning up all packages and containers"
-	@docker compose down --volumes --remove-orphans
+	@docker compose down --rmi all --volumes --remove-orphans
 	@rm -rf node_modules
 	@rm -rf .docusaurus
 	@echo "All packages and containers cleaned up"
