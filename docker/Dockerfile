@@ -27,7 +27,7 @@ ARG CACHEBUST=1
 COPY ./site/ /app/
 ## Install dependencies with `--frozen-lockfile` to ensure reproducibility.
 WORKDIR /app
-RUN pnpm install --reporter=ndjson --frozen-lockfile --force
+RUN pnpm install --frozen-lockfile --force
 ## Build the static site.
 RUN pnpm build
 
