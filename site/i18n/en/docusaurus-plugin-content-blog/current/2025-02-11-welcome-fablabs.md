@@ -1,6 +1,6 @@
 ---
-title: Initiation au Fablab
-description: Un guide pour découvrir les bases du Fablab et de la fabrication numérique.
+title: Discovering Fablabs, 3D Printing, and Embedded AI
+description: An introduction to Fablabs, 3D printing, and embedded AI.
 authors: [yann_v]
 tags: [fablab, ai, 3d printing, robotics]
 hide_table_of_contents: false
