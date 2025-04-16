@@ -33,11 +33,13 @@ RUN pnpm build
 FROM prod AS serve
 ## Expose the port that Docusaurus will run on.
 EXPOSE 3000
+# Before copying the healthcheck script
+RUN apt-get update && apt-get install -y curl wget && apt-get clean
 ## Copy healthcheck script
 COPY ./docker/healthcheck.sh /healthcheck.sh
 RUN chmod +x /healthcheck.sh
 ## Add health check to verify the service is running properly
-HEALTHCHECK --interval=30s --timeout=10s --start-period=55s --retries=5 \
+HEALTHCHECK --interval=30s --timeout=10s --start-period=90s --retries=3 \
     CMD /healthcheck.sh
 ## Run the production server.
 CMD ["pnpm", "serve", "--host", "0.0.0.0", "--no-open"]

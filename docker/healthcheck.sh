@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set variables
-HOST="localhost"
+HOST="0.0.0.0"
 PORT="3000"
 TIMEOUT=5
 URL="http://${HOST}:${PORT}/"
