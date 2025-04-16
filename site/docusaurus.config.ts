@@ -47,7 +47,8 @@ const config: Config = {
           path: 'blog',
           // Make sure i18n is enabled for blog
           blogTitle: 'Workshops',
-          blogSidebarTitle: 'All workshops'
+          blogSidebarTitle: 'All workshops',
+          blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: './src/css/custom.css'
