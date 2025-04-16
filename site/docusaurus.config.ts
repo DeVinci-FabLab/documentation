@@ -40,6 +40,15 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/'
         },
+        blog: {
+          // Add blog configuration
+          showReadingTime: true,
+          // Optional: change path if needed
+          path: 'blog',
+          // Make sure i18n is enabled for blog
+          blogTitle: 'Workshops',
+          blogSidebarTitle: 'All workshops'
+        },
         theme: {
           customCss: './src/css/custom.css'
         }
