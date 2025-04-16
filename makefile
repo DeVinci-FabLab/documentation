@@ -10,7 +10,8 @@ dev:
 prod:
 	@echo "Targetting production environment"
 	@docker compose -p $(PROJECT_NAME) down -v --remove-orphans
-	@docker compose -p $(PROJECT_NAME) up -d --build docusaurus-prod
+	@docker build --build-arg CACHEBUST=$(shell date +%s) -t $(PROJECT_NAME)_docusaurus-prod -f docker/Dockerfile .
+	@docker compose -p $(PROJECT_NAME) up -d docusaurus-prod
 	@echo "Docusaurus production build complete"
 	@echo "Access the site at http://localhost:3000"
 	@echo "To stop the server, run 'make stop'"
@@ -32,7 +33,8 @@ restart-dev:
 restart-prod:
 	@echo "Restarting production environment"
 	@docker compose -p $(PROJECT_NAME) down -v --remove-orphans
-	@docker compose -p $(PROJECT_NAME) up -d --build docusaurus-prod
+	@docker build --build-arg CACHEBUST=$(shell date +%s) -t $(PROJECT_NAME)_docusaurus-prod -f docker/Dockerfile .
+	@docker compose -p $(PROJECT_NAME) up -d docusaurus-prod
 	@echo "Docusaurus production build complete"
 	@echo "Access the site at http://localhost:3000"
 	@echo "To stop the server, run 'make stop'"

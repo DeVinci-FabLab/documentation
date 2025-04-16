@@ -21,6 +21,8 @@ CMD ["/dev-startup.sh"]
 
 # Stage 2b: Production build mode.
 FROM base AS prod
+## Use a build argument to force rebuild
+ARG CACHEBUST=1
 ## Copy over the source code from site directory.
 COPY ./site/ /app/
 ## Install dependencies with `--frozen-lockfile` to ensure reproducibility.
