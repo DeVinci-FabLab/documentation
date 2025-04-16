@@ -1,6 +1,6 @@
 update:
 	@echo "Pulling latest changes from the repository"
-	@git pull origin main
+	@git pull --rebase
 	@echo "Repository updated"
 
 dev:
