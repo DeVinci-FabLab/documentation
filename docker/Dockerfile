@@ -35,6 +35,6 @@ FROM prod AS serve
 EXPOSE 3000
 ## Add health check to verify the service is running properly
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-    CMD wget -q --spider http://localhost:3000/ || exit 1
+    CMD curl -q --spider http://localhost:3000/ || exit 1
 ## Run the production server.
 CMD ["pnpm", "serve", "--host", "0.0.0.0", "--no-open"]
