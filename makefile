@@ -15,6 +15,7 @@ prod-local:
 	docker compose down -v --remove-orphans
 	docker compose up -d docusaurus-prod-local --build
 	@echo "Docusaurus production build complete"
+	@echo "Access the site at http://localhost:3000"
 	@echo "To stop the server, run 'make stop'"
 
 prod:
@@ -43,6 +44,7 @@ restart-prod-local:
 	docker compose down -v --remove-orphans
 	docker compose up -d docusaurus-prod-local --build
 	@echo "Docusaurus production build complete"
+	@echo "Access the site at http://localhost:3000"
 	@echo "To stop the server, run 'make stop'"
 
 restart-prod:
