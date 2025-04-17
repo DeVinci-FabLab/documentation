@@ -1,6 +1,6 @@
 services:
   # Development service with hot-reloading
-  docusaurus-dev-local:
+  docusaurus-dev:
     build:
       context: .
       dockerfile: docker/Dockerfile
