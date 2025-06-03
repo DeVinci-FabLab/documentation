@@ -33,6 +33,15 @@ const sidebars: SidebarsConfig = {
         'electronics/test',
       ],
     },
+    {
+      type: 'category',
+      label: 'Courses',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        'courses/rust',
+      ],
+    },
   ],
 };
 
