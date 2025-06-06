@@ -35,6 +35,19 @@ Documentation is required for all contributions (code, issues, or pull requests)
 
 Ensure your documentation is well-structured and easy to navigate.
 
+### Adding New Documentation
+
+To add new documentation, follow these steps:
+
+1. Add your Markdown file in the appropriate section under `site/docs/<your-section>/<your-file>.md`.
+2. Add the English version of your file in `site/i18n/en/docusaurus-plugin-content-docs/current/<your-section>/<your-file>.md`.
+3. Update `site/sidebar.ts` to include a link to your Markdown file in the sidebar.
+4. If adding a new category, update the following files:
+   - `site/i18n/en/docusaurus-plugin-content-docs/current.json`
+   - `site/i18n/fr/docusaurus-plugin-content-docs/current.json`
+
+Ensure that your documentation is well-structured and easy to navigate.
+
 ## Deployment
 
 Every solution should include a Docker deployment option, with a `compose.yml` and `Dockerfile` if necessary. The deployment process should be:
@@ -53,6 +66,20 @@ docker compose up -d docusaurus-prod-local --build
 ```
 
 Access the project at [http://localhost:3000](http://localhost:3000).
+
+### Running the Project
+
+To run the project locally, use the following commands:
+
+```bash
+# Stop any running containers and remove volumes and orphans
+docker compose down -v --remove-orphans
+
+# Build and start the Docusaurus production container
+docker compose up -d docusaurus-prod-local --build
+```
+
+Once the project is running, you can access it at [http://localhost:300](http://localhost:300).
 
 ## Testing
 
