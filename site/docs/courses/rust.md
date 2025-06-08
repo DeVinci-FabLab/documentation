@@ -16,38 +16,6 @@ slug: rust-course
 | ---- | --------------------------------- | ----------------------- |
 | Rust | Logique de programmation, IDE     | Cargo, syntaxe, mémoire |
 
-## Table des matières
-
-- [Rust - Base](#rust---base)
-  - [Table des matières](#table-des-matières)
-  - [Introduction](#introduction)
-  - [Setup](#setup)
-    - [Déroulé du cours](#déroulé-du-cours)
-    - [Utilisation de `cargo`](#utilisation-de-cargo)
-    - [`Cargo.toml`](#cargotoml)
-  - [Syntaxe et Structures de base](#syntaxe-et-structures-de-base)
-    - [Point-virgule ou pas ?](#point-virgule-ou-pas-)
-    - [Macro ? Késako ?](#macro--késako-)
-    - [Point d’entrée du programme](#point-dentrée-du-programme)
-    - [Expression vs instruction](#expression-vs-instruction)
-    - [Structures](#structures)
-  - [Ownership](#ownership)
-    - [Cas des fonctions](#cas-des-fonctions)
-  - [Solution à l'Ownership : les Références](#solution-à-lownership--les-références)
-  - [Durée de vie](#durée-de-vie)
-- [FAITES CONFIANCE AU COMPILEUR](#faites-confiance-au-compileur)
-  - [Annexe 1 : Type de données en Rust](#annexe-1--type-de-données-en-rust)
-    - [Entier](#entier)
-    - [float](#float)
-    - [bool](#bool)
-    - [char](#char)
-    - [tuple](#tuple)
-    - [array](#array)
-    - [string literals](#string-literals)
-    - [String](#string)
-  - [Annexe 2 : Stack vs Heap (aka Les mémoires)](#annexe-2--stack-vs-heap-aka-les-mémoires)
-  - [Ressources](#ressources)
-
 ## Introduction
 
 Rust est un langage qui vise à remplacer les langages bas-niveau, comme le C. Il est axé sur la performance, la concurrence, mais surtout la sûreté.

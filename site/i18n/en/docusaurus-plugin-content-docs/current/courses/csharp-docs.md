@@ -10,28 +10,6 @@ slug: csharp-docs
 
 # Create your project documentation
 
-## Table of contents
-
-- [Create your project documentation](#create-your-project-documentation)
-  - [Table of contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-    - [Step 1: Install DocFX](#step-1-install-docfx)
-    - [Step 2: Setup workspace](#step-2-setup-workspace)
-    - [Step 3: \[ Optional \] Update content](#step-3--optional--update-content)
-    - [Step 4: Preview your docs](#step-4-preview-your-docs)
-  - [Customize your doc](#customize-your-doc)
-    - [Step 1: Add sections](#step-1-add-sections)
-    - [Step 2: Add pages](#step-2-add-pages)
-    - [Step 3: See Markdown features support](#step-3-see-markdown-features-support)
-    - [Logo \& favicon](#logo--favicon)
-    - [Step 4: Add code documentation](#step-4-add-code-documentation)
-  - [Deploy the doc](#deploy-the-doc)
-    - [Step 1: Setup GitHub Pages](#step-1-setup-github-pages)
-    - [Step 2: Deployment to web](#step-2-deployment-to-web)
-  - [Sources](#sources)
-
 ## Introduction
 
 This article will guide you through the process of creating a documentation for your C# project using the tool [DocFX](https://dotnet.github.io/docfx/). Documentation is key to help user understand how to use the tools you create. It is also a good way to show the quality of your work.

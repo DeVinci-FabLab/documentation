@@ -10,20 +10,6 @@ slug: postgres-docker
 
 # PostgreSQL with Docker
 
-## Table of Contents
-
-- [PostgreSQL with Docker](#postgresql-with-docker)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Prerequisites](#prerequisites)
-  - [Step 1: Install Docker](#step-1-install-docker)
-  - [Step 2: Create a PostgreSQL container](#step-2-create-a-postgresql-container)
-    - [Quick explanation](#quick-explanation)
-  - [Step 3: Start the PostgreSQL container](#step-3-start-the-postgresql-container)
-  - [Step 4: Access the PostgreSQL database](#step-4-access-the-postgresql-database)
-  - [Step 5: Clean up](#step-5-clean-up)
-  - [To go further](#to-go-further)
-
 ## Introduction
 
 This learning material will guide you through the process of setting up a PostgreSQL database using Docker. Docker is a platform that allows you to develop, ship, and run applications in containers. Containers are lightweight, standalone, and executable packages that include everything needed to run an application, including the code, runtime, system tools, libraries, and settings.

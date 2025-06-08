@@ -10,21 +10,6 @@ slug: csharp-to-postgres
 
 # C# vers PostgreSQL
 
-## Table des matières
-
-- [C# vers PostgreSQL](#c-vers-postgresql)
-  - [Table des matières](#table-des-matières)
-  - [Introduction](#introduction)
-  - [Prérequis](#prérequis)
-  - [Étape 1 : Configurer le projet](#étape-1--configurer-le-projet)
-  - [Étape 2 : Ajouter le package Npgsql](#étape-2--ajouter-le-package-npgsql)
-  - [Étape 3 : Créer le contenu de la base de données](#étape-3--créer-le-contenu-de-la-base-de-données)
-  - [Étape 4 : Se connecter à la base de données](#étape-4--se-connecter-à-la-base-de-données)
-  - [Étape 5 : Exécuter l’application](#étape-5--exécuter-lapplication)
-  - [Étape 8 : Ajouter un client](#étape-8--ajouter-un-client)
-  - [Étape 7 : Voir le contenu de la table](#étape-7--voir-le-contenu-de-la-table)
-  - [Pour aller plus loin](#pour-aller-plus-loin)
-
 ## Introduction
 
 Ce support d'apprentissage vous guidera dans le processus de connexion d’une application C# à une base de données PostgreSQL.

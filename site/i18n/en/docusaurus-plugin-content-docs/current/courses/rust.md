@@ -16,38 +16,6 @@ slug: rust-course
 | ---- | ----------------------------- | ----------------------- |
 | Rust | Programming logic, IDE        | Cargo, syntax, memory   |
 
-## Table of Contents
-
-- [Rust - Basics](#rust---basics)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Setup](#setup)
-    - [Course outline](#course-outline)
-    - [Using `cargo`](#using-cargo)
-    - [`Cargo.toml`](#cargotoml)
-  - [Syntax and Basic Constructs](#syntax-and-basic-constructs)
-    - [Semicolon or Not?](#semicolon-or-not)
-    - [Macro? What’s That?](#macro-whats-that)
-    - [Program Entry Point](#program-entry-point)
-    - [Expression vs Statement](#expression-vs-statement)
-    - [Structures](#structures)
-  - [Ownership](#ownership)
-    - [Functions and Ownership](#functions-and-ownership)
-  - [Borrowing and References](#borrowing-and-references)
-  - [Lifetimes](#lifetimes)
-- [Trust the Compiler](#trust-the-compiler)
-  - [Appendix 1: Rust Data Types](#appendix-1-rust-data-types)
-    - [Integers](#integers)
-    - [Floats](#floats)
-    - [bool](#bool)
-    - [char](#char)
-    - [Tuples](#tuples)
-    - [Arrays](#arrays)
-    - [String Literals](#string-literals)
-    - [String](#string)
-  - [Appendix 2: Stack vs Heap](#appendix-2-stack-vs-heap)
-  - [Resources](#resources)
-
 ## Introduction
 
 Rust is a language aiming to replace low-level languages like C. It focuses on performance, concurrency, and above all, safety.

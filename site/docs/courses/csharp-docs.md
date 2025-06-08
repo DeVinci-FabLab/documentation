@@ -10,28 +10,6 @@ slug: csharp-docs
 
 # Créez la documentation de votre projet
 
-## Table des matières
-
-- [Créez la documentation de votre projet](#créez-la-documentation-de-votre-projet)
-  - [Table des matières](#table-des-matières)
-  - [Introduction](#introduction)
-  - [Prérequis](#prérequis)
-  - [Installation](#installation)
-    - [Étape 1 : Installer DocFX](#étape-1--installer-docfx)
-    - [Étape 2 : Configurer l'espace de travail](#étape-2--configurer-lespace-de-travail)
-    - [Étape 3 : \[ Optionnel \] Mettre à jour le contenu](#étape-3---optionnel--mettre-à-jour-le-contenu)
-    - [Étape 4 : Prévisualiser votre documentation](#étape-4--prévisualiser-votre-documentation)
-  - [Personnaliser votre documentation](#personnaliser-votre-documentation)
-    - [Étape 1 : Ajouter des sections](#étape-1--ajouter-des-sections)
-    - [Étape 2 : Ajouter des pages](#étape-2--ajouter-des-pages)
-    - [Étape 3 : Voir les fonctionnalités Markdown supportées](#étape-3--voir-les-fonctionnalités-markdown-supportées)
-    - [Logo \& favicon](#logo--favicon)
-    - [Étape 4 : Ajouter la documentation du code](#étape-4--ajouter-la-documentation-du-code)
-  - [Déployer la documentation](#déployer-la-documentation)
-    - [Étape 1 : Configuration de GitHub Pages](#étape-1--configuration-de-github-pages)
-    - [Étape 2 : Déploiement sur le web](#étape-2--déploiement-sur-le-web)
-  - [Sources](#sources)
-
 ## Introduction
 
 Cet article vous guidera dans le processus de création d'une documentation pour votre projet C# en utilisant l'outil [DocFX](https://dotnet.github.io/docfx/). La documentation est essentielle pour aider les utilisateurs à comprendre comment utiliser les outils que vous créez. C'est aussi un excellent moyen de mettre en valeur la qualité de votre travail.

@@ -10,21 +10,6 @@ slug: csharp-on-vscode
 
 # C# for Visual Studio Code
 
-## Table of Contents
-
-- [C# for Visual Studio Code](#c-for-visual-studio-code)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Prerequisites](#prerequisites)
-  - [Step 1: Install .NET SDK](#step-1-install-net-sdk)
-  - [Step 2: Install Visual Studio Code](#step-2-install-visual-studio-code)
-    - [Windows](#windows)
-    - [MacOS](#macos)
-    - [Linux](#linux)
-  - [Step 3: Install the C# extension](#step-3-install-the-c-extension)
-  - [Bonus: Developer Tools](#bonus-developer-tools)
-  - [To go further](#to-go-further)
-
 ## Introduction
 
 This guide will help you set up your development environment for C# using Visual Studio Code. It will guide you through the installation of the .NET SDK, Visual Studio Code, and the C# extension for a complete setup.
