@@ -25,28 +25,20 @@ Documentation is required for all contributions (code, issues, or pull requests)
 
 ### Adding New Documentation
 
-1. Place your Markdown file in `site/docs/<your-section>/<your-file>.md`.
-2. Add the English version in `site/i18n/en/docusaurus-plugin-content-docs/current/<your-section>/<your-file>.md`.
-3. Update `site/sidebar.ts` to add your file to the sidebar navigation.
-4. If you are introducing a new category, update:
+1. Ensure your Markdown file is well-structured and follows the project's documentation style.
+   * Use headings, lists, and code blocks to enhance readability.
+   * Include table of contents, images where necessary, using relative paths.
+   * Use the provided `site/static/assets/template.md` for consistency.
+2. Place your Markdown file in `site/docs/<your-section>/<your-file>.md`.
+3. Add the English version in `site/i18n/en/docusaurus-plugin-content-docs/current/<your-section>/<your-file>.md`.
+4. If your file has images, place them in `site/static/assets/docs/<your-file>/`.
+5. Update `site/sidebar.ts` to add your file to the sidebar navigation.
+6. If you are introducing a new category, update:
 
    * `site/i18n/en/docusaurus-plugin-content-docs/current.json`
    * `site/i18n/fr/docusaurus-plugin-content-docs/current.json`
 
 Ensure your documentation is well-structured and easy to navigate.
-
-### Adding New Documentation
-
-To add new documentation, follow these steps:
-
-1. Add your Markdown file in the appropriate section under `site/docs/<your-section>/<your-file>.md`.
-2. Add the English version of your file in `site/i18n/en/docusaurus-plugin-content-docs/current/<your-section>/<your-file>.md`.
-3. Update `site/sidebar.ts` to include a link to your Markdown file in the sidebar.
-4. If adding a new category, update the following files:
-   - `site/i18n/en/docusaurus-plugin-content-docs/current.json`
-   - `site/i18n/fr/docusaurus-plugin-content-docs/current.json`
-
-Ensure that your documentation is well-structured and easy to navigate.
 
 ## Deployment
 
@@ -57,12 +49,28 @@ Every solution should include a Docker deployment option, with a `compose.yml` a
 
 ### Running the Project Locally
 
-```bash
-# Stop containers, remove volumes and orphan containers
-docker compose down -v --remove-orphans
+To start the project in development mode:
 
-# Build and start the Docusaurus production container
-docker compose up -d docusaurus-prod-local --build
+```sh
+make dev
+```
+
+To start the project in production mode (local build):
+
+```sh
+make prod-local
+```
+
+To stop all running containers:
+
+```sh
+make stop
+```
+
+To clean up containers, images, and node_modules:
+
+```sh
+make clean
 ```
 
 Access the project at [http://localhost:3000](http://localhost:3000).

@@ -1,11 +1,11 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 title: Rust - Basics
+author: Urbain Lantrès (UrbKali)
 description: A guide to discover the basics of the FabLab and digital fabrication.
-authors: [urbain_l]
 tags: [info]
 hide_table_of_contents: false
-slug: rust_course
+slug: rust-course
 ---
 
 # Rust - Basics
@@ -15,6 +15,38 @@ slug: rust_course
 |      | Prerequisites                 | Skills                  |
 | ---- | ----------------------------- | ----------------------- |
 | Rust | Programming logic, IDE        | Cargo, syntax, memory   |
+
+## Table of Contents
+
+- [Rust - Basics](#rust---basics)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Setup](#setup)
+    - [Course outline](#course-outline)
+    - [Using `cargo`](#using-cargo)
+    - [`Cargo.toml`](#cargotoml)
+  - [Syntax and Basic Constructs](#syntax-and-basic-constructs)
+    - [Semicolon or Not?](#semicolon-or-not)
+    - [Macro? What’s That?](#macro-whats-that)
+    - [Program Entry Point](#program-entry-point)
+    - [Expression vs Statement](#expression-vs-statement)
+    - [Structures](#structures)
+  - [Ownership](#ownership)
+    - [Functions and Ownership](#functions-and-ownership)
+  - [Borrowing and References](#borrowing-and-references)
+  - [Lifetimes](#lifetimes)
+- [Trust the Compiler](#trust-the-compiler)
+  - [Appendix 1: Rust Data Types](#appendix-1-rust-data-types)
+    - [Integers](#integers)
+    - [Floats](#floats)
+    - [bool](#bool)
+    - [char](#char)
+    - [Tuples](#tuples)
+    - [Arrays](#arrays)
+    - [String Literals](#string-literals)
+    - [String](#string)
+  - [Appendix 2: Stack vs Heap](#appendix-2-stack-vs-heap)
+  - [Resources](#resources)
 
 ## Introduction
 
@@ -145,7 +177,7 @@ Every Rust program starts with a `main` function.
   loop {
       println!("Looping forever");
   }
-  // Won't stop unless interrupted 
+  // Won't stop unless interrupted
   ```
 
   A loop can be an expression:
@@ -400,6 +432,6 @@ Use the heap for types like `String`, vectors, etc., since stack allocations req
 
 ---
 
-Last update: 02/16/2024
+Last update: Feb. 2024
 
 Author: [Urbain Lantrès](https://github.com/UrbsKali)

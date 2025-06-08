@@ -1,18 +1,52 @@
 ---
+sidebar_position: 5
 title: Rust - les bases
+author: Urbain Lantrès (UrbKali)
 description: Un guide pour découvrir les fondamentaux de Rust.
 tags: [info]
 hide_table_of_contents: false
-slug: rust_course
+slug: rust-course
 ---
 
 # Rust - Base
->
+
 > Le but de cette formation est de vous rendre autonome sur Rust
 
 |      | Pré requis                        | Compétences             |
 | ---- | --------------------------------- | ----------------------- |
 | Rust | Logique de programmation, IDE     | Cargo, syntaxe, mémoire |
+
+## Table des matières
+
+- [Rust - Base](#rust---base)
+  - [Table des matières](#table-des-matières)
+  - [Introduction](#introduction)
+  - [Setup](#setup)
+    - [Déroulé du cours](#déroulé-du-cours)
+    - [Utilisation de `cargo`](#utilisation-de-cargo)
+    - [`Cargo.toml`](#cargotoml)
+  - [Syntaxe et Structures de base](#syntaxe-et-structures-de-base)
+    - [Point-virgule ou pas ?](#point-virgule-ou-pas-)
+    - [Macro ? Késako ?](#macro--késako-)
+    - [Point d’entrée du programme](#point-dentrée-du-programme)
+    - [Expression vs instruction](#expression-vs-instruction)
+    - [Structures](#structures)
+  - [Ownership](#ownership)
+    - [Cas des fonctions](#cas-des-fonctions)
+  - [Solution à l'Ownership : les Références](#solution-à-lownership--les-références)
+  - [Durée de vie](#durée-de-vie)
+- [FAITES CONFIANCE AU COMPILEUR](#faites-confiance-au-compileur)
+  - [Annexe 1 : Type de données en Rust](#annexe-1--type-de-données-en-rust)
+    - [Entier](#entier)
+    - [float](#float)
+    - [bool](#bool)
+    - [char](#char)
+    - [tuple](#tuple)
+    - [array](#array)
+    - [string literals](#string-literals)
+    - [String](#string)
+  - [Annexe 2 : Stack vs Heap (aka Les mémoires)](#annexe-2--stack-vs-heap-aka-les-mémoires)
+  - [Ressources](#ressources)
 
 ## Introduction
 
@@ -91,7 +125,7 @@ version = "0.1.0"
 edition = "2023"
 
 [dependencies]
-# bon là j'en ai aucune mais vous avez compris l'idée 
+# bon là j'en ai aucune mais vous avez compris l'idée
 ```
 
 Quand on crée un projet avec `cargo`, un fichier `Cargo.toml` (Tom’s Obvious, Minimal Language) est automatiquement ajouté au projet pour définir et suivre les dépendances.
@@ -143,7 +177,7 @@ Un programme Rust commence toujours par la fonction `main`.
   loop {
     println!("AAAAAAAAAA");
   }
-  // Ne va jamais s'arreter 
+  // Ne va jamais s'arreter
   ```
 
   Une boucle peut être une expression
@@ -248,7 +282,7 @@ Il y a trois règle d'ownership dans Rust :
 - Toute valeur à un propriétaire
 - Il n'y a qu'un seul propriétaire à la fois
 - Quand le propriétaire disparait, la valeur aussi
-  
+
 Cela conduit à des erreurs de compilation, alors que d'autres languages ne posserait pas de problème.
 Pour bien comprendre la subtilité de l'ownership, il faut comprendre les différentes mémoires, le Stack et le Heap (cf Annexe 2)
 
@@ -256,14 +290,14 @@ Il y a deux cas possible : Variable sur le Stack ou Variable sur le Heap
 
 ```rust
   let x = 42;
-  let y = x; 
+  let y = x;
 ```
 
 Dans ce cas, `x` est une donnée à taille fixe, donc sur le Stack, elle est donc copié automatiquement (car copier des données sur le Stack est très rapide)
 
 ```rust
   let x = String::from("hehe");
-  let y = x; 
+  let y = x;
 ```
 
 Mais dans celui là, la variable `x` est stocké sur le Heap, la copie pouvant être couteuse, elle n'est pas effectué. Rust supprime `x`et garde `y`, on dit que l'ownership est transféré
@@ -276,12 +310,12 @@ De la même manière, mettre une variable du Heap dans une fonction lui fait per
 
 - & = référence
 - \* = déréférence
-  
+
 Règles des références :
 
 - On peut avoir une référence modifiable ou n références statique à tout moment
 - Une référence doit toujours pointer vers une valeur (c'est pas évident)
-  
+
 On préfère passer les références des variables, plutôt que la valeur elle même, c'est un système similaire au pointeur, mais plus simple
 Il y a le même système de modification que les variables classiques.
 On peut avoir une référence mutable à la fois, et autant de référence classique que l'on veut.
@@ -321,7 +355,7 @@ fn main() {
 fn dont_trust_me() -> &String{
     let x = String::from("oh no");
     &x  // on retourne la référence
-} // mais ici la valeur de x est perdu 
+} // mais ici la valeur de x est perdu
 ```
 
 Dans ce cas, la référence pointe vers une valeur inexistante, ce que Rust n'autorise pas -> le code ne compile pas
@@ -420,6 +454,6 @@ On utilise donc le Heap, et l'allocateur mémoire doit trouver un espace libre o
 
 ---
 
-Dernière mise à jour : 16/02/2024
+Dernière mise à jour : Février 2024
 
 Auteur : [Urbain Lantrès](https://github.com/UrbsKali)

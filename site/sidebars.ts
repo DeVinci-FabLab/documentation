@@ -1,4 +1,4 @@
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
@@ -39,6 +39,10 @@ const sidebars: SidebarsConfig = {
       collapsed: true,
       collapsible: true,
       items: [
+        'courses/csharp-docs',
+        'courses/csharp-on-vscode',
+        'courses/csharp-to-postgres',
+        'courses/postgres-docker',
         'courses/rust',
       ],
     },

@@ -23,7 +23,27 @@
 
 ## SubSubject 1
 
+:::note
+This is a note for SubSubject 1.
+:::
+
+:::tip
+A useful tip for SubSubject 1.
+:::
+
 ## SubSubject 2
+
+:::info
+A useful information for SubSubject 2.
+:::
+
+:::caution
+This is a caution message for SubSubject 2.
+:::
+
+:::danger
+A potential danger for SubSubject 2.
+:::
 
 ---
 
