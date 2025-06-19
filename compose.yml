@@ -34,6 +34,9 @@ services:
     restart: unless-stopped
     environment:
       - NODE_ENV=production
+    deploy:
+      mode: replicated
+      replicas: 2
     security_opt:
       - no-new-privileges:true
     labels:
