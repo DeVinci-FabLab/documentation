@@ -46,3 +46,9 @@ services:
       - 'traefik.http.routers.my-website.tls.certresolver=myresolver'
       - 'traefik.http.services.my-website.loadbalancer.server.port=3000'
       - 'com.centurylinklabs.watchtower.enable=true'
+    networks:
+      - traefik-network
+
+networks:
+  traefik-network:
+    external: true
