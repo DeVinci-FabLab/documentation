@@ -30,26 +30,16 @@ services:
 
   # Production service
   docusaurus-prod:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
-      target: serve
+    image: ghcr.io/${GITHUB_REPO_OWNER:-organization-name}/${DOCKER_IMAGE_NAME:-documentation}:latest
     restart: unless-stopped
-    expose:
-      - '3000'
     environment:
       - NODE_ENV=production
     security_opt:
       - no-new-privileges:true
-    networks:
-      Documentation:
-        ipv4_address: 192.168.6.2
-
-networks:
-  Documentation:
-    driver: bridge
-    ipam:
-      driver: default
-      config:
-        - subnet: 192.168.6.0/24
-          gateway: 192.168.6.1
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.my-website.rule=Host(`docs.devinci-fablab.fr`)'
+      - 'traefik.http.routers.my-website.entrypoints=websecure'
+      - 'traefik.http.routers.my-website.tls.certresolver=myresolver'
+      - 'traefik.http.services.my-website.loadbalancer.server.port=3000'
+      - 'com.centurylinklabs.watchtower.enable=true'

@@ -42,4 +42,4 @@ RUN chmod +x /healthcheck.sh
 HEALTHCHECK --interval=30s --timeout=10s --start-period=90s --retries=3 \
     CMD /healthcheck.sh
 ## Run the production server.
-CMD ["pnpm", "serve", "--host", "0.0.0.0", "--no-open"]
+CMD ["pnpm", "serve", "--host", "0.0.0.0", "--port", "3000", "--no-open"]
