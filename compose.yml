@@ -12,8 +12,6 @@ services:
       - ./site:/app
     environment:
       - NODE_ENV=development
-    security_opt:
-      - no-new-privileges:true
 
   docusaurus-prod-local:
     build:
@@ -25,8 +23,6 @@ services:
       - '3000:3000'
     environment:
       - NODE_ENV=production
-    security_opt:
-      - no-new-privileges:true
 
   # Production service
   docusaurus-prod:
