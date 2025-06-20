@@ -41,10 +41,10 @@ services:
       - no-new-privileges:true
     labels:
       - 'traefik.enable=true'
-      - 'traefik.http.routers.my-website.rule=Host(`docs.devinci-fablab.fr`)'
-      - 'traefik.http.routers.my-website.entrypoints=websecure'
-      - 'traefik.http.routers.my-website.tls.certresolver=myresolver'
-      - 'traefik.http.services.my-website.loadbalancer.server.port=3000'
+      - 'traefik.http.routers.documentation.rule=Host(`docs.devinci-fablab.fr`)'
+      - 'traefik.http.routers.documentation.entrypoints=websecure'
+      - 'traefik.http.routers.documentation.tls.certresolver=myresolver'
+      - 'traefik.http.services.documentation.loadbalancer.server.port=3000'
       - 'com.centurylinklabs.watchtower.enable=true'
     networks:
       - traefik-network
