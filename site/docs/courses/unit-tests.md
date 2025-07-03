@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-title: Les tests unitaires (exemples en C# avec MSTest)
+title: Tests unitaires (exemples en C# avec MSTest)
 author: Eliott A. Roussille
 description: Un guide pour comprendre les fondamentaux des tests unitaires, illustré en C# avec MSTest, mais applicable à tous les langages.
 tags: [info]
@@ -8,7 +8,7 @@ hide_table_of_contents: false
 slug: mstest-course
 ---
 
-# Les tests unitaires (exemples en C# avec MSTest)
+# Tests unitaires (exemples en C# avec MSTest)
 
 Les tests unitaires sont des programmes qui vérifient automatiquement que chaque partie de votre code fonctionne comme prévu. Ils facilitent la maintenance, la détection des bugs et la refactorisation. De plus, un haut taux de couverture (le pourcentage de code testé par les tests) garantit la qualité du code.
 
