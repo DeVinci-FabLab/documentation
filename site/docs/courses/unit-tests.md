@@ -416,6 +416,7 @@ namespace ExempleNamespace.Tests
         }
     }
 }
+```
 
 ```csharp
 namespace LivInParis.Tests
