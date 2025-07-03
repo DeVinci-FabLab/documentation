@@ -94,6 +94,7 @@ const config: Config = {
         'c',
         'cpp',
         'csharp',
+        'css',
         'json',
         'markdown',
         'python',

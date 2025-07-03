@@ -44,6 +44,7 @@ const sidebars: SidebarsConfig = {
         'courses/csharp-to-postgres',
         'courses/postgres-docker',
         'courses/rust',
+        'courses/unit-tests'
       ],
     },
   ],

@@ -75,20 +75,6 @@ make clean
 
 Access the project at [http://localhost:3000](http://localhost:3000).
 
-### Running the Project
-
-To run the project locally, use the following commands:
-
-```bash
-# Stop any running containers and remove volumes and orphans
-docker compose down -v --remove-orphans
-
-# Build and start the Docusaurus production container
-docker compose up -d docusaurus-prod-local --build
-```
-
-Once the project is running, you can access it at [http://localhost:300](http://localhost:300).
-
 ## Testing
 
 All contributions must include tests to ensure project stability. Please follow these principles:
