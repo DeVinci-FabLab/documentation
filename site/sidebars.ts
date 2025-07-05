@@ -35,16 +35,16 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Courses',
+      label: 'IT Courses',
       collapsed: true,
       collapsible: true,
       items: [
-        'courses/csharp-docs',
-        'courses/csharp-on-vscode',
-        'courses/csharp-to-postgres',
-        'courses/postgres-docker',
-        'courses/rust',
-        'courses/unit-tests'
+        'it_courses/csharp-docs',
+        'it_courses/csharp-on-vscode',
+        'it_courses/csharp-to-postgres',
+        'it_courses/postgres-docker',
+        'it_courses/rust',
+        'it_courses/unit-tests'
       ],
     },
   ],

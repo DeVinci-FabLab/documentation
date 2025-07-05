@@ -16,15 +16,11 @@ This guide presents the fundamental concepts of unit testing, illustrated with M
 
 ## Why Write Unit Tests?
 
-- **Quality**:
-  Code coverage is the percentage of code tested by unit tests and ensures that the code works as expected and that future changes do not break existing features.
+- **Quality**: Code coverage is the percentage of code tested by unit tests and ensures that the code works as expected and that future changes do not break existing features.
   Having a high coverage rate is a sign of code quality and robustness.
-- **Quick bug detection**:
-  Unit tests allow you to quickly detect errors in the code, reducing debugging time.
-- **Living documentation**:
-  Unit tests serve as living documentation for the code, showing how each part is supposed to work.
-- **Easier code modification**:
-  Unit tests allow you to modify code with confidence, as they can ensure that changes haven't broken anything.
+- **Quick bug detection**: Unit tests allow you to quickly detect errors in the code, reducing debugging time.
+- **Living documentation**: Unit tests serve as living documentation for the code, showing how each part is supposed to work.
+- **Easier code modification**: Unit tests allow you to modify code with confidence, as they can ensure that changes haven't broken anything.
 
 ## Creating and Configuring an MSTest Project
 
@@ -106,7 +102,14 @@ namespace MyNamespace
 {
     public static class Calculator
     {
-        public static decimal CalculateVAT(decimal amount, decimal rate) => amount * rate;
+        public static decimal CalculateVAT(decimal amount, decimal rate)
+        {
+            if (rate < 0)
+            {
+                throw new ArgumentException("The rate cannot be negative.");
+            }
+            return amount * rate;
+        }
     }
 }
 ```
@@ -260,7 +263,7 @@ public async Task CalculAsync_ShouldReturnResult()
 ```
 
 - **Mocks**: To isolate dependencies (see Moq, NSubstitute)
-- **Configure MSTest**: Parallelization, global timeout, etc. by editing MSTestSettings.cs. See the [official MSTest documentation](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-configure).
+- **Configure MSTest**: Parallelization, global timeout, etc. by editing MSTestSettings.cs file. See the [official MSTest documentation](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-configure).
 
 ## Unit Testing in Other Languages
 

@@ -16,15 +16,11 @@ Ce guide présente les concepts fondamentaux des tests unitaires, illustrés ave
 
 ## Pourquoi écrire des tests unitaires ?
 
-- **Qualité** :
-  Le taux de couverture correspond au pourcentage de code testé par les tests unitaires et permet de s'assurer que le code fonctionne comme prévu et que les modifications futures ne cassent pas les fonctionnalités existantes.
+- **Qualité** : Le taux de couverture correspond au pourcentage de code testé par les tests unitaires et permet de s'assurer que le code fonctionne comme prévu et que les modifications futures ne cassent pas les fonctionnalités existantes.
   Avoir un taux de couverture élevé est un gage de qualité et de robustesse du code.
-- **Détection rapide des bugs** :
-  Les tests unitaires permettent de détecter rapidement les erreurs dans le code, ce qui réduit le temps passé à déboguer.
-- **Documentation vivante** :
-  Les tests unitaires servent de documentation vivante du code, en montrant comment chaque partie est censée fonctionner.
-- **Faciliter la modification du code** :
-  Les tests unitaires vous permettent de modifier le code en toute confiance, car ils peuvent assurer que les modifications n'ont rien cassé.
+- **Détection rapide des bugs** : Les tests unitaires permettent de détecter rapidement les erreurs dans le code, ce qui réduit le temps passé à déboguer.
+- **Documentation vivante** : Les tests unitaires servent de documentation vivante du code, en montrant comment chaque partie est censée fonctionner.
+- **Faciliter la modification du code** : Les tests unitaires vous permettent de modifier le code en toute confiance, car ils peuvent assurer que les modifications n'ont rien cassé.
 
 ## Créer et configurer un projet de tests MSTest
 
@@ -106,7 +102,14 @@ namespace MonNamespace
 {
     public static class Calculateur
     {
-        public static decimal CalculerTva(decimal montant, decimal taux) => montant * taux;
+        public static decimal CalculerTva(decimal montant, decimal taux)
+        {
+            if (taux < 0)
+            {
+                throw new ArgumentException("Le taux ne peut pas être négatif.");
+            }
+            return montant * taux;
+        }
     }
 }
 ```
@@ -196,7 +199,7 @@ L’exécution des tests dépend de votre environnement de développement :
 - **Visual Studio** : "Test" > "Explorateur de tests", Ctrl+E, T ou clic droit sur le projet de test.
 - **Visual Studio Code** : Onglet "Testing" ou clic droit sur le projet de test.
 - **JetBrains Rider** : Onglet "Tests" et "Test Coverage".
-- **Terminal** :`dotnet test`
+- **Terminal** : `dotnet test`
 
 ## Bonnes pratiques
 
@@ -260,7 +263,7 @@ public async Task CalculAsync_ShouldRetourneResultat()
 ```
 
 - **Mocks** : Pour isoler les dépendances (voir Moq, NSubstitute)
-- **Configurer MSTest** : Parallélisation, timeout global, etc. en modifiant MSTestSettings.cs. Voir la [documentation officielle MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-configure).
+- **Configurer MSTest** : Parallélisation, timeout global, etc. en modifiant le fichier MSTestSettings.cs. Voir la [documentation officielle MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-configure).
 
 ## Tests unitaires dans d'autres langages
 

@@ -15,8 +15,8 @@
     "message": "Electronic Hardware",
     "description": "The label for category Electronic Hardware in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Courses": {
-    "message": "Courses",
-    "description": "The label for category Courses in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.IT Courses": {
+    "message": "IT Courses",
+    "description": "The label for category IT Courses in sidebar tutorialSidebar"
   }
 }
