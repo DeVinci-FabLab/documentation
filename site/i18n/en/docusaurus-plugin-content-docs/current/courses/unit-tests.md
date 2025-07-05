@@ -10,143 +10,135 @@ slug: mstest-course
 
 # Unit Testing (Examples in C# with MSTest)
 
-Unit tests are programs that automatically verify that each part of your code works as expected. They make maintenance, bug detection, and refactoring easier. Moreover, a high coverage rate (the percentage of code tested by tests) ensures code quality.
+Unit tests are programs that automatically verify that each part of your code works as expected.
 
-This guide aims to present the fundamental concepts of unit testing. Everything will be illustrated with the MSTest framework for C#, but the principles remain applicable to all languages: each ecosystem offers its own tools ([see the end of the page for other languages](#unit-testing-in-other-languages)).
+This guide presents the fundamental concepts of unit testing, illustrated with MSTest for C#. However, the principles remain applicable to all languages ([see end of page](#unit-testing-in-other-languages)).
 
 ## Why Write Unit Tests?
 
-- Ensure code quality
-- Facilitate regression detection
-- Document expected behavior
-- Build confidence when making changes
+- **Quality**:
+  Code coverage is the percentage of code tested by unit tests and ensures that the code works as expected and that future changes do not break existing features.
+  Having a high coverage rate is a sign of code quality and robustness.
+- **Quick bug detection**:
+  Unit tests allow you to quickly detect errors in the code, reducing debugging time.
+- **Living documentation**:
+  Unit tests serve as living documentation for the code, showing how each part is supposed to work.
+- **Easier code modification**:
+  Unit tests allow you to modify code with confidence, as they can ensure that changes haven't broken anything.
 
 ## Creating and Configuring an MSTest Project
 
 Here's how to properly set up a unit test project with MSTest for a C# .NET project:
 
-**Prerequisite:**
-Have an existing C# project (for example, `MyProject`). Otherwise:
+### Prerequisites
+
+Have an existing C# project (for example, `MonProjet`). Otherwise:
 
 ```bash
-# Create a folder for the project if needed
-mkdir MyProjectSolution
-cd MyProjectSolution
+mkdir MyProjectSolution # Create a folder for the project if needed
+cd MyProjectSolution # Go into the project folder
 
-# 1. Create a .sln solution file
-dotnet new sln -n MyProjectSolution
+dotnet new sln -n MyProjectSolution # Create a .sln solution file
 
-# 2. Create a console project
-dotnet new console -o src/MyProject
+dotnet new console -o src/MyProject # Create a console project in src/MyProject
 
-# 3. Add the console project to the solution
-dotnet sln MyProjectSolution.sln add src/MyProject/MyProject.csproj
+dotnet sln add src/MyProject/MyProject.csproj # Add the project to the solution
 ```
 
-1. **Create the test project**
+For the following, we will use this project structure:
 
-   In your solution folder:
+```css
+MyProjectSolution/
+├── MyProjectSolution.sln
+└── src/
+    └── MyProject/
+        ├── MyProject.csproj
+        └── Program.cs
+```
 
-    ```bash
-    mkdir tests
-    dotnet new mstest -o tests/MyProject.Tests
-    ```
+Adapt the paths if you have a different structure.
 
-   This creates a test project named `MyProject.Tests`.
+### Configure the test project
 
-2. **Add the test project to the solution**
+In your solution folder:
 
-   ```bash
-   dotnet sln MyProjectSolution.sln add tests/MyProject.Tests/MyProject.Tests.csproj
-   ```
+```bash
+dotnet new mstest -o tests/MyProject.Tests
+dotnet sln add tests/MyProject.Tests/MyProject.Tests.csproj
+dotnet add tests/MyProject.Tests reference src/MyProject/MyProject.csproj
+```
 
-3. **Add a reference to the project to be tested**
+This creates a test project named `MyProject.Tests` in the `tests` folder, then links the test project to the solution and the main project.
 
-   ```bash
-   cd tests/MyProject.Tests
-   dotnet add reference ../../src/MyProject/MyProject.csproj
-   ```
+That's it! You can now write your tests in `tests/MyProject.Tests`. Organize the test files following the structure of the main project (e.g., a file `MaClasseTests.cs` for `MaClasse.cs`).
 
-4. **Check the structure**
+Here is the final structure:
 
-   - Place your tests in the `MyProject.Tests` folder.
-   - Organize test files following the main project's structure (e.g., a `MyClassTests.cs` file for `MyClass.cs`).
-
-5. **Example solution structure**
-
-    ```css
-    MyProjectSolution/
-    ├── MyProjectSolution.sln
-    ├── src/
-    │   └── MyProject/
-    │       ├── MyProject.csproj
-    │       ├── MyClass.cs
-    │       └── Program.cs
-    └── tests/
-        └── MyProject.Tests/
-            ├── MyProject.Tests.csproj
-            ├── MyClassTests.cs
-            └── MSTestSettings.cs
-    ```
-
-6. **Best practices**
-
-   - Suffix your test projects with `.Tests` or `.Test`.
-   - Use a consistent namespace, e.g., `MyProject.Tests`.
-   - Place tests in a separate folder from business logic.
-   - Add an `MSTestSettings.cs` file if advanced configuration is needed ([see below](#going-further)).
+```css
+MyProjectSolution/
+├── MyProjectSolution.sln
+├── src/
+│   └── MyProject/
+│       ├── MyClass.cs
+│       ├── MyProject.csproj
+│       └── Program.cs
+└── tests/
+    └── MyProject.Tests/
+        ├── MyClassTests.cs
+        ├── MyProject.Tests.csproj
+        └── MSTestSettings.cs
+```
 
 For more details: [Microsoft docs - Create an MSTest test project](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)
 
-## Structure of a Unit Test
+## Structure of a Unit Test (AAA pattern)
 
-### Theory: The AAA Pattern
+- **Arrange**: Prepare the data and objects needed to test the method.
+- **Act**: Call the method to test.
+- **Assert**: Verify the result obtained.
 
-**AAA:**
+### Realistic example with MSTest
 
-- **Arrange**: Initialize objects and define the data passed to the method under test.
-- **Act**: Call the method under test with the initialized parameters.
-- **Assert**: Verify that the action of the method under test behaves as expected (we'll see the `Assert` class below).
-
-### Syntax of a Unit Test with MSTest
+Suppose a method that calculates VAT:
 
 ```csharp
-using Microsoft.VisualStudio.TestTools.UnitTesting; //Sometimes automatic
+namespace MyNamespace
+{
+    public static class Calculator
+    {
+        public static decimal CalculateVAT(decimal amount, decimal rate) => amount * rate;
+    }
+}
+```
+
+Associated unit test:
+
+```csharp
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace MyNamespace.Tests
 {
     [TestClass]
-    public class MyClassTests
+    public class CalculatorTests
     {
         [TestMethod]
-        public void MyMethodToTest_ShouldDoThis() //Or Given..._When..._Then... (two conventions used)
+        public void CalculateVAT_WithValidAmountAndRate_ReturnsExpectedResult()
         {
             // Arrange
-
+            decimal amount = 100m;
+            decimal rate = 0.2m;
             // Act
-
+            decimal result = Calculator.CalculateVAT(amount, rate);
             // Assert
+            Assert.AreEqual(20m, result, "The VAT should be correct.");
         }
     }
 }
 ```
 
-### Simple Example
+## Writing Unit Tests with MSTest
 
-```csharp
-[TestMethod]
-public void Addition_ShouldReturnCorrectSum()
-{
-    // Arrange
-    int a = 2, b = 3;
-    // Act
-    int result = a + b;
-    // Assert
-    Assert.AreEqual(5, result);
-}
-```
-
-## The `Assert` Class
+### The `Assert` Class
 
 `Assert` is used to verify expected results in your tests.
 
@@ -161,37 +153,39 @@ Here are the most common methods:
 
 If a test fails, the (optional) message is displayed, which saves time.
 
-**Simple example:**
+### Parameterized Tests
 
-```csharp
-[TestMethod]
-public void Conditions_ShouldBeOfLength5NotEqualToWorldNotBeginWithWContainsHAndNotNull()
-// This is for the example; in reality, you should segment as much as possible. One method = one test.
-// As you can see, this is unreadable.
-{
-    string str = "Hello";
-    Assert.AreEqual(5, str.Length, "The string length should be 5.");
-    Assert.AreNotEqual("World", str, "The string should not be 'World'.");
-    Assert.IsFalse(str.StartsWith("W"), "The string should not start with 'W'.");
-    Assert.IsTrue(str.Contains("H"), "The string should contain 'H'.");
-    Assert.IsNotNull(str, "The string should not be null.");
-}
-```
-
-## Parameterized Tests
-
-Run a test with multiple sets of data.
+To test a method with several sets of data, use the `[DataTestMethod]` and `[DataRow]` attributes.
 
 ```csharp
 [DataTestMethod]
-[DataRow(2, 3, 5)]
-[DataRow(10, 20, 30)]
-[DataRow(-1, 20, 19)]
-[DataRow(10, 0, 10)]
-public void Addition_ShouldReturnCorrectSum(int a, int b, int expected)
+[DataRow(100, 0.2, 20)]
+[DataRow(50, 0.1, 5)]
+public void CalculateVAT_WithVariousValues_ReturnsExpectedResult(decimal amount, decimal rate, decimal expected)
 {
-    string message = "The sum of " + a + " and " + b + " should be " + expected;
-    Assert.AreEqual(expected, a + b, message);
+    Assert.AreEqual(expected, Calculator.CalculateVAT(amount, rate));
+}
+```
+
+### Exception Handling
+
+To test that a method throws an expected exception, use the `[ExpectedException]` attribute or the `Assert.ThrowsException<T>()` method.
+
+```csharp
+// With ExpectedException
+[TestMethod]
+[ExpectedException(typeof(ArgumentException))]
+public void CalculateVAT_NegativeRate_ThrowsException()
+{
+    Calculator.CalculateVAT(100, -0.2m);
+}
+
+// With Assert.ThrowsException
+[TestMethod]
+public void CalculateVAT_NegativeRate_ThrowsException()
+{
+    var exception = Assert.ThrowsException<ArgumentException>(() => Calculator.CalculateVAT(100, -0.2m));
+    Assert.AreEqual("The rate cannot be negative.", exception.Message);
 }
 ```
 
@@ -199,73 +193,19 @@ public void Addition_ShouldReturnCorrectSum(int a, int b, int expected)
 
 How you run tests depends on your development environment:
 
-- **Visual Studio Code**:
-  - Use the "Testing" tab in the sidebar to run or monitor your tests.
-  - You can also right-click the test project > "Run Tests" or "Run Tests with Coverage" to get code coverage.
-
-- **JetBrains Rider**:
-  - Go to the "Tests" tab to run or debug your tests.
-  - The "Test Coverage" option lets you see coverage for each file.
-
-- **Other IDEs**:
-  - Most modern IDEs offer unit test integration with dedicated buttons or menus.
-
-- **Command line**:
-
-    ```bash
-    dotnet test
-    ```
-
-    This command runs all tests related to the solution and displays the results in the terminal.
+- **Visual Studio**: "Test" > "Test Explorer", Ctrl+E, T or right-click on the test project.
+- **Visual Studio Code**: "Testing" tab or right-click on the test project.
+- **JetBrains Rider**: "Tests" tab and "Test Coverage".
+- **Terminal**: `dotnet test`
 
 ## Best Practices
 
-- **Clearly name your tests**: Indicate what is being tested and the expected result.
-
-    ```csharp
-    MyMethodToTest_ShouldDoThis()
-    ```
-
-- **Isolation**: Tests should not depend on each other.
 - **Segment**: One test = one test method.
-
-    ```csharp
-    // Bad
-    [TestMethod]
-    public void Conditions_ShouldBeNotNullAndContainsH()
-    {
-        // Arrange
-        string str = "Hello";
-        // Act & Assert
-        Assert.IsNotNull(str, "The string should not be null.");
-        Assert.IsTrue(str.Contains("H"), "The string should contain 'H'.");
-    }
-
-    // Prefer
-    [TestMethod]
-    public void Conditions_ShouldBeNotNull()
-    {
-        // Arrange
-        string str = "Hello";
-        // Act
-
-        // Assert
-        Assert.IsNotNull(str, "The string should not be null.");
-    }
-
-    [TestMethod]
-    public void Conditions_ShouldContainH()
-    {
-        // Arrange
-        string str = "Hello";
-        // Act
-
-        // Assert
-        Assert.IsTrue(str.Contains("H"), "The string should contain 'H'.");
-    }
-    ```
-
-- **Avoid side effects**: Clean up resources if needed (`[TestInitialize]`, `[TestCleanup]`, `[AssemblyInitialize]`, `[ClassInitialize]`, ...).
+- **Explicit naming**: Indicate what is being tested and the expected result. Two naming conventions are common:
+  - `Method_Should...`: `Method_ShouldReturnExpectedResult`
+  - `Given..._When..._Then...`: `Method_Condition_ExpectedResult`
+- **Isolation**: Tests should not depend on each other.
+- **Limit side effects**: Clean up resources if needed (`[TestCleanup]`, `[TestInitialize]`, `[AssemblyInitialize]`, `[ClassInitialize]`, …).
 
     ```csharp
     private List<string> _list;
@@ -296,67 +236,37 @@ How you run tests depends on your development environment:
 
 ## Common Mistakes
 
-- **Forgetting the `[TestMethod]` attribute**: the test will not be detected.
-
-    ```csharp
-    // Bad
-    public void Addition_ShouldReturnCorrectSum()
-    {
-        // Arrange
-        int a = 2, b = 3;
-        // Act
-        int result = a + b;
-        // Assert
-        Assert.AreEqual(5, result);
-    }
-    ```
+- Forgetting `[TestMethod]` or `[TestClass]`: the test is not detected
+- Forgetting to build before testing (`dotnet build`)
+- Testing several behaviors in the same test
+- Dependency between tests (e.g., modifying a static variable)
+- Incorrect use of `Assert` (e.g., swapping expected/actual)
+- Not cleaning up resources (files, connections, etc.)
+- Not testing edge cases or exceptions
+- Leaving dead/unused code in tests
+- Not running tests regularly
 
 ## Going Further
-
-- **Testing exceptions**:
-
-```csharp
-[TestMethod]
-[ExpectedException(typeof(ArgumentNullException))]
-public void MyMethod_ShouldThrowOnNull()
-{
-    MyClass.MyMethod(null);
-}
-```
 
 - **Async tests**:
 
 ```csharp
 [TestMethod]
-public async Task MyMethodAsync_ShouldReturnResult()
+public async Task CalculAsync_ShouldReturnResult()
 {
-    var result = await MyClass.MyMethodAsync();
-    Assert.IsNotNull(result);
+    var result = await CalculateurAsync.CalculAsync(10, 2);
+    Assert.AreEqual(20, result);
 }
 ```
 
-- **Using mocks**: To isolate dependencies, use a framework like Moq or NSubstitute.
-
-- **Configure MSTest with MSTestSettings.cs**:
-
-    To customize the global behavior of MSTest, you can add an `MSTestSettings.cs` file to your test project. This file allows you to configure test parallelization, global timeout, etc.
-
-    **Example**
-
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-    [assembly: Parallelize(Scope = ExecutionScope.MethodLevel, Workers = 4)] // Parallelize tests at the method level with 4 workers
-    [assembly: TestSettings(DefaultTestTimeout = 10000)] // Global timeout of 10 seconds per test
-    ```
-
-    For more details, see the [official MSTest documentation](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-configure).
+- **Mocks**: To isolate dependencies (see Moq, NSubstitute)
+- **Configure MSTest**: Parallelization, global timeout, etc. by editing MSTestSettings.cs. See the [official MSTest documentation](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-configure).
 
 ## Unit Testing in Other Languages
 
 The principles of unit testing are universal. Here are some popular frameworks:
 
-- **Python**: [pytest](https://docs.pytest.org/en/stable/) or [unittest](https://docs.python.org/3/library/unittest.html)
+- **Python**: [pytest](https://docs.pytest.org/en/stable/), [unittest](https://docs.python.org/3/library/unittest.html)
 - **Java**: [JUnit](https://junit.org/junit5/)
 - **JavaScript/TypeScript**: [Jest](https://jestjs.io/), [Mocha](https://mochajs.org/)
 - **Go**: [testing](https://pkg.go.dev/testing)

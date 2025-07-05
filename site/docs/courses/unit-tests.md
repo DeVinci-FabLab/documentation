@@ -10,143 +10,135 @@ slug: mstest-course
 
 # Tests unitaires (exemples en C# avec MSTest)
 
-Les tests unitaires sont des programmes qui vérifient automatiquement que chaque partie de votre code fonctionne comme prévu. Ils facilitent la maintenance, la détection des bugs et la refactorisation. De plus, un haut taux de couverture (le pourcentage de code testé par les tests) garantit la qualité du code.
+Les tests unitaires sont des programmes qui vérifient automatiquement que chaque partie de votre code fonctionne comme prévu.
 
-Ce guide a pour but de présenter les concepts fondamentaux des tests unitaires. Tout sera illustré avec le framework MSTest pour C#. mais les principes restent applicables à tous les langages : chaque écosystème propose ses propres outils ([voir en fin de page pour d'autres langages](#tests-unitaires-dans-dautres-langages)).
+Ce guide présente les concepts fondamentaux des tests unitaires, illustrés avec MSTest pour C#. Néanmoins les principes restent applicables à tous les langages ([voir en fin de page](#tests-unitaires-dans-dautres-langages)).
 
 ## Pourquoi écrire des tests unitaires ?
 
-- Garantir la qualité du code
-- Faciliter la détection des régressions
-- Documenter le comportement attendu
-- Favoriser la confiance lors des modifications
+- **Qualité** :
+  Le taux de couverture correspond au pourcentage de code testé par les tests unitaires et permet de s'assurer que le code fonctionne comme prévu et que les modifications futures ne cassent pas les fonctionnalités existantes.
+  Avoir un taux de couverture élevé est un gage de qualité et de robustesse du code.
+- **Détection rapide des bugs** :
+  Les tests unitaires permettent de détecter rapidement les erreurs dans le code, ce qui réduit le temps passé à déboguer.
+- **Documentation vivante** :
+  Les tests unitaires servent de documentation vivante du code, en montrant comment chaque partie est censée fonctionner.
+- **Faciliter la modification du code** :
+  Les tests unitaires vous permettent de modifier le code en toute confiance, car ils peuvent assurer que les modifications n'ont rien cassé.
 
 ## Créer et configurer un projet de tests MSTest
 
 Voici comment mettre en place un projet de tests unitaire proprement avec MSTest pour un projet C# .NET :
 
-**Prérequis** :
+### Prérequis
+
 Avoir un projet C# existant (par exemple, `MonProjet`). Sinon :
 
 ```bash
-# Créer un dossier pour le projet si besoin
-mkdir MonProjetSolution
-cd MonProjetSolution
+mkdir MonProjetSolution # Créer un dossier pour le projet si besoin
+cd MonProjetSolution # Se placer dans le dossier du projet
 
-# 1. Créer un fichier de solution .sln
-dotnet new sln -n MonProjetSolution
+dotnet new sln -n MonProjetSolution # Créer un fichier de solution .sln
 
-# 2. Créer un projet console
-dotnet new console -o src/MonProjet
+dotnet new console -o src/MonProjet # Créer un projet console dans le dossier src/MonProjet
 
-# 3. Ajouter le projet console à la solution
-dotnet sln MonProjetSolution.sln add src/MonProjet/MonProjet.csproj
+dotnet sln add src/MonProjet/MonProjet.csproj # Ajouter le projet à la solution
 ```
 
-1. **Créer le projet de tests**
+Pour la suite, on va se placer dans cette architecture de projet :
 
-   Dans le dossier de votre solution :
+```css
+MonProjetSolution/
+├── MonProjetSolution.sln
+└── src/
+    └── MonProjet/
+        ├── MonProjet.csproj
+        └── Program.cs
+```
 
-    ```bash
-    mkdir tests
-    dotnet new mstest -o tests/MonProjet.Tests
-    ```
+Adapter les chemins si vous avez une structure différente.
 
-   Cela crée un projet de tests nommé `MonProjet.Tests`.
+### Configurer le projet de tests
 
-2. **Ajouter le projet de tests à la solution**
+Dans le dossier de votre solution :
 
-   ```bash
-   dotnet sln MonProjetSolution.sln add tests/MonProjet.Tests/MonProjet.Tests.csproj
-   ```
+```bash
+dotnet new mstest -o tests/MonProjet.Tests
+dotnet sln add tests/MonProjet.Tests/MonProjet.Tests.csproj
+dotnet add tests/MonProjet.Tests reference src/MonProjet/MonProjet.csproj
+```
 
-3. **Ajouter une référence au projet à tester**
+Cela crée un projet de tests nommé `MonProjet.Tests` dans le dossier `tests` puis lie le projet de tests à la solution et au projet principal.
 
-   ```bash
-   cd tests/MonProjet.Tests
-   dotnet add reference ../../src/MonProjet/MonProjet.csproj
-   ```
+C’est tout ! Tu peux maintenant écrire tes tests dans `tests/MonProjet.Tests`. Organise les fichiers de test en suivant la structure du projet principal (ex : un fichier `MaClasseTests.cs` pour `MaClasse.cs`).
 
-4. **Vérifier la structure**
+Voici la structure finale :
 
-   - Placez vos tests dans le dossier `MonProjet.Tests`.
-   - Organisez les fichiers de test en suivant la structure du projet principal (ex : un fichier `MaClasseTests.cs` pour `MaClasse.cs`).
-
-5. **Exemple de structure de solution**
-
-    ```css
-    MonProjetSolution/
-    ├── MonProjetSolution.sln
-    ├── src/
-    │   └── MonProjet/
-    │       ├── MonProjet.csproj
-    │       ├── MaClasse.cs
-    │       └── Program.cs
-    └── tests/
-        └── MonProjet.Tests/
-            ├── MonProjet.Tests.csproj
-            ├── MaClasseTests.cs
-            └── MSTestSettings.cs
-    ```
-
-6. **Bonnes pratiques**
-
-   - Suffixez vos projets de test par `.Tests` ou `.Test`.
-   - Utilisez un namespace cohérent, par exemple `MonProjet.Tests`.
-   - Placez les tests dans un dossier séparé de la logique métier.
-   - Ajoutez un fichier `MSTestSettings.cs` si besoin de configuration avancée ([voir plus bas](#aller-plus-loin)).
+```css
+MonProjetSolution/
+├── MonProjetSolution.sln
+├── src/
+│   └── MonProjet/
+│       ├── MonProjet.csproj
+│       ├── MaClasse.cs
+│       └── Program.cs
+└── tests/
+    └── MonProjet.Tests/
+        ├── MonProjet.Tests.csproj
+        ├── MaClasseTests.cs
+        └── MSTestSettings.cs
+```
 
 Pour plus de détails : [docs Microsoft - Créer un projet de test MSTest](https://learn.microsoft.com/fr-fr/dotnet/core/testing/unit-testing-with-mstest)
 
-## Structure d’un Test Unitaire
+## Structure d’un Test Unitaire (schéma AAA)
 
-### Théorie : le schéma AAA
+- **Arrange** : Préparer les données et objets nécessaires au test de la méthode.
+- **Act** : Appeler la méthode à tester.
+- **Assert** : Vérifier le résultat obtenu.
 
-**AAA** :
+### Exemple réaliste avec MSTest
 
-- **Arrange** : Initialisation des objets et définition des données transmises à la méthode testée.
-- **Act** : Appel de la méthode testée avec les paramètres initialisés.
-- **Assert** : Vérification que l’action de la méthode testée se comporte comme prévu (on verra la classe `Assert` plus bas).
-
-### Syntaxe d'un Test Unitaire avec MSTest
+Supposons une méthode qui calcule la TVA :
 
 ```csharp
-using Microsoft.VisualStudio.TestTools.UnitTesting; //Parfois automatique
+namespace MonNamespace
+{
+    public static class Calculateur
+    {
+        public static decimal CalculerTva(decimal montant, decimal taux) => montant * taux;
+    }
+}
+```
+
+Test unitaire associé :
+
+```csharp
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace MonNamespace.Tests
 {
     [TestClass]
-    public class MaClasseTests
+    public class CalculateurTests
     {
         [TestMethod]
-        public void MaMethodeATester_ShouldFaireCa() //Ou Given..._When..._Then... (deux conventions utilisées )
+        public void CalculerTva_AvecMontantEtTauxValides_RetourneResultatAttendu()
         {
             // Arrange
-
+            decimal montant = 100m;
+            decimal taux = 0.2m;
             // Act
-
+            decimal resultat = Calculateur.CalculerTva(montant, taux);
             // Assert
+            Assert.AreEqual(20m, resultat, "La TVA doit être correcte.");
         }
     }
 }
 ```
 
-### Exemple simple
+## Écriture de Tests Unitaires avec MSTest
 
-```csharp
-[TestMethod]
-public void Addition_ShouldReturnCorrectSum()
-{
-    // Arrange
-    int a = 2, b = 3;
-    // Act
-    int result = a + b;
-    // Assert
-    Assert.AreEqual(5, result);
-}
-```
-
-## Classe `Assert`
+### Classe `Assert`
 
 `Assert` est utilisée pour vérifier les résultats attendus dans vos tests.
 
@@ -161,37 +153,39 @@ Voici les méthodes les plus courantes :
 
 Si un test échoue, le message inscrit (optionnel) s'affiche ce qui permet de gagner du temps.
 
-**Exemple simple** :
+### Tests Paramétrés
 
-```csharp
-[TestMethod]
-public void Conditions_ShouldBeOfLength5NotEqualToWorldNotBeginWithWContainsHAndNotNull()
-//C'est pour l'exemple en réalité, il faut segmenter le plus possible. Une méthode => Un test.
-//La preuve, ici, c'est illisible.
-{
-    string str = "Hello";
-    Assert.AreEqual(5, str.Length, "La longueur de la chaîne doit être 5.");
-    Assert.AreNotEqual("World", str, "La chaîne ne doit pas être 'World'.");
-    Assert.IsFalse(str.StartsWith("W"), "La chaîne ne doit pas commencer par 'W'.");
-    Assert.IsTrue(str.Contains("H"), "La chaîne doit contenir 'H'.");
-    Assert.IsNotNull(str, "La chaîne ne doit pas être null.");
-}
-```
-
-## Tests Paramétrés
-
-Exécutent un test avec plusieurs jeux de données.
+Pour tester une méthode avec plusieurs jeux de données, utilisez les attributs `[DataTestMethod]` et `[DataRow]`.
 
 ```csharp
 [DataTestMethod]
-[DataRow(2, 3, 5)]
-[DataRow(10, 20, 30)]
-[DataRow(-1, 20, 19)]
-[DataRow(10, 0, 10)]
-public void Addition_ShouldReturnCorrectSum(int a, int b, int expected)
+[DataRow(100, 0.2, 20)]
+[DataRow(50, 0.1, 5)]
+public void CalculerTva_AvecDiversesValeurs_RetourneLeRésultatAttendu(decimal montant, decimal taux, decimal attendu)
 {
-    string message = "La somme de " + a + " et " + b + "devrait être " + expected;
-    Assert.AreEqual(expected, a + b, message);
+    Assert.AreEqual(attendu, Calculateur.CalculerTva(montant, taux));
+}
+```
+
+### Gestion des exceptions
+
+Pour tester qu'une méthode lance une exception attendue, utilisez l'attribut `[ExpectedException]` ou la méthode `Assert.ThrowsException<T>()`.
+
+```csharp
+// Avec ExpectedException
+[TestMethod]
+[ExpectedException(typeof(ArgumentException))]
+public void CalculerTva_TauxNegatif_ProvoqueException()
+{
+    Calculateur.CalculerTva(100, -0.2m);
+}
+
+// Avec Assert.ThrowsException
+[TestMethod]
+public void CalculerTva_TauxNegatif_ProvoqueException()
+{
+    var exception = Assert.ThrowsException<ArgumentException>(() => Calculateur.CalculerTva(100, -0.2m));
+    Assert.AreEqual("Le taux ne peut pas être négatif.", exception.Message);
 }
 ```
 
@@ -199,73 +193,19 @@ public void Addition_ShouldReturnCorrectSum(int a, int b, int expected)
 
 L’exécution des tests dépend de votre environnement de développement :
 
-- **Visual Studio Code** :
-  - Utilisez l’onglet "Testing" dans la barre latérale pour lancer ou surveiller vos tests.
-  - Vous pouvez aussi faire un clic droit sur le projet de test > "Run Tests" ou "Run Tests with Coverage" pour obtenir le taux de couverture de code.
+- **Visual Studio** : "Test" > "Explorateur de tests", Ctrl+E, T ou clic droit sur le projet de test.
+- **Visual Studio Code** : Onglet "Testing" ou clic droit sur le projet de test.
+- **JetBrains Rider** : Onglet "Tests" et "Test Coverage".
+- **Terminal** :`dotnet test`
 
-- **JetBrains Rider** :
-  - Accédez à l’onglet "Tests" pour exécuter ou déboguer vos tests.
-  - L’option "Test Coverage" permet de visualiser la couverture de chaque fichier.
+## Bonnes pratiques
 
-- **Autres IDE** :
-  - La plupart des IDE modernes proposent une intégration des tests unitaires avec des boutons ou menus dédiés.
-
-- **En ligne de commande** :
-
-    ```bash
-    dotnet test
-    ```
-
-    Cette commande exécute tous les tests reliés à la solution et affiche les résultats dans le terminal.
-
-## Bonnes Pratiques
-
-- **Nommer clairement les tests** : Indique ce qui est testé et le résultat attendu.
-
-    ```csharp
-    MaMethodeATester_ShouldFaireCa()
-    ```
-
-- **Isolation** : Les tests ne doivent pas dépendre les uns des autres.
 - **Segmenter** : Un test = une méthode de test.
-
-    ```csharp
-    // Mauvais
-    [TestMethod]
-    public void Conditions_ShouldBeNotNullAndContainsH()
-    {
-        // Arrange
-        string str = "Hello";
-        // Act & Assert
-        Assert.IsNotNull(str, "La chaîne ne doit pas être null.");
-        Assert.IsTrue(str.Contains("H"), "La chaîne doit contenir 'H'.");
-    }
-
-    // Préférez
-    [TestMethod]
-    public void Conditions_ShouldBeNotNull()
-    {
-        // Arrange
-        string str = "Hello";
-        // Act
-
-        // Assert
-        Assert.IsNotNull(str, "La chaîne ne doit pas être null.");
-    }
-
-    [TestMethod]
-    public void Conditions_ShouldContainH()
-    {
-        // Arrange
-        string str = "Hello";
-        // Act
-
-        // Assert
-        Assert.IsTrue(str.Contains("H"), "La chaîne doit contenir 'H'.");
-    }
-    ```
-
-- **Éviter les effets de bord** : Nettoyer les ressources si besoin (méthodes `[TestInitialize]`, `[TestCleanup]`, `[AssemblyInitialize]`, `[ClassInitialize]`, …).
+- **Nom explicite** : Indique ce qui est testé et le résultat attendu. Deux conventions de nommage sont courantes :
+  - `Méthode_Should...`: `Méthode_ShouldRésultatAttendu`
+  - `Given..._When..._Then...` : `Méthode_Condition_RésultatAttendu`
+- **Isolation** : Les tests ne doivent pas dépendre les uns des autres.
+- **Limiter les effets de bord** : Nettoyer les ressources si besoin (`[TestCleanup]`, `[TestInitialize]`, `[AssemblyInitialize]`, `[ClassInitialize]`, …).
 
     ```csharp
     private List<string> _list;
@@ -296,67 +236,37 @@ L’exécution des tests dépend de votre environnement de développement :
 
 ## Erreurs courantes
 
-- **Oublier l’attribut `[TestMethod]`** : le test ne sera pas détecté.
-
-    ```csharp
-    // Mauvais
-    public void Addition_ShouldReturnCorrectSum()
-    {
-        // Arrange
-        int a = 2, b = 3;
-        // Act
-        int result = a + b;
-        // Assert
-        Assert.AreEqual(5, result);
-    }
-    ```
+- Oublier `[TestMethod]` ou `[TestClass]` : le test n’est pas détecté
+- Oublier de builder avant de tester (`dotnet build`)
+- Tester plusieurs comportements dans un même test
+- Dépendance entre tests (ex : modification d’une variable statique)
+- Mauvais usage d’`Assert` (ex : inverser expected/actual)
+- Ne pas nettoyer les ressources (fichiers, connexions, etc.)
+- Ne pas tester les cas limites ou les exceptions
+- Laisser du code mort/non utilisé dans les tests
+- Ne pas exécuter les tests régulièrement
 
 ## Aller plus loin
 
-- **Tester les exceptions** :
+- **Tests asynchrones**
 
 ```csharp
 [TestMethod]
-[ExpectedException(typeof(ArgumentNullException))]
-public void MaMethode_ShouldThrowOnNull()
+public async Task CalculAsync_ShouldRetourneResultat()
 {
-    MaClasse.MaMethode(null);
+    var resultat = await CalculateurAsync.CalculerAsync(10, 2);
+    Assert.AreEqual(20, resultat);
 }
 ```
 
-- **Tests asynchrones** :
-
-```csharp
-[TestMethod]
-public async Task MaMethodeAsync_ShouldReturnResult()
-{
-    var result = await MaClasse.MaMethodeAsync();
-    Assert.IsNotNull(result);
-}
-```
-
-- **Utiliser des mocks** : Pour isoler les dépendances, utilisez un framework comme Moq ou NSubstitute.
-
-- **Configurer MSTest avec MSTestSettings.cs** :
-
-    Pour personnaliser le comportement global de MSTest, vous pouvez ajouter un fichier `MSTestSettings.cs` dans votre projet de tests. Ce fichier permet par exemple de configurer la parallélisation des tests, le timeout global, etc.
-
-    **Exemple**
-
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-    [assembly: Parallelize(Scope = ExecutionScope.MethodLevel, Workers = 4)] // Parallélise les tests au niveau des méthodes avec 4 workers
-    [assembly: TestSettings(DefaultTestTimeout = 10000)] // Timeout global de 10 secondes pour chaque test
-    ```
-
-    Pour plus de détails, voir la [documentation officielle MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-configure).
+- **Mocks** : Pour isoler les dépendances (voir Moq, NSubstitute)
+- **Configurer MSTest** : Parallélisation, timeout global, etc. en modifiant MSTestSettings.cs. Voir la [documentation officielle MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-configure).
 
 ## Tests unitaires dans d'autres langages
 
 Les principes des tests unitaires sont universels. Voici quelques frameworks populaires :
 
-- **Python** : [pytest](https://docs.pytest.org/en/stable/) ou [unittest](https://docs.python.org/3/library/unittest.html)
+- **Python** : [pytest](https://docs.pytest.org/en/stable/), [unittest](https://docs.python.org/3/library/unittest.html)
 - **Java** : [JUnit](https://junit.org/junit5/)
 - **JavaScript/TypeScript** : [Jest](https://jestjs.io/), [Mocha](https://mochajs.org/)
 - **Go** : [testing](https://pkg.go.dev/testing)
