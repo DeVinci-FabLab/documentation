@@ -87,8 +87,8 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} DeVinci Fablab.`
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.oneLight,
+      darkTheme: prismThemes.vsDark,
       additionalLanguages: [
         'bash',
         'c',
