@@ -5,14 +5,14 @@ author: Eliott A. Roussille
 description: Un guide pour comprendre les fondamentaux des tests unitaires, illustré en C# avec MSTest, mais applicable à tous les langages.
 tags: [info]
 hide_table_of_contents: false
-slug: mstest-course
+slug: unit-testing-course
 ---
 
 # Tests unitaires (exemples en C# avec MSTest)
 
 Les tests unitaires sont des programmes qui vérifient automatiquement que chaque partie de votre code fonctionne comme prévu.
 
-Ce guide présente les concepts fondamentaux des tests unitaires, illustrés avec MSTest pour C#. Néanmoins les principes restent applicables à tous les langages ([voir en fin de page](#tests-unitaires-dans-dautres-langages)).
+Ce guide présente les concepts fondamentaux des tests unitaires, illustrés avec MSTest, un framework de test pour C#. Néanmoins les principes restent applicables à tous les langages ([voir en fin de page](#tests-unitaires-dans-dautres-langages)).
 
 ## Pourquoi écrire des tests unitaires ?
 
@@ -128,12 +128,12 @@ namespace MonNamespace.Tests
         public void CalculerTva_AvecMontantEtTauxValides_RetourneResultatAttendu()
         {
             // Arrange
-            decimal montant = 100m;
-            decimal taux = 0.2m;
+            decimal montant = 100;
+            decimal taux = 0.2;
             // Act
             decimal resultat = Calculateur.CalculerTva(montant, taux);
             // Assert
-            Assert.AreEqual(20m, resultat, "La TVA doit être correcte.");
+            Assert.AreEqual(20, resultat, "La TVA doit être correcte.");
         }
     }
 }
@@ -164,7 +164,7 @@ Pour tester une méthode avec plusieurs jeux de données, utilisez les attributs
 [DataTestMethod]
 [DataRow(100, 0.2, 20)]
 [DataRow(50, 0.1, 5)]
-public void CalculerTva_AvecDiversesValeurs_RetourneLeRésultatAttendu(decimal montant, decimal taux, decimal attendu)
+public void CalculerTva_AvecDiversesValeurs_RetourneLeResultatAttendu(decimal montant, decimal taux, decimal attendu)
 {
     Assert.AreEqual(attendu, Calculateur.CalculerTva(montant, taux));
 }
@@ -180,14 +180,14 @@ Pour tester qu'une méthode lance une exception attendue, utilisez l'attribut `[
 [ExpectedException(typeof(ArgumentException))]
 public void CalculerTva_TauxNegatif_ProvoqueException()
 {
-    Calculateur.CalculerTva(100, -0.2m);
+    Calculateur.CalculerTva(100, -0.2);
 }
 
 // Avec Assert.ThrowsException
 [TestMethod]
 public void CalculerTva_TauxNegatif_ProvoqueException()
 {
-    var exception = Assert.ThrowsException<ArgumentException>(() => Calculateur.CalculerTva(100, -0.2m));
+    var exception = Assert.ThrowsException<ArgumentException>(() => Calculateur.CalculerTva(100, -0.2));
     Assert.AreEqual("Le taux ne peut pas être négatif.", exception.Message);
 }
 ```
@@ -205,8 +205,8 @@ L’exécution des tests dépend de votre environnement de développement :
 
 - **Segmenter** : Un test = une méthode de test.
 - **Nom explicite** : Indique ce qui est testé et le résultat attendu. Deux conventions de nommage sont courantes :
-  - `Méthode_Should...`: `Méthode_ShouldRésultatAttendu`
-  - `Given..._When..._Then...` : `Méthode_Condition_RésultatAttendu`
+  - `Méthode_Should...`: `Methode_ShouldResultatAttendu`
+  - `Given..._When..._Then...` : `Methode_Condition_ResultatAttendu`
 - **Isolation** : Les tests ne doivent pas dépendre les uns des autres.
 - **Limiter les effets de bord** : Nettoyer les ressources si besoin (`[TestCleanup]`, `[TestInitialize]`, `[AssemblyInitialize]`, `[ClassInitialize]`, …).
 
@@ -262,7 +262,7 @@ public async Task CalculAsync_ShouldRetourneResultat()
 }
 ```
 
-- **Mocks** : Pour isoler les dépendances (voir Moq, NSubstitute)
+- **Mocks** : Pour isoler les dépendances (voir [Moq](https://github.com/devlooped/moq/wiki/Quickstart), [NSubstitute](https://nsubstitute.github.io/docs/2010-01-01-getting-started.html))
 - **Configurer MSTest** : Parallélisation, timeout global, etc. en modifiant le fichier MSTestSettings.cs. Voir la [documentation officielle MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-configure).
 
 ## Tests unitaires dans d'autres langages

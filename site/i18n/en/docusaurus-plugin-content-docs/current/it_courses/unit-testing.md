@@ -5,14 +5,14 @@ author: Eliott A. Roussille
 description: A guide to understanding the fundamentals of unit testing, illustrated in C# with MSTest, but applicable to all languages.
 tags: [info]
 hide_table_of_contents: false
-slug: mstest-course
+slug: unit-testing-course
 ---
 
 # Unit Testing (Examples in C# with MSTest)
 
 Unit tests are programs that automatically verify that each part of your code works as expected.
 
-This guide presents the fundamental concepts of unit testing, illustrated with MSTest for C#. However, the principles remain applicable to all languages ([see end of page](#unit-testing-in-other-languages)).
+This guide presents the fundamental concepts of unit testing, illustrated with MSTest, a testing framework for C#. However, the principles remain applicable to all languages ([see end of page](#unit-testing-in-other-languages)).
 
 ## Why Write Unit Tests?
 
@@ -128,12 +128,12 @@ namespace MyNamespace.Tests
         public void CalculateVAT_WithValidAmountAndRate_ReturnsExpectedResult()
         {
             // Arrange
-            decimal amount = 100m;
-            decimal rate = 0.2m;
+            decimal amount = 100;
+            decimal rate = 0.2;
             // Act
             decimal result = Calculator.CalculateVAT(amount, rate);
             // Assert
-            Assert.AreEqual(20m, result, "The VAT should be correct.");
+            Assert.AreEqual(20, result, "The VAT should be correct.");
         }
     }
 }
@@ -180,14 +180,14 @@ To test that a method throws an expected exception, use the `[ExpectedException]
 [ExpectedException(typeof(ArgumentException))]
 public void CalculateVAT_NegativeRate_ThrowsException()
 {
-    Calculator.CalculateVAT(100, -0.2m);
+    Calculator.CalculateVAT(100, -0.2);
 }
 
 // With Assert.ThrowsException
 [TestMethod]
 public void CalculateVAT_NegativeRate_ThrowsException()
 {
-    var exception = Assert.ThrowsException<ArgumentException>(() => Calculator.CalculateVAT(100, -0.2m));
+    var exception = Assert.ThrowsException<ArgumentException>(() => Calculator.CalculateVAT(100, -0.2));
     Assert.AreEqual("The rate cannot be negative.", exception.Message);
 }
 ```
@@ -262,7 +262,7 @@ public async Task CalculAsync_ShouldReturnResult()
 }
 ```
 
-- **Mocks**: To isolate dependencies (see Moq, NSubstitute)
+- **Mocks**: To isolate dependencies (see [Moq](https://github.com/devlooped/moq/wiki/Quickstart), [NSubstitute](https://nsubstitute.github.io/docs/2010-01-01-getting-started.html))
 - **Configure MSTest**: Parallelization, global timeout, etc. by editing MSTestSettings.cs file. See the [official MSTest documentation](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-configure).
 
 ## Unit Testing in Other Languages
