@@ -5,7 +5,7 @@ author: Urbain Lantrès (UrbKali)
 description: A guide to discover the basics of the FabLab and digital fabrication.
 tags: [info]
 hide_table_of_contents: false
-slug: rust-course
+slug: rust
 ---
 
 # Rust - Basics

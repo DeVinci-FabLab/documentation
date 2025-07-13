@@ -5,7 +5,7 @@ author: Eliott A. Roussille
 description: Un guide pour comprendre les fondamentaux des tests unitaires, illustré en C# avec MSTest, mais applicable à tous les langages.
 tags: [info]
 hide_table_of_contents: false
-slug: unit-testing-course
+slug: unit-testing
 ---
 
 # Tests unitaires (exemples en C# avec MSTest)
@@ -95,7 +95,7 @@ Pour plus de détails : [docs Microsoft - Créer un projet de test MSTest](htt
 
 ### Exemple réaliste avec MSTest
 
-Supposons une méthode qui calcule la TVA :
+Supposons une classe qui contient des méthodes pour calculer la TVA et le prix TTC d'un montant donné :
 
 ```csharp
 namespace MonNamespace
@@ -110,11 +110,16 @@ namespace MonNamespace
             }
             return montant * taux;
         }
+
+        public static decimal CalculerPrixTTC(decimal montant, decimal taux)
+        {
+            return montant + CalculerTva(montant, taux);
+        }
     }
 }
 ```
 
-Test unitaire associé :
+Tests unitaires associés :
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -135,6 +140,20 @@ namespace MonNamespace.Tests
             // Assert
             Assert.AreEqual(20, resultat, "La TVA doit être correcte.");
         }
+
+        [TestMethod]
+        public void CalculerPrixTTC_AvecMontantEtTauxValides_RetournePrixComplet()
+        {
+            // Arrange
+            decimal montant = 100;
+            decimal taux = 0.2;
+            // Act
+            decimal prix = Calculateur.CalculerPrixTTC(montant, taux);
+            // Assert
+            Assert.AreEqual(120, prix, "Le prix TTC doit être le montant plus la TVA.");
+        }
+
+        // ...
     }
 }
 ```

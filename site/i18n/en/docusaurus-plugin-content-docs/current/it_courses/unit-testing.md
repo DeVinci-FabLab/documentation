@@ -5,7 +5,7 @@ author: Eliott A. Roussille
 description: A guide to understanding the fundamentals of unit testing, illustrated in C# with MSTest, but applicable to all languages.
 tags: [info]
 hide_table_of_contents: false
-slug: unit-testing-course
+slug: unit-testing
 ---
 
 # Unit Testing (Examples in C# with MSTest)
@@ -95,7 +95,7 @@ For more details: [Microsoft docs - Create an MSTest test project](https://learn
 
 ### Realistic example with MSTest
 
-Suppose a method that calculates VAT:
+Suppose a class that contains methods to calculate VAT and the total price (including VAT) for a given amount:
 
 ```csharp
 namespace MyNamespace
@@ -110,11 +110,16 @@ namespace MyNamespace
             }
             return amount * rate;
         }
+
+        public static decimal CalculateTotalPrice(decimal amount, decimal rate)
+        {
+            return amount + CalculateVAT(amount, rate);
+        }
     }
 }
 ```
 
-Associated unit test:
+Associated unit tests:
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -135,9 +140,20 @@ namespace MyNamespace.Tests
             // Assert
             Assert.AreEqual(20, result, "The VAT should be correct.");
         }
+
+        [TestMethod]
+        public void CalculateTotalPrice_WithValidAmountAndRate_ReturnsCompletePrice()
+        {
+            // Arrange
+            decimal amount = 100;
+            decimal rate = 0.2;
+            // Act
+            decimal result = Calculator.CalculateTotalPrice(amount, rate);
+            // Assert
+            Assert.AreEqual(120, result, "The total price should be the amount plus VAT.");
+        }
     }
 }
-```
 
 ## Writing Unit Tests with MSTest
 

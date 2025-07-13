@@ -5,7 +5,7 @@ author: Urbain Lantrès (UrbKali)
 description: Un guide pour découvrir les fondamentaux de Rust.
 tags: [info]
 hide_table_of_contents: false
-slug: rust-course
+slug: rust
 ---
 
 # Rust - Base
