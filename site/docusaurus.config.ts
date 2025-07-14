@@ -58,7 +58,13 @@ const config: Config = {
   ],
 
   themeConfig: {
+    algolia: {
+      appId: '7B6MSZEWAH',
+      apiKey: 'b77f0433b3372ea692844d52d1602c86',
+      indexName: 'dvfl-documentation',
+    },
     navbar: {
+      hideOnScroll: true,
       logo: {
         alt: 'DVFL logo',
         src: 'img/favicon.svg',
@@ -79,8 +85,13 @@ const config: Config = {
         {
           type: 'localeDropdown',
           position: 'right'
-        }
-      ]
+        },
+        {
+          href: 'https://github.com/DeVinci-FabLab/documentation',
+          position: 'right',
+          className: 'header-github-link',
+        },
+      ],
     },
     footer: {
       style: 'dark',
