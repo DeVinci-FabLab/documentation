@@ -403,4 +403,4 @@ public class PlayerTests
 
 Dernière mise à jour : Juillet 2025
 
-Auteur : [Eliott A. Roussille](https://github.com/Captainbleu)
+Auteur : [Eliott A. Roussille](https://github.com/aust-1)
