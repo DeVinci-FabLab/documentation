@@ -18,5 +18,9 @@
   "sidebar.tutorialSidebar.category.IT Courses": {
     "message": "IT Courses",
     "description": "The label for category IT Courses in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Spaces Charters": {
+    "message": "Spaces Charters",
+    "description": "The label for category Spaces Charters in sidebar tutorialSidebar"
   }
 }

@@ -6,7 +6,17 @@ const sidebars: SidebarsConfig = {
     'safety',
     {
       type: 'category',
-      label: '3D Printing', // This label will be automatically translated
+      label: 'Spaces Charters', // This label will be automatically translated
+      collapsed: true,
+      collapsible: true,
+      items: [
+        'spaces_charters/resin',
+        'spaces_charters/textile',
+      ],
+    },
+    {
+      type: 'category',
+      label: '3D Printing',
       collapsed: true,
       collapsible: true,
       items: [
