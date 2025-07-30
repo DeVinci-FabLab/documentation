@@ -28,6 +28,12 @@
   --code-background-color: #2e2e32;
 }
 
+*:focus {
+  color: var(--ifm-color-primary);
+  outline: 3px solid var(--ifm-color-primary);
+}
+
+/* Custom styles for DocSearch */
 [data-theme='light'] .DocSearch {
   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
   --docsearch-container-background: rgba(94, 100, 112, 0.7);
@@ -77,13 +83,34 @@ article.searchResultItem_dbEb .search-result-match {
   background: var(--ifm-background-color);
   color: var(--ifm-color-primary);
   background: var(--code-background-color);
-  padding: 0.04em 0.03em;
-  border-radius: 0.2em;
+  padding: 0.64px 0.48px;
+  border-radius: 3.2px;
 }
 
-*:focus {
-  color: var(--ifm-color-primary);
-  outline: 3px solid var(--ifm-color-primary);
+/* Custom styles for markdown headers */
+.markdown h2 {
+  /* For Icon in header */
+  display: flex;
+  align-items: center;
+  gap: 6.4px;
+  /* Section separator */
+  border-top: 2.35px solid var(--ifm-color-primary);
+  padding-top: 40px;
+}
+
+/* override : Delete separator for h2 after header */
+.markdown header+h2 {
+  border-top: none;
+}
+
+.markdown svg.lucide.lucide-file-text,
+.markdown svg.lucide.lucide-triangle-alert,
+.markdown svg.lucide.lucide-square-check-big {
+  margin-top: 2px;
+}
+
+.markdown svg.lucide.lucide-pin {
+  margin-top: 4px;
 }
 
 /* Link styles in markdown */
