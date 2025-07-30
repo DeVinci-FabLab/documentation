@@ -398,6 +398,6 @@ public class PlayerTests
 
 ---
 
-Last updated: July 2025
+Last updated: July. 2025
 
 Author: [Eliott A. Roussille](https://github.com/aust-1)
