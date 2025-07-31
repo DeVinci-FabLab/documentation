@@ -101,6 +101,7 @@ article.searchResultItem_dbEb .search-result-match {
 /* override : Delete separator for h2 after header */
 .markdown header+h2 {
   border-top: none;
+  padding-top: 0px;
 }
 
 .markdown svg.lucide.lucide-file-text,
