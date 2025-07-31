@@ -1,11 +1,12 @@
 ---
-sidebar_position: 3
 title: C# vers PostgreSQL
-author: Yann M. Vidamment (MorganKryze)
+sidebar_position: 3
 description: Ce support d'apprentissage vous permettra de créer et d'héberger un site web statique pour votre documentation. L’outil est développé pour un projet C# mais peut être utilisé pour tout autre projet, les articles étant rédigés en markdown.
-tags: [info]
-hide_table_of_contents: false
 slug: csharp-to-postgres
+tags: [info]
+last_update:
+  date: 2024-05-01
+  author: Yann M. Vidamment (MorganKryze)
 ---
 
 # C# vers PostgreSQL

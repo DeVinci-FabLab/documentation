@@ -1,20 +1,21 @@
 ---
-sidebar_position: 5
 title: Rust - Basics
-author: Urbain Lantrès (UrbKali)
+sidebar_position: 5
 description: A guide to discover the basics of the FabLab and digital fabrication.
-tags: [info]
-hide_table_of_contents: false
 slug: rust
+tags: [info]
+last_update:
+  date: 2024-02-01
+  author: Urbain Lantrès (UrbsKali)
 ---
 
 # Rust - Basics
 
 > The goal of this training is to make you self-sufficient in Rust
 
-|      | Prerequisites                 | Skills                  |
-| ---- | ----------------------------- | ----------------------- |
-| Rust | Programming logic, IDE        | Cargo, syntax, memory   |
+|      | Prerequisites          | Skills                |
+| ---- | ---------------------- | --------------------- |
+| Rust | Programming logic, IDE | Cargo, syntax, memory |
 
 ## Introduction
 

@@ -1,11 +1,12 @@
 ---
-sidebar_position: 1
 title: Create your project documentation
-author: Yann M. Vidamment (MorganKryze)
+sidebar_position: 1
 description: This learning material will let you create and host a static website for your documentation. The tool is developed for a C# project but can be used for any other project as the articles are written in markdown.
-tags: [info]
-hide_table_of_contents: false
 slug: csharp-docs
+tags: [info]
+last_update:
+  date: 2024-05-01
+  author: Yann M. Vidamment (MorganKryze)
 ---
 
 # Create your project documentation

@@ -1,11 +1,12 @@
 ---
-sidebar_position: 4
 title: PostgreSQL with Docker
-author: Yann M. Vidamment (MorganKryze)
+sidebar_position: 4
 description: This learning material will guide you through the process of setting up a PostgreSQL database using Docker.
-tags: [info]
-hide_table_of_contents: false
 slug: postgres-docker
+tags: [info]
+last_update:
+  date: 2024-05-01
+  author: Yann M. Vidamment (MorganKryze)
 ---
 
 # PostgreSQL with Docker

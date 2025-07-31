@@ -1,20 +1,21 @@
 ---
-sidebar_position: 5
 title: Rust - les bases
-author: Urbain Lantrès (UrbKali)
+sidebar_position: 5
 description: Un guide pour découvrir les fondamentaux de Rust.
-tags: [info]
-hide_table_of_contents: false
 slug: rust
+tags: [info]
+last_update:
+  date: 2024-02-01
+  author: Urbain Lantrès (UrbsKali)
 ---
 
 # Rust - Base
 
 > Le but de cette formation est de vous rendre autonome sur Rust
 
-|      | Pré requis                        | Compétences             |
-| ---- | --------------------------------- | ----------------------- |
-| Rust | Logique de programmation, IDE     | Cargo, syntaxe, mémoire |
+|      | Pré requis                    | Compétences             |
+| ---- | ----------------------------- | ----------------------- |
+| Rust | Logique de programmation, IDE | Cargo, syntaxe, mémoire |
 
 ## Introduction
 
@@ -162,10 +163,10 @@ Un programme Rust commence toujours par la fonction `main`.
   // y est égal à 15;
   ```
 
-  Par défaut `break` termine la boucle la plus imbriqué, mais grâce au boucle labelisé, on peut terminer n'importe quelle boucle déjà défini. Le label DOIT commencer par `'`
+  Par défaut `break` termine la boucle la plus imbriqué, mais grâce au boucle labelisé, on peut terminer n'importe quelle boucle déjà défini. Le label DOIT commencer par `'`.
 
   ```rust
-  let mut i = 0
+  let mut i = 0;
 
   'ma_boucle loop {
     loop {
@@ -268,7 +269,7 @@ Dans ce cas, `x` est une donnée à taille fixe, donc sur le Stack, elle est don
   let y = x;
 ```
 
-Mais dans celui là, la variable `x` est stocké sur le Heap, la copie pouvant être couteuse, elle n'est pas effectué. Rust supprime `x`et garde `y`, on dit que l'ownership est transféré
+Mais dans celui là, la variable `x` est stocké sur le Heap, la copie pouvant être couteuse, elle n'est pas effectué. Rust supprime `x` et garde `y`, on dit que l'ownership est transféré.
 
 ### Cas des fonctions
 

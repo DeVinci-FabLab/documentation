@@ -1,3 +1,13 @@
+---
+title: Subject Template
+sidebar_position: 1
+description: A guide to understand how write docs.
+slug: subject-template
+tags: [info, other, another]
+last_update:
+  date: 2000-02-26
+  author: author
+---
 # Subject
 
 > This is a template for a subject.

@@ -1,11 +1,12 @@
 ---
-sidebar_position: 2
 title: C# pour Visual Studio Code
-author: Yann M. Vidamment (MorganKryze)
+sidebar_position: 2
 description: Ce tutoriel vous aidera à configurer votre environnement de développement pour C# avec Visual Studio Code.
-tags: [info]
-hide_table_of_contents: false
 slug: csharp-on-vscode
+tags: [info]
+last_update:
+  date: 2024-05-01
+  author: Yann M. Vidamment (MorganKryze)
 ---
 
 # C# pour Visual Studio Code

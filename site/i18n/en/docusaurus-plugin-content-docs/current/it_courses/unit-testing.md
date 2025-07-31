@@ -1,11 +1,12 @@
 ---
-sidebar_position: 6
 title: Unit Testing (Examples in C# with MSTest)
-author: Eliott A. Roussille
+sidebar_position: 6
 description: A guide to understanding the fundamentals of unit testing, illustrated in C# with MSTest, but applicable to all languages.
-tags: [info]
-hide_table_of_contents: false
 slug: unit-testing
+tags: [info]
+last_update:
+  date: 2025-07-03
+  author: Eliott A. Roussille
 ---
 
 # Unit Testing (Examples in C# with MSTest)
