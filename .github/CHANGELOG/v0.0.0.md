@@ -13,7 +13,7 @@ An extra short summary of these notes goes here.
 
 ## IMPROVED 📈
 
-- If improving an existing feature, rather than something that’s brand new, use the "Improvements" title instead of "New".
+- If improving an existing feature, rather than something that's brand new, use the "Improvements" title instead of "New".
 - If you've improved something as a result of user feedback, consider a sentence like, "you asked, we listened".
 
 ## FIXED 🐛

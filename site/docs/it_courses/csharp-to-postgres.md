@@ -1,7 +1,7 @@
 ---
 title: C# vers PostgreSQL
 sidebar_position: 3
-description: Ce support d'apprentissage vous permettra de créer et d'héberger un site web statique pour votre documentation. L’outil est développé pour un projet C# mais peut être utilisé pour tout autre projet, les articles étant rédigés en markdown.
+description: Ce support d'apprentissage vous permettra de créer et d'héberger un site web statique pour votre documentation. L'outil est développé pour un projet C# mais peut être utilisé pour tout autre projet, les articles étant rédigés en markdown.
 slug: csharp-to-postgres
 tags: [info]
 last_update:
@@ -13,10 +13,10 @@ last_update:
 
 ## Introduction
 
-Ce support d'apprentissage vous guidera dans le processus de connexion d’une application C# à une base de données PostgreSQL.
+Ce support d'apprentissage vous guidera dans le processus de connexion d'une application C# à une base de données PostgreSQL.
 
 :::caution
-Dans ce cours, nous partons du principe que vous avez déjà installé PostgreSQL sur votre machine. Si ce n’est pas le cas, consultez plutôt le matériel d’apprentissage [PostgreSQL](postgres-docker.md).
+Dans ce cours, nous partons du principe que vous avez déjà installé PostgreSQL sur votre machine. Si ce n'est pas le cas, consultez plutôt le matériel d'apprentissage [PostgreSQL](postgres-docker.md).
 :::
 
 ## Prérequis
@@ -43,9 +43,9 @@ dotnet add package Npgsql
 
 ## Étape 3 : Créer le contenu de la base de données
 
-[Ignorez cette étape si vous possédez déjà une base de données créée, par exemple avec un fichier d’initialisation.]
+[Ignorez cette étape si vous possédez déjà une base de données créée, par exemple avec un fichier d'initialisation.]
 
-Nous commençons par entrer dans la base de données PostgreSQL via le terminal. Remplacez `postgres` par le nom d’utilisateur que vous avez utilisé pour créer la base de données.
+Nous commençons par entrer dans la base de données PostgreSQL via le terminal. Remplacez `postgres` par le nom d'utilisateur que vous avez utilisé pour créer la base de données.
 
 ```bash
 psql -h localhost -U postgres
@@ -96,15 +96,15 @@ class Program
 Remplacez `your_password` par le mot de passe que vous avez utilisé pour créer la base de données.
 :::
 
-## Étape 5 : Exécuter l’application
+## Étape 5 : Exécuter l'application
 
-Exécutez l’application.
+Exécutez l'application.
 
 ```bash
 dotnet run
 ```
 
-Vous devriez voir la version de PostgreSQL s’afficher dans la console.
+Vous devriez voir la version de PostgreSQL s'afficher dans la console.
 
 ## Étape 8 : Ajouter un client
 
@@ -115,7 +115,7 @@ using var cmd = new NpgsqlCommand("INSERT INTO customer (name) VALUES ('John Doe
 cmd.ExecuteNonQuery();
 ```
 
-Exécutez à nouveau l’application.
+Exécutez à nouveau l'application.
 
 ```bash
 dotnet run
@@ -134,13 +134,13 @@ while (reader.Read())
 }
 ```
 
-Exécutez à nouveau l’application.
+Exécutez à nouveau l'application.
 
 ```bash
 dotnet run
 ```
 
-Vous devriez voir « 1 John Doe » s’afficher dans la console.
+Vous devriez voir « 1 John Doe » s'afficher dans la console.
 
 ## Pour aller plus loin
 

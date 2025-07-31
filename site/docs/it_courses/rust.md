@@ -21,7 +21,7 @@ last_update:
 
 Rust est un langage qui vise à remplacer les langages bas-niveau, comme le C. Il est axé sur la performance, la concurrence, mais surtout la sûreté.
 
-En effet, un des plus gros problèmes du C/C++ est qu’il est difficile d’avoir un code qui gère de manière robuste la mémoire, sans fuites
+En effet, un des plus gros problèmes du C/C++ est qu'il est difficile d'avoir un code qui gère de manière robuste la mémoire, sans fuites
 
 En Rust, le code est sécurisé par défaut, grâce à son système d'emprunt, qui peut être difficile à prendre en main
 
@@ -31,7 +31,7 @@ Rust peut être utilisé pour les mêmes usages que le C/C++, on peut le retrouv
 
 IDE conseillé : RustRover ou VS code : [Lien vers l'installeur](https://www.rust-lang.org/fr/learn/get-started)
 
-L’installateur va mettre `rustup` et `cargo` sur votre ordinateur :
+L'installateur va mettre `rustup` et `cargo` sur votre ordinateur :
 
 - `rustup` permet de gérer tout ce qui touche à Rust sur votre machine, notamment la mise à jour des composants avec `rustup update`
 - `cargo` permet de générer des projets, les exécuter, et les publier
@@ -59,13 +59,13 @@ Etapes majeures :
 
 ### Utilisation de `cargo`
 
-- Création d’un projet
+- Création d'un projet
 
   ```bash
   cargo new <nom-du-projet>
   ```
 
-- Exécution d’un projet
+- Exécution d'un projet
 
   ```bash
   cargo run
@@ -97,7 +97,7 @@ edition = "2023"
 # bon là j'en ai aucune mais vous avez compris l'idée
 ```
 
-Quand on crée un projet avec `cargo`, un fichier `Cargo.toml` (Tom’s Obvious, Minimal Language) est automatiquement ajouté au projet pour définir et suivre les dépendances.
+Quand on crée un projet avec `cargo`, un fichier `Cargo.toml` (Tom's Obvious, Minimal Language) est automatiquement ajouté au projet pour définir et suivre les dépendances.
 
 [Plus d'info](https://doc.rust-lang.org/cargo/reference/manifest.html)
 
@@ -111,7 +111,7 @@ Rust a besoin de point virgule à la fin de chaque ligne pour séparer les instr
 
 Une macro est une instruction qui termine par ! (ex : ```println!("hehe boi")```), ce n'est pas une fonction classique, mais pas loin
 
-### Point d’entrée du programme
+### Point d'entrée du programme
 
 Un programme Rust commence toujours par la fonction `main`.
 

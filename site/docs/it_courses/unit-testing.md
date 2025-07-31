@@ -67,7 +67,7 @@ dotnet add tests/MonProjet.Tests reference src/MonProjet/MonProjet.csproj
 
 Cela crée un projet de tests nommé `MonProjet.Tests` dans le dossier `tests` puis lie le projet de tests à la solution et au projet principal.
 
-C’est tout ! Tu peux maintenant écrire tes tests dans `tests/MonProjet.Tests`. Organise les fichiers de test en suivant la structure du projet principal (ex : un fichier `MaClasseTests.cs` pour `MaClasse.cs`).
+C'est tout ! Tu peux maintenant écrire tes tests dans `tests/MonProjet.Tests`. Organise les fichiers de test en suivant la structure du projet principal (ex : un fichier `MaClasseTests.cs` pour `MaClasse.cs`).
 
 Voici la structure finale :
 
@@ -88,7 +88,7 @@ MonProjetSolution/
 
 Pour plus de détails : [docs Microsoft - Créer un projet de test MSTest](https://learn.microsoft.com/fr-fr/dotnet/core/testing/unit-testing-with-mstest)
 
-## Structure d’un Test Unitaire (schéma AAA)
+## Structure d'un Test Unitaire (schéma AAA)
 
 - **Arrange** : Préparer les données et objets nécessaires au test de la méthode.
 - **Act** : Appeler la méthode à tester.
@@ -214,7 +214,7 @@ public void CalculerTva_TauxNegatif_ProvoqueException()
 
 ## Exécution des tests
 
-L’exécution des tests dépend de votre environnement de développement :
+L'exécution des tests dépend de votre environnement de développement :
 
 - **Visual Studio** : "Test" > "Explorateur de tests", Ctrl+E, T ou clic droit sur le projet de test.
 - **Visual Studio Code** : Onglet "Testing" ou clic droit sur le projet de test.
@@ -259,11 +259,11 @@ L’exécution des tests dépend de votre environnement de développement :
 
 ## Erreurs courantes
 
-- Oublier `[TestMethod]` ou `[TestClass]` : le test n’est pas détecté
+- Oublier `[TestMethod]` ou `[TestClass]` : le test n'est pas détecté
 - Oublier de builder avant de tester (`dotnet build`)
 - Tester plusieurs comportements dans un même test
-- Dépendance entre tests (ex : modification d’une variable statique)
-- Mauvais usage d’`Assert` (ex : inverser expected/actual)
+- Dépendance entre tests (ex : modification d'une variable statique)
+- Mauvais usage d'`Assert` (ex : inverser expected/actual)
 - Ne pas nettoyer les ressources (fichiers, connexions, etc.)
 - Ne pas tester les cas limites ou les exceptions
 - Laisser du code mort/non utilisé dans les tests

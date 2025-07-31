@@ -13,7 +13,7 @@ last_update:
 
 ## Introduction
 
-Ce guide vous aidera à configurer votre environnement de développement pour C# en utilisant Visual Studio Code. Il vous guidera à travers l’installation du SDK .NET, de Visual Studio Code et de l’extension C# pour une configuration complète.
+Ce guide vous aidera à configurer votre environnement de développement pour C# en utilisant Visual Studio Code. Il vous guidera à travers l'installation du SDK .NET, de Visual Studio Code et de l'extension C# pour une configuration complète.
 
 ## Prérequis
 
@@ -21,11 +21,11 @@ Ce guide vous aidera à configurer votre environnement de développement pour C#
 
 ## Étape 1 : Installer le SDK .NET
 
-Le SDK .NET est une plateforme de développement gratuite et open source permettant de créer différents types d’applications. Il inclut le compilateur C#, le runtime .NET et le runtime ASP.NET Core.
+Le SDK .NET est une plateforme de développement gratuite et open source permettant de créer différents types d'applications. Il inclut le compilateur C#, le runtime .NET et le runtime ASP.NET Core.
 
-1. Téléchargez l’installeur du SDK .NET depuis le [site officiel](https://dotnet.microsoft.com/download).
-2. Exécutez l’installeur et suivez les instructions.
-3. Une fois installé, ouvrez un nouveau terminal et exécutez la commande suivante pour vérifier l’installation :
+1. Téléchargez l'installeur du SDK .NET depuis le [site officiel](https://dotnet.microsoft.com/download).
+2. Exécutez l'installeur et suivez les instructions.
+3. Une fois installé, ouvrez un nouveau terminal et exécutez la commande suivante pour vérifier l'installation :
 
 ```bash
 dotnet --version
@@ -33,49 +33,49 @@ dotnet --version
 
 ## Étape 2 : Installer Visual Studio Code
 
-Visual Studio Code est un éditeur de code source gratuit développé par Microsoft pour Windows, Linux et macOS. Il prend en charge le débogage, le contrôle Git intégré, la mise en surbrillance syntaxique, l’auto-complétion intelligente, les extraits de code et le refactoring.
+Visual Studio Code est un éditeur de code source gratuit développé par Microsoft pour Windows, Linux et macOS. Il prend en charge le débogage, le contrôle Git intégré, la mise en surbrillance syntaxique, l'auto-complétion intelligente, les extraits de code et le refactoring.
 
 ### Windows
 
-1. Téléchargez l’installeur de Visual Studio Code depuis le [site officiel](https://code.visualstudio.com/).
+1. Téléchargez l'installeur de Visual Studio Code depuis le [site officiel](https://code.visualstudio.com/).
 
-2. Exécutez l’installeur et suivez les instructions (pensez à ajouter l’action `Ouvrir avec Code` au menu contextuel de l’Explorateur Windows).
+2. Exécutez l'installeur et suivez les instructions (pensez à ajouter l'action `Ouvrir avec Code` au menu contextuel de l'Explorateur Windows).
 
 3. Une fois installé, ouvrez Visual Studio Code.
 
-4. Cliquez sur `File` > `Auto Save` pour activer l’enregistrement automatique.
+4. Cliquez sur `File` > `Auto Save` pour activer l'enregistrement automatique.
 
 ### MacOS
 
-1. Téléchargez l’installeur de Visual Studio Code depuis le [site officiel](https://code.visualstudio.com/) ou utilisez la commande suivante dans le terminal :
+1. Téléchargez l'installeur de Visual Studio Code depuis le [site officiel](https://code.visualstudio.com/) ou utilisez la commande suivante dans le terminal :
 
 ```bash
 brew install --cask visual-studio-code
 ```
 
-2. (Ignorez si vous avez utilisé brew) Ouvrez le fichier téléchargé et glissez l’icône Visual Studio Code dans le dossier Applications.
+2. (Ignorez si vous avez utilisé brew) Ouvrez le fichier téléchargé et glissez l'icône Visual Studio Code dans le dossier Applications.
 
 3. Une fois installé, ouvrez Visual Studio Code.
 
 4. Ouvrez la palette de commandes (`Ctrl+Shift+P`) et tapez `shell command` pour trouver la commande `Shell Command: Install 'code' command in PATH`.
 
-5. Cliquez sur `File` > `Auto Save` pour activer l’enregistrement automatique.
+5. Cliquez sur `File` > `Auto Save` pour activer l'enregistrement automatique.
 
 ### Linux
 
-1. Téléchargez l’installeur de Visual Studio Code depuis le [site officiel](https://code.visualstudio.com/download) (disponible au format `.deb` ou `.rpm`). Vous pouvez aussi consulter la [version Insiders de Visual Studio Code](https://code.visualstudio.com/insiders/) pour plus de disponibilité.
+1. Téléchargez l'installeur de Visual Studio Code depuis le [site officiel](https://code.visualstudio.com/download) (disponible au format `.deb` ou `.rpm`). Vous pouvez aussi consulter la [version Insiders de Visual Studio Code](https://code.visualstudio.com/insiders/) pour plus de disponibilité.
 
-2. Exécutez l’installeur et suivez les instructions.
+2. Exécutez l'installeur et suivez les instructions.
 
 3. Une fois installé, ouvrez Visual Studio Code.
 
 4. Ouvrez la palette de commandes (`Ctrl+Shift+P`) et tapez `shell command` pour trouver la commande `Shell Command: Install 'code' command in PATH`.
 
-5. Cliquez sur `File` > `Auto Save` pour activer l’enregistrement automatique.
+5. Cliquez sur `File` > `Auto Save` pour activer l'enregistrement automatique.
 
-## Étape 3 : Installer l’extension C #
+## Étape 3 : Installer l'extension C #
 
-L’extension C# pour Visual Studio Code ajoute la prise en charge de C# à Visual Studio Code, avec notamment la coloration syntaxique, IntelliSense (auto-complétion) et le débogage.
+L'extension C# pour Visual Studio Code ajoute la prise en charge de C# à Visual Studio Code, avec notamment la coloration syntaxique, IntelliSense (auto-complétion) et le débogage.
 
 Trouvez-les ici :
 

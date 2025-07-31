@@ -47,16 +47,16 @@ Voici un tableau récapitulatif des différents types de filaments utilisés en 
 
 | Matériau             | Type      | Facile à Imprimer | Résistant | Durable | Nécessite Enceinte | Flexible | Résistant aux UV |
 | -------------------- | --------- | :---------------: | :-------: | :-----: | :----------------: | :------: | :--------------: |
-| **PLA**              | Standard  |        ✔️         |    ✔️     |   ✔️    |         ❌         |    ❌    |        ❌        |
-| **PETG**             | Standard  |        ✔️         |    ✔️     |   ✔️    |         ✔️         |    ❌    |        ❌        |
-| **ABS**              | Standard  |        ✔️         |    ✔️     |   ✔️    |         ✔️         |    ❌    |        ❌        |
-| **Flex**             | Technique |        ✔️         |    ✔️     |   ✔️    |         ❌         |    ✔️    |        ❌        |
-| **Nylon**            | Technique |        ✔️         |    ✔️     |   ✔️    |         ✔️         |    ❌    |        ❌        |
-| **ASA**              | Technique |        ✔️         |    ✔️     |   ✔️    |         ✔️         |    ❌    |        ✔️        |
-| **Polycarbonate**    | Technique |        ✔️         |    ✔️     |   ✔️    |         ✔️         |    ❌    |        ❌        |
-| **Fibre de Carbone** | Composite |        ✔️         |    ✔️     |   ❌    |         ❌         |    ❌    |        ❌        |
-| **Métal**            | Composite |        ✔️         |    ✔️     |   ❌    |         ❌         |    ❌    |        ❌        |
-| **Bois**             | Composite |        ✔️         |    ❌     |   ❌    |         ❌         |    ❌    |        ❌        |
+| **PLA**              | Standard  |         ✔️         |     ✔️     |    ✔️    |         ❌          |    ❌     |        ❌         |
+| **PETG**             | Standard  |         ✔️         |     ✔️     |    ✔️    |         ✔️          |    ❌     |        ❌         |
+| **ABS**              | Standard  |         ✔️         |     ✔️     |    ✔️    |         ✔️          |    ❌     |        ❌         |
+| **Flex**             | Technique |         ✔️         |     ✔️     |    ✔️    |         ❌          |    ✔️     |        ❌         |
+| **Nylon**            | Technique |         ✔️         |     ✔️     |    ✔️    |         ✔️          |    ❌     |        ❌         |
+| **ASA**              | Technique |         ✔️         |     ✔️     |    ✔️    |         ✔️          |    ❌     |        ✔️         |
+| **Polycarbonate**    | Technique |         ✔️         |     ✔️     |    ✔️    |         ✔️          |    ❌     |        ❌         |
+| **Fibre de Carbone** | Composite |         ✔️         |     ✔️     |    ❌    |         ❌          |    ❌     |        ❌         |
+| **Métal**            | Composite |         ✔️         |     ✔️     |    ❌    |         ❌          |    ❌     |        ❌         |
+| **Bois**             | Composite |         ✔️         |     ❌     |    ❌    |         ❌          |    ❌     |        ❌         |
 
 ### Le système AMS de Bambulab
 
@@ -160,14 +160,14 @@ L'embarqué désigne les **systèmes informatiques intégrés** à des objets du
 
 ### Différence entre un microcontrôleur et un micro-ordinateur
 
-| Caractéristique              | Microcontrôleur ⚙️                                                               | Micro-ordinateur 💻                                                                        |
+| Caractéristique              | Microcontrôleur ⚙️                                                                | Micro-ordinateur 💻                                                                         |
 | ---------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| **Définition**               | Un circuit intégré avec processeur, mémoire et périphériques sur une seule puce. | Un petit ordinateur avec processeur, mémoire, système d’exploitation et ports d’extension. |
-| **Système d’exploitation**   | Aucun (exécute directement un programme en boucle)                               | Oui (ex. Linux sur Raspberry Pi)                                                           |
+| **Définition**               | Un circuit intégré avec processeur, mémoire et périphériques sur une seule puce. | Un petit ordinateur avec processeur, mémoire, système d'exploitation et ports d'extension. |
+| **Système d'exploitation**   | Aucun (exécute directement un programme en boucle)                               | Oui (ex. Linux sur Raspberry Pi)                                                           |
 | **Puissance de calcul**      | Faible, optimisé pour des tâches simples et répétitives                          | Plus puissant, capable d'exécuter des applications complexes                               |
 | **Mémoire (RAM & Stockage)** | Très limitée (quelques Ko à Mo)                                                  | Plus importante (512 Mo à plusieurs Go)                                                    |
-| **Consommation d’énergie**   | Très basse (fonctionne sur batterie longtemps)                                   | Plus élevée (nécessite souvent une alimentation)                                           |
-| **Programmation**            | Code souvent écrit en C ou en assembleur, avec un temps d’exécution précis       | Peut exécuter des langages variés (Python, Java, C++) et plusieurs processus en parallèle  |
+| **Consommation d'énergie**   | Très basse (fonctionne sur batterie longtemps)                                   | Plus élevée (nécessite souvent une alimentation)                                           |
+| **Programmation**            | Code souvent écrit en C ou en assembleur, avec un temps d'exécution précis       | Peut exécuter des langages variés (Python, Java, C++) et plusieurs processus en parallèle  |
 | **Exemples d'utilisation**   | Commande d'un moteur, gestion de capteurs, robotique basique                     | Vision par ordinateur, IA embarquée, serveurs légers, stations météo connectées            |
 
 ### Perspectives futures
@@ -205,7 +205,7 @@ Avec l'évolution des microcontrôleurs, on voit apparaître des applications de
 
 La Raspberry Pi est un micro-ordinateur monocarte basé sur une architecture ARM, développé par la fondation Raspberry Pi. Conçue pour l'éducation, elle est devenue une référence dans le domaine du DIY, de l'embarqué et de l'IA.
 
-- **Système d’exploitation** : Raspberry Pi OS, basé sur Debian.
+- **Système d'exploitation** : Raspberry Pi OS, basé sur Debian.
 - **Langages de programmation** : Python, C, Java, et plus.
 - **Applications** : Domotique, robotique, serveurs web, stations météo, IA embarquée.
 
@@ -218,13 +218,13 @@ L'installation d'une Raspberry Pi est simple :
 
 ![alt text](/assets/blog/welcome/computer_vision.png)
 
-La Computer Vision est un domaine de l’IA qui permet aux machines de comprendre et d’analyser des images ou des vidéos.
+La Computer Vision est un domaine de l'IA qui permet aux machines de comprendre et d'analyser des images ou des vidéos.
 
 ### You Only Look Once (YOLO)
 
 ![alt text](/assets/blog/welcome/yolo_map.png)
 
-YOLO est un algorithme de détection d’objets en temps réel qui traite l’image en une seule passe, rendant le processus extrêmement rapide et efficace.
+YOLO est un algorithme de détection d'objets en temps réel qui traite l'image en une seule passe, rendant le processus extrêmement rapide et efficace.
 
 ![alt text](/assets/blog/welcome/yolo_grid.png)
 
@@ -275,7 +275,7 @@ Nous sommes dans un contexte **100% offline**, il faut donc **maximiser les perf
 
 - **L'optimisation CPU & RAM**
 - **Le multiprocessing** pour exécuter plusieurs tâches en parallèle
-- **Le choix d’une bonne résolution vidéo** pour ne pas surcharger le traitement
+- **Le choix d'une bonne résolution vidéo** pour ne pas surcharger le traitement
 - **La réduction de latence** pour un temps de réponse optimal
 
 ### Déroulement du TP
@@ -286,7 +286,7 @@ Nous allons concevoir un programme **divisé en plusieurs modules**, chacun fonc
 
 1. **Acquisition de la vidéo**: Capturer le flux de la caméra en continu.
 2. **Inférence avec YOLO**: Détecter une **intrusion humaine** en utilisant un modèle [**YOLO**](https://docs.ultralytics.com/fr).
-3. **Alerte en cas d’intrusion**: Si une personne est détectée, afficher un message.
+3. **Alerte en cas d'intrusion**: Si une personne est détectée, afficher un message.
 4. **Affichage en temps réel**: Montrer la vidéo avec les **bounding boxes** des intrus.
 
 #### Étape 2 : Installation de l'environnement de travail
@@ -321,7 +321,7 @@ streamlit
 
 #### Étape 3 : Multiprocessing en Action
 
-Nous allons exécuter chaque module dans un **processus séparé** afin d’optimiser le traitement du flux vidéo en **temps réel** !
+Nous allons exécuter chaque module dans un **processus séparé** afin d'optimiser le traitement du flux vidéo en **temps réel** !
 
 ![multiproc architecture](/assets/blog/welcome/multiproc.png)
 
@@ -444,12 +444,12 @@ Bravo ! Vous avez mis en place un système de **surveillance en temps réel** su
 
 - **Optimiser la gestion de la mémoire** pour éviter les fuites.
 - **Redimensionner les images** pour réduire la charge de traitement.
-- **Appliquer la quantization** pour accélérer l’inférence.
+- **Appliquer la quantization** pour accélérer l'inférence.
 - **Ajouter un mode serveur** pour envoyer les alertes sur un réseau local.
 
-### BONUS : Qu’est-ce que la Quantization en IA ?
+### BONUS : Qu'est-ce que la Quantization en IA ?
 
-La quantization est une technique utilisée en intelligence artificielle, notamment pour optimiser les modèles de deep learning afin qu’ils fonctionnent plus efficacement sur des appareils à ressources limitées.
+La quantization est une technique utilisée en intelligence artificielle, notamment pour optimiser les modèles de deep learning afin qu'ils fonctionnent plus efficacement sur des appareils à ressources limitées.
 
 Un modèle de deep learning utilise :
 
