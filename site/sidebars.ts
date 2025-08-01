@@ -10,6 +10,8 @@ const sidebars: SidebarsConfig = {
       collapsed: true,
       collapsible: true,
       items: [
+        'spaces_charters/3D-printing',
+        'spaces_charters/electronics',
         'spaces_charters/resin',
         'spaces_charters/textile',
       ],
