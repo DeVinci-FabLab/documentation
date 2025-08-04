@@ -7,12 +7,16 @@ description: Charter describing the rules, best practices, and contacts for the 
 slug: electronic-space-charter
 tags: [charter, security, good practices]
 last_update:
-  date: 2025-07-31
-  author: Eliott A. Roussille, Hugo Degioanni
+  date: 2025-08-04
+  author: Eliott A. Roussille, Hugo Degioanni, Urbain Lantrès
 ---
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
 
 # Electronic Space Charter
+
+:::info
+The electronic space is managed and maintained by the **DaVinciBot (DVB)** association. If you have any questions, problems, or requests for equipment, please contact a member of DVB.
+:::
 
 ## <FileText size={32} /> Space Description
 
@@ -46,9 +50,13 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Soldering stations and soldering irons
 - Measuring devices: multimeters, oscilloscopes, signal generators
 - Adjustable laboratory power supplies
-- Various tools: wire cutters, strippers, screwdrivers, anti-static pliers
+- Various tools: wire cutters, strippers, screwdrivers, anti-static pliers, grounding wrist straps
 - Electronic components: resistors, capacitors, diodes, transistors, microcontrollers, sensors
 - Prototyping equipment: breadboards, jumper wires, blank PCB boards
+
+:::note
+Electronic components and prototyping equipment are available **upon request** from **DVB**. Please do not take anything without prior approval.
+:::
 
 ## <Pin size={32} /> Storage and Cleaning
 
@@ -59,21 +67,21 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 ## <Siren size={32} /> In Case of Problem
 
-- Report any **breakdown, damage, or malfunction** to a manager or technical referent.
+- Report any breakdown, damage, or malfunction to a manager or technical referent at **DVB**.
 - Never intervene alone on unknown or damaged equipment without prior validation.
 
 ## <Phone size={32} /> Contacts
 
 | Role or Function   | Name           | Contact Method |
 | ------------------ | -------------- | -------------- |
-| Space Manager      | Robin L'HYVER  | @robinmoon     |
+| Space Manager      | Urbain LANTRÈS | @urbanosaurus  |
+| Technical Referent | Robin L'HYVER  | @robinmoon     |
 | Technical Referent | Hugo DEGIOANNI | @loxa          |
-| Technical Referent | Urbain LANTRÈS | @urbanosaurus  |
 
 Thank you for respecting these guidelines so that this space remains accessible and pleasant for everyone!
 
 ---
 
-Last update: July. 2025
+Last update: Aug. 2025
 
-Authors: [Eliott A. Roussille](https://github.com/aust-1), [Hugo Degioanni](https://www.linkedin.com/in/hdegioanni)
+Authors: [Eliott A. Roussille](https://github.com/aust-1), [Hugo Degioanni](https://www.linkedin.com/in/hdegioanni), [Urbain Lantrès](https://github.com/UrbsKali)

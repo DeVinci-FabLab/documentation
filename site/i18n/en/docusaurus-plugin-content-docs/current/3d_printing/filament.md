@@ -59,7 +59,7 @@ Engineering plastics are more resistant and durable than standard plastics. They
 | **Bed Temperature**                  | 45 - 60°C                      | 70 - 90°C                      | 90 - 110°C                     | 80 - 120°C                      |
 | **Recommended Build Surface**        | Glue Stick, Textured PEI Plate | Glue Stick, Textured PEI Plate | Glue Stick, Textured PEI Plate | Glue Stick, Textured PEI Plate  |
 | **Other Hardware Recommendations**   | Cooling Fan                    | Enclosure Required             | Enclosure Required             | Enclosure Required, Cooling Fan |
-| **Impact Resistance**                | :white_check_mark:            | :white_check_mark:             | :white_check_mark:             | :white_check_mark:              |
+| **Impact Resistance**                | :white_check_mark:             | :white_check_mark:             | :white_check_mark:             | :white_check_mark:              |
 | **UV Resistant**                     | :x:                            | :x:                            | :white_check_mark:             | :x:                             |
 | **Water Resistant**                  | :x:                            | :white_check_mark:             | :white_check_mark:             | :x:                             |
 | **Chemically Resistant**             | :x:                            | :x:                            | :x:                            | :x:                             |

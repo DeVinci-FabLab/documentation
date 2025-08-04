@@ -7,12 +7,16 @@ description: Charte décrivant les règles, les bonnes pratiques et les contacts
 slug: electronic-space-charter
 tags: [charter, security, good practices]
 last_update:
-  date: 2025-07-31
-  author: Eliott A. Roussille, Hugo Degioanni
+  date: 2025-08-04
+  author: Eliott A. Roussille, Hugo Degioanni, Urbain Lantrès
 ---
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
 
 # Charte de l'espace électronique
+
+:::info
+L'espace électronique est géré et maintenu par l'association **DaVinciBot (DVB)**. Pour toute question, problème ou demande de matériel, vous pouvez contacter un·e membre de DVB.
+:::
 
 ## <FileText size={32} /> Description de l'espace
 
@@ -46,9 +50,13 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Stations de soudage et fers à souder
 - Appareils de mesure : multimètres, oscilloscopes, générateurs de signaux
 - Alimentations de laboratoire réglables
-- Outils divers : pinces coupantes, dénudeurs, tournevis, pinces antistatiques
+- Outils divers : pinces coupantes, dénudeurs, tournevis, pinces antistatiques, bracelets de mise à la terre
 - Composants électroniques : résistances, condensateurs, diodes, transistors, microcontrôleurs, capteurs
 - Matériel de prototypage : breadboards, fils de connexion (jumpers), plaques PCB vierges
+
+:::note
+Les composants électroniques et le matériel de prototypage sont disponibles **sur demande** auprès de **DVB**. Merci de ne rien prélever sans validation préalable.
+:::
 
 ## <Pin size={32} /> Rangement et nettoyage
 
@@ -59,21 +67,21 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 ## <Siren size={32} /> En cas de problème
 
-- Signaler toute **panne, casse ou dysfonctionnement** à un·e responsable ou référent·e technique.
+- Signaler auprès de **DVB** toute panne, casse ou dysfonctionnement à un·e responsable ou référent·e technique.
 - Ne jamais intervenir seul·e sur un matériel inconnu ou endommagé sans validation préalable.
 
 ## <Phone size={32} /> Contacts
 
 | Rôle ou fonction   | Nom            | Moyen de contact |
 | ------------------ | -------------- | ---------------- |
-| Responsable espace | Robin L'HYVER  | @robinmoon       |
+| Responsable espace | Urbain LANTRÈS | @urbanosaurus    |
+| Référent technique | Robin L'HYVER  | @robinmoon       |
 | Référent technique | Hugo DEGIOANNI | @loxa            |
-| Référent technique | Urbain LANTRÈS | @urbanosaurus    |
 
 Merci de respecter ces consignes pour que cet espace reste accessible et agréable à utiliser pour tout le monde !
 
 ---
 
-Dernière mise à jour : Juillet 2025
+Dernière mise à jour : Août 2025
 
-Auteurs : [Eliott A. Roussille](https://github.com/aust-1), [Hugo Degioanni](https://www.linkedin.com/in/hdegioanni)
+Auteurs : [Eliott A. Roussille](https://github.com/aust-1), [Hugo Degioanni](https://www.linkedin.com/in/hdegioanni), [Urbain Lantrès](https://github.com/UrbsKali)

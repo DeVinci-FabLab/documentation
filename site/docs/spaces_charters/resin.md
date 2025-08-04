@@ -16,60 +16,59 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 ## <FileText size={32} /> Description de l'espace
 
-- L'espace résine est spécifiquement conçu pour les impressions 3D en résine photosensible, ainsi que les opérations associées : nettoyage, post-traitement, polymérisation et finitions des pièces réalisées.
-- Il requiert une vigilance accrue et un respect strict des règles de sécurité en raison des produits chimiques et toxiques manipulés. Son accès est strictement réservé aux personnes formées.
+- L'espace résine est dédié à l'impression 3D avec des résines photosensibles, ainsi qu'aux étapes associées : nettoyage, post-traitement, polymérisation et finitions.
+- En raison de la **toxicité des produits manipulés**, l'accès est **strictement réservé aux personnes formées**, et les règles de sécurité doivent y être appliquées **avec rigueur**.
 
 ## <TriangleAlert size={32} /> Règles de sécurité
 
-- **Accès strictement interdit sans formation préalable**.
-- Toujours travailler avec une blouse ou un vêtement de protection pour éviter toute projection sur les vêtements.
-- Port de gants en nitrile obligatoire pour toute manipulation.
-- Ne jamais effectuer la maintenance des machines sans formation préalable.
-- Interdiction absolue de nourriture et boisson dans l'espace.
-- Tout objet dans l'espace résine est considéré comme toxique, sauf indication contraire (par exemple pièces en résine durcies après passage au four à UV).
-- Si vous retirez vos gants en nitrile, ils sont considérés comme consommés et doivent être remplacés immédiatement.
-- Les lunettes de sécurité sont vivement recommandés lors des manipulations à risque de projection.
-- Aération régulière obligatoire pour limiter l'accumulation de vapeurs toxiques.
-- Ne jamais laisser les produits chimiques ouverts ou sans étiquetage clair.
-- Porter un masque lors des manipulations longues pour éviter l'inhalation prolongée.
+- **Accès interdit sans formation préalable**.
+- **Port de gants en nitrile obligatoire** pour toute manipulation.
+- **Blouse ou vêtements de protection** recommandés pour éviter les projections.
+- **Lunettes de sécurité vivement recommandées** lors des manipulations à risque.
+- **Port du masque obligatoire** pour les manipulations longues ou générant des vapeurs.
+- **Interdiction absolue de nourriture et boisson** dans l'espace.
+- **Tout objet dans l'espace est considéré comme toxique** (y compris outils, flacons, entonnoirs), sauf indication contraire.
+- **Un gant retiré = gant consommé** : en remettre une paire neuve.
+- **Aération obligatoire** pendant l'utilisation de la résine ou de solvants.
+- **Ne jamais laisser un produit chimique ouvert** ou sans étiquette claire.
+- **Maintenance interdite sans formation spécifique**.
 
 ## <CheckSquare size={32} /> Bonnes pratiques et recommandations
 
+- Se faire accompagner lors de vos premiers prints post-formation par un·e membre pleinement formé·e.
 - Jeter immédiatement les résidus de résine après chaque manipulation.
-- Utiliser **un seul type** de résine par impression.
-- Lors de vos premiers prints post-formation, faites-vous accompagner par un·e membre pleinement formé·e.
-- Ne jamais utiliser d'outils abrasifs sur les bacs à résine lors du nettoyage ou de la filtration. Utiliser exclusivement des outils doux pour éviter tout risque de rayure.
-- Ne pas laisser la machine Saturn sans son couvercle anti-UV pour éviter de l'endommager.
-- Utiliser obligatoirement des bâtonnets en bois pour tout mélange.
-- **Ne jamais** jeter les déchets liquides dans un lavabo.
-- Être présent·e durant l'intégralité d'un cycle d'impression, ne pas laisser les productions dans les machines sans surveillance.
-- Pour toute expérience nécessitant du repos ou une attente prolongée, noter obligatoirement sur un post-it votre nom, prénom, date et heures de début et fin.
-- Ouvrir les fenêtres en cas de mélange non photosensible pour garantir une bonne ventilation.
-- Tout matériel présent dans l'espace est considéré comme consommable : s'il n'est plus neuf, il doit être jeté.
-- Remplacer systématiquement le filtre des cuves ou des entonnoirs après utilisation.
+- Utiliser **un seul type** de résine par bac et impression.
+- **Ne jamais rayer ou griffer les bacs à résine** : utiliser uniquement des outils **non abrasifs** pour le nettoyage ou la filtration.
+- Remplacer systématiquement les filtres des cuves ou entonnoirs après usage.
+- Utiliser uniquement des bâtonnets en bois pour les mélanges.
+- **Ne jamais jeter de déchets liquides** dans un lavabo — même dilués.
+- Être présent·e pendant tout le cycle d'impression, ne pas laisser une impression sans surveillance.
+- Couvrir systématiquement la Saturn avec son couvercle anti-UV hors usage.
+- **Post-it obligatoire** pour toute expérience nécessitant un temps de repos : nom, prénom, date, heure de début et fin.
+- Tout consommable ou matériel (entonnoir, bac, spatule…) est considéré **à usage unique** : s'il n'est plus neuf, il doit être jeté.
 
 ## <Wrench size={32} /> Matériel à disposition
 
 - Imprimantes résine :
-  - Saturn 3 12k
-  - Saturn 4 16k
-  - Forms 3
-- Station de lavage à alcool isopropylique (Forms Wash)
-- Four UV (Forms Cure)
+  - Saturn 3 12K
+  - Saturn 4 16K
+  - Form 3
+- Station de lavage à l'alcool isopropylique (Form Wash)
+- Four UV (Form Cure)
 - Pompe à vide
 - Gants en nitrile, masques respiratoires, lunettes de protection
-- Bâtonnets en bois
+- Bâtonnets en bois, filtres, entonnoirs jetables
 
 ## <Pin size={32} /> Rangement et nettoyage
 
-- Nettoyer systématiquement l'espace après utilisation.
-- Jeter les résidus solides et liquides de résine dans les bacs prévus à cet effet.
-- Remettre immédiatement toutes les protections en place après utilisation (couvercles anti-UV, protections diverses, etc.).
+- **Nettoyer systématiquement** l'espace de travail après usage.
+- **Remettre en place toutes les protections** (couvercles, bouchons, boîtes) après chaque impression.
+- **Jeter tous les déchets** (gants, chiffons, filtres, résidus) dans les bacs prévus à cet effet.
 
 ## <Siren size={32} /> En cas de problème
 
-- En cas d'incident, de dysfonctionnement ou de doute, prévenir immédiatement un·e responsable ou référent·e technique.
-- Ne jamais tenter de réparer ou d'intervenir sur une machine seul·e sans formation appropriée.
+- Signaler immédiatement tout incident, dysfonctionnement ou anomalie à un·e référent·e ou à la personne responsable de l'espace.
+- Ne pas intervenir seul·e sur une machine sans autorisation ni formation.
 
 ## <Phone size={32} /> Contacts
 

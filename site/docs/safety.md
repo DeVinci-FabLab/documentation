@@ -36,8 +36,8 @@ Si vous avez des doutes ou des questions, veuillez vous référer à votre super
 
 L'Équipement de Protection Individuelle est indispensable dans un Fablab. Il constitue la première ligne de défense contre les accidents. Voici une liste des EPI disponibles dans le Fablab :
 
-| Équipement                    | Dangers auxquels il répond | Illustration                      |
-| ----------------------------- | -------------------------- | --------------------------------- |
+| Équipement                    | Dangers auxquels il répond | Illustration                                  |
+| ----------------------------- | -------------------------- | --------------------------------------------- |
 | Lunettes en plastique         | Projections, copeaux       | ![lunettes](/assets/docs/safety/safety-2.png) |
 | Lunettes UV                   | Lumière UV                 | ![lunettes](/assets/docs/safety/safety-7.png) |
 | Gants résistants aux coupures | Coupures, scie, cutter     | ![gants](/assets/docs/safety/safety-3.png)    |

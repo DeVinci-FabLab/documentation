@@ -36,8 +36,8 @@ If you may have any doubt or inquiry, please refer to your supervisor.
 
 Personal Protective Equipment is a must-have in a Fablab. It is the first line of defense against accidents. Here is a list of PPE available in the Fablab:
 
-| Equipment             | Dangers it answers to | Illustration                     |
-| --------------------- | --------------------- | -------------------------------- |
+| Equipment             | Dangers it answers to | Illustration                                 |
+| --------------------- | --------------------- | -------------------------------------------- |
 | Plastic glasses       | Projections, chips    | ![glasses](/assets/docs/safety/safety-2.png) |
 | UV glasses            | UV light              | ![glasses](/assets/docs/safety/safety-7.png) |
 | Cut resistant gloves  | Cut, saw, cutter      | ![gloves](/assets/docs/safety/safety-3.png)  |

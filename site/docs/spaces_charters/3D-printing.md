@@ -1,5 +1,5 @@
 ---
-title: Charte de l'espace impression 3D (FDM)
+title: Charte de l'espace impression 3D
 pagination_label: Charte de l'espace impression 3D
 sidebar_label: Impression 3D
 sidebar_position: 2
@@ -52,7 +52,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 - **Nettoyer la surface d'impression** si nécessaire (résidus, colle, etc.).
 - **Ranger les outils utilisés** (spatules, pinces, cutters) à leur emplacement dédié.
-- Ranger les bobines sur les rails en dessous des imprimantes ou dans les étagères prévues à cet effet.
+- **Ranger les bobines** sur les rails en dessous des imprimantes ou dans les étagères prévues à cet effet.
 
 ## <Siren size={32} /> En cas de problème
 
@@ -72,6 +72,6 @@ Merci de respecter ces consignes pour que cet espace reste accessible et agréab
 
 ---
 
-Dernière mise à jour : Juillet 2025
+Dernière mise à jour : Août 2025
 
 Auteurs : [Eliott A. Roussille](https://github.com/aust-1), François Teynier

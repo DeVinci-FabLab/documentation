@@ -1,5 +1,5 @@
 ---
-title: 3D Printing Space Charter (FDM)
+title: 3D Printing Space Charter
 pagination_label: 3D Printing Space Charter
 sidebar_label: 3D Printing
 sidebar_position: 1
@@ -12,7 +12,7 @@ last_update:
 ---
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
 
-# 3D Printing Space Charter (FDM)
+# 3D Printing Space Charter
 
 ## <FileText size={32} /> Space Description
 
@@ -52,7 +52,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 - **Clean the print surface** if necessary (residues, glue, etc.).
 - **Put away used tools** (spatulas, pliers, cutters) in their dedicated place.
-- Store spools on the rails under the printers or in the shelves provided for this purpose.
+- **Store spools** on the rails under the printers or in the shelves provided for this purpose.
 
 ## <Siren size={32} /> In Case of Problem
 
@@ -62,16 +62,16 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 ## <Phone size={32} /> Contacts
 
-| Role or Function   | Name                | Contact Method   |
-| ------------------ | ------------------- | ---------------- |
-| Space Manager      | Alexandre COURRIEU  | @ammon6421       |
-| Technical Referent | Maxime FROMONT      | @palmito0496     |
-| Technical Referent | François TEYNIER    | @proxy4403       |
+| Role or Function   | Name               | Contact Method |
+| ------------------ | ------------------ | -------------- |
+| Space Manager      | Alexandre COURRIEU | @ammon6421     |
+| Technical Referent | Maxime FROMONT     | @palmito0496   |
+| Technical Referent | François TEYNIER   | @proxy4403     |
 
 Thank you for respecting these guidelines so that this space remains accessible and pleasant for everyone!
 
 ---
 
-Last update: July. 2025
+Last update: Aug. 2025
 
 Authors: [Eliott A. Roussille](https://github.com/aust-1), François Teynier

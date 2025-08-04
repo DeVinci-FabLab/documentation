@@ -16,54 +16,53 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 ## <FileText size={32} /> Space Description
 
-- The textile space is dedicated to textile creation: sewing, embroidery, textile printing (flocking), textile cutting (Cricut), simple textile repairs, and creative fabric projects.
-- This space allows members to carry out personal or collective projects requiring sewing or textile design skills.
+- The textile space is dedicated to **textile creation** : sewing, embroidery, flocking, textile cutting (Cricut), simple repairs, and creative projects.
+- It allows members to carry out **personal or collective projects**, requiring sewing, cutting, or textile design skills.
 
 ## <TriangleAlert size={32} /> Safety Rules
 
-- Do not eat or drink in the space (to avoid stains and accidents with the machines).
-- Do not use the machines without prior validation from a trained member.
-- Do not change machine settings other than basic ones (upper thread tension, stitch length, temperature and timer for the heat press, etc.) without authorization from a supervisor.
-- Always turn off and unplug machines after use.
-- Keep the workspace clear around machines to avoid any risk of accident (e.g., cables, tools).
-- Pay special attention when using needle machines (sewing machines, overlockers) to avoid accidents.
+- **No eating or drinking** in the space to avoid stains and reduce the risk of accidents with the machines.
+- **Use of machines only after validation** by a trained member.
+- **Do not change advanced machine settings** (other than upper thread tension, stitch length, heat press temperature/timer, etc.) without authorization from a manager.
+- **Always turn off and unplug machines** after use.
+- **Keep the area around machines clear** to avoid falls and snags.
+- Pay **special attention when using needle machines** (sewing machines, sergers).
 
 ## <CheckSquare size={32} /> Best Practices and Recommendations
 
-- Sewing scissors must be used exclusively for cutting fabric or thread (not leather, paper, interfacing, zippers, etc.).
+- **Use sewing scissors only for fabric or thread** – never for leather, paper, interfacing, zippers, etc.
 - Do not use the tables for anything other than textile work.
-- Replace the protective film on Cricut mats and use only the mat appropriate for the intended use.
-- Respect items reserved for MDD.
-- Check the condition of needles and replace them if necessary (with prior agreement if the user does not know how to proceed).
-- Check the thread condition before use to avoid breakage or machine jams.
-- Immediately report any machine malfunction.
-- If a machine breaks down or needs maintenance, immediately place a clear sign indicating the problem and notify a technical referent.
+- **Put the protective film back** on Cricut mats after use, and **use the mat suitable** for each material.
+- Respect items reserved for MDD (do not use them).
+- Check the condition of needles and change them if necessary (ask for help if needed).
+- Check the condition of the thread to avoid jams or breakage.
+- **Immediately report any malfunction**.
+- If a machine breaks down or needs maintenance, **place a clear note on the machine** and inform a referent.
 
 ## <Wrench size={32} /> Available Equipment
 
 - Sewing machines
-- Embroidery machine
-- Cricut cutter and associated mats
+- Serger
 - Heat press
-- Overlocker
+- Embroidery machine
+- Cricut + suitable mats
 - Sewing scissors
-- Pins, needles, threads, seam rippers, measuring tapes
-- Mats and iron
-- Various textile accessories
-- Equipment for crochet and embroidery
+- Pins, needles, seam rippers, tape measures
+- Iron and ironing mat
+- Crochet and embroidery supplies
+- Threads, vinyl, and textile accessories
 
 ## <Pin size={32} /> Storage and Cleaning
 
-- Clean or request cleaning of deposits after using machines, especially the overlocker or after using fabrics like velvet.
-- Put away all used equipment after use.
-- Cut fabric cleanly and use scraps to reduce textile waste.
-- Use fabric scraps if possible before taking new fabrics.
-- Regularly clean the machines (remove dust and accumulated textile residues).
+- **Clean up textile debris** after using the machines (especially serger or velvet).
+- **Put each tool back** in its place after use.
+- Cut fabrics neatly, and **prefer using scraps** to reduce waste.
+- **Clean machines regularly** (dust, lint, stuck threads).
 
 ## <Siren size={32} /> In Case of Problem
 
-- Immediately report any incident or technical problem to a technical referent or the person responsible for the space.
-- Clearly indicate any identified problem on a note or sign to warn other users.
+- Report any incident or technical problem to a referent or the person responsible for the space.
+- Place a visible message on the affected machine to warn other users.
 
 ## <Phone size={32} /> Contacts
 

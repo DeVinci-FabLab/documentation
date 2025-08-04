@@ -16,60 +16,59 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 ## <FileText size={32} /> Space Description
 
-- The resin space is specifically designed for 3D printing with photosensitive resin, as well as associated operations: cleaning, post-processing, curing, and finishing of printed parts.
-- It requires increased vigilance and strict adherence to safety rules due to the chemicals and toxic products handled. Access is strictly reserved for trained individuals.
+- The resin space is dedicated to 3D printing with photosensitive resins, as well as associated steps: cleaning, post-processing, curing, and finishing.
+- Due to the **toxicity of the products handled**, access is **strictly reserved for trained individuals**, and safety rules must be applied **rigorously**.
 
 ## <TriangleAlert size={32} /> Safety Rules
 
-- **Access strictly prohibited without prior training**.
-- Always work with a lab coat or protective clothing to avoid splashes on clothes.
-- Wearing nitrile gloves is mandatory for any handling.
-- Never perform machine maintenance without prior training.
-- Absolutely no food or drink allowed in the space.
-- Any object in the resin space is considered toxic unless otherwise indicated (e.g., resin parts cured after UV oven).
-- If you remove your nitrile gloves, they are considered used and must be replaced immediately.
-- Safety glasses are strongly recommended when handling materials with splash risk.
-- Regular ventilation is mandatory to limit the accumulation of toxic vapors.
-- Never leave chemicals open or without clear labeling.
-- Wear a mask during long manipulations to avoid prolonged inhalation.
+- **Access prohibited without prior training**.
+- **Wearing nitrile gloves is mandatory** for any handling.
+- **Lab coat or protective clothing** recommended to avoid splashes.
+- **Safety glasses strongly recommended** during risky operations.
+- **Mask wearing is mandatory** for long manipulations or those generating vapors.
+- **Absolutely no food or drink** in the space.
+- **Any object in the space is considered toxic** (including tools, bottles, funnels), unless otherwise indicated.
+- **A glove removed = glove consumed**: put on a new pair.
+- **Ventilation is mandatory** during the use of resin or solvents.
+- **Never leave a chemical product open** or without a clear label.
+- **Maintenance prohibited without specific training**.
 
 ## <CheckSquare size={32} /> Best Practices and Recommendations
 
+- Be accompanied during your first prints after training by a fully trained member.
 - Immediately dispose of resin residues after each handling.
-- Use **only one type** of resin per print.
-- For your first prints after training, be accompanied by a fully trained member.
-- Never use abrasive tools on resin tanks during cleaning or filtering. Use only soft tools to avoid scratches.
-- Do not leave the Saturn machine without its UV cover to avoid damage.
-- Always use wooden sticks for mixing.
-- **Never** pour liquid waste down a sink.
-- Be present for the entire printing cycle; do not leave productions in the machines unattended.
-- For any experiment requiring rest or prolonged waiting, write your name, surname, date, and start/end times on a post-it note.
-- Open windows in case of non-photosensitive mixing to ensure good ventilation.
-- All equipment in the space is considered consumable: if it is no longer new, it must be discarded.
-- Always replace the tank or funnel filter after use.
+- Use **only one type** of resin per tank and print.
+- **Never scratch or scrape resin tanks**: use only **non-abrasive tools** for cleaning or filtering.
+- Always replace the filters of tanks or funnels after use.
+- Use only wooden sticks for mixing.
+- **Never pour liquid waste** into a sink — even diluted.
+- Be present during the entire print cycle, do not leave a print unattended.
+- Always cover the Saturn with its anti-UV lid when not in use.
+- **Post-it required** for any experiment needing resting time: name, surname, date, start and end time.
+- Any consumable or equipment (funnel, tank, spatula, etc.) is considered **single-use**: if it is no longer new, it must be discarded.
 
 ## <Wrench size={32} /> Available Equipment
 
 - Resin printers:
-  - Saturn 3 12k
-  - Saturn 4 16k
-  - Forms 3
-- Isopropyl alcohol washing station (Forms Wash)
-- UV oven (Forms Cure)
+  - Saturn 3 12K
+  - Saturn 4 16K
+  - Form 3
+- Isopropyl alcohol washing station (Form Wash)
+- UV oven (Form Cure)
 - Vacuum pump
 - Nitrile gloves, respirator masks, safety glasses
-- Wooden sticks
+- Wooden sticks, filters, disposable funnels
 
 ## <Pin size={32} /> Storage and Cleaning
 
-- Always clean the space after use.
-- Dispose of solid and liquid resin residues in the designated bins.
-- Immediately put all protections back in place after use (UV covers, various protections, etc.).
+- **Systematically clean** the workspace after use.
+- **Replace all protections** (lids, caps, boxes) after each print.
+- **Dispose of all waste** (gloves, cloths, filters, residues) in the bins provided for this purpose.
 
 ## <Siren size={32} /> In Case of Problem
 
-- In case of incident, malfunction, or doubt, immediately notify a manager or technical referent.
-- Never attempt to repair or intervene on a machine alone without proper training.
+- Immediately report any incident, malfunction, or anomaly to a referent or the person responsible for the space.
+- Do not intervene alone on a machine without authorization or training.
 
 ## <Phone size={32} /> Contacts
 
