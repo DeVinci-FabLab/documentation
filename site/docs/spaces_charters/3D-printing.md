@@ -12,7 +12,7 @@ last_update:
 ---
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
 
-# Charte de l'espace Impression 3D (FDM)
+# Charte de l'espace Impression 3D
 
 ## <FileText size={32} /> Description de l'espace
 
