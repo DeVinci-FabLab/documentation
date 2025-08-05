@@ -3,9 +3,9 @@ title: Charte de l'espace textile
 pagination_label: Charte de l'espace textile
 sidebar_label: Textile
 sidebar_position: 5
-description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace textile du FabLab.
+description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace textile du DeVinci Fablab.
 slug: textile-space-charter
-tags: [charter, security, good practices]
+tags: [charte, sécurité, rangement]
 last_update:
   date: 2025-07-31
   author: Eliott A. Roussille, Lenday Stawarski, Rebecca Levy, Sherylann Wilthien

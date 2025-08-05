@@ -3,9 +3,9 @@ title: [Name of Space] Space Charter
 pagination_label: [Name of Space] Space Charter
 sidebar_label: [Name of Space]
 sidebar_position: 1
-description: Charter describing the rules, best practices, and contacts for the FabLab [name of Space] space.
+description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab [name of Space] space.
 slug: [name-of-space]-space-charter
-tags: [charter, security, good practices]
+tags: [charter, security, storage]
 last_update:
   date: 2025-07-31
   author: xx, xx, xx

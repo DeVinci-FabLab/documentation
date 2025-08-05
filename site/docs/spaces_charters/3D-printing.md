@@ -3,9 +3,9 @@ title: Charte de l'espace impression 3D
 pagination_label: Charte de l'espace impression 3D
 sidebar_label: Impression 3D
 sidebar_position: 2
-description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace impression 3D du FabLab.
+description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace impression 3D du DeVinci Fablab.
 slug: 3D-printing-space-charter
-tags: [charter, security, good practices]
+tags: [charte, sécurité, rangement]
 last_update:
   date: 2025-08-01
   author: Eliott A. Roussille, François Teynier
