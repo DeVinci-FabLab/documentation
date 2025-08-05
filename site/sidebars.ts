@@ -4,14 +4,16 @@ const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     'intro',
     'safety',
+    'srg',
     {
       type: 'category',
-      label: 'Spaces Charters', // This label will be automatically translated
+      label: 'Spaces Charters',  // This label will be automatically translated
       collapsed: true,
       collapsible: true,
       items: [
         'spaces_charters/3D-printing',
         'spaces_charters/electronics',
+        'spaces_charters/fabrication',
         'spaces_charters/resin',
         'spaces_charters/textile',
       ],

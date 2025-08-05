@@ -2,7 +2,7 @@
 title: Charte de l'espace résine
 pagination_label: Charte de l'espace résine
 sidebar_label: Résine
-sidebar_position: 3
+sidebar_position: 4
 description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace résine du FabLab.
 slug: resin-space-charter
 tags: [charter, security, good practices]

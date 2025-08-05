@@ -15,7 +15,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 # Charte de l'espace électronique
 
 :::info
-L'espace électronique est géré et maintenu par l'association **DaVinciBot (DVB)**. Pour toute question, problème ou demande de matériel, vous pouvez contacter un·e membre de DVB.
+L'espace électronique est géré et maintenu par l'association [**DaVinciBot (DVB)**](https://docs.davincibot.fr/). Pour toute question, problème ou demande de matériel, vous pouvez contacter un·e membre de DVB.
 :::
 
 ## <FileText size={32} /> Description de l'espace

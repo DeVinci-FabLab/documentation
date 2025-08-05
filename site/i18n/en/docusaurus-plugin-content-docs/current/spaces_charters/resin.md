@@ -2,7 +2,7 @@
 title: Resin Space Charter
 pagination_label: Resin Space Charter
 sidebar_label: Resin
-sidebar_position: 3
+sidebar_position: 4
 description: Charter describing the rules, best practices, and contacts for the FabLab resin space.
 slug: resin-space-charter
 tags: [charter, security, good practices]

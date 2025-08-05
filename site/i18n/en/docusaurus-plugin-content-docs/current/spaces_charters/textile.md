@@ -2,7 +2,7 @@
 title: Textile Space Charter
 pagination_label: Textile Space Charter
 sidebar_label: Textile
-sidebar_position: 4
+sidebar_position: 5
 description: Charter describing the rules, best practices, and contacts for the FabLab textile space.
 slug: textile-space-charter
 tags: [charter, security, good practices]

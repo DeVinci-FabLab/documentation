@@ -2,7 +2,7 @@
 title: Charte de l'espace textile
 pagination_label: Charte de l'espace textile
 sidebar_label: Textile
-sidebar_position: 4
+sidebar_position: 5
 description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace textile du FabLab.
 slug: textile-space-charter
 tags: [charter, security, good practices]
