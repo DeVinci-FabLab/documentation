@@ -3,9 +3,9 @@ title: Resin Space Charter
 pagination_label: Resin Space Charter
 sidebar_label: Resin
 sidebar_position: 4
-description: Charter describing the rules, best practices, and contacts for the FabLab resin space.
+description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab resin space.
 slug: resin-space-charter
-tags: [charter, security, good practices]
+tags: [charter, security, storage]
 last_update:
   date: 2025-07-31
   author: Dimitry Siebert, Eliott A. Roussille, François Teynier, Hugo Degioanni

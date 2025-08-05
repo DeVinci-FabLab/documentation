@@ -3,7 +3,7 @@ title: Rust - les bases
 sidebar_position: 5
 description: Un guide pour découvrir les fondamentaux de Rust.
 slug: rust
-tags: [info]
+tags: [formation, info, rust]
 last_update:
   date: 2024-02-01
   author: Urbain Lantrès (UrbsKali)

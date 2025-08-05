@@ -3,7 +3,7 @@ title: Tests unitaires (exemples en C# avec MSTest)
 sidebar_position: 6
 description: Un guide pour comprendre les fondamentaux des tests unitaires, illustré en C# avec MSTest, mais applicable à tous les langages.
 slug: unit-testing
-tags: [info]
+tags: [formation, info, csharp]
 last_update:
   date: 2025-07-03
   author: Eliott A. Roussille

@@ -3,9 +3,9 @@ title: Electronic Space Charter
 pagination_label: Electronic Space Charter
 sidebar_label: Electronics
 sidebar_position: 2
-description: Charter describing the rules, best practices, and contacts for the FabLab electronic space.
+description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab electronic space.
 slug: electronic-space-charter
-tags: [charter, security, good practices]
+tags: [charter, security, storage]
 last_update:
   date: 2025-08-04
   author: Eliott A. Roussille, Hugo Degioanni, Urbain Lantrès

@@ -3,7 +3,7 @@ title: Unit Testing (Examples in C# with MSTest)
 sidebar_position: 6
 description: A guide to understanding the fundamentals of unit testing, illustrated in C# with MSTest, but applicable to all languages.
 slug: unit-testing
-tags: [info]
+tags: [course, info, csharp]
 last_update:
   date: 2025-07-03
   author: Eliott A. Roussille
@@ -399,6 +399,6 @@ public class PlayerTests
 
 ---
 
-Last updated: July. 2025
+Last update: July. 2025
 
 Author: [Eliott A. Roussille](https://github.com/aust-1)

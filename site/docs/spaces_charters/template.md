@@ -3,9 +3,9 @@ title: Charte de l'espace [nom de l'espace]
 pagination_label: Charte de l'espace [nom de l'espace]
 sidebar_label: [Nom de l'espace]
 sidebar_position: x
-description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace [nom de l'espace] du FabLab.
+description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace [nom de l'espace] du DeVinci Fablab.
 slug: [nom-de-l'espace]-space-charter
-tags: [charter, security, good practices]
+tags: [charter, sécurité, rangement]
 last-update:
   date: 2025-07-31
   author: xx, xx, xx

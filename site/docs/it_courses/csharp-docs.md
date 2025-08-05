@@ -3,7 +3,7 @@ title: Créez la documentation de votre projet
 sidebar_position: 1
 description: Ce cours vous permettra de créer et héberger un site web statique pour votre documentation. L'outil est développé pour un projet C# mais peut être utilisé pour tout autre projet, les articles étant rédigés en markdown.
 slug: csharp-docs
-tags: [info]
+tags: [formation, info, csharp]
 last_update:
   date: 2024-05-01
   author: Yann M. Vidamment (MorganKryze)

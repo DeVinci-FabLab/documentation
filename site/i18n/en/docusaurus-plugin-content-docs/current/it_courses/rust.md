@@ -1,9 +1,9 @@
 ---
 title: Rust - Basics
 sidebar_position: 5
-description: A guide to discover the basics of the FabLab and digital fabrication.
+description: A guide to discover the basics of Rust programming.
 slug: rust
-tags: [info]
+tags: [course, info, rust]
 last_update:
   date: 2024-02-01
   author: Urbain Lantrès (UrbsKali)

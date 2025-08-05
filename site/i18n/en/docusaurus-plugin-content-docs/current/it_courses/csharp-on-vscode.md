@@ -3,7 +3,7 @@ title: C# for Visual Studio Code
 sidebar_position: 2
 description: This tutorial will help you set up your development environment for C# using Visual Studio Code.
 slug: csharp-on-vscode
-tags: [info]
+tags: [course, info, csharp]
 last_update:
   date: 2024-05-01
   author: Yann M. Vidamment (MorganKryze)
