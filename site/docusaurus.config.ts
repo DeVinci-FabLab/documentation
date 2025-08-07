@@ -44,7 +44,14 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          routeBasePath: '/'
+          routeBasePath: "/",
+          editUrl: ({ locale, version, docPath }) => {
+            const repo = "https://github.com/DeVinci-FabLab/documentation/";
+            if (locale === "en") {
+              return `${repo}/edit/main/site/i18n/en/docusaurus-plugin-content-docs/${version}/${docPath}`;
+            }
+            return `${repo}/edit/main/site/docs/${docPath}`;
+          },
         },
         blog: {
           // Add blog configuration
@@ -67,7 +74,11 @@ const config: Config = {
     algolia: {
       appId: '7B6MSZEWAH',
       apiKey: 'b77f0433b3372ea692844d52d1602c86',
-      indexName: 'dvfl-documentation',
+      indexName: 'dvfl-documentation",
+    },
+    colorMode: {
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
     },
     navbar: {
       hideOnScroll: true,
@@ -104,7 +115,39 @@ const config: Config = {
       maxHeadingLevel: 4,
     },
     footer: {
-      style: 'dark',
+      style: "dark",
+      links: [
+        {
+          title: "Community",
+          items: [
+            {
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/company/devinci-fablab",
+            },
+            {
+              label: "Instagram",
+              href: "https://www.instagram.com/devinci.fablab/",
+            },
+          ],
+        },
+        {
+          title: "More",
+          items: [
+            {
+              label: "devinci-fablab.fr",
+              href: "https://devinci-fablab.fr/",
+            },
+            {
+              label: "MyFab",
+              href: "https://my.devinci-fablab.fr/",
+            },
+            {
+              label: "GitHub",
+              href: "https://github.com/DeVinci-FabLab/",
+            },
+          ],
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} DeVinci Fablab.`
     },
     prism: {
