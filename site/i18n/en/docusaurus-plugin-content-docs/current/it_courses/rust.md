@@ -320,7 +320,7 @@ Rust disallows returning references to values that go out of scope. Use owned re
 **Solution : lifetime**
 The lifetimes are parameters added to specify the duration of a value's validity. To fix the previous function, you should return an owned value instead of a reference.
 
-# Trust the Compiler
+<important>**Trust the Compiler**</important>
 
 ## Appendix 1: Rust Data Types
 

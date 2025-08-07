@@ -1,34 +1,33 @@
-import type * as Preset from '@docusaurus/preset-classic';
-import type { Config } from '@docusaurus/types';
-import { themes as prismThemes } from 'prism-react-renderer';
+import type * as Preset from "@docusaurus/preset-classic";
+import type { Config } from "@docusaurus/types";
+import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'DVFL Documentation',
-  // tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: "DVFL Documentation",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'http://localhost:3000',
+  url: "http://localhost:3000",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'DeVinci Fablab', // Usually your GitHub org/user name.
-  projectName: 'Documentation', // Usually your repo name.
+  organizationName: "DeVinci Fablab",
+  projectName: "Documentation",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  onBrokenAnchors: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  onBrokenAnchors: "warn",
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'fr',
-    locales: ['fr', 'en'],
+    defaultLocale: "fr",
+    locales: ["fr", "en"],
     path: "i18n",
   },
 
@@ -40,10 +39,10 @@ const config: Config = {
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
           editUrl: ({ locale, version, docPath }) => {
             const repo = "https://github.com/DeVinci-FabLab/documentation/";
@@ -57,24 +56,24 @@ const config: Config = {
           // Add blog configuration
           showReadingTime: true,
           // Optional: change path if needed
-          path: 'blog',
+          path: "blog",
           // Make sure i18n is enabled for blog
-          blogTitle: 'Workshops',
-          blogSidebarTitle: 'All workshops',
-          blogSidebarCount: 'ALL',
+          blogTitle: "Workshops",
+          blogSidebarTitle: "All workshops",
+          blogSidebarCount: "ALL",
         },
         theme: {
-          customCss: './src/css/custom.css'
-        }
-      } satisfies Preset.Options
-    ]
+          customCss: "./src/css/custom.css",
+        },
+      } satisfies Preset.Options,
+    ],
   ],
 
   themeConfig: {
     algolia: {
-      appId: '7B6MSZEWAH',
-      apiKey: 'b77f0433b3372ea692844d52d1602c86',
-      indexName: 'dvfl-documentation",
+      appId: "7B6MSZEWAH",
+      apiKey: "b77f0433b3372ea692844d52d1602c86",
+      indexName: "dvfl-documentation",
     },
     colorMode: {
       disableSwitch: false,
@@ -83,30 +82,30 @@ const config: Config = {
     navbar: {
       hideOnScroll: true,
       logo: {
-        alt: 'DVFL logo',
-        src: 'img/favicon.svg',
-        srcDark: 'img/favicon.svg'
+        alt: "DVFL logo",
+        src: "img/favicon.svg",
+        srcDark: "img/favicon.svg",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentation'
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Documentation",
         },
         {
-          to: 'blog',
-          position: 'left',
-          label: 'Workshops'
+          to: "blog",
+          position: "left",
+          label: "Workshops",
         },
         {
-          type: 'localeDropdown',
-          position: 'right'
+          type: "localeDropdown",
+          position: "right",
         },
         {
-          href: 'https://github.com/DeVinci-FabLab/documentation',
-          position: 'right',
-          className: 'header-github-link',
+          href: "https://github.com/DeVinci-FabLab/documentation",
+          position: "right",
+          className: "header-github-link",
         },
       ],
     },
@@ -148,27 +147,27 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} DeVinci Fablab.`
+      copyright: `Copyright © ${new Date().getFullYear()} DeVinci Fablab.`,
     },
     prism: {
       theme: prismThemes.oneLight,
       darkTheme: prismThemes.vsDark,
       additionalLanguages: [
-        'bash',
-        'c',
-        'cpp',
-        'csharp',
-        'css',
-        'json',
-        'markdown',
-        'python',
-        'rust',
-        'sql',
-        'typescript',
-        'yaml'
-      ]
-    }
-  } satisfies Preset.ThemeConfig
+        "bash",
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "json",
+        "markdown",
+        "python",
+        "rust",
+        "sql",
+        "typescript",
+        "yaml",
+      ],
+    },
+  } satisfies Preset.ThemeConfig,
 };
 
 export default config;

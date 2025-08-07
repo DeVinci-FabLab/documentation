@@ -43,7 +43,7 @@ dotnet add package Npgsql
 
 ## Step 3: Create the database content
 
-[Skip this step if you already have a database created with an init file for example.]
+(Skip this step if you already have a database created with an init file for example.)
 
 We start by entering via the terminal the PostgreSQL database. Consider replacing `postgres` with the username you used to create the database.
 

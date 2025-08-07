@@ -332,7 +332,7 @@ Dans ce cas, la référence pointe vers une valeur inexistante, ce que Rust n'au
 **Solution : lifetime**
 les lifetimes sont des paramètre qu'on ajoute pour spécifé la durée de vie d'une valeur, pour réparer la fonction précédante, il faudrait plutôt retourner une valeur own qu'une référence.
 
-# FAITES CONFIANCE AU COMPILEUR
+<important>**FAITES CONFIANCE AU COMPILEUR**</important>
 
 ## Annexe 1 : Type de données en Rust
 

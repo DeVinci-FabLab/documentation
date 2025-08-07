@@ -43,7 +43,7 @@ dotnet add package Npgsql
 
 ## Étape 3 : Créer le contenu de la base de données
 
-[Ignorez cette étape si vous possédez déjà une base de données créée, par exemple avec un fichier d'initialisation.]
+(Ignorez cette étape si vous possédez déjà une base de données créée, par exemple avec un fichier d'initialisation.)
 
 Nous commençons par entrer dans la base de données PostgreSQL via le terminal. Remplacez `postgres` par le nom d'utilisateur que vous avez utilisé pour créer la base de données.
 
