@@ -29,7 +29,13 @@ const config: Config = {
   i18n: {
     defaultLocale: 'fr',
     locales: ['fr', 'en'],
-    path: 'i18n'
+    path: "i18n",
+  },
+
+  future: {
+    v4: {
+      useCssCascadeLayers: true,
+    },
   },
 
   presets: [
