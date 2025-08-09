@@ -1,0 +1,24 @@
+services:
+  docusaurus-prod:
+    image: ghcr.io/devinci-fablab/documentation:latest
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    deploy:
+      mode: replicated
+      replicas: 2
+    security_opt:
+      - no-new-privileges:true
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.documentation.rule=Host(`docs.devinci-fablab.fr`)"
+      - "traefik.http.routers.documentation.entrypoints=websecure"
+      - "traefik.http.routers.documentation.tls.certresolver=myresolver"
+      - "traefik.http.services.documentation.loadbalancer.server.port=3000"
+      - "com.centurylinklabs.watchtower.enable=true"
+    networks:
+      - traefik-network
+
+networks:
+  traefik-network:
+    external: true

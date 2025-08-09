@@ -1,4 +1,5 @@
 site/node_modules
+site/.pnpm-store
 site/.docusaurus
 site/build
 .git

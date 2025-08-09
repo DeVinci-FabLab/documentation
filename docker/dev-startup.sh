@@ -9,9 +9,5 @@ fi
 
 # Continue with normal startup
 cd /app
-if [ -d "node_modules" ]; then
-  exec pnpm start --host 0.0.0.0 --poll 1000
-else
-  pnpm install
-  exec pnpm start --host 0.0.0.0 --poll 1000
-fi
+pnpm install --frozen-lockfile
+exec pnpm start --host 0.0.0.0 --poll 1000

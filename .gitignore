@@ -4,6 +4,7 @@ site/node_modules
 # Generated files
 .docusaurus
 .cache-loader
+.pnpm-store
 
 # Misc
 .DS_Store

@@ -1,0 +1,15 @@
+services:
+  docusaurus-prod-local:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: serve
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+
+networks:
+  traefik-network:
+    external: true
