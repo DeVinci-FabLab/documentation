@@ -15,6 +15,9 @@ WORKDIR /app
 EXPOSE 3000
 ## Create startup script
 COPY ./dev-startup.sh /dev-startup.sh
+## Convert Windows line endings to Unix line endings
+RUN sed -i 's/\r$//' /dev-startup.sh
+## Ensure the script is executable.
 RUN chmod +x /dev-startup.sh
 ## Run the development server using the startup script
 CMD ["/dev-startup.sh"]
