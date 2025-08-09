@@ -25,7 +25,7 @@ CMD ["/dev-startup.sh"]
 # Stage 2b: Production build mode.
 FROM base AS prod
 ## Copy over the source code from site directory.
-COPY ../site/ /app/
+COPY site/ /app/
 ## Install dependencies with `--frozen-lockfile` to ensure reproducibility.
 WORKDIR /app
 RUN pnpm install --frozen-lockfile --force
@@ -39,7 +39,7 @@ EXPOSE 3000
 # Before copying the healthcheck script
 RUN apt-get update && apt-get install -y curl wget && apt-get clean
 ## Copy healthcheck script
-COPY ./healthcheck.sh /healthcheck.sh
+COPY docker/healthcheck.sh /healthcheck.sh
 RUN chmod +x /healthcheck.sh
 ## Add health check to verify the service is running properly
 HEALTHCHECK --interval=30s --timeout=10s --start-period=90s --retries=3 \
