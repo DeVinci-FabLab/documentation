@@ -5,11 +5,12 @@ sidebar_label: Résine
 sidebar_position: 4
 description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace résine du DeVinci Fablab.
 slug: resin-space-charter
-tags: [charte, sécurité, rangement]
+tags: [charter, safety, storage]
 last_update:
   date: 2025-07-31
   author: Dimitry Siebert, Eliott A. Roussille, François Teynier, Hugo Degioanni
 ---
+
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
 
 # Charte de l'espace résine

@@ -1,0 +1,20 @@
+3d-printing:
+  label: '3D Printing'
+  permalink: '/3d-printing'
+  description: 'Docs related to 3D printing technologies and applications'
+
+ai:
+  label: 'AI'
+  permalink: '/ai'
+  description: 'Docs related to artificial intelligence technologies and applications'
+
+fablab:
+  label: 'Fablab'
+  permalink: '/fablab'
+  description: 'Docs related to the FabLab, its projects, and community activities'
+
+
+robotics:
+  label: 'Robotics'
+  permalink: '/robotics'
+  description: 'Docs related to robotics technologies and applications'

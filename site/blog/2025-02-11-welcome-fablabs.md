@@ -2,7 +2,7 @@
 title: Initiation au Fablab
 description: Un guide pour découvrir les bases du Fablab et de la fabrication numérique.
 authors: [yann_v]
-tags: [fablab, ai, 3d printing, robotics]
+tags: [fablab, ai, 3d-printing, robotics]
 hide_table_of_contents: false
 slug: welcome-fablabs
 ---
@@ -47,16 +47,16 @@ Voici un tableau récapitulatif des différents types de filaments utilisés en 
 
 | Matériau             | Type      | Facile à Imprimer | Résistant | Durable | Nécessite Enceinte | Flexible | Résistant aux UV |
 | -------------------- | --------- | :---------------: | :-------: | :-----: | :----------------: | :------: | :--------------: |
-| **PLA**              | Standard  |         ✔️         |     ✔️     |    ✔️    |         ❌          |    ❌     |        ❌         |
-| **PETG**             | Standard  |         ✔️         |     ✔️     |    ✔️    |         ✔️          |    ❌     |        ❌         |
-| **ABS**              | Standard  |         ✔️         |     ✔️     |    ✔️    |         ✔️          |    ❌     |        ❌         |
-| **Flex**             | Technique |         ✔️         |     ✔️     |    ✔️    |         ❌          |    ✔️     |        ❌         |
-| **Nylon**            | Technique |         ✔️         |     ✔️     |    ✔️    |         ✔️          |    ❌     |        ❌         |
-| **ASA**              | Technique |         ✔️         |     ✔️     |    ✔️    |         ✔️          |    ❌     |        ✔️         |
-| **Polycarbonate**    | Technique |         ✔️         |     ✔️     |    ✔️    |         ✔️          |    ❌     |        ❌         |
-| **Fibre de Carbone** | Composite |         ✔️         |     ✔️     |    ❌    |         ❌          |    ❌     |        ❌         |
-| **Métal**            | Composite |         ✔️         |     ✔️     |    ❌    |         ❌          |    ❌     |        ❌         |
-| **Bois**             | Composite |         ✔️         |     ❌     |    ❌    |         ❌          |    ❌     |        ❌         |
+| **PLA**              | Standard  |        ✔️         |    ✔️     |   ✔️    |         ❌         |    ❌    |        ❌        |
+| **PETG**             | Standard  |        ✔️         |    ✔️     |   ✔️    |         ✔️         |    ❌    |        ❌        |
+| **ABS**              | Standard  |        ✔️         |    ✔️     |   ✔️    |         ✔️         |    ❌    |        ❌        |
+| **Flex**             | Technique |        ✔️         |    ✔️     |   ✔️    |         ❌         |    ✔️    |        ❌        |
+| **Nylon**            | Technique |        ✔️         |    ✔️     |   ✔️    |         ✔️         |    ❌    |        ❌        |
+| **ASA**              | Technique |        ✔️         |    ✔️     |   ✔️    |         ✔️         |    ❌    |        ✔️        |
+| **Polycarbonate**    | Technique |        ✔️         |    ✔️     |   ✔️    |         ✔️         |    ❌    |        ❌        |
+| **Fibre de Carbone** | Composite |        ✔️         |    ✔️     |   ❌    |         ❌         |    ❌    |        ❌        |
+| **Métal**            | Composite |        ✔️         |    ✔️     |   ❌    |         ❌         |    ❌    |        ❌        |
+| **Bois**             | Composite |        ✔️         |    ❌     |   ❌    |         ❌         |    ❌    |        ❌        |
 
 ### Le système AMS de Bambulab
 
@@ -160,7 +160,7 @@ L'embarqué désigne les **systèmes informatiques intégrés** à des objets du
 
 ### Différence entre un microcontrôleur et un micro-ordinateur
 
-| Caractéristique              | Microcontrôleur ⚙️                                                                | Micro-ordinateur 💻                                                                         |
+| Caractéristique              | Microcontrôleur ⚙️                                                               | Micro-ordinateur 💻                                                                        |
 | ---------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | **Définition**               | Un circuit intégré avec processeur, mémoire et périphériques sur une seule puce. | Un petit ordinateur avec processeur, mémoire, système d'exploitation et ports d'extension. |
 | **Système d'exploitation**   | Aucun (exécute directement un programme en boucle)                               | Oui (ex. Linux sur Raspberry Pi)                                                           |

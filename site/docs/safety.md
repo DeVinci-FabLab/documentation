@@ -76,14 +76,20 @@ En cas d'urgence, voici les numéros à appeler :
 - **Ambulance** : 15
 - **Centre antipoison** : 01 40 05 48 48
 
----
-
 [^1]: ISO 13732-1:2006 / 7010:W017, surfaces chaudes.
+
 [^2]: ISO 7010:M009, protection des mains.
+
 [^3]: ISO 16000-1:2004 / 7010:W016, qualité de l'air intérieur et fumées toxiques.
+
 [^4]: ISO 7010:M016, masque obligatoire.
+
 [^5]: ISO 7010:W001, risque général de projections de particules de métal ou de bois.
+
 [^6]: ISO 7010:M004, lunettes obligatoires.
+
 [^7]: ISO 7010:W004, danger de rayonnement laser.
+
 [^8]: ISO 7010:M006, lunettes de protection opaques obligatoires.
+
 [^9]: ISO 7010:W024, risque d'écrasement des mains dû au moteur rotatif.

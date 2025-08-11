@@ -5,11 +5,12 @@ sidebar_label: [Name of Space]
 sidebar_position: x
 description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab [name of Space] space.
 slug: [name-of-space]-space-charter
-tags: [charter, security, storage]
+tags: [charter, safety, storage]
 last_update:
   date: 2025-07-31
   author: xx, xx, xx
 ---
+
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
 
 # [Name of Space] Space Charter

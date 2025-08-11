@@ -18,25 +18,27 @@ All contributions should be in English to ensure that all members of the communi
 
 Documentation is required for all contributions (code, issues, or pull requests). It should be:
 
-* Clear and concise
-* Written in Markdown
-* Included in the main `README.md` when applicable
-* Supplemented in the `docs/` folder if more detail is needed
+- Clear and concise
+- Written in Markdown
+- Included in the main `README.md` when applicable
+- Supplemented in the `docs/` folder if more detail is needed
 
 ### Adding New Documentation
 
 1. Ensure your Markdown file is well-structured and follows the project's documentation style.
-   * Use headings, lists, and code blocks to enhance readability.
-   * Include table of contents, images where necessary, using relative paths.
-   * Use the provided `site/static/assets/template.md` for consistency.
+   - Use headings, lists, and code blocks to enhance readability.
+   - Include table of contents, images where necessary, using relative paths.
+   - Use the provided `site/static/assets/template.md` for consistency.
 2. Place your Markdown file in `site/docs/<your-section>/<your-file>.md`.
 3. Add the English version in `site/i18n/en/docusaurus-plugin-content-docs/current/<your-section>/<your-file>.md`.
 4. If your file has images, place them in `site/static/assets/docs/<your-file>/`.
 5. Update `site/sidebar.ts` to add your file to the sidebar navigation.
-6. If you are introducing a new category, update:
-
-   * `site/i18n/en/docusaurus-plugin-content-docs/current.json`
-   * `site/i18n/fr/docusaurus-plugin-content-docs/current.json`
+6. If you use new tags, ensure they are added to :
+   - `site/i18n/en/docusaurus-plugin-content-docs/current/tags.yml`
+   - `site/docs/tags.yml`
+7. If you are introducing a new category, update:
+   - `site/i18n/en/docusaurus-plugin-content-docs/current.json`
+   - `site/i18n/fr/docusaurus-plugin-content-docs/current.json`
 
 Ensure your documentation is well-structured and easy to navigate.
 
@@ -44,8 +46,8 @@ Ensure your documentation is well-structured and easy to navigate.
 
 Every solution should include a Docker deployment option, with a `compose.yml` and `Dockerfile` if necessary. The deployment process should be:
 
-* As simple as possible
-* Fully documented in the `README.md`
+- As simple as possible
+- Fully documented in the `README.md`
 
 ### Running the Project Locally
 
@@ -79,10 +81,10 @@ Access the project at [http://localhost:3000](http://localhost:3000).
 
 All contributions must include tests to ensure project stability. Please follow these principles:
 
-* Write unit tests for new features and bug fixes
-* Use a testing framework appropriate to the language and project
-* Ensure all tests pass before opening a pull request
-* Include test instructions in the `README.md`
+- Write unit tests for new features and bug fixes
+- Use a testing framework appropriate to the language and project
+- Ensure all tests pass before opening a pull request
+- Include test instructions in the `README.md`
 
 ## Commit Messages
 
@@ -94,13 +96,13 @@ The use of emojis in commit messages is encouraged to make the messages more eng
 
 All contributions should follow the [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branching model. The main branches are:
 
-* `main`: The main branch for the project. This branch should always be stable and deployable.
-* `develop`: The development branch for the project. All feature branches should be merged into this branch.
-* `feature/*`: Feature branches for new functionality. These branches should be merged into the `develop` branch.
-* `hotfix/*`: Hotfix branches for critical bug fixes. These branches should be merged into the `main` and `develop` branches.
-* `release/*`: Release branches for preparing a new release. These branches should be merged into the `main` and `develop` branches.
-* `support/*`: Support branches for long-term support. These branches should be merged into the `main` branch.
-* `docs/*`: Documentation branches for updating the documentation. These branches should be merged into the `main` branch.
+- `main`: The main branch for the project. This branch should always be stable and deployable.
+- `develop`: The development branch for the project. All feature branches should be merged into this branch.
+- `feature/*`: Feature branches for new functionality. These branches should be merged into the `develop` branch.
+- `hotfix/*`: Hotfix branches for critical bug fixes. These branches should be merged into the `main` and `develop` branches.
+- `release/*`: Release branches for preparing a new release. These branches should be merged into the `main` and `develop` branches.
+- `support/*`: Support branches for long-term support. These branches should be merged into the `main` branch.
+- `docs/*`: Documentation branches for updating the documentation. These branches should be merged into the `main` branch.
 
 ## Archiving
 

@@ -10,6 +10,7 @@ last-update:
   date: 2025-07-31
   author: xx, xx, xx
 ---
+
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
 
 # Charte de l'espace [nom de l'espace]

@@ -5,11 +5,12 @@ sidebar_label: Textile
 sidebar_position: 5
 description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace textile du DeVinci Fablab.
 slug: textile-space-charter
-tags: [charte, sécurité, rangement]
+tags: [charter, safety, storage]
 last_update:
   date: 2025-07-31
   author: Eliott A. Roussille, Lenday Stawarski, Rebecca Levy, Sherylann Wilthien
 ---
+
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
 
 # Charte de l'espace textile

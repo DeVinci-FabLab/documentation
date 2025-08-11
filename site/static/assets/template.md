@@ -8,6 +8,7 @@ last_update:
   date: 2000-02-26
   author: author
 ---
+
 # Subject
 
 > This is a template for a subject.

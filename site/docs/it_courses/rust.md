@@ -3,7 +3,7 @@ title: Rust - les bases
 sidebar_position: 5
 description: Un guide pour découvrir les fondamentaux de Rust.
 slug: rust
-tags: [formation, info, rust]
+tags: [course, info, rust]
 last_update:
   date: 2024-02-01
   author: Urbain Lantrès (UrbsKali)
@@ -109,7 +109,7 @@ Rust a besoin de point virgule à la fin de chaque ligne pour séparer les instr
 
 ### Macro ? Késako ?
 
-Une macro est une instruction qui termine par ! (ex : ```println!("hehe boi")```), ce n'est pas une fonction classique, mais pas loin
+Une macro est une instruction qui termine par ! (ex : `println!("hehe boi")`), ce n'est pas une fonction classique, mais pas loin
 
 ### Point d'entrée du programme
 

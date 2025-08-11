@@ -3,7 +3,7 @@ title: C# pour Visual Studio Code
 sidebar_position: 2
 description: Ce tutoriel vous aidera à configurer votre environnement de développement pour C# avec Visual Studio Code.
 slug: csharp-on-vscode
-tags: [formation, info, csharp]
+tags: [course, info, csharp]
 last_update:
   date: 2024-05-01
   author: Yann M. Vidamment (MorganKryze)
@@ -73,7 +73,7 @@ brew install --cask visual-studio-code
 
 5. Cliquez sur `File` > `Auto Save` pour activer l'enregistrement automatique.
 
-## Étape 3 : Installer l'extension C #
+## Étape 3 : Installer l'extension C\#
 
 L'extension C# pour Visual Studio Code ajoute la prise en charge de C# à Visual Studio Code, avec notamment la coloration syntaxique, IntelliSense (auto-complétion) et le débogage.
 

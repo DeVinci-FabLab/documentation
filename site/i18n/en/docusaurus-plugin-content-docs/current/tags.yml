@@ -1,0 +1,49 @@
+charter:
+  label: 'Charter'
+  permalink: '/charter'
+  description: 'Docs related to charters and guidelines for various spaces'
+
+course:
+  label: 'Course'
+  permalink: '/course'
+  description: 'Docs related to training and courses offered'
+
+csharp:
+  label: 'C#'
+  permalink: '/csharp'
+  description: 'Docs related to C# programming language and its applications'
+
+docker:
+  label: 'Docker'
+  permalink: '/docker'
+  description: 'Docs related to Docker and containerization technologies'
+
+info:
+  label: 'Info'
+  permalink: '/info'
+  description: 'Docs related to informatics and technology'
+
+rust:
+  label: 'Rust'
+  permalink: '/rust'
+  description: 'Docs related to Rust programming language and its applications'
+
+safety:
+  label: 'Safety'
+  permalink: '/safety'
+  description: 'Docs related to safety guidelines and best practices'
+
+sql:
+  label: 'SQL'
+  permalink: '/sql'
+  description: 'Docs related to SQL databases and query languages'
+
+storage:
+  label: 'Storage'
+  permalink: '/storage'
+  description: 'Docs related to storage solutions and best practices'
+
+waste:
+  label: 'Waste'
+  permalink: '/waste'
+  description: 'Docs related to waste management and recycling practices'

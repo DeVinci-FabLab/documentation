@@ -3,11 +3,12 @@ title: Formation Sécurité, Rangement et Gaspillage (SRG)
 sidebar_position: 3
 description: Formation de base du DeVinci Fablab sur les règles de sécurité, de rangement et d'utilisation responsable des ressources.
 slug: srg
-tags: [formation, sécurité, rangement, gaspillage]
+tags: [course, safety, storage, waste]
 last_update:
   date: 2025-08-05
   author: Association DeVinci Fablab
 ---
+
 import { Info, AlertTriangle, Trash2, Boxes, Lightbulb, FileText } from 'lucide-react';
 
 # Formation Sécurité, Rangement et Gaspillage (SRG)

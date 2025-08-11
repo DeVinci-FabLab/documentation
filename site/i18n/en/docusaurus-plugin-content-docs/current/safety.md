@@ -76,14 +76,20 @@ In case of emergency, here are the numbers you should call :
 - **Ambulance** : 15
 - **Poison control center** : 01 40 05 48 48
 
----
-
 [^1]: ISO 13732-1:2006 / 7010:W017, hot surfaces.
+
 [^2]: ISO 7010:M009, hand protection.
+
 [^3]: ISO 16000-1:2004 / 7010:W016, indoor air quality and toxic fumes.
+
 [^4]: ISO 7010:M016, compulsory mask.
+
 [^5]: ISO 7010:W001, general risk of projections from metal or wood bits.
+
 [^6]: ISO 7010:M004, compulsory glasses.
+
 [^7]: ISO 7010:W004, laser radiation hazard.
+
 [^8]: ISO 7010:M006, compulsory opaque protective goggles.
+
 [^9]: ISO 7010:W024, hand crushing hazard due to rotary engine.

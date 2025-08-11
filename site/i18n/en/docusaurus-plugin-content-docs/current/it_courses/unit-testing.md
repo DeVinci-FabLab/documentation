@@ -155,6 +155,7 @@ namespace MyNamespace.Tests
         }
     }
 }
+```
 
 ## Writing Unit Tests with MSTest
 
@@ -227,32 +228,32 @@ How you run tests depends on your development environment:
 - **Isolation**: Tests should not depend on each other.
 - **Limit side effects**: Clean up resources if needed (`[TestCleanup]`, `[TestInitialize]`, `[AssemblyInitialize]`, `[ClassInitialize]`, …).
 
-    ```csharp
-    private List<string> _list;
+  ```csharp
+  private List<string> _list;
 
-    [TestInitialize]
-    public void Setup()
-    {
-        // Common arrange for all tests: initialization
-        _list = new List<string> { "A", "B" };
-    }
+  [TestInitialize]
+  public void Setup()
+  {
+      // Common arrange for all tests: initialization
+      _list = new List<string> { "A", "B" };
+  }
 
-    [TestCleanup]
-    public void Cleanup()
-    {
-        // Cleanup after each test
-        _list.Clear();
-    }
+  [TestCleanup]
+  public void Cleanup()
+  {
+      // Cleanup after each test
+      _list.Clear();
+  }
 
-    [TestMethod]
-    public void List_ShouldContainA()
-    {
-        // Act
-        bool containsA = _list.Contains("A");
-        // Assert
-        Assert.IsTrue(containsA);
-    }
-    ```
+  [TestMethod]
+  public void List_ShouldContainA()
+  {
+      // Act
+      bool containsA = _list.Contains("A");
+      // Assert
+      Assert.IsTrue(containsA);
+  }
+  ```
 
 ## Common Mistakes
 

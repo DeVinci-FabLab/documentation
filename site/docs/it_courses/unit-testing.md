@@ -3,7 +3,7 @@ title: Tests unitaires (exemples en C# avec MSTest)
 sidebar_position: 6
 description: Un guide pour comprendre les fondamentaux des tests unitaires, illustré en C# avec MSTest, mais applicable à tous les langages.
 slug: unit-testing
-tags: [formation, info, csharp]
+tags: [course, info, csharp]
 last_update:
   date: 2025-07-03
   author: Eliott A. Roussille
@@ -230,32 +230,32 @@ L'exécution des tests dépend de votre environnement de développement :
 - **Isolation** : Les tests ne doivent pas dépendre les uns des autres.
 - **Limiter les effets de bord** : Nettoyer les ressources si besoin (`[TestCleanup]`, `[TestInitialize]`, `[AssemblyInitialize]`, `[ClassInitialize]`, …).
 
-    ```csharp
-    private List<string> _list;
+  ```csharp
+  private List<string> _list;
 
-    [TestInitialize]
-    public void Setup()
-    {
-        // Arrange commun à tous les tests : initialisation
-        _list = new List<string> { "A", "B" };
-    }
+  [TestInitialize]
+  public void Setup()
+  {
+      // Arrange commun à tous les tests : initialisation
+      _list = new List<string> { "A", "B" };
+  }
 
-    [TestCleanup]
-    public void Cleanup()
-    {
-        // Nettoyage après chaque test
-        _list.Clear();
-    }
+  [TestCleanup]
+  public void Cleanup()
+  {
+      // Nettoyage après chaque test
+      _list.Clear();
+  }
 
-    [TestMethod]
-    public void List_ShouldContainA()
-    {
-        // Act
-        bool containsA = _list.Contains("A");
-        // Assert
-        Assert.IsTrue(containsA);
-    }
-    ```
+  [TestMethod]
+  public void List_ShouldContainA()
+  {
+      // Act
+      bool containsA = _list.Contains("A");
+      // Assert
+      Assert.IsTrue(containsA);
+  }
+  ```
 
 ## Erreurs courantes
 

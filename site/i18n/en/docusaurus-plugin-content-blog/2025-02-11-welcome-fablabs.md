@@ -2,7 +2,7 @@
 title: Discovering Fablabs, 3D Printing, and Embedded AI
 description: An introduction to Fablabs, 3D printing, and embedded AI.
 authors: [yann_v]
-tags: [fablab, ai, 3d printing, robotics]
+tags: [fablab, ai, 3d-printing, robotics]
 hide_table_of_contents: false
 slug: welcome-fablabs
 ---
@@ -47,16 +47,16 @@ Here is a summary table of the different types of filaments used in 3D printing:
 
 | Material          | Type      | Easy to Print | Resistant | Durable | Requires Enclosure | Flexible | UV Resistant |
 | ----------------- | --------- | :-----------: | :-------: | :-----: | :----------------: | :------: | :----------: |
-| **PLA**           | Standard  |       ✔️       |     ✔️     |    ✔️    |         ❌          |    ❌     |      ❌       |
-| **PETG**          | Standard  |       ✔️       |     ✔️     |    ✔️    |         ✔️          |    ❌     |      ❌       |
-| **ABS**           | Standard  |       ✔️       |     ✔️     |    ✔️    |         ✔️          |    ❌     |      ❌       |
-| **Flex**          | Technical |       ✔️       |     ✔️     |    ✔️    |         ❌          |    ✔️     |      ❌       |
-| **Nylon**         | Technical |       ✔️       |     ✔️     |    ✔️    |         ✔️          |    ❌     |      ❌       |
-| **ASA**           | Technical |       ✔️       |     ✔️     |    ✔️    |         ✔️          |    ❌     |      ✔️       |
-| **Polycarbonate** | Technical |       ✔️       |     ✔️     |    ✔️    |         ✔️          |    ❌     |      ❌       |
-| **Carbon Fiber**  | Composite |       ✔️       |     ✔️     |    ❌    |         ❌          |    ❌     |      ❌       |
-| **Metal**         | Composite |       ✔️       |     ✔️     |    ❌    |         ❌          |    ❌     |      ❌       |
-| **Wood**          | Composite |       ✔️       |     ❌     |    ❌    |         ❌          |    ❌     |      ❌       |
+| **PLA**           | Standard  |      ✔️       |    ✔️     |   ✔️    |         ❌         |    ❌    |      ❌      |
+| **PETG**          | Standard  |      ✔️       |    ✔️     |   ✔️    |         ✔️         |    ❌    |      ❌      |
+| **ABS**           | Standard  |      ✔️       |    ✔️     |   ✔️    |         ✔️         |    ❌    |      ❌      |
+| **Flex**          | Technical |      ✔️       |    ✔️     |   ✔️    |         ❌         |    ✔️    |      ❌      |
+| **Nylon**         | Technical |      ✔️       |    ✔️     |   ✔️    |         ✔️         |    ❌    |      ❌      |
+| **ASA**           | Technical |      ✔️       |    ✔️     |   ✔️    |         ✔️         |    ❌    |      ✔️      |
+| **Polycarbonate** | Technical |      ✔️       |    ✔️     |   ✔️    |         ✔️         |    ❌    |      ❌      |
+| **Carbon Fiber**  | Composite |      ✔️       |    ✔️     |   ❌    |         ❌         |    ❌    |      ❌      |
+| **Metal**         | Composite |      ✔️       |    ✔️     |   ❌    |         ❌         |    ❌    |      ❌      |
+| **Wood**          | Composite |      ✔️       |    ❌     |   ❌    |         ❌         |    ❌    |      ❌      |
 
 ### The AMS System by Bambulab
 
@@ -160,7 +160,7 @@ Embedded AI refers to **computer systems integrated** into everyday objects, suc
 
 ### Difference Between a Microcontroller and a Microcomputer
 
-| Characteristic             | Microcontroller ⚙️                                                                 | Microcomputer 💻                                                                   |
+| Characteristic             | Microcontroller ⚙️                                                                | Microcomputer 💻                                                                  |
 | -------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | **Definition**             | An integrated circuit with a processor, memory, and peripherals on a single chip. | A small computer with a processor, memory, operating system, and expansion ports. |
 | **Operating System**       | None (runs a single program in a loop)                                            | Yes (e.g., Linux on Raspberry Pi)                                                 |

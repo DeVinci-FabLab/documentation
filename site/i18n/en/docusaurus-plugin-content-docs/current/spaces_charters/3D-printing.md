@@ -5,11 +5,12 @@ sidebar_label: 3D Printing
 sidebar_position: 1
 description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab 3D printing space.
 slug: 3D-printing-space-charter
-tags: [charter, security, storage]
+tags: [charter, safety, storage]
 last_update:
   date: 2025-08-01
   author: Eliott A. Roussille, François Teynier
 ---
+
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
 
 # 3D Printing Space Charter
