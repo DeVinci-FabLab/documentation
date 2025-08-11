@@ -1,5 +1,5 @@
 ---
-title: Safety, Storage and Waste Training (SSW)
+title: Safety, Storage and Waste (SSW)
 sidebar_position: 3
 description: Basic training for the DeVinci Fablab on safety rules, storage, and responsible use of resources.
 slug: srg
@@ -11,9 +11,9 @@ last_update:
 
 import { Info, AlertTriangle, Trash2, Boxes, Lightbulb, FileText } from 'lucide-react';
 
-# Safety, Storage and Waste Training (SSW)
+# Safety, Storage and Waste (SSW) : Guide to Good Practices in the Fablab
 
-> Welcome to the **SSW** training (Safety, Storage, Waste), which presents the basics of how the DeVinci Fablab operates.
+> Welcome to the **SSW** training (Safety, Storage, Waste), which presents the basics of how the DeVinci Fablab operates and the best practices to adopt in the space.
 
 ![PPE](/assets/docs/srg/ppe-icons.jpg)
 
