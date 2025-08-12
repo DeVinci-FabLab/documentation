@@ -162,7 +162,3 @@ Retrouvez les règles spécifiques à chaque espace du Fablab :
 - [Charte Textile](spaces_charters/textile.md)
 
 Merci de faire du DeVinci Fablab un endroit sûr, durable et collaboratif !
-
----
-
-Dernière mise à jour : Août 2025

@@ -401,6 +401,4 @@ Use the heap for types like `String`, vectors, etc., since stack allocations req
 
 ---
 
-Last update: Feb. 2024
-
 Author: [Urbain Lantrès](https://github.com/UrbsKali)

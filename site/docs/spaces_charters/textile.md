@@ -77,6 +77,4 @@ Merci de respecter ces consignes pour que cet espace reste accessible et agréab
 
 ---
 
-Dernière mise à jour : Juillet 2025
-
 Auteur·ice·s : [Eliott A. Roussille](https://github.com/aust-1), Lenday Stawarski, [Rebecca Levy](https://www.linkedin.com/in/rebecca-levy-a010a7201), [Sherylann Wilthien](https://www.linkedin.com/in/sherylann-wilthien-a9b58a253)

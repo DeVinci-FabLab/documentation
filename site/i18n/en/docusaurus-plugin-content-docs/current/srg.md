@@ -162,7 +162,3 @@ Find the specific rules for each Fablab space:
 - [Textile Charter](spaces_charters/textile.md)
 
 Thank you for making the DeVinci Fablab a safe, sustainable, and collaborative place!
-
----
-
-Last update: Aug. 2025

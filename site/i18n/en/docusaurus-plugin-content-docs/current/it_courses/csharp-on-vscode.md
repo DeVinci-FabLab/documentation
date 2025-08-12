@@ -117,6 +117,4 @@ Finally, open a C# file and press `Ctrl+S` (`Cmd+S` on MacOS) to format the docu
 
 ---
 
-Last update: May 2024
-
 Author: [Yann M. Vidamment](https://github.com/MorganKryze)

@@ -150,6 +150,4 @@ Vous devriez voir « 1 John Doe » s'afficher dans la console.
 
 ---
 
-Dernière mise à jour : Mai 2024
-
 Auteur : [Yann M. Vidamment](https://github.com/MorganKryze)

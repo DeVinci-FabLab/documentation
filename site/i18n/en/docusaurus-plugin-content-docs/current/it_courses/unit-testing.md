@@ -400,6 +400,4 @@ public class PlayerTests
 
 ---
 
-Last update: July. 2025
-
 Author: [Eliott A. Roussille](https://github.com/aust-1)

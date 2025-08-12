@@ -131,6 +131,10 @@
     font-size: 1.75rem;
   }
 
+  .markdown hr {
+    background-color: var(--ifm-color-primary);
+  }
+
   /* == == == Links in markdown == == == */
   .markdown a {
     color: var(--fab-blue);

@@ -84,6 +84,4 @@ Thank you for respecting these guidelines so that this space remains accessible 
 
 ---
 
-Last update: July. 2025
-
 Authors: [Dimitry Siebert](https://www.linkedin.com/in/dimitry-siebert-%F0%9F%90%B3-6a28aa256), [Eliott A. Roussille](https://github.com/aust-1), François Teynier, [Hugo Degioanni](https://www.linkedin.com/in/hdegioanni)

@@ -5,7 +5,7 @@ description: This learning material will let you create and host a static websit
 slug: csharp-docs
 tags: [course, info, csharp]
 last_update:
-  date: 2024-05-01
+  date: 2024-04-30
   author: Yann M. Vidamment (MorganKryze)
 ---
 
@@ -434,7 +434,5 @@ In your github repository description, click on "Edit" then for the url select t
 - [DocFX markdown support](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)
 
 ---
-
-Last update: May. 2024
 
 Author: [Yann M. Vidamment](https://github.com/MorganKryze)

@@ -154,6 +154,4 @@ Cependant, pour effacer les données persistantes, pensez à supprimer le réper
 
 ---
 
-Dernière mise à jour : Mai 2024
-
 Auteur : [Yann M. Vidamment](https://github.com/MorganKryze)

@@ -80,6 +80,4 @@ Merci de respecter ces consignes pour que cet espace reste accessible et agréab
 
 ---
 
-Dernière mise à jour : Juillet 2025
-
 Auteur·ice·s : [xx](https://example.com), [xx](https://example.com), [xx](https://example.com)

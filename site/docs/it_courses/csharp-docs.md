@@ -5,7 +5,7 @@ description: Ce cours vous permettra de créer et héberger un site web statique
 slug: csharp-docs
 tags: [course, info, csharp]
 last_update:
-  date: 2024-05-01
+  date: 2024-04-30
   author: Yann M. Vidamment (MorganKryze)
 ---
 
@@ -434,7 +434,5 @@ Dans la description de votre dépôt GitHub, cliquez sur "Edit" puis pour l'URL 
 - [Support Markdown dans DocFX](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)
 
 ---
-
-Dernière mise à jour : Mai 2024
 
 Auteur : [Yann M. Vidamment](https://github.com/MorganKryze)

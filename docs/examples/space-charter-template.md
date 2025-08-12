@@ -80,6 +80,4 @@ Thank you for respecting these guidelines so that this space remains accessible 
 
 ---
 
-Last update: Aug. 2025
-
 Authors: [xx](https://example.com), [xx](https://example.com), [xx](https://example.com)

@@ -83,6 +83,4 @@ Thank you for respecting these guidelines so that this space remains accessible 
 
 ---
 
-Last update: Aug. 2025
-
 Authors: [Eliott A. Roussille](https://github.com/aust-1), [Hugo Degioanni](https://www.linkedin.com/in/hdegioanni), [Urbain Lantrès](https://github.com/UrbsKali)

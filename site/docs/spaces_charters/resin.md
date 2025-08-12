@@ -8,7 +8,11 @@ slug: resin-space-charter
 tags: [charter, safety, storage]
 last_update:
   date: 2025-07-31
-  author: Dimitry Siebert, Eliott A. Roussille, François Teynier, Hugo Degioanni
+  author: Dimitry Siebert, Eliott A. Roussille, François Teynier et Hugo Degioanni
+additionalContributors:
+  - login: github-bot
+    html_url: https://github.com/github-bot
+    avatar_url: https://avatars.githubusercontent.com/u/6031226?v=4
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
@@ -83,7 +87,5 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 Merci de respecter ces consignes pour que cet espace reste accessible et agréable à utiliser pour tout le monde !
 
 ---
-
-Dernière mise à jour : Juillet 2025
 
 Auteurs : [Dimitry Siebert](https://www.linkedin.com/in/dimitry-siebert-%F0%9F%90%B3-6a28aa256), [Eliott A. Roussille](https://github.com/aust-1), François Teynier, [Hugo Degioanni](https://www.linkedin.com/in/hdegioanni)

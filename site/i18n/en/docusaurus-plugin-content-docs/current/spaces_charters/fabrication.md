@@ -79,6 +79,4 @@ Thank you for respecting these guidelines so that this space remains accessible 
 
 ---
 
-Last update: Aug. 2025
-
 Author: [Eliott A. Roussille](https://github.com/aust-1)

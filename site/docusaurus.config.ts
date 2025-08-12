@@ -8,23 +8,9 @@ const config: Config = {
   title: "DVFL Documentation",
   favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
   url: "http://localhost:3000",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "DeVinci Fablab",
-  projectName: "Documentation",
-
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  onBrokenAnchors: "warn",
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "fr",
     locales: ["fr", "en"],
@@ -44,20 +30,15 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
-          editUrl: ({ locale, version, docPath }) => {
-            const repo = "https://github.com/DeVinci-FabLab/documentation/";
-            if (locale === "en") {
-              return `${repo}/edit/main/site/i18n/en/docusaurus-plugin-content-docs/${version}/${docPath}`;
-            }
-            return `${repo}/edit/main/site/docs/${docPath}`;
-          },
+          editUrl:
+            "https://github.com/DeVinci-FabLab/documentation/tree/main/site",
+          editLocalizedFiles: true,
+          showLastUpdateTime: true,
         },
         blog: {
-          // Add blog configuration
-          showReadingTime: true,
-          // Optional: change path if needed
+          routeBasePath: "workshops",
           path: "blog",
-          // Make sure i18n is enabled for blog
+          showReadingTime: true,
           blogTitle: "Workshops",
           blogSidebarTitle: "All workshops",
           blogSidebarCount: "ALL",
@@ -94,7 +75,7 @@ const config: Config = {
           label: "Documentation",
         },
         {
-          to: "blog",
+          to: "workshops",
           position: "left",
           label: "Workshops",
         },
@@ -171,3 +152,5 @@ const config: Config = {
 };
 
 export default config;
+
+//TODO: faire une homepage ? [exemple](https://forge.apps.education.fr/eric.autant/squelettedocusaurus/-/blob/main/src/components/HomepageFeatures/index.js?ref_type=heads)

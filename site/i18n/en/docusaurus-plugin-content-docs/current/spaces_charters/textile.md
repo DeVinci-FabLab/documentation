@@ -77,6 +77,4 @@ Thank you for respecting these guidelines so that this space remains accessible 
 
 ---
 
-Last update: July. 2025
-
 Authors: [Eliott A. Roussille](https://github.com/aust-1), Lenday Stawarski, [Rebecca Levy](https://www.linkedin.com/in/rebecca-levy-a010a7201), [Sherylann Wilthien](https://www.linkedin.com/in/sherylann-wilthien-a9b58a253)

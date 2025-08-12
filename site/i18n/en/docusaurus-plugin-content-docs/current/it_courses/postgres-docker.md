@@ -156,6 +156,4 @@ Go through the steps if you update the `init.sql` file with new data.
 
 ---
 
-Last update: May. 2024
-
 Author: [Yann M. Vidamment](https://github.com/MorganKryze)

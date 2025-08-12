@@ -79,6 +79,4 @@ Merci de respecter ces consignes pour que cet espace reste accessible et agréab
 
 ---
 
-Dernière mise à jour : Août 2025
-
 Auteur : [Eliott A. Roussille](https://github.com/aust-1)

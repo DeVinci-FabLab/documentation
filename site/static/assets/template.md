@@ -49,6 +49,4 @@ A potential danger for SubSubject 2.
 
 ---
 
-Last update: Month. Year
-
 Author: John DOE

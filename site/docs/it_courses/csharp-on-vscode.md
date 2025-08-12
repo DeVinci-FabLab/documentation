@@ -117,6 +117,4 @@ Enfin, ouvrez un fichier C# et appuyez sur `Ctrl+S` (`Cmd+S` sur macOS) pour for
 
 ---
 
-Dernière mise à jour : Mai 2024
-
 Auteur : [Yann M. Vidamment](https://github.com/MorganKryze)

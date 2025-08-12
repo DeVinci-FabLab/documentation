@@ -423,6 +423,4 @@ On utilise donc le Heap, et l'allocateur mémoire doit trouver un espace libre o
 
 ---
 
-Dernière mise à jour : Février 2024
-
 Auteur : [Urbain Lantrès](https://github.com/UrbsKali)
