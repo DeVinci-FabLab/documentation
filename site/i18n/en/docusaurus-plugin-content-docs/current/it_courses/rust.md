@@ -7,6 +7,10 @@ tags: [course, info, rust]
 last_update:
   date: 2024-02-01
   author: Urbain Lantrès (UrbsKali)
+additional_contributors:
+  - username: Urbain Lantrès
+    html_url: https://github.com/UrbsKali
+    avatar_url: https://github.com/UrbsKali.png
 ---
 
 # Rust - Basics
@@ -398,7 +402,3 @@ Use the heap for types like `String`, vectors, etc., since stack allocations req
 - [Video version](https://www.youtube.com/playlist?list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8)
 - [Understanding memory](https://www.youtube.com/watch?v=_8-ht2AKyH4)
 - [FreeCodeCamp Full Rust Course](https://www.youtube.com/watch?v=BpPEoZW5IiY)
-
----
-
-Author: [Urbain Lantrès](https://github.com/UrbsKali)

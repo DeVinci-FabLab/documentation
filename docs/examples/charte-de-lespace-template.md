@@ -9,6 +9,15 @@ tags: [charte, sécurité, rangement]
 last-update:
   date: 2025-07-31
   author: xx, xx, xx
+show_git_contributors: false
+additional_contributors:
+  - username: xx
+    html_url: https://example.com/xx
+    avatar_url: https://example.com/xx.png
+  - username: xx
+    html_url: https://example.com/xx
+    avatar_url: https://example.com/xx.png
+  - username: xx
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
@@ -71,13 +80,9 @@ Pas de **gras**.
 
 ## <Phone size={32} /> Contacts
 
-| Rôle ou fonction   | Nom        | Moyen de contact |
-| ------------------ | ---------- | ---------------- |
-| Responsable espace | Prénom NOM | Discord          |
-| Référent technique | Prénom NOM | Discord          |
+| Rôle ou fonction   | Nom        | Moyen de contact (discord) |
+| ------------------ | ---------- | -------------------------- |
+| Responsable espace | Prénom NOM | Discord                    |
+| Référent technique | Prénom NOM | Discord                    |
 
 Merci de respecter ces consignes pour que cet espace reste accessible et agréable à utiliser pour tout le monde !
-
----
-
-Auteur·ice·s : [xx](https://example.com), [xx](https://example.com), [xx](https://example.com)

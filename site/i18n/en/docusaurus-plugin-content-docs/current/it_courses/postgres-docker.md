@@ -7,6 +7,10 @@ tags: [course, info, sql, docker]
 last_update:
   date: 2024-05-01
   author: Yann M. Vidamment (MorganKryze)
+additional_contributors:
+  - username: Yann M. Vidamment (MorganKryze)
+    html_url: https://github.com/MorganKryze
+    avatar_url: https://github.com/MorganKryze.png
 ---
 
 # PostgreSQL with Docker
@@ -153,7 +157,3 @@ Go through the steps if you update the `init.sql` file with new data.
 
 - [PostgreSQL commands](https://tomcam.github.io/postgres/): a list of PostgreSQL commands and good practices.
 - [Docker Compose](https://docs.docker.com/compose/): official documentation for Docker Compose.
-
----
-
-Author: [Yann M. Vidamment](https://github.com/MorganKryze)

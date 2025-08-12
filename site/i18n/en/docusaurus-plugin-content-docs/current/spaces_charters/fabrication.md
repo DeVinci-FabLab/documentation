@@ -9,6 +9,11 @@ tags: [charter, safety, storage]
 last_update:
   date: 2025-08-04
   author: Eliott A. Roussille
+show_git_contributors: false
+additional_contributors:
+  - username: Eliott A. Roussille
+    html_url: https://www.linkedin.com/in/eliott-roussille
+    avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGJInAV0qQonQ/profile-displayphoto-shrink_400_400/B4DZZZ3PrjH4Ag-/0/1745264377148?e=1758153600&v=beta&t=qUIJD-O8iwugtWxnDqAeRsp_gwPM_281yS1PFUg00Z8
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
@@ -70,13 +75,9 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 ## <Phone size={32} /> Contacts
 
-| Role or Function   | Name               | Contact Method |
-| ------------------ | ------------------ | -------------- |
-| Space Manager      | Alexandre COURRIEU | @ammon6421     |
-| Technical Referent | Maxime FROMONT     | @palmito0496   |
+| Role or Function   | Name               | Contact Method (discord) |
+| ------------------ | ------------------ | ------------------------ |
+| Space Manager      | Alexandre COURRIEU | @ammon6421               |
+| Technical Referent | Maxime FROMONT     | @palmito0496             |
 
 Thank you for respecting these guidelines so that this space remains accessible and pleasant for everyone!
-
----
-
-Author: [Eliott A. Roussille](https://github.com/aust-1)

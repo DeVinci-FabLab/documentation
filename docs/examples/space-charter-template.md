@@ -9,6 +9,15 @@ tags: [charter, safety, storage]
 last_update:
   date: 2025-07-31
   author: xx, xx, xx
+show_git_contributors: false
+additional_contributors:
+  - username: xx
+    html_url: https://example.com/xx
+    avatar_url: https://example.com/xx.png
+  - username: xx
+    html_url: https://example.com/xx
+    avatar_url: https://example.com/xx.png
+  - username: xx
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
@@ -71,13 +80,9 @@ No **bold** text.
 
 ## <Phone size={32} /> Contacts
 
-| Role or Function   | Name           | Contact Method |
-| ------------------ | -------------- | -------------- |
-| Space Manager      | Firstname NAME | Discord        |
-| Technical Referent | Firstname NAME | Discord        |
+| Role or Function   | Name           | Contact Method (discord) |
+| ------------------ | -------------- | ------------------------ |
+| Space Manager      | Firstname NAME | Discord                  |
+| Technical Referent | Firstname NAME | Discord                  |
 
 Thank you for respecting these guidelines so that this space remains accessible and pleasant for everyone!
-
----
-
-Authors: [xx](https://example.com), [xx](https://example.com), [xx](https://example.com)

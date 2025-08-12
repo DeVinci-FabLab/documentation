@@ -7,6 +7,10 @@ tags: [course, info, csharp]
 last_update:
   date: 2024-05-01
   author: Yann M. Vidamment (MorganKryze)
+additional_contributors:
+  - username: Yann M. Vidamment (MorganKryze)
+    html_url: https://github.com/MorganKryze
+    avatar_url: https://github.com/MorganKryze.png
 ---
 
 # C# to PostgreSQL
@@ -147,7 +151,3 @@ You should see "1 John Doe" displayed in the console.
 - [Npgsql documentation](https://www.npgsql.org/doc/index.html)
 - [PostgreSQL documentation](https://www.postgresql.org/docs/current/index.html)
 - [Learn SQL](https://roadmap.sh/sql)
-
----
-
-Author: [Yann M. Vidamment](https://github.com/MorganKryze)

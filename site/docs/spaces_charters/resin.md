@@ -9,10 +9,18 @@ tags: [charter, safety, storage]
 last_update:
   date: 2025-07-31
   author: Dimitry Siebert, Eliott A. Roussille, François Teynier et Hugo Degioanni
-additionalContributors:
-  - login: github-bot
-    html_url: https://github.com/github-bot
-    avatar_url: https://avatars.githubusercontent.com/u/6031226?v=4
+show_git_contributors: false
+additional_contributors:
+  - username: Dimitry Siebert
+    html_url: https://www.linkedin.com/in/dimitry-siebert-%F0%9F%90%B3-6a28aa256
+    avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQE9UmZIfg6Xog/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1668107234689?e=1758153600&v=beta&t=SuKEqoQ_NG_LEfyXT-GhggGNKMaOSACNQG2U3f4WmDM
+  - username: Eliott A. Roussille
+    html_url: https://www.linkedin.com/in/eliott-roussille
+    avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGJInAV0qQonQ/profile-displayphoto-shrink_400_400/B4DZZZ3PrjH4Ag-/0/1745264377148?e=1758153600&v=beta&t=qUIJD-O8iwugtWxnDqAeRsp_gwPM_281yS1PFUg00Z8
+  - username: François Teynier
+  - username: Hugo Degioanni
+    html_url: https://www.linkedin.com/in/hdegioanni
+    avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQENW7uGQunWyw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730826037333?e=1758153600&v=beta&t=ie-_iLD-XeHFVs61uWTAFn3kZV2WBJmqVLtBj3AZJ5Q
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
@@ -77,15 +85,11 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 ## <Phone size={32} /> Contacts
 
-| Rôle ou fonction   | Nom                | Moyen de contact |
-| ------------------ | ------------------ | ---------------- |
-| Responsable espace | Maxime FROMONT     | @palmito0496     |
-| Référent technique | Dimitry SIEBERT    | @to00varishch    |
-| Référent technique | Urbain LANTRÈS     | @urbanosaurus    |
-| Référent technique | Alexandre COURRIEU | @ammon6421       |
+| Rôle ou fonction   | Nom                | Moyen de contact (discord) |
+| ------------------ | ------------------ | -------------------------- |
+| Responsable espace | Maxime FROMONT     | @palmito0496               |
+| Référent technique | Dimitry SIEBERT    | @to00varishch              |
+| Référent technique | Urbain LANTRÈS     | @urbanosaurus              |
+| Référent technique | Alexandre COURRIEU | @ammon6421                 |
 
 Merci de respecter ces consignes pour que cet espace reste accessible et agréable à utiliser pour tout le monde !
-
----
-
-Auteurs : [Dimitry Siebert](https://www.linkedin.com/in/dimitry-siebert-%F0%9F%90%B3-6a28aa256), [Eliott A. Roussille](https://github.com/aust-1), François Teynier, [Hugo Degioanni](https://www.linkedin.com/in/hdegioanni)

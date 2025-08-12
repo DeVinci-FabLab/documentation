@@ -7,6 +7,10 @@ tags: [course, info, csharp]
 last_update:
   date: 2024-05-01
   author: Yann M. Vidamment (MorganKryze)
+additional_contributors:
+  - username: Yann M. Vidamment (MorganKryze)
+    html_url: https://github.com/MorganKryze
+    avatar_url: https://github.com/MorganKryze.png
 ---
 
 # C# for Visual Studio Code
@@ -114,7 +118,3 @@ Finally, open a C# file and press `Ctrl+S` (`Cmd+S` on MacOS) to format the docu
 ## To go further
 
 - [Official material](https://code.visualstudio.com/Docs/languages/csharp)
-
----
-
-Author: [Yann M. Vidamment](https://github.com/MorganKryze)

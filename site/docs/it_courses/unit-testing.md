@@ -399,7 +399,3 @@ public class PlayerTests
     }
 }
 ```
-
----
-
-Auteur : [Eliott A. Roussille](https://github.com/aust-1)

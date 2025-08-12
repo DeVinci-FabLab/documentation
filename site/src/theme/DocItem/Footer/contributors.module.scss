@@ -1,0 +1,87 @@
+.contributors {
+  --contrib-ring-gap: 2px;
+  --contrib-ring-thickness: 2px;
+  --contrib-ring-color: var(--ifm-font-color-base);
+  --contrib-gap-color: var(--ifm-background-color);
+
+  margin-block: var(--ifm-spacing-vertical);
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .contributor img {
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+    box-shadow:
+      0 0 0 var(--contrib-ring-gap) var(--contrib-gap-color),
+      0 0 0 calc(var(--contrib-ring-gap) + var(--contrib-ring-thickness))
+        var(--contrib-ring-color);
+
+    transition:
+      box-shadow var(--ifm-transition-fast) var(--ifm-transition-timing-default),
+      transform var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+  }
+
+  .contributor img:hover {
+    box-shadow:
+      0 0 0 var(--contrib-ring-gap) var(--contrib-gap-color),
+      0 0 0 calc(var(--contrib-ring-gap) + var(--contrib-ring-thickness))
+        var(--ifm-pagination-nav-color-hover);
+    transform: scale(1.1);
+  }
+
+  a:focus-visible .contributor img,
+  .contributor a:focus-visible img {
+    box-shadow:
+      0 0 0 var(--contrib-ring-gap) var(--contrib-gap-color),
+      0 0 0 calc(var(--contrib-ring-gap) + var(--contrib-ring-thickness))
+        var(--ifm-color-primary);
+  }
+
+  .contributor figure {
+    margin: 20px 0 0 2px;
+  }
+
+  .caption {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    overflow-wrap: anywhere;
+    hyphens: auto;
+
+    line-height: 1.1;
+    padding-bottom: 0.2em;
+
+    margin-top: 0.35rem;
+    text-align: center;
+    max-width: 74px;
+  }
+
+  a:focus {
+    outline: 0;
+  }
+
+  @media (max-width: 600px) {
+    .wrapper {
+      display: block;
+    }
+  }
+}

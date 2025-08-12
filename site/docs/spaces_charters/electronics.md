@@ -9,6 +9,17 @@ tags: [charter, safety, storage]
 last_update:
   date: 2025-08-04
   author: Eliott A. Roussille, Hugo Degioanni, Urbain Lantrès
+show_git_contributors: false
+additional_contributors:
+  - username: Eliott A. Roussille
+    html_url: https://www.linkedin.com/in/eliott-roussille
+    avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGJInAV0qQonQ/profile-displayphoto-shrink_400_400/B4DZZZ3PrjH4Ag-/0/1745264377148?e=1758153600&v=beta&t=qUIJD-O8iwugtWxnDqAeRsp_gwPM_281yS1PFUg00Z8
+  - username: Hugo Degioanni
+    html_url: https://www.linkedin.com/in/hdegioanni
+    avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQENW7uGQunWyw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730826037333?e=1758153600&v=beta&t=ie-_iLD-XeHFVs61uWTAFn3kZV2WBJmqVLtBj3AZJ5Q
+  - username: Urbain Lantrès
+    html_url: https://github.com/UrbsKali
+    avatar_url: https://github.com/UrbsKali.png
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
@@ -73,14 +84,10 @@ Les composants électroniques et le matériel de prototypage sont disponibles **
 
 ## <Phone size={32} /> Contacts
 
-| Rôle ou fonction   | Nom            | Moyen de contact |
-| ------------------ | -------------- | ---------------- |
-| Responsable espace | Urbain LANTRÈS | @urbanosaurus    |
-| Référent technique | Robin L'HYVER  | @robinmoon       |
-| Référent technique | Hugo DEGIOANNI | @loxa            |
+| Rôle ou fonction   | Nom            | Moyen de contact (discord) |
+| ------------------ | -------------- | -------------------------- |
+| Responsable espace | Urbain LANTRÈS | @urbanosaurus              |
+| Référent technique | Robin L'HYVER  | @robinmoon                 |
+| Référent technique | Hugo DEGIOANNI | @loxa                      |
 
 Merci de respecter ces consignes pour que cet espace reste accessible et agréable à utiliser pour tout le monde !
-
----
-
-Auteurs : [Eliott A. Roussille](https://github.com/aust-1), [Hugo Degioanni](https://www.linkedin.com/in/hdegioanni), [Urbain Lantrès](https://github.com/UrbsKali)

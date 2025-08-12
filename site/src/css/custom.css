@@ -1,5 +1,4 @@
 @layer custom {
-
   :root {
     --fab-orange: #f18904;
     --fab-pink: #d41a5f;
@@ -20,7 +19,7 @@
   }
 
   /* == == == Dark mode == == == */
-  [data-theme='dark'] {
+  [data-theme="dark"] {
     --ifm-color-primary: #fb9c20;
     --ifm-color-primary-dark: #fa9004;
     --ifm-color-primary-darker: #ec8804;
@@ -33,17 +32,13 @@
     --code-background-color: #2e2e32;
   }
 
-  *:not(#docsearch-input):focus {
+  :not(#docsearch-input):focus {
     color: var(--ifm-color-primary);
     outline: 3px solid var(--ifm-color-primary);
   }
 
-  .markdown code {
-    background-color: var(--code-background-color);
-  }
-
   /* == == == DocSearch == == == */
-  [data-theme='light'] .DocSearch {
+  [data-theme="light"] .DocSearch {
     --docsearch-muted-color: var(--ifm-color-secondary-darkest);
     --docsearch-container-background: rgba(94, 100, 112, 0.7);
 
@@ -59,7 +54,7 @@
     --docsearch-footer-background: var(--ifm-color-white);
   }
 
-  [data-theme='dark'] .DocSearch {
+  [data-theme="dark"] .DocSearch {
     --docsearch-muted-color: var(--ifm-color-secondary-darkest);
     --docsearch-container-background: rgba(47, 55, 69, 0.7);
 
@@ -73,19 +68,20 @@
     --docsearch-hit-background: var(--ifm-color-emphasis-100);
 
     --docsearch-footer-background: var(--ifm-background-surface-color);
-    --docsearch-key-gradient: linear-gradient(-26.5deg,
-        var(--ifm-color-emphasis-200) 0%,
-        var(--ifm-color-emphasis-100) 100%);
+    --docsearch-key-gradient: linear-gradient(
+      -26.5deg,
+      var(--ifm-color-emphasis-200) 0%,
+      var(--ifm-color-emphasis-100) 100%
+    );
   }
 
   @layer docusaurus.theme-search-algolia {
-
-    .searchResultItemHeading_sOID a {
+    h2[class^="searchResultItemHeading"] a {
       color: var(--ifm-font-color-base);
       text-decoration: dotted underline;
     }
 
-    .searchResultItemHeading_sOID a:hover {
+    h2[class^="searchResultItemHeading"] a:hover {
       color: var(--fab-orange);
       text-decoration: underline;
     }
@@ -96,82 +92,87 @@
       padding: 0.64px 0.48px;
       border-radius: 3.2px;
     }
-
   }
 
-  /* == == == Markdown headers == == == */
-  .markdown h2 {
-    /* For Icon in header */
-    display: flex;
-    align-items: center;
-    gap: 6.4px;
-    /* Section separator */
-    border-top: 2.35px solid var(--ifm-color-primary);
-    padding-top: 40px;
-  }
+  .markdown {
+    code {
+      background-color: var(--code-background-color);
+    }
 
-  /* override : Delete separator for h2 after header */
-  .markdown header+h2 {
-    border-top: none;
-    padding-top: 0;
-  }
+    important {
+      font-size: 1.75rem;
+    }
 
-  .markdown svg.lucide-file-text,
-  .markdown svg.lucide-triangle-alert,
-  .markdown svg.lucide-square-check-big,
-  .markdown svg.lucide-boxes {
-    margin-top: 2px;
-  }
+    hr {
+      background-color: var(--ifm-color-primary);
+    }
 
-  .markdown svg.lucide-pin {
-    margin-top: 4px;
-  }
+    /* == == == Headers == == == */
+    h2 {
+      /* For Icon in header */
+      display: flex;
+      align-items: center;
+      gap: 6.4px;
+      /* Section separator */
+      border-top: 2.35px solid var(--ifm-color-primary);
+      padding-top: 40px;
+    }
 
-  .markdown important {
-    font-size: 1.75rem;
-  }
+    /* override : Delete separator for h2 after header */
+    header + h2 {
+      border-top: none;
+      padding-top: 0;
+    }
 
-  .markdown hr {
-    background-color: var(--ifm-color-primary);
-  }
+    svg.lucide-file-text,
+    svg.lucide-triangle-alert,
+    svg.lucide-square-check-big,
+    svg.lucide-boxes {
+      margin-top: 2px;
+    }
 
-  /* == == == Links in markdown == == == */
-  .markdown a {
-    color: var(--fab-blue);
-    text-decoration: underline dotted;
-  }
+    svg.lucide-pin {
+      margin-top: 4px;
+    }
 
-  .markdown a:hover {
-    color: var(--fab-pink);
-    text-decoration: underline;
-  }
+    /* == == == Links == == == */
+    a {
+      color: var(--fab-blue);
+      text-decoration: underline dotted;
+    }
 
-  .markdown a:visited,
-  .markdown a:active {
-    color: var(--fab-purple);
-  }
+    a:hover {
+      color: var(--fab-pink);
+      text-decoration: underline;
+    }
 
-  .markdown a:focus {
-    color: var(--ifm-color-primary);
-  }
+    a:visited,
+    a:active {
+      color: var(--fab-purple);
+    }
 
-  .markdown a.hash-link {
-    color: var(--ifm-color-primary);
+    a:focus {
+      color: var(--ifm-color-primary);
+    }
+
+    a.hash-link {
+      color: var(--ifm-color-primary);
+    }
   }
 
   /* == == == GitHub Icon in navbar == == == */
   .header-github-link::before {
-    content: '';
+    content: "";
     width: 24px;
     height: 24px;
     display: flex;
     background-color: var(--ifm-navbar-link-color);
     mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E");
-    transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+    transition: background-color var(--ifm-transition-fast)
+      var(--ifm-transition-timing-default);
   }
 
   .header-github-link:hover::before {
     background-color: var(--ifm-navbar-link-hover-color);
   }
-
 }

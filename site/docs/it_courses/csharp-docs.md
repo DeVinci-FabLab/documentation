@@ -7,6 +7,10 @@ tags: [course, info, csharp]
 last_update:
   date: 2024-04-30
   author: Yann M. Vidamment (MorganKryze)
+additional_contributors:
+  - username: Yann M. Vidamment (MorganKryze)
+    html_url: https://github.com/MorganKryze
+    avatar_url: https://github.com/MorganKryze.png
 ---
 
 # Créez la documentation de votre projet
@@ -432,7 +436,3 @@ Dans la description de votre dépôt GitHub, cliquez sur "Edit" puis pour l'URL 
 - [Documentation utile mais non officielle](https://tehgm.net/blog/docfx-github-actions/)
 - [Commentaires de documentation C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Support Markdown dans DocFX](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)
-
----
-
-Auteur : [Yann M. Vidamment](https://github.com/MorganKryze)

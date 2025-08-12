@@ -452,5 +452,9 @@
   "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
     "message": "Collapse the dropdown",
     "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.DocItem.Footer.Contributors": {
+    "message": "Contributeur·ice·s",
+    "description": "The name of the contributors header"
   }
 }

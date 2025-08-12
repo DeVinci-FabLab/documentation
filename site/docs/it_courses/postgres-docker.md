@@ -7,6 +7,10 @@ tags: [course, info, sql, docker]
 last_update:
   date: 2024-05-01
   author: Yann M. Vidamment (MorganKryze)
+additional_contributors:
+  - username: Yann M. Vidamment (MorganKryze)
+    html_url: https://github.com/MorganKryze
+    avatar_url: https://github.com/MorganKryze.png
 ---
 
 # PostgreSQL avec Docker
@@ -151,7 +155,3 @@ Cependant, pour effacer les données persistantes, pensez à supprimer le réper
 
 - [Commandes PostgreSQL](https://tomcam.github.io/postgres/) : liste de commandes PostgreSQL et bonnes pratiques.
 - [Docker Compose](https://docs.docker.com/compose/) : documentation officielle de Docker Compose.
-
----
-
-Auteur : [Yann M. Vidamment](https://github.com/MorganKryze)

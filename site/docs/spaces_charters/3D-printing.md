@@ -9,6 +9,12 @@ tags: [charter, safety, storage]
 last_update:
   date: 2025-08-01
   author: Eliott A. Roussille, François Teynier
+show_git_contributors: false
+additional_contributors:
+  - username: Eliott A. Roussille
+    html_url: https://www.linkedin.com/in/eliott-roussille
+    avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGJInAV0qQonQ/profile-displayphoto-shrink_400_400/B4DZZZ3PrjH4Ag-/0/1745264377148?e=1758153600&v=beta&t=qUIJD-O8iwugtWxnDqAeRsp_gwPM_281yS1PFUg00Z8
+  - username: François Teynier
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
@@ -63,14 +69,10 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 ## <Phone size={32} /> Contacts
 
-| Rôle ou fonction   | Nom                | Moyen de contact |
-| ------------------ | ------------------ | ---------------- |
-| Responsable espace | Alexandre COURRIEU | @ammon6421       |
-| Référent technique | Maxime FROMONT     | @palmito0496     |
-| Référent technique | François TEYNIER   | @proxy4403       |
+| Rôle ou fonction   | Nom                | Moyen de contact (discord) |
+| ------------------ | ------------------ | -------------------------- |
+| Responsable espace | Alexandre COURRIEU | @ammon6421                 |
+| Référent technique | Maxime FROMONT     | @palmito0496               |
+| Référent technique | François TEYNIER   | @proxy4403                 |
 
 Merci de respecter ces consignes pour que cet espace reste accessible et agréable à utiliser pour tout le monde !
-
----
-
-Auteurs : [Eliott A. Roussille](https://github.com/aust-1), François Teynier
