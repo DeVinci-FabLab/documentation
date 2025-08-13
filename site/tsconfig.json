@@ -4,6 +4,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "jsx": "react",
+    "esModuleInterop": true,
   },
   "exclude": [".docusaurus", "build"]
 }

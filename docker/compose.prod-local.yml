@@ -1,8 +1,8 @@
 services:
   docusaurus-prod-local:
     build:
-      context: .
-      dockerfile: ./Dockerfile
+      context: ..
+      dockerfile: docker/Dockerfile
       target: serve
     restart: unless-stopped
     ports:

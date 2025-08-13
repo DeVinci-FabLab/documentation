@@ -1,14 +1,14 @@
 {
-    "[css]": {
-        "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "explicit"
     },
-    "[markdown]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.markdownlint": "explicit"
-        },
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
-    "markdownlint.config": {
-        "MD033": false
-    }
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "markdownlint.config": {
+    "MD033": false
+  }
 }

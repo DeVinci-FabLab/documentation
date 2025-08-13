@@ -13,7 +13,7 @@ dev:
 
 prod-local:
 	@echo "Targetting production environment with local build"
-	docker compose down -v --remove-orphans
+	docker compose -f docker/compose.dev.yml -f docker/compose.prod-local.yml -f docker/compose.yml down -v --remove-orphans
 	docker compose -f docker/compose.prod-local.yml up -d --build
 	@echo "Docusaurus production build complete"
 	@echo "Access the site at http://localhost:3000"
@@ -21,7 +21,7 @@ prod-local:
 
 prod:
 	@echo "Targetting production environment"
-	docker compose down -v --remove-orphans
+	docker compose -f docker/compose.dev.yml -f docker/compose.prod-local.yml -f docker/compose.yml down -v --remove-orphans
 	docker compose -f docker/compose.yml up -d --build
 	@echo "Docusaurus production build complete"
 	@echo "To stop the server, run 'make stop'"
