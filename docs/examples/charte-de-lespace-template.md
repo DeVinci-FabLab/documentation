@@ -24,12 +24,12 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 # Charte de l'espace [nom de l'espace]
 
-## <FileText size={32} /> Description de l'espace
+## <FileText /> Description de l'espace
 
 - Décrire brièvement à quoi sert cet espace, les activités principales qui s'y déroulent, ainsi que ses spécificités éventuelles.
 - **Gras** légèrement autorisé.
 
-## <TriangleAlert size={32} /> Règles de sécurité
+## <TriangleAlert /> Règles de sécurité
 
 Lister clairement et simplement toutes les règles de sécurité obligatoires à respecter dans cet espace :
 
@@ -39,7 +39,7 @@ Lister clairement et simplement toutes les règles de sécurité obligatoires à
 
 **Gras** au début de toutes les règles.
 
-## <CheckSquare size={32} /> Bonnes pratiques et recommandations
+## <CheckSquare /> Bonnes pratiques et recommandations
 
 Lister les bonnes pratiques à suivre pour préserver le matériel, l'espace, et travailler efficacement :
 
@@ -49,7 +49,7 @@ Lister les bonnes pratiques à suivre pour préserver le matériel, l'espace, et
 
 Un peu de **gras** autorisé.
 
-## <Wrench size={32} /> Matériel à disposition
+## <Wrench /> Matériel à disposition
 
 Décrire succinctement le matériel disponible dans cet espace :
 
@@ -59,7 +59,7 @@ Décrire succinctement le matériel disponible dans cet espace :
 
 Pas de **gras**.
 
-## <Pin size={32} /> Rangement et nettoyage
+## <Pin /> Rangement et nettoyage
 
 Indiquer clairement comment ranger le matériel, nettoyer l'espace après utilisation, et les habitudes à prendre pour maintenir l'espace agréable pour tout le monde :
 
@@ -69,7 +69,7 @@ Indiquer clairement comment ranger le matériel, nettoyer l'espace après utilis
 
 **Gras** dans toutes les consignes.
 
-## <Siren size={32} /> En cas de problème
+## <Siren /> En cas de problème
 
 Préciser la démarche à suivre en cas de problème (incident, matériel cassé, besoin d'assistance) :
 
@@ -78,7 +78,7 @@ Préciser la démarche à suivre en cas de problème (incident, matériel cassé
 
 Pas de **gras**.
 
-## <Phone size={32} /> Contacts
+## <Phone /> Contacts
 
 | Rôle ou fonction   | Nom        | Moyen de contact (discord) |
 | ------------------ | ---------- | -------------------------- |

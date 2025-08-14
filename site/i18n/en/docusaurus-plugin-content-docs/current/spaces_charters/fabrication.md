@@ -20,12 +20,12 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 # Fabrication Space Charter
 
-## <FileText size={32} /> Space Description
+## <FileText /> Space Description
 
 - The manufacturing area is a workshop for **machining**, **assembly**, and **manual or machine-assisted manufacturing** of various projects involving wood, metal, plastic, and composite materials.
 - It includes **manual work areas**, power tools, and conventional machines (drill press, sander, scroll saw, etc.).
 
-## <TriangleAlert size={32} /> Safety Rules
+## <TriangleAlert /> Safety Rules
 
 - **Wearing appropriate PPE** for the activity is mandatory: goggles, mask, ear defenders, gloves (with some exceptions).
 - **Wearing loose clothing or accessories** (scarves, bracelets, long sleeves) is strictly prohibited.
@@ -37,7 +37,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Never wear gloves when using motorized rotary tools.**
 - **Be stable when cutting**: do not cut over a void; use **a vise or a holding device**.
 
-## <CheckSquare size={32} /> Best Practices and Recommendations
+## <CheckSquare /> Best Practices and Recommendations
 
 - Visually check the condition of tools before use (blades, drill bits, abrasives, etc.).
 - Plan the manufacturing steps before starting to avoid errors and accidents.
@@ -48,7 +48,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Use **appropriate holding devices** (vices, clamps) for the parts to be machined.
 - **Tools are self-service**, but must always **be returned to exactly where they came from** (see [SSW](../srg.md)).
 
-## <Wrench size={32} /> Available Equipment
+## <Wrench /> Available Equipment
 
 - Scroll saw
 - Drill press
@@ -59,7 +59,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Consumables: screws, glues, adhesives, abrasives
 - Schrödinger Box: reuse space for unused parts and materials
 
-## <Pin size={32} /> Storage and Cleaning
+## <Pin /> Storage and Cleaning
 
 - **Always clean the work area after use.**
 - **Clean up chips and dust** after cutting or sanding.
@@ -67,13 +67,13 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Never block access** to emergency exits or safety devices.
 - **Turn off, unplug, and secure machines** before leaving the area.
 
-## <Siren size={32} /> In Case of Problem
+## <Siren /> In Case of Problem
 
 - Stop using a machine immediately if it behaves abnormally or makes a suspicious noise.
 - Notify a supervisor or manager if you have any doubts.
 - Never attempt to repair a machine yourself without approval or appropriate training.
 
-## <Phone size={32} /> Contacts
+## <Phone /> Contacts
 
 | Role or Function   | Name               | Contact Method (discord) |
 | ------------------ | ------------------ | ------------------------ |

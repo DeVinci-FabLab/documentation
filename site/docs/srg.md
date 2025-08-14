@@ -17,13 +17,13 @@ import { Info, AlertTriangle, Trash2, Boxes, Lightbulb, FileText } from 'lucide-
 
 ![EPI](/assets/docs/srg/ppe-icons.jpg)
 
-## <Info size={32} /> Objectifs de cette formation
+## <Info /> Objectifs de cette formation
 
 - Utiliser les espaces du DeVinci Fablab dans de bonnes conditions.
 - Connaitre les attentes de l'association vis-à-vis de ses usagers.
 - Adopter une posture responsable, respectueuse et collaborative.
 
-## <AlertTriangle size={32} /> Sécurité
+## <AlertTriangle /> Sécurité
 
 ### Équipements de Protection Individuels (EPI)
 
@@ -82,7 +82,7 @@ En cas de besoin :
 - **Utilisez uniquement le CO₂ sur les machines électriques.**
 - **Détecteurs de fumée** : fumer est interdit et **l'aspirateur à fumées est obligatoire pour les fers à souder**.
 
-## <Boxes size={32} /> Rangement
+## <Boxes /> Rangement
 
 ### Règles de bienséance
 
@@ -127,7 +127,7 @@ Dans la même optique de laisser un maximum de zones de travail disponibles à t
 Elles sont réservées aux membres pour leurs projets personnels.
 :::
 
-## <Trash2 size={32} /> Gaspillage
+## <Trash2 /> Gaspillage
 
 ### Utilisation des consommables
 
@@ -144,14 +144,14 @@ Le DeVinci Fablab met de nombreuses ressources à votre disposition de manière 
   - Déposez-y vos pièces si elles ont un potentiel de réutilisation.
   - Servez-vous librement dedans, vous pouvez **même ramener les pièces chez vous**.
 
-## <Lightbulb size={32} /> En résumé
+## <Lightbulb /> En résumé
 
 - **Soyez attentif à ce que vous faites.**
 - **Rendez le lieu meilleur que vous ne l'avez trouvé.**
 - **Prévenez quand quelque chose ne va pas.**
 - **Respectez le collectif.**
 
-## <FileText size={32} /> Pour aller plus loin : Chartes des espaces
+## <FileText /> Pour aller plus loin : Chartes des espaces
 
 Retrouvez les règles spécifiques à chaque espace du Fablab :
 

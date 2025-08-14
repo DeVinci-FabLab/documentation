@@ -27,12 +27,12 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 # Textile Space Charter
 
-## <FileText size={32} /> Space Description
+## <FileText /> Space Description
 
 - The textile space is dedicated to **textile creation** : sewing, embroidery, flocking, textile cutting (Cricut), simple repairs, and creative projects.
 - It allows members to carry out **personal or collective projects**, requiring sewing, cutting, or textile design skills.
 
-## <TriangleAlert size={32} /> Safety Rules
+## <TriangleAlert /> Safety Rules
 
 - **No eating or drinking** in the space to avoid stains and reduce the risk of accidents with the machines.
 - **Use of machines only after validation** by a trained member.
@@ -41,7 +41,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Keep the area around machines clear** to avoid falls and snags.
 - Pay **special attention when using needle machines** (sewing machines, sergers).
 
-## <CheckSquare size={32} /> Best Practices and Recommendations
+## <CheckSquare /> Best Practices and Recommendations
 
 - **Use sewing scissors only for fabric or thread** – never for leather, paper, interfacing, zippers, etc.
 - Do not use the tables for anything other than textile work.
@@ -52,7 +52,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Immediately report any malfunction**.
 - If a machine breaks down or needs maintenance, **place a clear note on the machine** and inform a referent.
 
-## <Wrench size={32} /> Available Equipment
+## <Wrench /> Available Equipment
 
 - Sewing machines
 - Serger
@@ -65,19 +65,19 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Crochet and embroidery supplies
 - Threads, vinyl, and textile accessories
 
-## <Pin size={32} /> Storage and Cleaning
+## <Pin /> Storage and Cleaning
 
 - **Clean up textile debris** after using the machines (especially serger or velvet).
 - **Put each tool back** in its place after use.
 - Cut fabrics neatly, and **prefer using scraps** to reduce waste.
 - **Clean machines regularly** (dust, lint, stuck threads).
 
-## <Siren size={32} /> In Case of Problem
+## <Siren /> In Case of Problem
 
 - Report any incident or technical problem to a referent or the person responsible for the space.
 - Place a visible message on the affected machine to warn other users.
 
-## <Phone size={32} /> Contacts
+## <Phone /> Contacts
 
 | Role or Function   | Name               | Contact Method (discord) |
 | ------------------ | ------------------ | ------------------------ |

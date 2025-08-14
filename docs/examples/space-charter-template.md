@@ -24,12 +24,12 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 # [Name of Space] Space Charter
 
-## <FileText size={32} /> Space Description
+## <FileText /> Space Description
 
 - Briefly describe what this space is used for, the main activities that take place there, and any specific features it may have.
 - **Bold** text is permitted to a limited extent.
 
-## <TriangleAlert size={32} /> Safety Rules
+## <TriangleAlert /> Safety Rules
 
 List clearly and simply all mandatory safety rules to be followed in this space:
 
@@ -39,7 +39,7 @@ List clearly and simply all mandatory safety rules to be followed in this space:
 
 **Bold** text is required at the beginning of all rules.
 
-## <CheckSquare size={32} /> Best Practices and Recommendations
+## <CheckSquare /> Best Practices and Recommendations
 
 List the best practices to follow in order to preserve the equipment, the space, and to work effectively:
 
@@ -49,7 +49,7 @@ List the best practices to follow in order to preserve the equipment, the space,
 
 A little **bold** text is permitted.
 
-## <Wrench size={32} /> Available Equipment
+## <Wrench /> Available Equipment
 
 Briefly describe the equipment available in this space:
 
@@ -59,7 +59,7 @@ Briefly describe the equipment available in this space:
 
 No **bold** text is permitted.
 
-## <Pin size={32} /> Storage and Cleaning
+## <Pin /> Storage and Cleaning
 
 Indicate clearly how to store the equipment, clean the space after use, and the habits to adopt to keep the space pleasant for everyone:
 
@@ -69,7 +69,7 @@ Indicate clearly how to store the equipment, clean the space after use, and the 
 
 **Bold** text is required at the beginning of all rules.
 
-## <Siren size={32} /> In Case of Problem
+## <Siren /> In Case of Problem
 
 Indicate the procedure to follow in case of a problem (incident, broken equipment, need for assistance):
 
@@ -78,7 +78,7 @@ Indicate the procedure to follow in case of a problem (incident, broken equipmen
 
 No **bold** text.
 
-## <Phone size={32} /> Contacts
+## <Phone /> Contacts
 
 | Role or Function   | Name           | Contact Method (discord) |
 | ------------------ | -------------- | ------------------------ |

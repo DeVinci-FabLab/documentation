@@ -27,12 +27,12 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 # Charte de l'espace textile
 
-## <FileText size={32} /> Description de l'espace
+## <FileText /> Description de l'espace
 
 - L'espace textile est dédié à la **création textile** : couture, broderie, flocage, découpe textile (Cricut), réparations simples et projets créatifs.
 - Il permet aux membres de réaliser des projets **personnels ou collectifs**, nécessitant des compétences en couture, découpe ou design textile.
 
-## <TriangleAlert size={32} /> Règles de sécurité
+## <TriangleAlert /> Règles de sécurité
 
 - **Interdiction de manger ou boire** dans l'espace pour éviter les taches et réduire les risques d'accident avec les machines.
 - **Utilisation des machines uniquement après validation** par un·e membre formé·e.
@@ -41,7 +41,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Maintenir un espace dégagé** autour des machines pour éviter les chutes et accrochages.
 - Porter une **attention particulière à l'utilisation des machines à aiguilles** (machines à coudre, surjeteuses).
 
-## <CheckSquare size={32} /> Bonnes pratiques et recommandations
+## <CheckSquare /> Bonnes pratiques et recommandations
 
 - **Utiliser uniquement les ciseaux de couture pour du tissu ou du fil** – jamais pour du cuir, papier, thermocollant, zip, etc.
 - Ne pas utiliser les tables pour autre chose que le travail textile.
@@ -52,7 +52,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Signaler immédiatement tout dysfonctionnement**.
 - Si une machine tombe en panne ou nécessite une maintenance, **placer un mot clair sur la machine** et prévenir un·e référent·e.
 
-## <Wrench size={32} /> Matériel à disposition
+## <Wrench /> Matériel à disposition
 
 - Machines à coudre
 - Surjeteuse
@@ -65,19 +65,19 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Matériel pour crochet et broderie
 - Fils, vinyle et accessoires textiles
 
-## <Pin size={32} /> Rangement et nettoyage
+## <Pin /> Rangement et nettoyage
 
 - **Nettoyer les dépôts textiles** après utilisation des machines (notamment surjeteuse ou velours).
 - **Ranger chaque outil** à sa place après usage.
 - Couper les tissus proprement, et **privilégier l'usage des chutes** pour limiter le gaspillage.
 - **Nettoyer régulièrement les machines** (poussières, peluches, fils coincés).
 
-## <Siren size={32} /> En cas de problème
+## <Siren /> En cas de problème
 
 - Signaler tout incident ou problème technique à un·e référent·e ou à la personne responsable de l'espace.
 - Placer un message visible sur la machine concernée pour prévenir les autres utilisateur·ices.
 
-## <Phone size={32} /> Contacts
+## <Phone /> Contacts
 
 | Rôle ou fonction    | Nom                | Moyen de contact (discord) |
 | ------------------- | ------------------ | -------------------------- |

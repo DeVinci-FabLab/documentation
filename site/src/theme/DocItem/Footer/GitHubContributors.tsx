@@ -4,7 +4,7 @@ import { getContributors } from "./contributors";
 import styles from "./contributors.module.scss";
 
 const FALLBACK_AVATAR =
-  "https://img.freepik.com/vecteurs-premium/icone-profil-avatar-par-defaut-image-utilisateur-medias-sociaux-icone-avatar-gris-silhouette-profil-vide-illustration-vectorielle_561158-3408.jpg";
+  "https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg";
 
 /**
  * GitHub Contributors component
@@ -54,6 +54,10 @@ const GitHubContributors = ({
   if (!contributors.length) {
     return null;
   }
+
+  contributors.sort((a, b) => {
+    return a.username.localeCompare(b.username);
+  });
 
   return (
     <div className={styles.contributors}>

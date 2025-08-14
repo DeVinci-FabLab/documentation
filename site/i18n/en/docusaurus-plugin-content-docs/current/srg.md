@@ -17,13 +17,13 @@ import { Info, AlertTriangle, Trash2, Boxes, Lightbulb, FileText } from 'lucide-
 
 ![PPE](/assets/docs/srg/ppe-icons.jpg)
 
-## <Info size={32} /> Training Objectives
+## <Info /> Training Objectives
 
 - Use the DeVinci Fablab spaces in good conditions.
 - Know the association's expectations towards its users.
 - Adopt a responsible, respectful, and collaborative attitude.
 
-## <AlertTriangle size={32} /> Safety
+## <AlertTriangle /> Safety
 
 ### Personal Protective Equipment (PPE)
 
@@ -82,7 +82,7 @@ In case of need:
 - **Use only the CO₂ extinguisher on electrical machines.**
 - **Smoke detectors**: smoking is prohibited and **the fume extractor is mandatory for soldering irons**.
 
-## <Boxes size={32} /> Storage
+## <Boxes /> Storage
 
 ### Courtesy Rules
 
@@ -127,7 +127,7 @@ With the aim of keeping as many work areas available as possible at all times, i
 They are reserved for members' personal projects.
 :::
 
-## <Trash2 size={32} /> Waste
+## <Trash2 /> Waste
 
 ### Use of Consumables
 
@@ -144,14 +144,14 @@ The DeVinci Fablab provides many resources for free, but that is not a reason to
   - Drop off your parts there if they have reuse potential.
   - Feel free to help yourself, you can **even take the parts home**.
 
-## <Lightbulb size={32} /> In summary
+## <Lightbulb /> In summary
 
 - **Be attentive to what you are doing.**
 - **Leave the place better than you found it.**
 - **Report when something is wrong.**
 - **Respect the community.**
 
-## <FileText size={32} /> To go further: Space Charters
+## <FileText /> To go further: Space Charters
 
 Find the specific rules for each Fablab space:
 

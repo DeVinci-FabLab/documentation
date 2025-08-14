@@ -27,12 +27,12 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 # Resin Space Charter
 
-## <FileText size={32} /> Space Description
+## <FileText /> Space Description
 
 - The resin space is dedicated to 3D printing with photosensitive resins, as well as associated steps: cleaning, post-processing, curing, and finishing.
 - Due to the **toxicity of the products handled**, access is **strictly reserved for trained individuals**, and safety rules must be applied **rigorously**.
 
-## <TriangleAlert size={32} /> Safety Rules
+## <TriangleAlert /> Safety Rules
 
 - **Access prohibited without prior training**.
 - **Wearing nitrile gloves is mandatory** for any handling.
@@ -46,7 +46,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Never leave a chemical product open** or without a clear label.
 - **Maintenance prohibited without specific training**.
 
-## <CheckSquare size={32} /> Best Practices and Recommendations
+## <CheckSquare /> Best Practices and Recommendations
 
 - Be accompanied during your first prints after training by a fully trained member.
 - Immediately dispose of resin residues after each handling.
@@ -60,7 +60,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Post-it required** for any experiment needing resting time: name, surname, date, start and end time.
 - Any consumable or equipment (funnel, tank, spatula, etc.) is considered **single-use**: if it is no longer new, it must be discarded.
 
-## <Wrench size={32} /> Available Equipment
+## <Wrench /> Available Equipment
 
 - Resin printers:
   - Saturn 3 12K
@@ -72,18 +72,18 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Nitrile gloves, respirator masks, safety glasses
 - Wooden sticks, filters, disposable funnels
 
-## <Pin size={32} /> Storage and Cleaning
+## <Pin /> Storage and Cleaning
 
 - **Systematically clean** the workspace after use.
 - **Replace all protections** (lids, caps, boxes) after each print.
 - **Dispose of all waste** (gloves, cloths, filters, residues) in the bins provided for this purpose.
 
-## <Siren size={32} /> In Case of Problem
+## <Siren /> In Case of Problem
 
 - Immediately report any incident, malfunction, or anomaly to a referent or the person responsible for the space.
 - Do not intervene alone on a machine without authorization or training.
 
-## <Phone size={32} /> Contacts
+## <Phone /> Contacts
 
 | Role or Function   | Name               | Contact Method (discord) |
 | ------------------ | ------------------ | ------------------------ |

@@ -20,12 +20,12 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 # Charte de l'espace fabrication
 
-## <FileText size={32} /> Description de l'espace
+## <FileText /> Description de l'espace
 
 - L'espace fabrication est un atelier destiné à l'**usinage**, à l'**assemblage** et à la **fabrication manuelle ou assistée par machine** de projets divers : bois, métal, plastique, matériaux composites.
 - Il comprend des **zones de travail manuel**, des outils électroportatifs, et des machines conventionnelles (perceuse à colonne, ponceuse, scie à chantourner, etc.).
 
-## <TriangleAlert size={32} /> Règles de sécurité
+## <TriangleAlert /> Règles de sécurité
 
 - **Port obligatoire des EPI adaptés** à l'activité : lunettes, masque, casque anti-bruit, gants (sauf exceptions).
 - **Interdiction stricte de porter des vêtements amples ou accessoires lâches** (écharpes, bracelets, manches longues).
@@ -37,7 +37,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Ne jamais porter de gants lors de l'utilisation d'outils rotatifs motorisés.**
 - **Être stable lors des découpes** : ne pas couper au-dessus du vide ; utiliser **un étau ou un dispositif de maintien**.
 
-## <CheckSquare size={32} /> Bonnes pratiques et recommandations
+## <CheckSquare /> Bonnes pratiques et recommandations
 
 - Contrôler visuellement l'état des outils avant usage (lames, forets, abrasifs...).
 - Prévoir les étapes de fabrication avant de commencer pour éviter erreurs et accidents.
@@ -48,7 +48,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Utiliser des **dispositifs de maintien adaptés** (étau, serre-joints) pour les pièces à usiner.
 - Les **outils sont en libre-service**, mais doivent toujours **être rangés exactement à l'endroit d'où ils proviennent** (voir [SRG](../srg.md)).
 
-## <Wrench size={32} /> Matériel à disposition
+## <Wrench /> Matériel à disposition
 
 - Scie à chantourner
 - Perceuse à colonne
@@ -59,7 +59,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Consommables : vis, colles, adhésifs, abrasifs
 - Schrödinger Box : espace de réemploi pour les pièces et matériaux non utilisés
 
-## <Pin size={32} /> Rangement et nettoyage
+## <Pin /> Rangement et nettoyage
 
 - **Nettoyer systématiquement l'espace de travail après utilisation.**
 - **Nettoyer les copeaux et poussières** après toute découpe ou ponçage.
@@ -67,13 +67,13 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Ne jamais bloquer l'accès** aux issues de secours ou aux dispositifs de sécurité.
 - **Éteindre, débrancher et sécuriser les machines** avant de quitter l'espace.
 
-## <Siren size={32} /> En cas de problème
+## <Siren /> En cas de problème
 
 - Arrêter immédiatement l'utilisation d'une machine en cas de comportement anormal ou bruit suspect.
 - Prévenir un·e référent·e ou responsable au moindre doute.
 - Ne jamais tenter une réparation seul·e sans accord ou formation adaptée.
 
-## <Phone size={32} /> Contacts
+## <Phone /> Contacts
 
 | Rôle ou fonction   | Nom                | Moyen de contact (discord) |
 | ------------------ | ------------------ | -------------------------- |

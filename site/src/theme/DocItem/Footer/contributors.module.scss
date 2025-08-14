@@ -2,14 +2,15 @@
   --contrib-ring-gap: 2px;
   --contrib-ring-thickness: 2px;
   --contrib-ring-color: var(--ifm-font-color-base);
-  --contrib-gap-color: var(--ifm-background-color);
+  --contrib-gap-color: var(--ifm-background-surface-color);
 
   margin-block: var(--ifm-spacing-vertical);
 
   .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(74px, max-content));
+    gap: 10px clamp(18px, 2.5vw, 35px);
     padding: 0;
 
     li {
@@ -17,14 +18,14 @@
     }
   }
 
+  .contributor figure {
+    margin: 20px 0 0 3px;
+  }
+
   .contributor img {
-    display: block;
+    display: flex;
     border-radius: 50%;
     object-fit: cover;
-
-    border: 0;
-    padding: 0;
-    margin: 0;
 
     box-shadow:
       0 0 0 var(--contrib-ring-gap) var(--contrib-gap-color),
@@ -52,10 +53,6 @@
         var(--ifm-color-primary);
   }
 
-  .contributor figure {
-    margin: 20px 0 0 2px;
-  }
-
   .caption {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -79,9 +76,9 @@
     outline: 0;
   }
 
-  @media (max-width: 600px) {
-    .wrapper {
-      display: block;
+  @media (max-width: 996px) {
+    .contributor figure {
+      margin-top: 12px;
     }
   }
 }

@@ -30,12 +30,12 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 L'espace électronique est géré et maintenu par l'association [**DaVinciBot (DVB)**](https://docs.davincibot.fr/). Pour toute question, problème ou demande de matériel, vous pouvez contacter un·e membre de DVB.
 :::
 
-## <FileText size={32} /> Description de l'espace
+## <FileText /> Description de l'espace
 
 - L'espace électronique est dédié à la conception, au prototypage et à la réparation de circuits électroniques.
 - On y trouve notamment du matériel de soudure, des appareils de mesure (multimètres, oscilloscopes) ainsi que divers composants électroniques.
 
-## <TriangleAlert size={32} /> Règles de sécurité
+## <TriangleAlert /> Règles de sécurité
 
 - **Interdiction de manger ou boire dans l'espace électronique**, pour éviter tout risque d'électrocution ou d'endommagement du matériel.
 - **Ne jamais laisser un fer à souder chaud sans surveillance.**
@@ -44,7 +44,7 @@ L'espace électronique est géré et maintenu par l'association [**DaVinciBot (D
 - Ne pas dépasser **320 °C pour souder** et **350 °C pour dessouder** — ou demander l'aide d'un·e référent·e si besoin.
 - **Ne jamais travailler sur un circuit sous tension supérieure à 24 V** sans supervision ou formation adaptée.
 
-## <CheckSquare size={32} /> Bonnes pratiques et recommandations
+## <CheckSquare /> Bonnes pratiques et recommandations
 
 - Nettoyer la panne du fer à souder avant chaque usage.
 - Vérifier les réglages de température avant d'allumer une station de soudage.
@@ -57,7 +57,7 @@ L'espace électronique est géré et maintenu par l'association [**DaVinciBot (D
 - **Travailler sur une chaise reliée à la masse** (comme la grande chaise noire de l'espace) permet de minimiser les risques liés aux décharges électrostatiques.
 - **Garder un espace de travail propre et organisé** pendant toute manipulation électronique.
 
-## <Wrench size={32} /> Matériel à disposition
+## <Wrench /> Matériel à disposition
 
 - Stations de soudage et fers à souder
 - Appareils de mesure : multimètres, oscilloscopes, générateurs de signaux
@@ -70,19 +70,19 @@ L'espace électronique est géré et maintenu par l'association [**DaVinciBot (D
 Les composants électroniques et le matériel de prototypage sont disponibles **sur demande** auprès de **DVB**. Merci de ne rien prélever sans validation préalable.
 :::
 
-## <Pin size={32} /> Rangement et nettoyage
+## <Pin /> Rangement et nettoyage
 
 - **Ranger chaque outil à sa place** immédiatement après utilisation.
 - **Nettoyer les stations de soudage** (résidus d'étain, brossage de la panne), puis **éteindre et débrancher**.
 - **Remettre tous les composants non utilisés** dans leur rangement d'origine.
 - **Ne pas mélanger** les composants pour garantir leur bon état.
 
-## <Siren size={32} /> En cas de problème
+## <Siren /> En cas de problème
 
 - Signaler auprès de **DVB** toute panne, casse ou dysfonctionnement à un·e responsable ou référent·e technique.
 - Ne jamais intervenir seul·e sur un matériel inconnu ou endommagé sans validation préalable.
 
-## <Phone size={32} /> Contacts
+## <Phone /> Contacts
 
 | Rôle ou fonction   | Nom            | Moyen de contact (discord) |
 | ------------------ | -------------- | -------------------------- |

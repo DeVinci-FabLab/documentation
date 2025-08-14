@@ -30,12 +30,12 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 The electronic space is managed and maintained by the [**DaVinciBot (DVB)**](https://docs.davincibot.fr/) association. If you have any questions, problems, or requests for equipment, please contact a member of DVB.
 :::
 
-## <FileText size={32} /> Space Description
+## <FileText /> Space Description
 
 - The electronic space is dedicated to the design, prototyping, and repair of electronic circuits.
 - It includes soldering equipment, measuring devices (multimeters, oscilloscopes), and various electronic components.
 
-## <TriangleAlert size={32} /> Safety Rules
+## <TriangleAlert /> Safety Rules
 
 - **No eating or drinking in the electronic space** to avoid any risk of electrocution or equipment damage.
 - **Never leave a hot soldering iron unattended.**
@@ -44,7 +44,7 @@ The electronic space is managed and maintained by the [**DaVinciBot (DVB)**](htt
 - Do not exceed **320 °C for soldering** and **350 °C for desoldering** — or ask a referent for help if needed.
 - **Never work on a circuit with voltage above 24 V** without supervision or proper training.
 
-## <CheckSquare size={32} /> Best Practices and Recommendations
+## <CheckSquare /> Best Practices and Recommendations
 
 - Clean the soldering iron tip before each use.
 - Check temperature settings before turning on a soldering station.
@@ -57,7 +57,7 @@ The electronic space is managed and maintained by the [**DaVinciBot (DVB)**](htt
 - **Working on a grounded chair** (like the big black chair in the space) minimizes the risks associated with electrostatic discharge.
 - **Keep your workspace clean and organized** when handling electronics.
 
-## <Wrench size={32} /> Available Equipment
+## <Wrench /> Available Equipment
 
 - Soldering stations and soldering irons
 - Measuring devices: multimeters, oscilloscopes, signal generators
@@ -70,19 +70,19 @@ The electronic space is managed and maintained by the [**DaVinciBot (DVB)**](htt
 Electronic components and prototyping equipment are available **upon request** from **DVB**. Please do not take anything without prior approval.
 :::
 
-## <Pin size={32} /> Storage and Cleaning
+## <Pin /> Storage and Cleaning
 
 - **Put each tool back in its place** immediately after use.
 - **Clean the soldering stations** (tin residues, brush the tip), then **turn off and unplug**.
 - **Return all unused components** to their original storage.
 - **Do not mix** components to ensure they remain in good condition.
 
-## <Siren size={32} /> In Case of Problem
+## <Siren /> In Case of Problem
 
 - Report any breakdown, damage, or malfunction to a manager or technical referent at **DVB**.
 - Never intervene alone on unknown or damaged equipment without prior validation.
 
-## <Phone size={32} /> Contacts
+## <Phone /> Contacts
 
 | Role or Function   | Name           | Contact Method (discord) |
 | ------------------ | -------------- | ------------------------ |

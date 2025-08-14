@@ -25,13 +25,7 @@ export const getContributors = async (commits: any) => {
     }
   );
 
-  // Await all fetches to complete.
   const contributors = await Promise.all(contributorPromises);
-
-  // sort alphabetically
-  contributors.sort((a, b) => {
-    return a.username.localeCompare(b.username);
-  });
 
   return contributors;
 };

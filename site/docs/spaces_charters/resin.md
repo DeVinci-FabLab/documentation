@@ -18,6 +18,7 @@ additional_contributors:
     html_url: https://www.linkedin.com/in/eliott-roussille
     avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGJInAV0qQonQ/profile-displayphoto-shrink_400_400/B4DZZZ3PrjH4Ag-/0/1745264377148?e=1758153600&v=beta&t=qUIJD-O8iwugtWxnDqAeRsp_gwPM_281yS1PFUg00Z8
   - username: François Teynier
+    avatar_url: https://i.imgur.com/hnuX6jp.jpeg
   - username: Hugo Degioanni
     html_url: https://www.linkedin.com/in/hdegioanni
     avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQENW7uGQunWyw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730826037333?e=1758153600&v=beta&t=ie-_iLD-XeHFVs61uWTAFn3kZV2WBJmqVLtBj3AZJ5Q
@@ -27,12 +28,12 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 # Charte de l'espace résine
 
-## <FileText size={32} /> Description de l'espace
+## <FileText /> Description de l'espace
 
 - L'espace résine est dédié à l'impression 3D avec des résines photosensibles, ainsi qu'aux étapes associées : nettoyage, post-traitement, polymérisation et finitions.
 - En raison de la **toxicité des produits manipulés**, l'accès est **strictement réservé aux personnes formées**, et les règles de sécurité doivent y être appliquées **avec rigueur**.
 
-## <TriangleAlert size={32} /> Règles de sécurité
+## <TriangleAlert /> Règles de sécurité
 
 - **Accès interdit sans formation préalable**.
 - **Port de gants en nitrile obligatoire** pour toute manipulation.
@@ -46,7 +47,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Ne jamais laisser un produit chimique ouvert** ou sans étiquette claire.
 - **Maintenance interdite sans formation spécifique**.
 
-## <CheckSquare size={32} /> Bonnes pratiques et recommandations
+## <CheckSquare /> Bonnes pratiques et recommandations
 
 - Se faire accompagner lors de vos premiers prints post-formation par un·e membre pleinement formé·e.
 - Jeter immédiatement les résidus de résine après chaque manipulation.
@@ -60,7 +61,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Post-it obligatoire** pour toute expérience nécessitant un temps de repos : nom, prénom, date, heure de début et fin.
 - Tout consommable ou matériel (entonnoir, bac, spatule…) est considéré **à usage unique** : s'il n'est plus neuf, il doit être jeté.
 
-## <Wrench size={32} /> Matériel à disposition
+## <Wrench /> Matériel à disposition
 
 - Imprimantes résine :
   - Saturn 3 12K
@@ -72,18 +73,18 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Gants en nitrile, masques respiratoires, lunettes de protection
 - Bâtonnets en bois, filtres, entonnoirs jetables
 
-## <Pin size={32} /> Rangement et nettoyage
+## <Pin /> Rangement et nettoyage
 
 - **Nettoyer systématiquement** l'espace de travail après usage.
 - **Remettre en place toutes les protections** (couvercles, bouchons, boîtes) après chaque impression.
 - **Jeter tous les déchets** (gants, chiffons, filtres, résidus) dans les bacs prévus à cet effet.
 
-## <Siren size={32} /> En cas de problème
+## <Siren /> En cas de problème
 
 - Signaler immédiatement tout incident, dysfonctionnement ou anomalie à un·e référent·e ou à la personne responsable de l'espace.
 - Ne pas intervenir seul·e sur une machine sans autorisation ni formation.
 
-## <Phone size={32} /> Contacts
+## <Phone /> Contacts
 
 | Rôle ou fonction   | Nom                | Moyen de contact (discord) |
 | ------------------ | ------------------ | -------------------------- |
