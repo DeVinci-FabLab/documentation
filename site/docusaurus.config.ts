@@ -141,6 +141,7 @@ const config: Config = {
         "css",
         "json",
         "markdown",
+        "powershell",
         "python",
         "rust",
         "sql",

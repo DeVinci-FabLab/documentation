@@ -15,6 +15,7 @@ additional_contributors:
     html_url: https://www.linkedin.com/in/eliott-roussille
     avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGJInAV0qQonQ/profile-displayphoto-shrink_400_400/B4DZZZ3PrjH4Ag-/0/1745264377148?e=1758153600&v=beta&t=qUIJD-O8iwugtWxnDqAeRsp_gwPM_281yS1PFUg00Z8
   - username: François Teynier
+    avatar_url: https://i.imgur.com/hnuX6jp.jpeg
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
