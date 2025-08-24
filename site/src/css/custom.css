@@ -105,6 +105,7 @@
 
     hr {
       background-color: var(--ifm-color-primary);
+      margin-top: 40px;
     }
 
     /* == == == Headers == == == */
@@ -124,23 +125,22 @@
       padding-top: 0;
     }
 
-    svg {
-      .lucide {
-        width: 1em;
-        height: 1em;
-      }
+    .lucide {
+      width: 1em;
+      height: 1em;
+    }
 
-      .lucide-file-text,
-      .lucide-triangle-alert,
-      .lucide-square-check-big,
-      .lucide-boxes,
-      .lucide-phone {
-        margin-top: 2px;
-      }
+    .lucide-package-open,
+    .lucide-file-text,
+    .lucide-triangle-alert,
+    .lucide-square-check-big,
+    .lucide-boxes,
+    .lucide-phone {
+      margin-top: 2px;
+    }
 
-      .lucide-pin {
-        margin-top: 4px;
-      }
+    .lucide-pin {
+      margin-top: 4px;
     }
 
     /* == == == Links == == == */
