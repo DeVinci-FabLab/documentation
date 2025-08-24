@@ -2,7 +2,6 @@
 title: Fabrication Space Charter
 pagination_label: Fabrication Space Charter
 sidebar_label: Fabrication
-sidebar_position: 3
 description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab fabrication space.
 slug: fabrication-space-charter
 tags: [charter, safety, storage]
@@ -17,8 +16,6 @@ additional_contributors:
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
-
-# Fabrication Space Charter
 
 ## <FileText /> Space Description
 

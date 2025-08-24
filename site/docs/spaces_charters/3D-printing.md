@@ -2,7 +2,6 @@
 title: Charte de l’espace impression 3D
 pagination_label: Charte de l’espace impression 3D
 sidebar_label: Impression 3D
-sidebar_position: 2
 description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l’espace impression 3D du DeVinci Fablab.
 slug: 3D-printing-space-charter
 tags: [charter, safety, storage]
@@ -19,8 +18,6 @@ additional_contributors:
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
-
-# Charte de l’espace Impression 3D
 
 ## <FileText /> Description de l’espace
 

@@ -2,7 +2,6 @@
 title: Charte de l’espace [nom de l’espace]
 pagination_label: Charte de l’espace [nom de l’espace]
 sidebar_label: [Nom de l’espace]
-sidebar_position: x
 description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l’espace [nom de l’espace] du DeVinci Fablab.
 slug: [nom-de-l’espace]-space-charter
 tags: [charte, sécurité, rangement]
@@ -21,8 +20,6 @@ additional_contributors:
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
-
-# Charte de l’espace [nom de l’espace]
 
 ## <FileText /> Description de l’espace
 

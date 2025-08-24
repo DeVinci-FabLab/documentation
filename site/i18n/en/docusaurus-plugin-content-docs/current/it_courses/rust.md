@@ -1,6 +1,5 @@
 ---
-title: Rust - Basics
-sidebar_position: 5
+title: Rust – Basics
 description: A guide to discover the basics of Rust programming.
 slug: rust
 tags: [course, info, rust]
@@ -12,8 +11,6 @@ additional_contributors:
     html_url: https://github.com/UrbsKali
     avatar_url: https://github.com/UrbsKali.png
 ---
-
-# Rust - Basics
 
 > The goal of this training is to make you self-sufficient in Rust
 

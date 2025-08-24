@@ -1,6 +1,5 @@
 ---
 title: PostgreSQL with Docker
-sidebar_position: 4
 description: This learning material will guide you through the process of setting up a PostgreSQL database using Docker.
 slug: postgres-docker
 tags: [course, info, sql, docker]
@@ -12,8 +11,6 @@ additional_contributors:
     html_url: https://github.com/MorganKryze
     avatar_url: https://github.com/MorganKryze.png
 ---
-
-# PostgreSQL with Docker
 
 ## Introduction
 

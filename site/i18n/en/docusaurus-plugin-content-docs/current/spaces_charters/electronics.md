@@ -2,7 +2,6 @@
 title: Electronic Space Charter
 pagination_label: Electronic Space Charter
 sidebar_label: Electronics
-sidebar_position: 2
 description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab electronic space.
 slug: electronic-space-charter
 tags: [charter, safety, storage]
@@ -23,8 +22,6 @@ additional_contributors:
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
-
-# Electronic Space Charter
 
 :::info
 The electronic space is managed and maintained by the [**DaVinciBot (DVB)**](https://docs.davincibot.fr/) association. If you have any questions, problems, or requests for equipment, please contact a member of DVB.

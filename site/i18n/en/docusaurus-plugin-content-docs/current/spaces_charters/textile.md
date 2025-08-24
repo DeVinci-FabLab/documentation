@@ -2,7 +2,6 @@
 title: Textile Space Charter
 pagination_label: Textile Space Charter
 sidebar_label: Textile
-sidebar_position: 5
 description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab textile space.
 slug: textile-space-charter
 tags: [charter, safety, storage]
@@ -24,8 +23,6 @@ additional_contributors:
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
-
-# Textile Space Charter
 
 ## <FileText /> Space Description
 

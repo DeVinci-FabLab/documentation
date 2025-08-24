@@ -2,7 +2,6 @@
 title: Resin Space Charter
 pagination_label: Resin Space Charter
 sidebar_label: Resin
-sidebar_position: 4
 description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab resin space.
 slug: resin-space-charter
 tags: [charter, safety, storage]
@@ -25,8 +24,6 @@ additional_contributors:
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
-
-# Resin Space Charter
 
 ## <FileText /> Space Description
 

@@ -2,7 +2,6 @@
 title: Charte de l’espace résine
 pagination_label: Charte de l’espace résine
 sidebar_label: Résine
-sidebar_position: 4
 description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l’espace résine du DeVinci Fablab.
 slug: resin-space-charter
 tags: [charter, safety, storage]
@@ -25,8 +24,6 @@ additional_contributors:
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
-
-# Charte de l’espace résine
 
 ## <FileText /> Description de l’espace
 

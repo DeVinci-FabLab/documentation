@@ -1,6 +1,5 @@
 ---
-title: Rust - les bases
-sidebar_position: 5
+title: Rust – les bases
 description: Un guide pour découvrir les fondamentaux de Rust.
 slug: rust
 tags: [course, info, rust]
@@ -12,8 +11,6 @@ additional_contributors:
     html_url: https://github.com/UrbsKali
     avatar_url: https://github.com/UrbsKali.png
 ---
-
-# Rust - Base
 
 > Le but de cette formation est de vous rendre autonome sur Rust
 

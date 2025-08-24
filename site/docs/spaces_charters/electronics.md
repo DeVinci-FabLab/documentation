@@ -2,7 +2,6 @@
 title: Charte de l’espace électronique
 pagination_label: Charte de l’espace électronique
 sidebar_label: Électronique
-sidebar_position: 1
 description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l’espace électronique du DeVinci Fablab.
 slug: electronic-space-charter
 tags: [charter, safety, storage]
@@ -23,8 +22,6 @@ additional_contributors:
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
-
-# Charte de l’espace électronique
 
 :::info
 L’espace électronique est géré et maintenu par l’association [**DaVinciBot (DVB)**](https://docs.davincibot.fr/). Pour toute question, problème ou demande de matériel, vous pouvez contacter un·e membre de DVB.

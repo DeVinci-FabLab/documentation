@@ -2,7 +2,6 @@
 title: Charte de l’espace fabrication
 pagination_label: Charte de l’espace fabrication
 sidebar_label: Fabrication
-sidebar_position: 3
 description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l’espace fabrication du DeVinci Fablab.
 slug: fabrication-space-charter
 tags: [charter, safety, storage]
@@ -17,8 +16,6 @@ additional_contributors:
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
-
-# Charte de l’espace fabrication
 
 ## <FileText /> Description de l’espace
 

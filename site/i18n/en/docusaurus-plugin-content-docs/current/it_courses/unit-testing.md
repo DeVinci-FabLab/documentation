@@ -1,6 +1,5 @@
 ---
 title: Unit Testing (Examples in C# with MSTest)
-sidebar_position: 6
 description: A guide to understanding the fundamentals of unit testing, illustrated in C# with MSTest, but applicable to all languages.
 slug: unit-testing
 tags: [course, info, csharp]
@@ -8,8 +7,6 @@ last_update:
   date: 2025-07-03
   author: Eliott A. Roussille
 ---
-
-# Unit Testing (Examples in C# with MSTest)
 
 Unit tests are programs that automatically verify that each part of your code works as expected.
 

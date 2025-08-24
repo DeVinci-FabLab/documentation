@@ -1,6 +1,5 @@
 ---
 title: C# vers PostgreSQL
-sidebar_position: 3
 description: Ce support d’apprentissage vous permettra de créer et d’héberger un site web statique pour votre documentation. L’outil est développé pour un projet C# mais peut être utilisé pour tout autre projet, les articles étant rédigés en markdown.
 slug: csharp-to-postgres
 tags: [course, info, csharp]
@@ -12,8 +11,6 @@ additional_contributors:
     html_url: https://github.com/MorganKryze
     avatar_url: https://github.com/MorganKryze.png
 ---
-
-# C# vers PostgreSQL
 
 ## Introduction
 

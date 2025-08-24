@@ -1,6 +1,5 @@
 ---
 title: C# pour Visual Studio Code
-sidebar_position: 2
 description: Ce tutoriel vous aidera à configurer votre environnement de développement pour C# avec Visual Studio Code.
 slug: csharp-on-vscode
 tags: [course, info, csharp]
@@ -12,8 +11,6 @@ additional_contributors:
     html_url: https://github.com/MorganKryze
     avatar_url: https://github.com/MorganKryze.png
 ---
-
-# C# pour Visual Studio Code
 
 ## Introduction
 
