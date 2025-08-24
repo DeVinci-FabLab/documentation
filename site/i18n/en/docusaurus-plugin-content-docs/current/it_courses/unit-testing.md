@@ -21,11 +21,11 @@ This guide presents the fundamental concepts of unit testing, illustrated with M
   Having a high coverage rate is a sign of code quality and robustness.
 - **Quick bug detection**: Unit tests allow you to quickly detect errors in the code, reducing debugging time.
 - **Living documentation**: Unit tests serve as living documentation for the code, showing how each part is supposed to work.
-- **Easier code modification**: Unit tests allow you to modify code with confidence, as they can ensure that changes haven't broken anything.
+- **Easier code modification**: Unit tests allow you to modify code with confidence, as they can ensure that changes haven’t broken anything.
 
 ## Creating and Configuring an MSTest Project
 
-Here's how to properly set up a unit test project with MSTest for a C# .NET project:
+Here’s how to properly set up a unit test project with MSTest for a C# .NET project:
 
 ### Prerequisites
 
@@ -67,7 +67,7 @@ dotnet add tests/MyProject.Tests reference src/MyProject/MyProject.csproj
 
 This creates a test project named `MyProject.Tests` in the `tests` folder, then links the test project to the solution and the main project.
 
-That's it! You can now write your tests in `tests/MyProject.Tests`. Organize the test files following the structure of the main project (e.g., a file `MaClasseTests.cs` for `MaClasse.cs`).
+That’s it! You can now write your tests in `tests/MyProject.Tests`. Organize the test files following the structure of the main project (e.g., a file `MaClasseTests.cs` for `MaClasse.cs`).
 
 Here is the final structure:
 

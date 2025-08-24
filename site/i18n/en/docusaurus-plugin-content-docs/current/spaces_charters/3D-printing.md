@@ -76,4 +76,6 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 | Technical Referent | Maxime FROMONT     | @palmito0496             |
 | Technical Referent | François TEYNIER   | @proxy4403               |
 
+---
+
 Thank you for respecting these guidelines so that this space remains accessible and pleasant for everyone!

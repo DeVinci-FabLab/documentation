@@ -85,4 +85,6 @@ No **bold** text.
 | Space Manager      | Firstname NAME | Discord                  |
 | Technical Referent | Firstname NAME | Discord                  |
 
+---
+
 Thank you for respecting these guidelines so that this space remains accessible and pleasant for everyone!

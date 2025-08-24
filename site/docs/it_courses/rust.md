@@ -25,17 +25,17 @@ additional_contributors:
 
 Rust est un langage qui vise à remplacer les langages bas-niveau, comme le C. Il est axé sur la performance, la concurrence, mais surtout la sûreté.
 
-En effet, un des plus gros problèmes du C/C++ est qu'il est difficile d'avoir un code qui gère de manière robuste la mémoire, sans fuites
+En effet, un des plus gros problèmes du C/C++ est qu’il est difficile d’avoir un code qui gère de manière robuste la mémoire, sans fuites
 
-En Rust, le code est sécurisé par défaut, grâce à son système d'emprunt, qui peut être difficile à prendre en main
+En Rust, le code est sécurisé par défaut, grâce à son système d’emprunt, qui peut être difficile à prendre en main
 
 Rust peut être utilisé pour les mêmes usages que le C/C++, on peut le retrouver dans le kernel de Linux, dans le backend de Discord, et dans des microcontrôleurs.
 
 ## Setup
 
-IDE conseillé : RustRover ou VS code : [Lien vers l'installeur](https://www.rust-lang.org/fr/learn/get-started)
+IDE conseillé : RustRover ou VS code : [Lien vers l’installeur](https://www.rust-lang.org/fr/learn/get-started)
 
-L'installateur va mettre `rustup` et `cargo` sur votre ordinateur :
+L’installateur va mettre `rustup` et `cargo` sur votre ordinateur :
 
 - `rustup` permet de gérer tout ce qui touche à Rust sur votre machine, notamment la mise à jour des composants avec `rustup update`
 - `cargo` permet de générer des projets, les exécuter, et les publier
@@ -59,23 +59,23 @@ Etapes majeures :
   ```
 
 - bip boup coder en rust
-- tada c'est finito
+- tada c’est finito
 
 ### Utilisation de `cargo`
 
-- Création d'un projet
+- Création d’un projet
 
   ```bash
   cargo new <nom-du-projet>
   ```
 
-- Exécution d'un projet
+- Exécution d’un projet
 
   ```bash
   cargo run
   ```
 
-- Compilation d'un projet
+- Compilation d’un projet
 
   ```bash
   cargo build [--release]
@@ -98,24 +98,24 @@ version = "0.1.0"
 edition = "2023"
 
 [dependencies]
-# bon là j'en ai aucune mais vous avez compris l'idée
+# bon là j’en ai aucune mais vous avez compris l’idée
 ```
 
-Quand on crée un projet avec `cargo`, un fichier `Cargo.toml` (Tom's Obvious, Minimal Language) est automatiquement ajouté au projet pour définir et suivre les dépendances.
+Quand on crée un projet avec `cargo`, un fichier `Cargo.toml` (Tom’s Obvious, Minimal Language) est automatiquement ajouté au projet pour définir et suivre les dépendances.
 
-[Plus d'info](https://doc.rust-lang.org/cargo/reference/manifest.html)
+[Plus d’info](https://doc.rust-lang.org/cargo/reference/manifest.html)
 
 ## Syntaxe et Structures de base
 
 ### Point-virgule ou pas ?
 
-Rust a besoin de point virgule à la fin de chaque ligne pour séparer les instructions, mais il est possible de voir des lignes sans point virgule dans les fonctions, car si une ligne n'a pas de point virgule, alors elle est considéré comme un return.
+Rust a besoin de point virgule à la fin de chaque ligne pour séparer les instructions, mais il est possible de voir des lignes sans point virgule dans les fonctions, car si une ligne n’a pas de point virgule, alors elle est considéré comme un return.
 
 ### Macro ? Késako ?
 
-Une macro est une instruction qui termine par ! (ex : `println!("hehe boi")`), ce n'est pas une fonction classique, mais pas loin
+Une macro est une instruction qui termine par ! (ex : `println!("hehe boi")`), ce n’est pas une fonction classique, mais pas loin
 
-### Point d'entrée du programme
+### Point d’entrée du programme
 
 Un programme Rust commence toujours par la fonction `main`.
 
@@ -150,7 +150,7 @@ Un programme Rust commence toujours par la fonction `main`.
   loop {
     println!("AAAAAAAAAA");
   }
-  // Ne va jamais s'arreter
+  // Ne va jamais s’arreter
   ```
 
   Une boucle peut être une expression
@@ -167,7 +167,7 @@ Un programme Rust commence toujours par la fonction `main`.
   // y est égal à 15;
   ```
 
-  Par défaut `break` termine la boucle la plus imbriqué, mais grâce au boucle labelisé, on peut terminer n'importe quelle boucle déjà défini. Le label DOIT commencer par `'`.
+  Par défaut `break` termine la boucle la plus imbriqué, mais grâce au boucle labelisé, on peut terminer n’importe quelle boucle déjà défini. Le label DOIT commencer par `'`.
 
   ```rust
   let mut i = 0;
@@ -248,16 +248,16 @@ Un programme Rust commence toujours par la fonction `main`.
 
 ## Ownership
 
-La particularité de Rust, c'est son sytème d'appartenance qui lui permet d'être sécurisé par défaut, ET QUI EMPECHE DE COMPILER QUAND CA DEVRAIT.
+La particularité de Rust, c’est son sytème d’appartenance qui lui permet d’être sécurisé par défaut, ET QUI EMPECHE DE COMPILER QUAND CA DEVRAIT.
 
-Il y a trois règle d'ownership dans Rust :
+Il y a trois règle d’ownership dans Rust :
 
 - Toute valeur à un propriétaire
-- Il n'y a qu'un seul propriétaire à la fois
+- Il n’y a qu’un seul propriétaire à la fois
 - Quand le propriétaire disparait, la valeur aussi
 
-Cela conduit à des erreurs de compilation, alors que d'autres languages ne posserait pas de problème.
-Pour bien comprendre la subtilité de l'ownership, il faut comprendre les différentes mémoires, le Stack et le Heap (cf Annexe 2)
+Cela conduit à des erreurs de compilation, alors que d’autres languages ne posserait pas de problème.
+Pour bien comprendre la subtilité de l’ownership, il faut comprendre les différentes mémoires, le Stack et le Heap (cf Annexe 2)
 
 Il y a deux cas possible : Variable sur le Stack ou Variable sur le Heap
 
@@ -273,13 +273,13 @@ Dans ce cas, `x` est une donnée à taille fixe, donc sur le Stack, elle est don
   let y = x;
 ```
 
-Mais dans celui là, la variable `x` est stocké sur le Heap, la copie pouvant être couteuse, elle n'est pas effectué. Rust supprime `x` et garde `y`, on dit que l'ownership est transféré.
+Mais dans celui là, la variable `x` est stocké sur le Heap, la copie pouvant être couteuse, elle n’est pas effectué. Rust supprime `x` et garde `y`, on dit que l’ownership est transféré.
 
 ### Cas des fonctions
 
 De la même manière, mettre une variable du Heap dans une fonction lui fait perdre son ownership, mais une variable du Stack est seulement copié.
 
-## Solution à l'Ownership : les Références
+## Solution à l’Ownership : les Références
 
 - & = référence
 - \* = déréférence
@@ -287,11 +287,11 @@ De la même manière, mettre une variable du Heap dans une fonction lui fait per
 Règles des références :
 
 - On peut avoir une référence modifiable ou n références statique à tout moment
-- Une référence doit toujours pointer vers une valeur (c'est pas évident)
+- Une référence doit toujours pointer vers une valeur (c’est pas évident)
 
-On préfère passer les références des variables, plutôt que la valeur elle même, c'est un système similaire au pointeur, mais plus simple
+On préfère passer les références des variables, plutôt que la valeur elle même, c’est un système similaire au pointeur, mais plus simple
 Il y a le même système de modification que les variables classiques.
-On peut avoir une référence mutable à la fois, et autant de référence classique que l'on veut.
+On peut avoir une référence mutable à la fois, et autant de référence classique que l’on veut.
 
 ```rust
 fn main() {
@@ -331,10 +331,10 @@ fn dont_trust_me() -> &String{
 } // mais ici la valeur de x est perdu
 ```
 
-Dans ce cas, la référence pointe vers une valeur inexistante, ce que Rust n'autorise pas -> le code ne compile pas
+Dans ce cas, la référence pointe vers une valeur inexistante, ce que Rust n’autorise pas -> le code ne compile pas
 
 **Solution : lifetime**
-les lifetimes sont des paramètre qu'on ajoute pour spécifé la durée de vie d'une valeur, pour réparer la fonction précédante, il faudrait plutôt retourner une valeur own qu'une référence.
+les lifetimes sont des paramètre qu’on ajoute pour spécifé la durée de vie d’une valeur, pour réparer la fonction précédante, il faudrait plutôt retourner une valeur own qu’une référence.
 
 <important>**FAITES CONFIANCE AU COMPILEUR**</important>
 
@@ -351,7 +351,7 @@ les lifetimes sont des paramètre qu'on ajoute pour spécifé la durée de vie d
 | i128           | u8             |
 | isize          | usize          |
 
-size, en fonction de l'architecture du CPU (32bits ou 64bits)
+size, en fonction de l’architecture du CPU (32bits ou 64bits)
 
 Séparateur virtuel : 1_000 = 1000 (super cool)
 
@@ -414,9 +414,9 @@ Un programme a accès à deux type de mémoire :
 - le Stack, qui consiste à une pile de données contigue (LIFO)
 - le Heap, qui consiste en un blob de données éparse (DTFYW :) )
 
-On ne peut mettre de la mémoire dans le Stack seulement si l'on connait à l'avance la taille des données, c'est possible avec des types tels que les int, float, bool, etc, mais impossible avec les String (Cf Annexe 1).
+On ne peut mettre de la mémoire dans le Stack seulement si l’on connait à l’avance la taille des données, c’est possible avec des types tels que les int, float, bool, etc, mais impossible avec les String (Cf Annexe 1).
 
-On utilise donc le Heap, et l'allocateur mémoire doit trouver un espace libre ou stocker nos données, ce qui est plus long.
+On utilise donc le Heap, et l’allocateur mémoire doit trouver un espace libre ou stocker nos données, ce qui est plus long.
 
 ## Ressources
 

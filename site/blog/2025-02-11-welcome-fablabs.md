@@ -7,15 +7,15 @@ hide_table_of_contents: false
 slug: welcome-fablabs
 ---
 
-# Workshop : Découverte des Fablabs, de l'Impression 3D et de l'IA Embarquée
+# Workshop : Découverte des Fablabs, de l’Impression 3D et de l’IA Embarquée
 
-Bienvenue dans ce workshop immersif où vous allez explorer les Fablabs, l'impression 3D et l'IA embarquée. Préparez-vous à plonger dans un univers de créativité, d'innovation et d'intelligence artificielle !
+Bienvenue dans ce workshop immersif où vous allez explorer les Fablabs, l’impression 3D et l’IA embarquée. Préparez-vous à plonger dans un univers de créativité, d’innovation et d’intelligence artificielle !
 
-## Introduction aux Fablabs et à l'Impression 3D
+## Introduction aux Fablabs et à l’Impression 3D
 
-### Qu'est-ce qu'un Fablab ?
+### Qu’est-ce qu’un Fablab ?
 
-Un **Fablab**, ou "Fabrication Laboratory", est un espace collaboratif où chacun peut venir créer, apprendre et partager. Initié par le **MIT** dans les années 2000, ce concept permet d'accéder à des outils de fabrication numérique comme des imprimantes 3D, des découpeuses laser, et bien plus encore. Les Fablabs sont des lieux où les idées prennent vie grâce à la technologie et à l'innovation.
+Un **Fablab**, ou "Fabrication Laboratory", est un espace collaboratif où chacun peut venir créer, apprendre et partager. Initié par le **MIT** dans les années 2000, ce concept permet d’accéder à des outils de fabrication numérique comme des imprimantes 3D, des découpeuses laser, et bien plus encore. Les Fablabs sont des lieux où les idées prennent vie grâce à la technologie et à l’innovation.
 
 <!-- truncate -->
 
@@ -33,13 +33,13 @@ Notre Fablab est équipé de diverses machines pour répondre à tous vos besoin
 Découvrez quelques projets réalisés dans notre Fablab :
 
 - **Tests de résistance** : Impression de divers objets pour tester la qualité des matériaux.
-- **Amélioration de l'espace** : Création de solutions de rangement et d'organisateurs de tiroirs.
+- **Amélioration de l’espace** : Création de solutions de rangement et d’organisateurs de tiroirs.
 - **Trophées personnalisés** : Fabrication de trophées pour une compétition.
 - **Cartes électroniques** : Développement et assemblage de cartes électroniques pour des projets internes.
 
-## Plongeons dans l'Impression 3D
+## Plongeons dans l’Impression 3D
 
-### Les filaments pour l'impression 3D
+### Les filaments pour l’impression 3D
 
 ![Filaments](/assets/docs/filaments/filament-1.png)
 
@@ -60,31 +60,31 @@ Voici un tableau récapitulatif des différents types de filaments utilisés en 
 
 ### Le système AMS de Bambulab
 
-Le système **AMS** de Bambulab permet l'impression 3D avec jusqu'à quatre filaments différents sans changement manuel des bobines. Il utilise la reconnaissance automatique des filaments (**RFID**) et le changement automatique des bobines (**ABC**). L'AMS est également équipé d'un système de séchage des filaments pour améliorer la qualité d'impression.
+Le système **AMS** de Bambulab permet l’impression 3D avec jusqu’à quatre filaments différents sans changement manuel des bobines. Il utilise la reconnaissance automatique des filaments (**RFID**) et le changement automatique des bobines (**ABC**). L’AMS est également équipé d’un système de séchage des filaments pour améliorer la qualité d’impression.
 
 ![AMS](/assets/docs/bambulab/bambulab-2.png)
 
-### L'extrudeur
+### L’extrudeur
 
-L'**extrudeur** tire le filament et le fait avancer dans le corps chauffant. L'extrudeur de l'imprimante Bambulab X1 Carbon est un extrudeur direct, situé au-dessus de la plaque d'impression, offrant un meilleur contrôle de la température et de la pression du filament.
+L’**extrudeur** tire le filament et le fait avancer dans le corps chauffant. L’extrudeur de l’imprimante Bambulab X1 Carbon est un extrudeur direct, situé au-dessus de la plaque d’impression, offrant un meilleur contrôle de la température et de la pression du filament.
 
 ![Extrudeur](/assets/docs/bambulab/bambulab-3.png)
 
 ### Le corps chauffant
 
-Le filament entre dans le corps chauffant, où il est fondu et extrudé à travers la buse. Le corps chauffant est équipé d'une cartouche chauffante et d'un capteur de température pour contrôler la température du filament.
+Le filament entre dans le corps chauffant, où il est fondu et extrudé à travers la buse. Le corps chauffant est équipé d’une cartouche chauffante et d’un capteur de température pour contrôler la température du filament.
 
 ![Corps chauffant](/assets/docs/bambulab/bambulab-4.png)
 
 ### La plaque
 
-La **plaque** est la surface sur laquelle l'impression est réalisée. Elle est chauffée pour améliorer l'adhérence du filament et peut être texturée ou équipée de surfaces amovibles pour faciliter le retrait de l'impression.
+La **plaque** est la surface sur laquelle l’impression est réalisée. Elle est chauffée pour améliorer l’adhérence du filament et peut être texturée ou équipée de surfaces amovibles pour faciliter le retrait de l’impression.
 
 ![Plaque](/assets/docs/bambulab/bambulab-5.png)
 
 ### Le logiciel de découpe
 
-Un **slicer** convertit votre modèle 3D en instructions d'impression. Dans ce guide, nous utiliserons **OrcaSlicer**, un slicer avancé compatible avec la plupart des imprimantes 3D.
+Un **slicer** convertit votre modèle 3D en instructions d’impression. Dans ce guide, nous utiliserons **OrcaSlicer**, un slicer avancé compatible avec la plupart des imprimantes 3D.
 
 ![Logiciel](/assets/docs/orca/orcaslicer-1.png)
 
@@ -95,25 +95,25 @@ Un **slicer** convertit votre modèle 3D en instructions d'impression. Dans ce g
 
 ![Importation](/assets/docs/orca/orcaslicer-2.png)
 
-#### Création du contexte d'impression
+#### Création du contexte d’impression
 
-1. Configurez l'imprimante dans le logiciel (modèle, diamètre de la buse, taille du plateau, matériau).
+1. Configurez l’imprimante dans le logiciel (modèle, diamètre de la buse, taille du plateau, matériau).
 2. Choisissez le type de plateau (lisse, texturé, technique).
 3. Sélectionnez le filament pour chaque fichier.
-4. Définissez la hauteur des couches pour ajuster la qualité de l'impression.
+4. Définissez la hauteur des couches pour ajuster la qualité de l’impression.
 
 ![Contexte](/assets/docs/orca/orcaslicer-3.png)
 
-#### Positionnement de l'objet sur le plateau
+#### Positionnement de l’objet sur le plateau
 
-Choisissez l'orientation de l'objet pour des raisons techniques et esthétiques. L'impression par dépôt de filament (FDM) laisse des traces visibles, alors choisissez judicieusement l'orientation.
+Choisissez l’orientation de l’objet pour des raisons techniques et esthétiques. L’impression par dépôt de filament (FDM) laisse des traces visibles, alors choisissez judicieusement l’orientation.
 
 ![Couches](/assets/docs/orca/orcaslicer-4.png)
 
 #### Définition du remplissage de la pièce
 
-1. Ajustez la densité de remplissage pour contrôler la solidité et le poids de l'impression.
-2. Choisissez parmi différents motifs de remplissage (nids d'abeille, gyroïdes, grilles).
+1. Ajustez la densité de remplissage pour contrôler la solidité et le poids de l’impression.
+2. Choisissez parmi différents motifs de remplissage (nids d’abeille, gyroïdes, grilles).
 
 ![Remplissage](/assets/docs/orca/orcaslicer-5.png)
 
@@ -127,7 +127,7 @@ Les supports sont nécessaires pour imprimer des parties en surplomb. Activez le
 
 OrcaSlicer offre des paramètres avancés pour affiner votre impression :
 
-- **Vitesse d'impression** : Contrôlez la vitesse de l'extrudeuse.
+- **Vitesse d’impression** : Contrôlez la vitesse de l’extrudeuse.
 - **Réglages de température** : Définissez les températures de la buse et du plateau.
 - **Vitesse du ventilateur** : Ajustez la vitesse de refroidissement du filament.
 - **Réglages de rétraction** : Gérez la rétraction du filament pour éviter les bavures.
@@ -135,26 +135,26 @@ OrcaSlicer offre des paramètres avancés pour affiner votre impression :
 #### Sauvegarde et exportation des fichiers découpés
 
 1. Sauvegardez le fichier découpé.
-2. Exportez-le vers l'imprimante en insérant la carte SD.
+2. Exportez-le vers l’imprimante en insérant la carte SD.
 
 ![Exportation](/assets/docs/orca/orcaslicer-7.png)
 
-#### Préparation de l'imprimante
+#### Préparation de l’imprimante
 
 1. Vérifiez que le filament est correctement chargé.
-2. Assurez-vous qu'il y a suffisamment de filament pour l'impression.
+2. Assurez-vous qu’il y a suffisamment de filament pour l’impression.
 3. Nettoyez et nivelez la plaque.
-4. Lancez l'impression.
+4. Lancez l’impression.
 
-## Introduction à l'IA Embarquée
+## Introduction à l’IA Embarquée
 
-### Qu'est-ce que l'embarqué ?
+### Qu’est-ce que l’embarqué ?
 
-L'embarqué désigne les **systèmes informatiques intégrés** à des objets du quotidien, comme les montres connectées ou les robots autonomes. Ces systèmes sont optimisés pour exécuter des tâches spécifiques avec des ressources limitées.
+L’embarqué désigne les **systèmes informatiques intégrés** à des objets du quotidien, comme les montres connectées ou les robots autonomes. Ces systèmes sont optimisés pour exécuter des tâches spécifiques avec des ressources limitées.
 
-### Pourquoi l'embarqué est-il crucial aujourd'hui ?
+### Pourquoi l’embarqué est-il crucial aujourd’hui ?
 
-- **Efficacité énergétique** : Fonctionne avec une faible consommation d'énergie.
+- **Efficacité énergétique** : Fonctionne avec une faible consommation d’énergie.
 - **Indépendance et autonomie** : Fonctionne 100% offline.
 - **Temps réel** : Réponses ultra-rapides pour des applications critiques.
 
@@ -162,30 +162,30 @@ L'embarqué désigne les **systèmes informatiques intégrés** à des objets du
 
 | Caractéristique              | Microcontrôleur ⚙️                                                               | Micro-ordinateur 💻                                                                        |
 | ---------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| **Définition**               | Un circuit intégré avec processeur, mémoire et périphériques sur une seule puce. | Un petit ordinateur avec processeur, mémoire, système d'exploitation et ports d'extension. |
-| **Système d'exploitation**   | Aucun (exécute directement un programme en boucle)                               | Oui (ex. Linux sur Raspberry Pi)                                                           |
-| **Puissance de calcul**      | Faible, optimisé pour des tâches simples et répétitives                          | Plus puissant, capable d'exécuter des applications complexes                               |
+| **Définition**               | Un circuit intégré avec processeur, mémoire et périphériques sur une seule puce. | Un petit ordinateur avec processeur, mémoire, système d’exploitation et ports d’extension. |
+| **Système d’exploitation**   | Aucun (exécute directement un programme en boucle)                               | Oui (ex. Linux sur Raspberry Pi)                                                           |
+| **Puissance de calcul**      | Faible, optimisé pour des tâches simples et répétitives                          | Plus puissant, capable d’exécuter des applications complexes                               |
 | **Mémoire (RAM & Stockage)** | Très limitée (quelques Ko à Mo)                                                  | Plus importante (512 Mo à plusieurs Go)                                                    |
-| **Consommation d'énergie**   | Très basse (fonctionne sur batterie longtemps)                                   | Plus élevée (nécessite souvent une alimentation)                                           |
-| **Programmation**            | Code souvent écrit en C ou en assembleur, avec un temps d'exécution précis       | Peut exécuter des langages variés (Python, Java, C++) et plusieurs processus en parallèle  |
-| **Exemples d'utilisation**   | Commande d'un moteur, gestion de capteurs, robotique basique                     | Vision par ordinateur, IA embarquée, serveurs légers, stations météo connectées            |
+| **Consommation d’énergie**   | Très basse (fonctionne sur batterie longtemps)                                   | Plus élevée (nécessite souvent une alimentation)                                           |
+| **Programmation**            | Code souvent écrit en C ou en assembleur, avec un temps d’exécution précis       | Peut exécuter des langages variés (Python, Java, C++) et plusieurs processus en parallèle  |
+| **Exemples d’utilisation**   | Commande d’un moteur, gestion de capteurs, robotique basique                     | Vision par ordinateur, IA embarquée, serveurs légers, stations météo connectées            |
 
 ### Perspectives futures
 
-Avec l'évolution des microcontrôleurs, on voit apparaître des applications de plus en plus intelligentes :
+Avec l’évolution des microcontrôleurs, on voit apparaître des applications de plus en plus intelligentes :
 
 - Voitures autonomes
 - Monitoring médical en temps réel
 - Surveillance assistée par IA
 
-## Quels types d'appareils pour l'embarqué ?
+## Quels types d’appareils pour l’embarqué ?
 
 ### Les plateformes les plus connues
 
 | Type de Carte     | Caractéristiques                                   | Exemples                      |
 | ----------------- | -------------------------------------------------- | ----------------------------- |
 | **CPU Only**      | Peu gourmand en énergie, adapté aux tâches légères | Raspberry Pi, Arduino         |
-| **CPU + GPU/TPU** | Accélération du calcul pour l'IA et la vision      | NVIDIA Jetson, Coral Edge TPU |
+| **CPU + GPU/TPU** | Accélération du calcul pour l’IA et la vision      | NVIDIA Jetson, Coral Edge TPU |
 | **FPGA**          | Ultra spécialisé, faible consommation              | Xilinx, Lattice               |
 
 ### Comparatif entre Raspberry Pi et Jetson
@@ -203,13 +203,13 @@ Avec l'évolution des microcontrôleurs, on voit apparaître des applications de
 
 ![multiproc architecture](/assets/blog/welcome/rpi_schema.png)
 
-La Raspberry Pi est un micro-ordinateur monocarte basé sur une architecture ARM, développé par la fondation Raspberry Pi. Conçue pour l'éducation, elle est devenue une référence dans le domaine du DIY, de l'embarqué et de l'IA.
+La Raspberry Pi est un micro-ordinateur monocarte basé sur une architecture ARM, développé par la fondation Raspberry Pi. Conçue pour l’éducation, elle est devenue une référence dans le domaine du DIY, de l’embarqué et de l’IA.
 
-- **Système d'exploitation** : Raspberry Pi OS, basé sur Debian.
+- **Système d’exploitation** : Raspberry Pi OS, basé sur Debian.
 - **Langages de programmation** : Python, C, Java, et plus.
 - **Applications** : Domotique, robotique, serveurs web, stations météo, IA embarquée.
 
-L'installation d'une Raspberry Pi est simple :
+L’installation d’une Raspberry Pi est simple :
 
 1. Une carte micro SD.
 2. [RPI Imager](https://www.raspberrypi.com/software/) pour flasher la carte micro SD avec une image de votre choix.
@@ -218,21 +218,21 @@ L'installation d'une Raspberry Pi est simple :
 
 ![alt text](/assets/blog/welcome/computer_vision.png)
 
-La Computer Vision est un domaine de l'IA qui permet aux machines de comprendre et d'analyser des images ou des vidéos.
+La Computer Vision est un domaine de l’IA qui permet aux machines de comprendre et d’analyser des images ou des vidéos.
 
 ### You Only Look Once (YOLO)
 
 ![alt text](/assets/blog/welcome/yolo_map.png)
 
-YOLO est un algorithme de détection d'objets en temps réel qui traite l'image en une seule passe, rendant le processus extrêmement rapide et efficace.
+YOLO est un algorithme de détection d’objets en temps réel qui traite l’image en une seule passe, rendant le processus extrêmement rapide et efficace.
 
 ![alt text](/assets/blog/welcome/yolo_grid.png)
 
-## L'IA embarquée et le Computer Vision en temps réel
+## L’IA embarquée et le Computer Vision en temps réel
 
-### Pourquoi embarquer l'IA sur des petits appareils ?
+### Pourquoi embarquer l’IA sur des petits appareils ?
 
-- **Confidentialité** : Pas besoin d'envoyer des données sensibles dans le cloud.
+- **Confidentialité** : Pas besoin d’envoyer des données sensibles dans le cloud.
 - **Autonomie** : Fonctionne sans connexion internet.
 - **Réduction des coûts** : Moins de dépendance à une infrastructure serveur.
 
@@ -249,9 +249,9 @@ Détecter un objet en quelques millisecondes avec des ressources limitées est u
 
 ### Introduction
 
-Bienvenue dans cette partie du workshop où nous allons parler d'optimisation et de **temps réel**. Dans notre cas, nous devons traiter un **flux vidéo en continu**, exécuter une **inférence rapide**, et **envoyer une alerte** le plus vite possible.
+Bienvenue dans cette partie du workshop où nous allons parler d’optimisation et de **temps réel**. Dans notre cas, nous devons traiter un **flux vidéo en continu**, exécuter une **inférence rapide**, et **envoyer une alerte** le plus vite possible.
 
-Pour cela, nous allons exploiter **le multiprocessing** pour paralléliser les tâches et éviter les goulets d'étranglement !
+Pour cela, nous allons exploiter **le multiprocessing** pour paralléliser les tâches et éviter les goulets d’étranglement !
 
 ### Matériel & Préparation
 
@@ -265,7 +265,7 @@ Maintenant que nous connaissons la Raspberry Pi, nous pouvons découvrir tout so
 
 ![camera](/assets/blog/welcome/camera.png)
 
-L'un des sites principaux où trouver du matériel :
+L’un des sites principaux où trouver du matériel :
 
 ![alt text](/assets/blog/welcome/kubii.png)
 
@@ -273,9 +273,9 @@ L'un des sites principaux où trouver du matériel :
 
 Nous sommes dans un contexte **100% offline**, il faut donc **maximiser les performances** de notre système embarqué en jouant sur :
 
-- **L'optimisation CPU & RAM**
+- **L’optimisation CPU & RAM**
 - **Le multiprocessing** pour exécuter plusieurs tâches en parallèle
-- **Le choix d'une bonne résolution vidéo** pour ne pas surcharger le traitement
+- **Le choix d’une bonne résolution vidéo** pour ne pas surcharger le traitement
 - **La réduction de latence** pour un temps de réponse optimal
 
 ### Déroulement du TP
@@ -286,12 +286,12 @@ Nous allons concevoir un programme **divisé en plusieurs modules**, chacun fonc
 
 1. **Acquisition de la vidéo**: Capturer le flux de la caméra en continu.
 2. **Inférence avec YOLO**: Détecter une **intrusion humaine** en utilisant un modèle [**YOLO**](https://docs.ultralytics.com/fr).
-3. **Alerte en cas d'intrusion**: Si une personne est détectée, afficher un message.
+3. **Alerte en cas d’intrusion**: Si une personne est détectée, afficher un message.
 4. **Affichage en temps réel**: Montrer la vidéo avec les **bounding boxes** des intrus.
 
-#### Étape 2 : Installation de l'environnement de travail
+#### Étape 2 : Installation de l’environnement de travail
 
-- **Création d'un environnement virtuel** afin d'isoler les dépendances :
+- **Création d’un environnement virtuel** afin d’isoler les dépendances :
 
 Dans votre terminal :
 
@@ -321,7 +321,7 @@ streamlit
 
 #### Étape 3 : Multiprocessing en Action
 
-Nous allons exécuter chaque module dans un **processus séparé** afin d'optimiser le traitement du flux vidéo en **temps réel** !
+Nous allons exécuter chaque module dans un **processus séparé** afin d’optimiser le traitement du flux vidéo en **temps réel** !
 
 ![multiproc architecture](/assets/blog/welcome/multiproc.png)
 
@@ -362,15 +362,15 @@ def inference(frame_queue: Queue, alert_queue: Queue, display_queue: Queue) -> N
     """
     model = YOLO("yolov8n.pt")  # Charge le modèle YOLOv8
     while True:
-        frame = frame_queue.get()  # Récupère une image de la file d'attente
+        frame = frame_queue.get()  # Récupère une image de la file d’attente
         results = model(frame)  # Détecte les objets
 
-        # Créer une copie de l'image pour ne montrer que les personnes
+        # Créer une copie de l’image pour ne montrer que les personnes
         frame_persons = frame.copy()
 
         for result in results:
             for box in result.boxes:
-                cls = int(box.cls[0])  # Classe de l'objet détecté
+                cls = int(box.cls[0])  # Classe de l’objet détecté
                 if cls == 0:  # Classe 0 = humain
                     alert_queue.put("Personne détectée !")
                     # Dessiner seulement les bounding boxes des personnes
@@ -393,7 +393,7 @@ def display_results(display_queue: Queue) -> None:
         frame = display_queue.get()
         cv2.imshow("Détection de personnes", frame)
 
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        if cv2.waitKey(1) & 0xFF == ord(’q’):
             break
     cv2.destroyAllWindows()
 
@@ -432,8 +432,8 @@ if __name__ == "__main__":
 ### Résultats Attendus
 
 - La caméra capture un flux vidéo **en continu**
-- L'inférence YOLO détecte une **présence humaine**
-- Une alerte est envoyée dès qu'une **intrusion** est détectée
+- L’inférence YOLO détecte une **présence humaine**
+- Une alerte est envoyée dès qu’une **intrusion** est détectée
 - Le tout fonctionne **en parallèle et en temps réel**
 
 ### Conclusion & Améliorations
@@ -444,12 +444,12 @@ Bravo ! Vous avez mis en place un système de **surveillance en temps réel** su
 
 - **Optimiser la gestion de la mémoire** pour éviter les fuites.
 - **Redimensionner les images** pour réduire la charge de traitement.
-- **Appliquer la quantization** pour accélérer l'inférence.
+- **Appliquer la quantization** pour accélérer l’inférence.
 - **Ajouter un mode serveur** pour envoyer les alertes sur un réseau local.
 
-### BONUS : Qu'est-ce que la Quantization en IA ?
+### BONUS : Qu’est-ce que la Quantization en IA ?
 
-La quantization est une technique utilisée en intelligence artificielle, notamment pour optimiser les modèles de deep learning afin qu'ils fonctionnent plus efficacement sur des appareils à ressources limitées.
+La quantization est une technique utilisée en intelligence artificielle, notamment pour optimiser les modèles de deep learning afin qu’ils fonctionnent plus efficacement sur des appareils à ressources limitées.
 
 Un modèle de deep learning utilise :
 
@@ -462,7 +462,7 @@ La quantization réduit la précision de ces valeurs en les convertissant en int
 
 Finalement, nous obtenons un modèle plus léger à la fois à charger dans la RAM mais aussi à inférer.
 
-Puisque nous utilisons YOLO depuis la [bibliothèque ultralytics](https://docs.ultralytics.com/fr/integrations/ncnn/#installation), allons voir comment cela s'applique à notre cas :
+Puisque nous utilisons YOLO depuis la [bibliothèque ultralytics](https://docs.ultralytics.com/fr/integrations/ncnn/#installation), allons voir comment cela s’applique à notre cas :
 
 ```python
 from ultralytics import YOLO
@@ -471,7 +471,7 @@ from ultralytics import YOLO
 model = YOLO("yolo11n.pt")
 
 # Export the model to NCNN format
-model.export(format="ncnn")  # creates '/yolo11n_ncnn_model'
+model.export(format="ncnn")  # creates ’/yolo11n_ncnn_model’
 
 # Load the exported NCNN model
 ncnn_model = YOLO("./yolo11n_ncnn_model")
@@ -480,8 +480,8 @@ ncnn_model = YOLO("./yolo11n_ncnn_model")
 results = ncnn_model("https://ultralytics.com/images/bus.jpg")
 ```
 
-Tentez de nouveau d'éxécuter ce programme en chargeant notre nouveau réseau !
+Tentez de nouveau d’éxécuter ce programme en chargeant notre nouveau réseau !
 
 ## Conclusion
 
-Vous avez maintenant toutes les bases pour déployer de l'IA embarquée sur Raspberry Pi et d'autres appareils !
+Vous avez maintenant toutes les bases pour déployer de l’IA embarquée sur Raspberry Pi et d’autres appareils !

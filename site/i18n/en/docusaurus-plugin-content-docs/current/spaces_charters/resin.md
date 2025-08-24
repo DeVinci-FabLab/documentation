@@ -93,4 +93,6 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 | Technical Referent | Urbain LANTRÈS     | @urbanosaurus            |
 | Technical Referent | Alexandre COURRIEU | @ammon6421               |
 
+---
+
 Thank you for respecting these guidelines so that this space remains accessible and pleasant for everyone!

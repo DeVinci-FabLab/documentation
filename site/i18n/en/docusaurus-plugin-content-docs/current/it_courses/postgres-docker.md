@@ -32,7 +32,7 @@ Docker is available for Windows, macOS, and Linux. You can download the installe
 
 ## Step 2: Create a PostgreSQL container
 
-Docker compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application's services.
+Docker compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services.
 
 Create a new directory named `database` and add a `docker-compose.yml` file with the following content:
 

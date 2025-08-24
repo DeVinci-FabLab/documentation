@@ -1,7 +1,7 @@
 ---
 title: Créez la documentation de votre projet
 sidebar_position: 1
-description: Ce cours vous permettra de créer et héberger un site web statique pour votre documentation. L'outil est développé pour un projet C# mais peut être utilisé pour tout autre projet, les articles étant rédigés en markdown.
+description: Ce cours vous permettra de créer et héberger un site web statique pour votre documentation. L’outil est développé pour un projet C# mais peut être utilisé pour tout autre projet, les articles étant rédigés en markdown.
 slug: csharp-docs
 tags: [course, info, csharp]
 last_update:
@@ -17,10 +17,10 @@ additional_contributors:
 
 ## Introduction
 
-Cet article vous guidera dans le processus de création d'une documentation pour votre projet C# en utilisant l'outil [DocFX](https://dotnet.github.io/docfx/). La documentation est essentielle pour aider les utilisateurs à comprendre comment utiliser les outils que vous créez. C'est aussi un excellent moyen de mettre en valeur la qualité de votre travail.
+Cet article vous guidera dans le processus de création d’une documentation pour votre projet C# en utilisant l’outil [DocFX](https://dotnet.github.io/docfx/). La documentation est essentielle pour aider les utilisateurs à comprendre comment utiliser les outils que vous créez. C’est aussi un excellent moyen de mettre en valeur la qualité de votre travail.
 
 :::caution
-Ce cours suppose que vous avez des connaissances de base en C# et que vous disposez d'un projet à documenter (même une simple application console).
+Ce cours suppose que vous avez des connaissances de base en C# et que vous disposez d’un projet à documenter (même une simple application console).
 :::
 
 ## Prérequis
@@ -45,7 +45,7 @@ Pour installer ou mettre à jour docfx, ouvrez un terminal et exécutez :
 dotnet tool update -g docfx
 ```
 
-### Étape 2 : Configurer l'espace de travail
+### Étape 2 : Configurer l’espace de travail
 
 Supposons que votre projet a une structure simple comme ceci :
 
@@ -120,7 +120,7 @@ Voici le contenu par défaut de `docfx.json` :
 }
 ```
 
-Pour un affichage plus pratique, des fonctionnalités et pour cibler le projet, je vous recommande de mettre à jour le fichier à la version ci-dessous. Pour plus d'informations, consultez la [documentation officielle](https://dotnet.github.io/docfx/reference/docfx-json-reference.html) des balises de références.
+Pour un affichage plus pratique, des fonctionnalités et pour cibler le projet, je vous recommande de mettre à jour le fichier à la version ci-dessous. Pour plus d’informations, consultez la [documentation officielle](https://dotnet.github.io/docfx/reference/docfx-json-reference.html) des balises de références.
 
 ```json
 {
@@ -162,7 +162,7 @@ Pour un affichage plus pratique, des fonctionnalités et pour cibler le projet, 
 ### Étape 3 : [ Optionnel ] Mettre à jour le contenu
 
 :::note
-Vous souhaiterez peut-être sélectionner le canal de la documentation que vous souhaitez générer. Par exemple, si vous souhaitez générer la documentation uniquement pour la version Debug ou Release. N'hésitez pas à mettre à jour `files` sur Debug ou Release et `TargetFramework` sur votre version dotnet (disponible dans le `MyApp.csproj`).
+Vous souhaiterez peut-être sélectionner le canal de la documentation que vous souhaitez générer. Par exemple, si vous souhaitez générer la documentation uniquement pour la version Debug ou Release. N’hésitez pas à mettre à jour `files` sur Debug ou Release et `TargetFramework` sur votre version dotnet (disponible dans le `MyApp.csproj`).
 :::
 
 ```json
@@ -184,7 +184,7 @@ Vous souhaiterez peut-être sélectionner le canal de la documentation que vous 
 ...
 ```
 
-N'oubliez pas de mettre à jour régulièrement vos fichiers compilés en utilisant la commande `dotnet build` au fur et à mesure des modifications du code :
+N’oubliez pas de mettre à jour régulièrement vos fichiers compilés en utilisant la commande `dotnet build` au fur et à mesure des modifications du code :
 
 ```bash
 dotnet build -c Debug
@@ -216,7 +216,7 @@ Votre documentation est désormais accessible sur [localhost:8080](http://localh
 Par défaut, seules les sections `Docs` et `Api Documentation` sont disponibles. Vous pouvez ajouter de nouvelles sections à votre documentation. Pour ce faire, vous devrez suivre quelques étapes :
 
 1. Ajoutez un nouveau dossier dans le dossier `documentation`. Par exemple, `articles`.
-2. À l'intérieur d'articles, ajoutez un fichier `index.md` et un fichier `toc.yml`.
+2. À l’intérieur d’articles, ajoutez un fichier `index.md` et un fichier `toc.yml`.
 
 Voici un exemple du fichier `index.md` :
 
@@ -235,10 +235,10 @@ items:
 ```
 
 :::note
-Nous avons ajouté la balise `items` au fichier `toc.yml`. C'est la racine de la table des matières et cela supprimera l'erreur `Incorrect Type. Expected "TOC"`.
+Nous avons ajouté la balise `items` au fichier `toc.yml`. C’est la racine de la table des matières et cela supprimera l’erreur `Incorrect Type. Expected "TOC"`.
 :::
 
-3. Maintenant, nous devons mettre à jour le fichier `toc.yml` dans le dossier `documentation` pour ajouter la nouvelle section. Je recommande d'ajouter une mention à la page d'accueil (sera la page d'atterrissage lorsque la section est cliquée). Voici un exemple du fichier `toc.yml` :
+3. Maintenant, nous devons mettre à jour le fichier `toc.yml` dans le dossier `documentation` pour ajouter la nouvelle section. Je recommande d’ajouter une mention à la page d’accueil (sera la page d’atterrissage lorsque la section est cliquée). Voici un exemple du fichier `toc.yml` :
 
 ```yml
 items:
@@ -296,7 +296,7 @@ Consultez [DocFX Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_ma
 
 ### Logo & favicon
 
-Pour ajouter un logo ou un favicon à votre documentation, commencez par les ajouter dans le dossier assets (si vous ne l'avez pas, créez-le dans le dossier `documentation`). Ensuite, mettez à jour le fichier `docfx.json` pour ajouter les balises `logo` et `favicon`. Voici un exemple :
+Pour ajouter un logo ou un favicon à votre documentation, commencez par les ajouter dans le dossier assets (si vous ne l’avez pas, créez-le dans le dossier `documentation`). Ensuite, mettez à jour le fichier `docfx.json` pour ajouter les balises `logo` et `favicon`. Voici un exemple :
 
 ```json
 ...
@@ -313,13 +313,13 @@ Pour ajouter un logo ou un favicon à votre documentation, commencez par les ajo
   }
 ```
 
-Pour les deux, je vous recommande d'utiliser des fichiers svg afin que le logo et le favicon soient évolutifs et ne perdent pas en qualité.
+Pour les deux, je vous recommande d’utiliser des fichiers svg afin que le logo et le favicon soient évolutifs et ne perdent pas en qualité.
 
 ### Étape 4 : Ajouter la documentation du code
 
-En programmant en C#, vous êtes peut-être au courant de l'utilisation des commentaires `///` pour documenter votre code. C'est une bonne pratique pour aider les autres développeurs à comprendre votre code. DocFX prendra ces commentaires en compte pour générer une documentation précise. Veuillez vous référer à la [documentation officielle](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) pour plus d'informations.
+En programmant en C#, vous êtes peut-être au courant de l’utilisation des commentaires `///` pour documenter votre code. C’est une bonne pratique pour aider les autres développeurs à comprendre votre code. DocFX prendra ces commentaires en compte pour générer une documentation précise. Veuillez vous référer à la [documentation officielle](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) pour plus d’informations.
 
-Pour que docfx prenne en compte ces métadonnées, vérifiez qu'un fichier de documentation est bien généré. Ajoutez cette ligne à votre "\*\*.csproj" fichier, à l'intérieur de la balise "PropertyGroup" :
+Pour que docfx prenne en compte ces métadonnées, vérifiez qu’un fichier de documentation est bien généré. Ajoutez cette ligne à votre "\*\*.csproj" fichier, à l’intérieur de la balise "PropertyGroup" :
 
 ```xml
 <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -385,13 +385,13 @@ Maintenant, votre documentation est prête à être générée dans la section `
 
 ### Étape 1 : Configuration de GitHub Pages
 
-GitHub propose un service appelé GitHub Pages permettant d'héberger des sites statiques directement depuis votre dépôt. Nous devrons configurer quelques éléments avant de déployer la documentation.
+GitHub propose un service appelé GitHub Pages permettant d’héberger des sites statiques directement depuis votre dépôt. Nous devrons configurer quelques éléments avant de déployer la documentation.
 
-Tout d'abord, allez dans les paramètres de votre dépôt, puis dans la section "Pages". Sélectionnez "Déployer depuis une branche", puis sélectionnez la branche "gh-pages" et le dossier racine. Cliquez ensuite sur "Enregistrer". Si vous n'avez pas de branche "gh-pages", vous devrez en créer une (il est préférable qu'elle soit vide au début mais ce n'est pas obligatoire).
+Tout d’abord, allez dans les paramètres de votre dépôt, puis dans la section "Pages". Sélectionnez "Déployer depuis une branche", puis sélectionnez la branche "gh-pages" et le dossier racine. Cliquez ensuite sur "Enregistrer". Si vous n’avez pas de branche "gh-pages", vous devrez en créer une (il est préférable qu’elle soit vide au début mais ce n’est pas obligatoire).
 
 ### Étape 2 : Déploiement sur le web
 
-Ensuite, vous devrez créer un nouveau dossier nommé `.github` à la racine de votre projet. À l'intérieur de ce dossier, créez un nouveau dossier nommé `workflows`. À l'intérieur de ce dossier, créez un nouveau fichier nommé `deploy_docs.yml`. Ce fichier contiendra le flux de travail pour générer et déployer la documentation sur GitHub Pages.
+Ensuite, vous devrez créer un nouveau dossier nommé `.github` à la racine de votre projet. À l’intérieur de ce dossier, créez un nouveau dossier nommé `workflows`. À l’intérieur de ce dossier, créez un nouveau fichier nommé `deploy_docs.yml`. Ce fichier contiendra le flux de travail pour générer et déployer la documentation sur GitHub Pages.
 
 Voici un exemple de fichier `deploy_docs.yml` :
 
@@ -422,12 +422,12 @@ jobs:
           publish_dir: docs/_site
 ```
 
-Poussez vos modifications puis rendez-vous dans la section "Actions" de votre dépôt. Vous devriez voir un nouveau flux de travail appelé "Deploy docs". Cliquez dessus pour voir les journaux. Si tout s'est bien passé, vous devriez voir un message "Déployé" à la fin des journaux.
+Poussez vos modifications puis rendez-vous dans la section "Actions" de votre dépôt. Vous devriez voir un nouveau flux de travail appelé "Deploy docs". Cliquez dessus pour voir les journaux. Si tout s’est bien passé, vous devriez voir un message "Déployé" à la fin des journaux.
 
 Maintenant, à chaque push sur la branche main, la documentation sera générée et déployée sur GitHub Pages.
 
 :::note
-Dans la description de votre dépôt GitHub, cliquez sur "Edit" puis pour l'URL sélectionnez l'option d'URL "GitHub Pages". Ainsi, votre documentation sera directement accessible depuis votre dépôt.
+Dans la description de votre dépôt GitHub, cliquez sur "Edit" puis pour l’URL sélectionnez l’option d’URL "GitHub Pages". Ainsi, votre documentation sera directement accessible depuis votre dépôt.
 :::
 
 ## Sources

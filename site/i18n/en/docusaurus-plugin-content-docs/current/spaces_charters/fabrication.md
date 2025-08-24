@@ -41,6 +41,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 - Visually check the condition of tools before use (blades, drill bits, abrasives, etc.).
 - Plan the manufacturing steps before starting to avoid errors and accidents.
+- **Do not use too much hot glue**: a small amount is sufficient.
 - **Work cleanly and tidily** to limit risks (objects lying around, cables on the floor, etc.).
 - Test on a scrap piece before any final cutting or machining.
 - Handle cutting tools **with care**, even when not in use.
@@ -79,5 +80,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 | ------------------ | ------------------ | ------------------------ |
 | Space Manager      | Alexandre COURRIEU | @ammon6421               |
 | Technical Referent | Maxime FROMONT     | @palmito0496             |
+
+---
 
 Thank you for respecting these guidelines so that this space remains accessible and pleasant for everyone!

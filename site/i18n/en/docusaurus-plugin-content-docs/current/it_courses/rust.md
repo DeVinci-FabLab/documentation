@@ -25,11 +25,11 @@ additional_contributors:
 
 Rust is a language aiming to replace low-level languages like C. It focuses on performance, concurrency, and above all, safety.
 
-Indeed, one of the biggest issues in C/C++ is that it's hard to manage memory robustly without leaks.
+Indeed, one of the biggest issues in C/C++ is that it’s hard to manage memory robustly without leaks.
 
 In Rust, code is safe by default thanks to its ownership and borrowing system, which can be tricky to grasp.
 
-Rust can be used for the same scenarios as C/C++; you'll find it in the Linux kernel, in Discord's backend, and in microcontrollers.
+Rust can be used for the same scenarios as C/C++; you’ll find it in the Linux kernel, in Discord’s backend, and in microcontrollers.
 
 ## Setup
 
@@ -101,7 +101,7 @@ edition = "2023"
 # none yet, but you get the idea
 ```
 
-When you create a project with `cargo`, a `Cargo.toml` ([Tom's Obvious, Minimal Language](https://toml.io/fr/)) is automatically added to manage dependencies.
+When you create a project with `cargo`, a `Cargo.toml` ([Tom’s Obvious, Minimal Language](https://toml.io/fr/)) is automatically added to manage dependencies.
 
 [More info](https://doc.rust-lang.org/cargo/reference/manifest.html)
 
@@ -111,9 +111,9 @@ When you create a project with `cargo`, a `Cargo.toml` ([Tom's Obvious, Minimal 
 
 Rust requires semicolons to separate statements, but inside functions you may see lines without semicolons—those are treated as return expressions.
 
-### Macro? What's That?
+### Macro? What’s That?
 
-A macro ends with `!` (e.g., `println!("hello")`). It's not a regular function, but similar.
+A macro ends with `!` (e.g., `println!("hello")`). It’s not a regular function, but similar.
 
 ### Program Entry Point
 
@@ -150,7 +150,7 @@ Every Rust program starts with a `main` function.
   loop {
       println!("Looping forever");
   }
-  // Won't stop unless interrupted
+  // Won’t stop unless interrupted
   ```
 
   A loop can be an expression:
@@ -245,7 +245,7 @@ Every Rust program starts with a `main` function.
 
 ## Ownership
 
-Rust's key feature is its ownership system, which guarantees safety at compile time and prevents common bugs.
+Rust’s key feature is its ownership system, which guarantees safety at compile time and prevents common bugs.
 
 Three ownership rules:
 
@@ -322,7 +322,7 @@ fn borrow_string() -> &String {
 Rust disallows returning references to values that go out of scope. Use owned return types or explicit lifetimes.
 
 **Solution : lifetime**
-The lifetimes are parameters added to specify the duration of a value's validity. To fix the previous function, you should return an owned value instead of a reference.
+The lifetimes are parameters added to specify the duration of a value’s validity. To fix the previous function, you should return an owned value instead of a reference.
 
 <important>**Trust the Compiler**</important>
 
@@ -392,7 +392,7 @@ println!("{}", s); // prints "hello, world!"
 A program has access to two memory regions:
 
 - Stack: contiguous LIFO memory for fixed-size data.
-- Heap: dynamic, for data whose size isn't known at compile time.
+- Heap: dynamic, for data whose size isn’t known at compile time.
 
 Use the heap for types like `String`, vectors, etc., since stack allocations require compile-time known sizes.
 

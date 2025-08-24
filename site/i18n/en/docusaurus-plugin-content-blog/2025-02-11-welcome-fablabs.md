@@ -66,7 +66,7 @@ The **AMS** system from Bambulab allows 3D printing with up to four different fi
 
 ### The Extruder
 
-The **extruder** pulls the filament and feeds it into the heated body. The extruder of the Bambulab X1 Carbon is a direct extruder, located above the print bed, offering better control over the filament's temperature and pressure.
+The **extruder** pulls the filament and feeds it into the heated body. The extruder of the Bambulab X1 Carbon is a direct extruder, located above the print bed, offering better control over the filament’s temperature and pressure.
 
 ![Extruder](/assets/docs/bambulab/bambulab-3.png)
 
@@ -106,7 +106,7 @@ A **slicer** converts your 3D model into printing instructions. In this guide, w
 
 #### Positioning the Object on the Build Plate
 
-Choose the object's orientation for technical and aesthetic reasons. FDM printing leaves visible layer lines, so choose the orientation wisely.
+Choose the object’s orientation for technical and aesthetic reasons. FDM printing leaves visible layer lines, so choose the orientation wisely.
 
 ![Layers](/assets/docs/orca/orcaslicer-4.png)
 
@@ -466,7 +466,7 @@ Quantization reduces the precision of these values by converting them to int8 (8
 
 Ultimately, we get a lighter model that is faster to load into RAM and infer.
 
-Since we are using YOLO from the [ultralytics library](https://docs.ultralytics.com/fr/integrations/ncnn/#installation), let's see how this applies to our case:
+Since we are using YOLO from the [ultralytics library](https://docs.ultralytics.com/fr/integrations/ncnn/#installation), let’s see how this applies to our case:
 
 ```python
 from ultralytics import YOLO

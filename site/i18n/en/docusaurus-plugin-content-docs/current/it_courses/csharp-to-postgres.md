@@ -20,7 +20,7 @@ additional_contributors:
 This learning material will guide you through the process of connecting a C# application to a PostgreSQL database.
 
 :::caution
-In this material, we assume that you have a PostgreSQL database installed on your machine. If you don't, consider reading the [PostgreSQL](postgres-docker.md) learning material.
+In this material, we assume that you have a PostgreSQL database installed on your machine. If you don’t, consider reading the [PostgreSQL](postgres-docker.md) learning material.
 :::
 
 ## Prerequisites

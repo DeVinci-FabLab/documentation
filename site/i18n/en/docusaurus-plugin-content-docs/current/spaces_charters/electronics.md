@@ -87,7 +87,9 @@ Electronic components and prototyping equipment are available **upon request** f
 | Role or Function   | Name           | Contact Method (discord) |
 | ------------------ | -------------- | ------------------------ |
 | Space Manager      | Urbain LANTRÈS | @urbanosaurus            |
-| Technical Referent | Robin L'HYVER  | @robinmoon               |
+| Technical Referent | Robin L’HYVER  | @robinmoon               |
 | Technical Referent | Hugo DEGIOANNI | @loxa                    |
+
+---
 
 Thank you for respecting these guidelines so that this space remains accessible and pleasant for everyone!

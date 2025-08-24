@@ -17,11 +17,11 @@ Ce guide présente les concepts fondamentaux des tests unitaires, illustrés ave
 
 ## Pourquoi écrire des tests unitaires ?
 
-- **Qualité** : Le taux de couverture correspond au pourcentage de code testé par les tests unitaires et permet de s'assurer que le code fonctionne comme prévu et que les modifications futures ne cassent pas les fonctionnalités existantes.
+- **Qualité** : Le taux de couverture correspond au pourcentage de code testé par les tests unitaires et permet de s’assurer que le code fonctionne comme prévu et que les modifications futures ne cassent pas les fonctionnalités existantes.
   Avoir un taux de couverture élevé est un gage de qualité et de robustesse du code.
 - **Détection rapide des bugs** : Les tests unitaires permettent de détecter rapidement les erreurs dans le code, ce qui réduit le temps passé à déboguer.
 - **Documentation vivante** : Les tests unitaires servent de documentation vivante du code, en montrant comment chaque partie est censée fonctionner.
-- **Faciliter la modification du code** : Les tests unitaires vous permettent de modifier le code en toute confiance, car ils peuvent assurer que les modifications n'ont rien cassé.
+- **Faciliter la modification du code** : Les tests unitaires vous permettent de modifier le code en toute confiance, car ils peuvent assurer que les modifications n’ont rien cassé.
 
 ## Créer et configurer un projet de tests MSTest
 
@@ -67,7 +67,7 @@ dotnet add tests/MonProjet.Tests reference src/MonProjet/MonProjet.csproj
 
 Cela crée un projet de tests nommé `MonProjet.Tests` dans le dossier `tests` puis lie le projet de tests à la solution et au projet principal.
 
-C'est tout ! Tu peux maintenant écrire tes tests dans `tests/MonProjet.Tests`. Organise les fichiers de test en suivant la structure du projet principal (ex : un fichier `MaClasseTests.cs` pour `MaClasse.cs`).
+C’est tout ! Tu peux maintenant écrire tes tests dans `tests/MonProjet.Tests`. Organise les fichiers de test en suivant la structure du projet principal (ex : un fichier `MaClasseTests.cs` pour `MaClasse.cs`).
 
 Voici la structure finale :
 
@@ -88,7 +88,7 @@ MonProjetSolution/
 
 Pour plus de détails : [docs Microsoft - Créer un projet de test MSTest](https://learn.microsoft.com/fr-fr/dotnet/core/testing/unit-testing-with-mstest)
 
-## Structure d'un Test Unitaire (schéma AAA)
+## Structure d’un Test Unitaire (schéma AAA)
 
 - **Arrange** : Préparer les données et objets nécessaires au test de la méthode.
 - **Act** : Appeler la méthode à tester.
@@ -96,7 +96,7 @@ Pour plus de détails : [docs Microsoft - Créer un projet de test MSTest](htt
 
 ### Exemple réaliste avec MSTest
 
-Supposons une classe qui contient des méthodes pour calculer la TVA et le prix TTC d'un montant donné :
+Supposons une classe qui contient des méthodes pour calculer la TVA et le prix TTC d’un montant donné :
 
 ```csharp
 namespace MonNamespace
@@ -169,12 +169,12 @@ Voici les méthodes les plus courantes :
 
 - **`Assert.AreEqual(expected, actual, message)`** : Vérifie que deux valeurs sont égales.
 - **`Assert.AreNotEqual(expected, actual, message)`** : Vérifie que deux valeurs ne sont pas égales.
-- **`Assert.IsTrue(condition, message)`** : Vérifie qu'une condition est vraie.
-- **`Assert.IsFalse(condition, message)`** : Vérifie qu'une condition est fausse.
-- **`Assert.IsNull(object, message)`** : Vérifie qu'un objet est null.
-- **`Assert.IsNotNull(object, message)`** : Vérifie qu'un objet n'est pas null.
+- **`Assert.IsTrue(condition, message)`** : Vérifie qu’une condition est vraie.
+- **`Assert.IsFalse(condition, message)`** : Vérifie qu’une condition est fausse.
+- **`Assert.IsNull(object, message)`** : Vérifie qu’un objet est null.
+- **`Assert.IsNotNull(object, message)`** : Vérifie qu’un objet n’est pas null.
 
-Si un test échoue, le message inscrit (optionnel) s'affiche ce qui permet de gagner du temps.
+Si un test échoue, le message inscrit (optionnel) s’affiche ce qui permet de gagner du temps.
 
 ### Tests Paramétrés
 
@@ -192,7 +192,7 @@ public void CalculerTva_AvecDiversesValeurs_RetourneLeResultatAttendu(decimal mo
 
 ### Gestion des exceptions
 
-Pour tester qu'une méthode lance une exception attendue, utilisez l'attribut `[ExpectedException]` ou la méthode `Assert.ThrowsException<T>()`.
+Pour tester qu’une méthode lance une exception attendue, utilisez l’attribut `[ExpectedException]` ou la méthode `Assert.ThrowsException<T>()`.
 
 ```csharp
 // Avec ExpectedException
@@ -214,7 +214,7 @@ public void CalculerTva_TauxNegatif_ProvoqueException()
 
 ## Exécution des tests
 
-L'exécution des tests dépend de votre environnement de développement :
+L’exécution des tests dépend de votre environnement de développement :
 
 - **Visual Studio** : "Test" > "Explorateur de tests", Ctrl+E, T ou clic droit sur le projet de test.
 - **Visual Studio Code** : Onglet "Testing" ou clic droit sur le projet de test.
@@ -259,11 +259,11 @@ L'exécution des tests dépend de votre environnement de développement :
 
 ## Erreurs courantes
 
-- Oublier `[TestMethod]` ou `[TestClass]` : le test n'est pas détecté
+- Oublier `[TestMethod]` ou `[TestClass]` : le test n’est pas détecté
 - Oublier de builder avant de tester (`dotnet build`)
 - Tester plusieurs comportements dans un même test
-- Dépendance entre tests (ex : modification d'une variable statique)
-- Mauvais usage d'`Assert` (ex : inverser expected/actual)
+- Dépendance entre tests (ex : modification d’une variable statique)
+- Mauvais usage d’`Assert` (ex : inverser expected/actual)
 - Ne pas nettoyer les ressources (fichiers, connexions, etc.)
 - Ne pas tester les cas limites ou les exceptions
 - Laisser du code mort/non utilisé dans les tests
@@ -285,7 +285,7 @@ public async Task CalculAsync_ShouldRetourneResultat()
 - **Mocks** : Pour isoler les dépendances (voir [Moq](https://github.com/devlooped/moq/wiki/Quickstart), [NSubstitute](https://nsubstitute.github.io/docs/2010-01-01-getting-started.html))
 - **Configurer MSTest** : Parallélisation, timeout global, etc. en modifiant le fichier MSTestSettings.cs. Voir la [documentation officielle MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-configure).
 
-## Tests unitaires dans d'autres langages
+## Tests unitaires dans d’autres langages
 
 Les principes des tests unitaires sont universels. Voici quelques frameworks populaires :
 

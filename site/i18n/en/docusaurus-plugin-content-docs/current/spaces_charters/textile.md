@@ -85,4 +85,6 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 | Technical Referent | Rebecca LEVY       | @.cuki                   |
 | Technical Referent | Sherylann WILTHIEN | @\_\_daisy\_             |
 
+---
+
 Thank you for respecting these guidelines so that this space remains accessible and pleasant for everyone!

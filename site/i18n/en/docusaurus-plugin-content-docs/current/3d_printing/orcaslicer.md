@@ -14,7 +14,7 @@ A slicer converts your 3D model into a series of fine layers, generating a G-cod
 
 Popular slicers include BambuStudio, PrusaSlicer, Cura, and IdeaMaker. While these are often associated with specific 3D printer brands, they generally support a wide range of printers, though some features may be limited.
 
-In this guide, we'll use OrcaSlicer, an advanced slicer based on BambuStudio, offering extensive settings and calibration options, and compatible with most 3D printers.
+In this guide, we’ll use OrcaSlicer, an advanced slicer based on BambuStudio, offering extensive settings and calibration options, and compatible with most 3D printers.
 
 ## Importing your 3D Model
 
@@ -48,7 +48,7 @@ We choose its orientation, for technical reasons but also for aesthetic reasons,
 
 ![Layers](/assets/docs/orca/orcaslicer-4.png)
 
-## Defining the Part's Infill
+## Defining the Part’s Infill
 
 ![Infill](/assets/docs/orca/orcaslicer-5.png)
 

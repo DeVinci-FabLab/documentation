@@ -10,15 +10,15 @@ sidebar_position: 1
 
 :::warning
 
-Cette documentation est en cours de rédaction. Elle n'est pas exhaustive et peut contenir des erreurs. Si vous avez des questions ou des suggestions, veuillez contacter l'équipe du Fablab.
+Cette documentation est en cours de rédaction. Elle n’est pas exhaustive et peut contenir des erreurs. Si vous avez des questions ou des suggestions, veuillez contacter l’équipe du Fablab.
 
 :::
 
 :::warning
 
-Travailler dans un Fablab n'est pas une activité sans risque et nécessite du temps pour déterminer quelle protection est adaptée à quelle technique de fabrication. La précipitation et le manque de connaissances seront les principales causes d'accidents.
+Travailler dans un Fablab n’est pas une activité sans risque et nécessite du temps pour déterminer quelle protection est adaptée à quelle technique de fabrication. La précipitation et le manque de connaissances seront les principales causes d’accidents.
 
-Veuillez prendre le temps de lire attentivement le guide suivant avant d'utiliser l'un des outils.
+Veuillez prendre le temps de lire attentivement le guide suivant avant d’utiliser l’un des outils.
 Si vous avez des doutes ou des questions, veuillez vous référer à votre superviseur.
 
 :::

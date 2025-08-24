@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## Introduction
 
-Travailler dans un Fablab n'est pas une activité sans risque et nécessite du temps pour déterminer quelle protection est adaptée à quelle technique de fabrication. La précipitation et le manque de connaissances seront les principales causes d'accidents.
+Travailler dans un Fablab n’est pas une activité sans risque et nécessite du temps pour déterminer quelle protection est adaptée à quelle technique de fabrication. La précipitation et le manque de connaissances seront les principales causes d’accidents.
 
 Ce guide abordera à la fois les équipements de prévention et les procédures de réponse aux dangers.
 
@@ -34,7 +34,7 @@ Si vous avez des doutes ou des questions, veuillez vous référer à votre super
 
 ## EPI | Équipement de Protection Individuelle
 
-L'Équipement de Protection Individuelle est indispensable dans un Fablab. Il constitue la première ligne de défense contre les accidents. Voici une liste des EPI disponibles dans le Fablab :
+L’Équipement de Protection Individuelle est indispensable dans un Fablab. Il constitue la première ligne de défense contre les accidents. Voici une liste des EPI disponibles dans le Fablab :
 
 | Équipement                    | Dangers auxquels il répond | Illustration                                  |
 | ----------------------------- | -------------------------- | --------------------------------------------- |
@@ -47,10 +47,10 @@ L'Équipement de Protection Individuelle est indispensable dans un Fablab. Il co
 
 ## Extincteur
 
-Il existe deux types d'extincteurs que nous pouvons utiliser :
+Il existe deux types d’extincteurs que nous pouvons utiliser :
 
-- **Extincteur à eau** : Ce type d'extincteur est utilisé pour les feux de classe A. Il est très efficace pour éteindre les feux de bois, de papier et de textile. Il n'est pas recommandé pour les feux électriques ou les liquides inflammables car il projette de l'eau à haute pression.
-- **Extincteur à CO2** : Ce type d'extincteur est utilisé pour les feux de classe B et C. Il est efficace pour éteindre les feux électriques et les liquides inflammables. Il n'est pas recommandé pour les feux de classe A car il ne refroidit pas le feu.
+- **Extincteur à eau** : Ce type d’extincteur est utilisé pour les feux de classe A. Il est très efficace pour éteindre les feux de bois, de papier et de textile. Il n’est pas recommandé pour les feux électriques ou les liquides inflammables car il projette de l’eau à haute pression.
+- **Extincteur à CO2** : Ce type d’extincteur est utilisé pour les feux de classe B et C. Il est efficace pour éteindre les feux électriques et les liquides inflammables. Il n’est pas recommandé pour les feux de classe A car il ne refroidit pas le feu.
 
 ## Trousse de premiers secours
 
@@ -66,30 +66,22 @@ Vous trouverez une trousse de premiers secours dans le couloir. Elle contient le
 - **Gants** : Pour protéger le secouriste.
 - **Rince-œil** : Pour nettoyer les yeux.
 
-Pour plus d'informations, une liste exhaustive est disponible sur la trousse de premiers secours elle-même.
+Pour plus d’informations, une liste exhaustive est disponible sur la trousse de premiers secours elle-même.
 
-## Numéros d'urgence
+## Numéros d’urgence
 
-En cas d'urgence, voici les numéros à appeler :
+En cas d’urgence, voici les numéros à appeler :
 
 - **Pompiers** : 18 (ligne directe depuis le bâtiment)
 - **Ambulance** : 15
 - **Centre antipoison** : 01 40 05 48 48
 
 [^1]: ISO 13732-1:2006 / 7010:W017, surfaces chaudes.
-
 [^2]: ISO 7010:M009, protection des mains.
-
-[^3]: ISO 16000-1:2004 / 7010:W016, qualité de l'air intérieur et fumées toxiques.
-
+[^3]: ISO 16000-1:2004 / 7010:W016, qualité de l’air intérieur et fumées toxiques.
 [^4]: ISO 7010:M016, masque obligatoire.
-
 [^5]: ISO 7010:W001, risque général de projections de particules de métal ou de bois.
-
 [^6]: ISO 7010:M004, lunettes obligatoires.
-
 [^7]: ISO 7010:W004, danger de rayonnement laser.
-
 [^8]: ISO 7010:M006, lunettes de protection opaques obligatoires.
-
-[^9]: ISO 7010:W024, risque d'écrasement des mains dû au moteur rotatif.
+[^9]: ISO 7010:W024, risque d’écrasement des mains dû au moteur rotatif.
