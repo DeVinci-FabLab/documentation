@@ -27,19 +27,17 @@
     border-radius: 50%;
     object-fit: cover;
 
-    box-shadow:
-      0 0 0 var(--contrib-ring-gap) var(--contrib-gap-color),
+    box-shadow: 0 0 0 var(--contrib-ring-gap) var(--contrib-gap-color),
       0 0 0 calc(var(--contrib-ring-gap) + var(--contrib-ring-thickness))
         var(--contrib-ring-color);
 
-    transition:
-      box-shadow var(--ifm-transition-fast) var(--ifm-transition-timing-default),
+    transition: box-shadow var(--ifm-transition-fast)
+        var(--ifm-transition-timing-default),
       transform var(--ifm-transition-fast) var(--ifm-transition-timing-default);
   }
 
   .contributor img:hover {
-    box-shadow:
-      0 0 0 var(--contrib-ring-gap) var(--contrib-gap-color),
+    box-shadow: 0 0 0 var(--contrib-ring-gap) var(--contrib-gap-color),
       0 0 0 calc(var(--contrib-ring-gap) + var(--contrib-ring-thickness))
         var(--ifm-pagination-nav-color-hover);
     transform: scale(1.1);
@@ -47,8 +45,7 @@
 
   a:focus-visible .contributor img,
   .contributor a:focus-visible img {
-    box-shadow:
-      0 0 0 var(--contrib-ring-gap) var(--contrib-gap-color),
+    box-shadow: 0 0 0 var(--contrib-ring-gap) var(--contrib-gap-color),
       0 0 0 calc(var(--contrib-ring-gap) + var(--contrib-ring-thickness))
         var(--ifm-color-primary);
   }

@@ -31,7 +31,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
           editUrl:
-            "https://github.com/DeVinci-FabLab/documentation/tree/main/site",
+            "https://github.com/DeVinci-FabLab/documentation/tree/main/site/",
           editLocalizedFiles: true,
           showLastUpdateTime: true,
         },
@@ -84,7 +84,7 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://github.com/DeVinci-FabLab/documentation",
+          href: "https://github.com/DeVinci-FabLab/documentation/",
           position: "right",
           className: "header-github-link",
         },
@@ -95,26 +95,12 @@ const config: Config = {
       maxHeadingLevel: 4,
     },
     footer: {
-      style: "dark",
       links: [
         {
-          title: "Community",
+          title: "Our Services",
           items: [
             {
-              label: "LinkedIn",
-              href: "https://www.linkedin.com/company/devinci-fablab",
-            },
-            {
-              label: "Instagram",
-              href: "https://www.instagram.com/devinci.fablab/",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "devinci-fablab.fr",
+              label: "Main website",
               href: "https://devinci-fablab.fr/",
             },
             {
@@ -122,12 +108,77 @@ const config: Config = {
               href: "https://my.devinci-fablab.fr/",
             },
             {
+              label: "Our Services Hub",
+              href: "https://home.devinci-fablab.fr/",
+            },
+          ],
+        },
+        {
+          title: "Get Involved",
+          items: [
+            {
+              label: "Request a training", //TODO: forms on website
+              href: "https://forms.office.com/e/MqVdQujzjf",
+            },
+            {
+              label: "Contribute to the site",
+              href: "https://github.com/DeVinci-FabLab/documentation?tab=contributing-ov-file",
+            },
+            {
+              label: "Suggest a feature",
+              href: "https://github.com/DeVinci-FabLab/documentation/issues/new?template=feature_request.md",
+            },
+            {
+              label: "Donate",
+              href: "https://www.helloasso.com/associations/devinci-fablab/formulaires/1",
+            },
+          ],
+        },
+        {
+          title: "Connect",
+          items: [
+            {
+              label: "Email",
+              href: "mailto:support@devinci-fablab.fr",
+            },
+            {
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/company/devinci-fablab/",
+            },
+            {
+              label: "Instagram",
+              href: "https://www.instagram.com/devinci.fablab/",
+            },
+            {
+              label: "Facebook",
+              href: "https://www.facebook.com/devinci.fablab/",
+            },
+            {
               label: "GitHub",
               href: "https://github.com/DeVinci-FabLab/",
             },
           ],
         },
+        {
+          title: "Our Partners",
+          items: [
+            {
+              label: "Hauts de Seine Department",
+              href: "https://www.hauts-de-seine.fr/",
+            },
+            {
+              label: "Institute for Future Technologies",
+              href: "https://ift.devinci.fr/",
+            },
+          ],
+        },
       ],
+      logo: {
+        alt: "DVFL logo",
+        src: "img/logo-full-color-clair.svg",
+        srcDark: "img/logo-full-color-clair.svg",
+        width: "170px",
+      },
       copyright: `Copyright © ${new Date().getFullYear()} DeVinci Fablab.`,
     },
     prism: {

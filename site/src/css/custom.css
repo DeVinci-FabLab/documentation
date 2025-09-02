@@ -183,4 +183,63 @@
   .header-github-link:hover::before {
     background-color: var(--ifm-navbar-link-hover-color);
   }
+
+  @media (max-width: 996px) {
+    body .footer__links {
+      width: 100%;
+    }
+
+    body .footer__bottom {
+      width: 100%;
+    }
+
+    body .footer__bottom > div {
+      text-align: center;
+    }
+    body .footer__item img {
+      max-width: 200px;
+    }
+
+    body .footer__link-item {
+      line-height: 2;
+    }
+    .footer__logo {
+      margin-top: 16px;
+    }
+  }
+
+  .footer__links {
+    width: 75%;
+    float: right;
+  }
+  .footer__bottom {
+    width: 25%;
+  }
+  .footer__bottom > div {
+    text-align: left;
+  }
+  .footer__logo {
+    max-width: 160px;
+    margin-left: 5px;
+    margin-top: 19px;
+  }
+  .footer__copyright {
+    font-size: 0.8em;
+    text-align: left;
+  }
+
+  .footer__link-item {
+    text-decoration: none;
+    transition: color 0.2s ease;
+    line-height: 1;
+  }
+  .footer__link-item:hover {
+    text-decoration: underline;
+  }
+}
+
+@layer docusaurus.infima {
+  .margin-bottom--sm {
+    margin-bottom: 0 !important;
+  }
 }

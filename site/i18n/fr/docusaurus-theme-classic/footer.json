@@ -3,40 +3,80 @@
     "message": "Copyright © 2025 DeVinci Fablab.",
     "description": "The footer copyright"
   },
-  "link.title.Community": {
-    "message": "Communauté",
-    "description": "The title of the footer links column with title=Community in the footer"
-  },
-  "link.title.More": {
-    "message": "Plus",
-    "description": "The title of the footer links column with title=More in the footer"
-  },
   "link.item.label.Instagram": {
     "message": "Instagram",
     "description": "The label of footer link with label=Instagram linking to https://www.instagram.com/devinci.fablab/"
   },
   "link.item.label.LinkedIn": {
     "message": "LinkedIn",
-    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/devinci-fablab"
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/devinci-fablab/"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/DeVinci-FabLab/"
   },
-  "link.item.label.davincibot.fr": {
-    "message": "davincibot.fr",
-    "description": "The label of footer link with label=davincibot.fr linking to https://davincibot.fr"
-  },
-  "link.item.label.Documentation": {
-    "message": "Documentation",
-    "description": "The label of footer link with label=Documentation linking to /"
-  },
-  "link.item.label.devinci-fablab.fr": {
-    "message": "devinci-fablab.fr",
-    "description": "The label of footer link with label=devinci-fablab.fr linking to https://devinci-fablab.fr/"
-  },
   "link.item.label.MyFab": {
     "message": "MyFab",
     "description": "The label of footer link with label=MyFab linking to https://my.devinci-fablab.fr/"
+  },
+  "logo.alt": {
+    "message": "DVFL logo",
+    "description": "The alt text of footer logo"
+  },
+  "link.title.Our Services": {
+    "message": "Nos Services",
+    "description": "The title of the footer links column with title=Our Services in the footer"
+  },
+  "link.title.Get Involved": {
+    "message": "S'impliquer",
+    "description": "The title of the footer links column with title=Get Involved in the footer"
+  },
+  "link.title.Connect": {
+    "message": "Nous suivre",
+    "description": "The title of the footer links column with title=Connect in the footer"
+  },
+  "link.title.Our Partners": {
+    "message": "Nos Partenaires",
+    "description": "The title of the footer links column with title=Partners in the footer"
+  },
+  "link.item.label.Main website": {
+    "message": "Main website",
+    "description": "The label of footer link with label=Main website linking to https://devinci-fablab.fr/"
+  },
+  "link.item.label.Our Services Hub": {
+    "message": "Our Services Hub",
+    "description": "The label of footer link with label=Our Services Hub linking to https://home.devinci-fablab.fr/"
+  },
+  "link.item.label.Request a training": {
+    "message": "Request a training",
+    "description": "The label of footer link with label=Request a training linking to https://forms.office.com/e/MqVdQujzjf"
+  },
+  "link.item.label.Contribute to the site": {
+    "message": "Contribute to the site",
+    "description": "The label of footer link with label=Contribute to the site linking to https://github.com/DeVinci-FabLab/documentation?tab=contributing-ov-file"
+  },
+  "link.item.label.Suggest a feature": {
+    "message": "Suggest a feature",
+    "description": "The label of footer link with label=Suggest a feature linking to https://github.com/DeVinci-FabLab/documentation/issues/new?template=feature_request.md"
+  },
+  "link.item.label.Donate": {
+    "message": "Donate",
+    "description": "The label of footer link with label=Donate linking to https://www.helloasso.com/associations/devinci-fablab/formulaires/1"
+  },
+  "link.item.label.Email": {
+    "message": "Email",
+    "description": "The label of footer link with label=Email linking to mailto:support@devinci-fablab.fr"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/devinci.fablab/"
+  },
+  "link.item.label.Hauts de Seine Department": {
+    "message": "Département des Hauts de Seine",
+    "description": "The label of footer link with label=Hauts de Seine Department linking to https://www.hauts-de-seine.fr/"
+  },
+  "link.item.label.Institute for Future Technologies": {
+    "message": "Institute for Future Technologies",
+    "description": "The label of footer link with label=Institute for Future Technologies linking to https://ift.devinci.fr/"
   }
 }
