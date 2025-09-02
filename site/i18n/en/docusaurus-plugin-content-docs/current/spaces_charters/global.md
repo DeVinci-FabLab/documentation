@@ -21,7 +21,7 @@ The DeVinci Fablab is a collective, open, and shared space. To ensure everyone c
 
 ## <PackageOpen /> Use of Resources and Equipment
 
-- **Do not use equipment that is not available.** If it’s not in the [Schrödinger Box](../srg#le-recyclage-des-projets), **do not touch it**.
+- **Do not use equipment that is not at your disposal.** If it’s not in the [Schrödinger Box](../srg#le-recyclage-des-projets), **do not touch it**.
 - **Equipment never leaves the Fablab.** It cannot be borrowed for outside or personal use under any circumstances.
 - **Do not take tools home**—even for a short project, a repair, or “just for the weekend.”
 - **Turn off machines** when not in use.
