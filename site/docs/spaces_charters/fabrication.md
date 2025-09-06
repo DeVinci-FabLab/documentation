@@ -28,7 +28,6 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Interdiction stricte de porter des vêtements amples ou accessoires lâches** (écharpes, bracelets, manches longues).
 - **Cheveux longs attachés obligatoirement**.
 - **Ne jamais utiliser une machine sans formation préalable** ou validation d’un·e responsable.
-- **Interdiction absolue de travailler seul·e** avec des outils ou machines dangereux (scie, perceuse, meuleuse...).
 - **Toujours vérifier le bon fonctionnement des sécurités** des machines avant utilisation.
 - **Ne jamais laisser une machine en fonctionnement sans surveillance.**
 - **Ne jamais porter de gants lors de l’utilisation d’outils rotatifs motorisés.**
@@ -62,8 +61,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Nettoyer systématiquement l’espace de travail après utilisation.**
 - **Nettoyer les copeaux et poussières** après toute découpe ou ponçage.
 - **Ranger chaque outil à sa place**, immédiatement après usage.
-- **Ne jamais bloquer l’accès** aux issues de secours ou aux dispositifs de sécurité.
-- **Éteindre, débrancher et sécuriser les machines** avant de quitter l’espace.
+- **Éteindre et débrancher les machines** avant de quitter l’espace.
 
 ## <Siren /> En cas de problème
 

@@ -28,7 +28,6 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Wearing loose clothing or accessories** (scarves, bracelets, long sleeves) is strictly prohibited.
 - **Long hair must be tied back**.
 - **Never use a machine without prior training** or approval from a supervisor.
-- **It is strictly forbidden to work alone** with dangerous tools or machines (saws, drills, grinders, etc.).
 - **Always check that the safety features** of machines are working properly before use.
 - **Never leave a machine running unattended.**
 - **Never wear gloves when using motorized rotary tools.**
@@ -62,8 +61,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Always clean the work area after use.**
 - **Clean up chips and dust** after cutting or sanding.
 - **Put each tool back in its place** immediately after use.
-- **Never block access** to emergency exits or safety devices.
-- **Turn off, unplug, and secure machines** before leaving the area.
+- **Turn off and unplug machines** before leaving the area.
 
 ## <Siren /> In Case of Problem
 

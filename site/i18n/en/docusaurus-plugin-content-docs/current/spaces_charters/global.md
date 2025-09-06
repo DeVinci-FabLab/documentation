@@ -42,6 +42,7 @@ If you are unsure about the accessibility or availability of a tool, **ask a ref
 
 ## <AlertTriangle /> Respect for Usage Rules
 
+- **Never block access** to emergency exits or safety devices.
 - **The specific rules for each area** (resin, textile, electronics, fabrication, etc.) fully apply.
 - **Repeated failure to follow the rules may have consequences.**
 - **The Fablab is a shared space**: always act as you would want others to act.
