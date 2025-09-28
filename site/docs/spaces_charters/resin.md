@@ -12,15 +12,15 @@ show_git_contributors: false
 additional_contributors:
   - username: Dimitry Siebert
     html_url: https://www.linkedin.com/in/dimitry-siebert-%F0%9F%90%B3-6a28aa256
-    avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQE9UmZIfg6Xog/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1668107234689?e=1758153600&v=beta&t=SuKEqoQ_NG_LEfyXT-GhggGNKMaOSACNQG2U3f4WmDM
+    avatar_url: https://i.imgur.com/N4IPheU.jpeg
   - username: Eliott A. Roussille
     html_url: https://www.linkedin.com/in/eliott-roussille
-    avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGJInAV0qQonQ/profile-displayphoto-shrink_400_400/B4DZZZ3PrjH4Ag-/0/1745264377148?e=1758153600&v=beta&t=qUIJD-O8iwugtWxnDqAeRsp_gwPM_281yS1PFUg00Z8
+    avatar_url: https://i.imgur.com/q7h7oQw.jpeg
   - username: François Teynier
     avatar_url: https://i.imgur.com/hnuX6jp.jpeg
   - username: Hugo Degioanni
     html_url: https://www.linkedin.com/in/hdegioanni
-    avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQENW7uGQunWyw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730826037333?e=1758153600&v=beta&t=ie-_iLD-XeHFVs61uWTAFn3kZV2WBJmqVLtBj3AZJ5Q
+    avatar_url: https://i.imgur.com/I1jokUc.jpeg
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';

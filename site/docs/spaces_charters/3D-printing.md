@@ -12,7 +12,7 @@ show_git_contributors: false
 additional_contributors:
   - username: Eliott A. Roussille
     html_url: https://www.linkedin.com/in/eliott-roussille
-    avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGJInAV0qQonQ/profile-displayphoto-shrink_400_400/B4DZZZ3PrjH4Ag-/0/1745264377148?e=1758153600&v=beta&t=qUIJD-O8iwugtWxnDqAeRsp_gwPM_281yS1PFUg00Z8
+    avatar_url: https://i.imgur.com/q7h7oQw.jpeg.jpeg
   - username: François Teynier
     avatar_url: https://i.imgur.com/hnuX6jp.jpeg
 ---

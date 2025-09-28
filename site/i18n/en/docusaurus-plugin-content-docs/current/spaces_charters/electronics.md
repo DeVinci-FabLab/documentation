@@ -12,10 +12,10 @@ show_git_contributors: false
 additional_contributors:
   - username: Eliott A. Roussille
     html_url: https://www.linkedin.com/in/eliott-roussille
-    avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGJInAV0qQonQ/profile-displayphoto-shrink_400_400/B4DZZZ3PrjH4Ag-/0/1745264377148?e=1758153600&v=beta&t=qUIJD-O8iwugtWxnDqAeRsp_gwPM_281yS1PFUg00Z8
+    avatar_url: https://i.imgur.com/q7h7oQw.jpeg
   - username: Hugo Degioanni
     html_url: https://www.linkedin.com/in/hdegioanni
-    avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQENW7uGQunWyw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730826037333?e=1758153600&v=beta&t=ie-_iLD-XeHFVs61uWTAFn3kZV2WBJmqVLtBj3AZJ5Q
+    avatar_url: https://i.imgur.com/I1jokUc.jpeg
   - username: Urbain Lantrès
     html_url: https://github.com/UrbsKali
     avatar_url: https://github.com/UrbsKali.png

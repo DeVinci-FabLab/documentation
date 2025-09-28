@@ -12,14 +12,14 @@ show_git_contributors: false
 additional_contributors:
   - username: Eliott A. Roussille
     html_url: https://www.linkedin.com/in/eliott-roussille
-    avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGJInAV0qQonQ/profile-displayphoto-shrink_400_400/B4DZZZ3PrjH4Ag-/0/1745264377148?e=1758153600&v=beta&t=qUIJD-O8iwugtWxnDqAeRsp_gwPM_281yS1PFUg00Z8
+    avatar_url: https://i.imgur.com/q7h7oQw.jpeg
   - username: Lenday Stawarski
   - username: Rebecca Levy
     html_url: https://www.linkedin.com/in/rebecca-levy-a010a7201
-    avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQEpx2vZc6s1jA/profile-displayphoto-shrink_400_400/B4EZbXrgmoHIAk-/0/1747375230053?e=1758153600&v=beta&t=A8lMEXYE7mqn5HaPldh1XDxr_bn5aEiERetkxbjmhF0
+    avatar_url: https://i.imgur.com/WmSwniS.jpeg
   - username: Sherylann Wilthien
     html_url: https://www.linkedin.com/in/sherylann-wilthien-a9b58a253
-    avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQHquVtmEQ__Tw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1665741026566?e=1758153600&v=beta&t=oxGYSKHAFTePo594giT2uJFQI3Q-1ezTMPIRZEZcSDU
+    avatar_url: https://i.imgur.com/xTxIuOu.jpeg
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
