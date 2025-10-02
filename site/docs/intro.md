@@ -26,7 +26,7 @@ Si vous avez des doutes ou des questions, veuillez vous référer à votre super
 ## Matériel électronique
 
 - [Imprimante 3D | Bambulab X1 Carbon](/3d_printing/bambulab)
-- [Station multifonction | SnapMaker Artisan](/CNC/snapmaker) (en cours)
+- Station multifonction | SnapMaker Artisan
 - Ordinateurs monocartes
   - [RaspberryPi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
   - [RaspberryPi 400](https://www.raspberrypi.com/products/raspberry-pi-400/)

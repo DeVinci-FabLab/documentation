@@ -36,14 +36,14 @@ Si vous avez des doutes ou des questions, veuillez vous référer à votre super
 
 L’Équipement de Protection Individuelle est indispensable dans un Fablab. Il constitue la première ligne de défense contre les accidents. Voici une liste des EPI disponibles dans le Fablab :
 
-| Équipement                    | Dangers auxquels il répond | Illustration                                  |
-| ----------------------------- | -------------------------- | --------------------------------------------- |
-| Lunettes en plastique         | Projections, copeaux       | ![lunettes](/assets/docs/safety/safety-2.png) |
-| Lunettes UV                   | Lumière UV                 | ![lunettes](/assets/docs/safety/safety-7.png) |
-| Gants résistants aux coupures | Coupures, scie, cutter     | ![gants](/assets/docs/safety/safety-3.png)    |
-| Gants résistants à la chaleur | Haute température          | ![gants](/assets/docs/safety/safety-4.png)    |
-| Casque                        | Bruits forts               | ![casque](/assets/docs/safety/safety-5.png)   |
-| Masque à gaz                  | Fumées, projections        | ![masque](/assets/docs/safety/safety-6.png)   |
+| Équipement                    | Dangers auxquels il répond | Illustration                                                             |
+| ----------------------------- | -------------------------- | ------------------------------------------------------------------------ |
+| Lunettes en plastique         | Projections, copeaux       | <img src="/assets/docs/safety/safety-2.png" alt="lunettes" width="100"/> |
+| Lunettes UV                   | Lumière UV                 | <img src="/assets/docs/safety/safety-7.png" alt="lunettes" width="100"/> |
+| Gants résistants aux coupures | Coupures, scie, cutter     | <img src="/assets/docs/safety/safety-3.png" alt="gants" width="100"/>    |
+| Gants résistants à la chaleur | Haute température          | <img src="/assets/docs/safety/safety-4.png" alt="gants" width="100"/>    |
+| Casque                        | Bruits forts               | <img src="/assets/docs/safety/safety-5.png" alt="casque" width="100"/>   |
+| Masque à gaz                  | Fumées, projections        | <img src="/assets/docs/safety/safety-6.png" alt="masque" width="100"/>   |
 
 ## Extincteur
 

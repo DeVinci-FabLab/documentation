@@ -26,7 +26,7 @@ If you may have any doubt or inquiry, please refer to your supervisor.
 ## Electronic hardware
 
 - [3D Printer | Bambulab X1 Carbon](/3d_printing/bambulab)
-- [Multi-function station | SnapMaker Artisan](/CNC/snapmaker) (WIP)
+- Multi-function station | SnapMaker Artisan
 - Single Board Computers
   - [RaspberryPi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
   - [RaspberryPi 400](https://www.raspberrypi.com/products/raspberry-pi-400/)

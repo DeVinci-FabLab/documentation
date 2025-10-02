@@ -36,14 +36,14 @@ If you may have any doubt or inquiry, please refer to your supervisor.
 
 Personal Protective Equipment is a must-have in a Fablab. It is the first line of defense against accidents. Here is a list of PPE available in the Fablab:
 
-| Equipment             | Dangers it answers to | Illustration                                 |
-| --------------------- | --------------------- | -------------------------------------------- |
-| Plastic glasses       | Projections, chips    | ![glasses](/assets/docs/safety/safety-2.png) |
-| UV glasses            | UV light              | ![glasses](/assets/docs/safety/safety-7.png) |
-| Cut resistant gloves  | Cut, saw, cutter      | ![gloves](/assets/docs/safety/safety-3.png)  |
-| Heat resistant gloves | High heat             | ![gloves](/assets/docs/safety/safety-4.png)  |
-| Headset               | Loud noises           | ![headset](/assets/docs/safety/safety-5.png) |
-| Gaz mask              | Fumes, projections    | ![mask](/assets/docs/safety/safety-6.png)    |
+| Equipment             | Dangers it answers to | Illustration                                                            |
+| --------------------- | --------------------- | ----------------------------------------------------------------------- |
+| Plastic glasses       | Projections, chips    | <img src="/assets/docs/safety/safety-2.png" alt="glasses" width="100"/> |
+| UV glasses            | UV light              | <img src="/assets/docs/safety/safety-7.png" alt="glasses" width="100"/> |
+| Cut resistant gloves  | Cut, saw, cutter      | <img src="/assets/docs/safety/safety-3.png" alt="gloves" width="100"/>  |
+| Heat resistant gloves | High heat             | <img src="/assets/docs/safety/safety-4.png" alt="gloves" width="100"/>  |
+| Headset               | Loud noises           | <img src="/assets/docs/safety/safety-5.png" alt="headset" width="100"/> |
+| Gaz mask              | Fumes, projections    | <img src="/assets/docs/safety/safety-6.png" alt="mask" width="100"/>    |
 
 ## Fire extinguisher
 
@@ -77,19 +77,11 @@ In case of emergency, here are the numbers you should call :
 - **Poison control center** : 01 40 05 48 48
 
 [^1]: ISO 13732-1:2006 / 7010:W017, hot surfaces.
-
 [^2]: ISO 7010:M009, hand protection.
-
 [^3]: ISO 16000-1:2004 / 7010:W016, indoor air quality and toxic fumes.
-
 [^4]: ISO 7010:M016, compulsory mask.
-
 [^5]: ISO 7010:W001, general risk of projections from metal or wood bits.
-
 [^6]: ISO 7010:M004, compulsory glasses.
-
 [^7]: ISO 7010:W004, laser radiation hazard.
-
 [^8]: ISO 7010:M006, compulsory opaque protective goggles.
-
 [^9]: ISO 7010:W024, hand crushing hazard due to rotary engine.
