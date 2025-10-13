@@ -50,7 +50,7 @@ MonProjetSolution/
         └── Program.cs
 ```
 
-Adapter les chemins si vous avez une structure différente.
+Adaptez les chemins si vous avez une structure différente.
 
 ### Configurer le projet de tests
 
@@ -213,7 +213,7 @@ public void CalculerTva_TauxNegatif_ProvoqueException()
 
 L’exécution des tests dépend de votre environnement de développement :
 
-- **Visual Studio** : "Test" > "Explorateur de tests", Ctrl+E, T ou clic droit sur le projet de test.
+- **Visual Studio** : "Test" > "Explorateur de tests", `Ctrl+E T`, ou clic droit sur le projet de test.
 - **Visual Studio Code** : Onglet "Testing" ou clic droit sur le projet de test.
 - **JetBrains Rider** : Onglet "Tests" et "Test Coverage".
 - **Terminal** : `dotnet test`

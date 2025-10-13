@@ -211,7 +211,7 @@ public void CalculateVAT_NegativeRate_ThrowsException()
 
 How you run tests depends on your development environment:
 
-- **Visual Studio**: "Test" > "Test Explorer", Ctrl+E, T or right-click on the test project.
+- **Visual Studio**: "Test" > "Test Explorer", `Ctrl+E T` or right-click on the test project.
 - **Visual Studio Code**: "Testing" tab or right-click on the test project.
 - **JetBrains Rider**: "Tests" tab and "Test Coverage".
 - **Terminal**: `dotnet test`

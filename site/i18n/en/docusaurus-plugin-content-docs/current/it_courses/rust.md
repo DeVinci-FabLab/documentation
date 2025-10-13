@@ -137,8 +137,8 @@ Every Rust program starts with a `main` function.
 - Variable binding
 
   ```rust
-  let x = 42;       // immutable
-  let mut y = 10;   // mutable
+  let x = 42;       // Immutable
+  let mut y = 10;   // Mutable
   ```
 
 - Infinite loop
@@ -259,7 +259,7 @@ let x = 42;
 let y = x; // i32 is Copy, so x is still valid
 
 let s1 = String::from("hello");
-let s2 = s1; // moves ownership; s1 is no longer valid
+let s2 = s1; // Moves ownership; s1 is no longer valid
 ```
 
 ### Functions and Ownership
@@ -282,7 +282,7 @@ Prefer borrowing rather than moving large data:
 fn main() {
     let mut s = String::from("hello");
     append_world(&mut s);
-    println!("{}", s); // prints "hello, world"
+    println!("{}", s); // Prints "hello, world"
 }
 
 fn append_world(s: &mut String) {
@@ -297,9 +297,9 @@ Every reference has a scope called a lifetime. In example :
 ```rust
 {
   let x = 5;
-  // we can use x here
+  // We can use x here
 } // x is no longer valid here
-// we cannot use x here
+// We cannot use x here
 ```
 
 Example of invalid code with functions:
@@ -381,7 +381,7 @@ Heap-allocated, growable:
 ```rust
 let mut s = String::from("hello");
 s.push_str(", world!");
-println!("{}", s); // prints "hello, world!"
+println!("{}", s); // Prints "hello, world!"
 ```
 
 ## Appendix 2: Stack vs Heap

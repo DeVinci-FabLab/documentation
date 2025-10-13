@@ -22,9 +22,9 @@ additional_contributors:
 
 Rust est un langage qui vise à remplacer les langages bas-niveau, comme le C. Il est axé sur la performance, la concurrence, mais surtout la sûreté.
 
-En effet, un des plus gros problèmes du C/C++ est qu’il est difficile d’avoir un code qui gère de manière robuste la mémoire, sans fuites
+En effet, un des plus gros problèmes du C/C++ est qu’il est difficile d’avoir un code qui gère de manière robuste la mémoire, sans fuites.
 
-En Rust, le code est sécurisé par défaut, grâce à son système d’emprunt, qui peut être difficile à prendre en main
+En Rust, le code est sécurisé par défaut, grâce à son système d’emprunt, qui peut être difficile à prendre en main.
 
 Rust peut être utilisé pour les mêmes usages que le C/C++, on peut le retrouver dans le kernel de Linux, dans le backend de Discord, et dans des microcontrôleurs.
 
@@ -41,7 +41,7 @@ L’installateur va mettre `rustup` et `cargo` sur votre ordinateur :
 
 Durant cette formation nous allons réaliser une application CLI pour télécharger des vidéos youtube. ([lien du code](https://gist.github.com/UrbsKali/67e09af49d42791a27a58e896677bcad))
 
-Etapes majeures :
+Étapes majeures :
 
 - Génération du projet
 
@@ -55,8 +55,8 @@ Etapes majeures :
   cargo add rustube
   ```
 
-- bip boup coder en rust
-- tada c’est finito
+- Bip Boup coder en rust
+- TADA c’est finito
 
 ### Utilisation de `cargo`
 
@@ -106,11 +106,11 @@ Quand on crée un projet avec `cargo`, un fichier `Cargo.toml` (Tom’s Obvious,
 
 ### Point-virgule ou pas ?
 
-Rust a besoin de point virgule à la fin de chaque ligne pour séparer les instructions, mais il est possible de voir des lignes sans point virgule dans les fonctions, car si une ligne n’a pas de point virgule, alors elle est considéré comme un return.
+Rust a besoin de point virgule à la fin de chaque ligne pour séparer les instructions, mais il est possible de voir des lignes sans point virgule dans les fonctions, car si une ligne n’a pas de point virgule, alors elle est considérée comme un return.
 
 ### Macro ? Késako ?
 
-Une macro est une instruction qui termine par ! (ex : `println!("hehe boi")`), ce n’est pas une fonction classique, mais pas loin
+Une macro est une instruction qui termine par ! (ex : `println!("hehe boi")`), ce n’est pas une fonction classique, mais pas loin.
 
 ### Point d’entrée du programme
 
@@ -137,8 +137,8 @@ Un programme Rust commence toujours par la fonction `main`.
 - Assignation
 
   ```rust
-  let x = 42; // constante
-  let mut y = 10; // variable
+  let x = 42; // Constante
+  let mut y = 10; // Variable
   ```
 
 - Boucle
@@ -219,7 +219,7 @@ Un programme Rust commence toujours par la fonction `main`.
   for mot in phrase {
     print!("{mot} ");
   }
-  // affiche "Thomas aime les gros calins "
+  // Affiche "Thomas aime les gros calins "
   ```
 
   Avec des ranges
@@ -245,7 +245,7 @@ Un programme Rust commence toujours par la fonction `main`.
 
 ## Ownership
 
-La particularité de Rust, c’est son sytème d’appartenance qui lui permet d’être sécurisé par défaut, ET QUI EMPECHE DE COMPILER QUAND CA DEVRAIT.
+La particularité de Rust, c’est son sytème d’appartenance qui lui permet d’être sécurisé par défaut, ET QUI EMPÊCHE DE COMPILER QUAND ÇA DEVRAIT.
 
 Il y a trois règle d’ownership dans Rust :
 
@@ -254,7 +254,7 @@ Il y a trois règle d’ownership dans Rust :
 - Quand le propriétaire disparait, la valeur aussi
 
 Cela conduit à des erreurs de compilation, alors que d’autres languages ne posserait pas de problème.
-Pour bien comprendre la subtilité de l’ownership, il faut comprendre les différentes mémoires, le Stack et le Heap (cf Annexe 2)
+Pour bien comprendre la subtilité de l’ownership, il faut comprendre les différentes mémoires, le Stack et le Heap [cf Annexe 2](#annexe-2--stack-vs-heap-aka-les-mémoires).
 
 Il y a deux cas possible : Variable sur le Stack ou Variable sur le Heap
 
@@ -263,14 +263,14 @@ Il y a deux cas possible : Variable sur le Stack ou Variable sur le Heap
   let y = x;
 ```
 
-Dans ce cas, `x` est une donnée à taille fixe, donc sur le Stack, elle est donc copié automatiquement (car copier des données sur le Stack est très rapide)
+Dans ce cas, `x` est une donnée à taille fixe, donc sur le Stack, elle est donc copié automatiquement (car copier des données sur le Stack est très rapide).
 
 ```rust
   let x = String::from("hehe");
   let y = x;
 ```
 
-Mais dans celui là, la variable `x` est stocké sur le Heap, la copie pouvant être couteuse, elle n’est pas effectué. Rust supprime `x` et garde `y`, on dit que l’ownership est transféré.
+Mais dans celui là, la variable `x` est stocké sur le Heap, la copie pouvant être couteuse, elle n’est pas effectuée. Rust supprime `x` et garde `y`, on dit que l’ownership est transféré.
 
 ### Cas des fonctions
 
@@ -286,7 +286,7 @@ Règles des références :
 - On peut avoir une référence modifiable ou n références statique à tout moment
 - Une référence doit toujours pointer vers une valeur (c’est pas évident)
 
-On préfère passer les références des variables, plutôt que la valeur elle même, c’est un système similaire au pointeur, mais plus simple
+On préfère passer les références des variables, plutôt que la valeur elle même, c’est un système similaire au pointeur, mais plus simple.
 Il y a le même système de modification que les variables classiques.
 On peut avoir une référence mutable à la fois, et autant de référence classique que l’on veut.
 
@@ -294,7 +294,7 @@ On peut avoir une référence mutable à la fois, et autant de référence class
 fn main() {
     let mut x = String::from("hehe");
     trust_me(&mut x);
-    println!("{}", x); // affiche hehe ohoho
+    println!("{}", x); // Affiche hehe ohoho
 }
 
 fn trust_me(x: &mut String) {
@@ -304,12 +304,12 @@ fn trust_me(x: &mut String) {
 
 ## Durée de vie
 
-bon là ça part un peu loin, mais chaque variable possède une durée de vie limité, par exemple :
+Bon là ça part un peu loin, mais chaque variable possède une durée de vie limitée, par exemple :
 
 ```rust
 {
   let x = 5;
-  // on fait des choses avec x
+  // On fait des choses avec x
 } // x se fait tej :(
 // On ne peut plus utiliser x
 ```
@@ -324,14 +324,13 @@ fn main() {
 
 fn dont_trust_me() -> &String{
     let x = String::from("oh no");
-    &x  // on retourne la référence
-} // mais ici la valeur de x est perdu
+    &x  // On retourne la référence
+} // Mais ici la valeur de x est perdu
 ```
 
-Dans ce cas, la référence pointe vers une valeur inexistante, ce que Rust n’autorise pas -> le code ne compile pas
+Dans ce cas, la référence pointe vers une valeur inexistante, ce que Rust n’autorise pas -> le code ne compile pas.
 
-**Solution : lifetime**
-les lifetimes sont des paramètre qu’on ajoute pour spécifé la durée de vie d’une valeur, pour réparer la fonction précédante, il faudrait plutôt retourner une valeur own qu’une référence.
+**Solution : les lifetimes**, ce sont des paramètres qu’on ajoute pour spécifier la durée de vie d’une valeur, pour réparer la fonction précédante, il faudrait plutôt retourner une valeur own qu’une référence.
 
 <important>**FAITES CONFIANCE AU COMPILEUR**</important>
 
@@ -339,7 +338,7 @@ les lifetimes sont des paramètre qu’on ajoute pour spécifé la durée de vie
 
 ### Entier
 
-| entier relatif | entier naturel |
+| Entier relatif | Entier naturel |
 | -------------- | -------------- |
 | i8             | u8             |
 | i16            | u8             |
@@ -348,26 +347,26 @@ les lifetimes sont des paramètre qu’on ajoute pour spécifé la durée de vie
 | i128           | u8             |
 | isize          | usize          |
 
-size, en fonction de l’architecture du CPU (32bits ou 64bits)
+`size` est déterminé en fonction de l’architecture du CPU (32 bits ou 64 bits).
 
-Séparateur virtuel : 1_000 = 1000 (super cool)
+Séparateur virtuel : 1_000 représente 1000, ce qui facilite la lecture et la compréhension des nombres.
 
-### float
+### `float`
 
 - f32
 - f64
 
-### bool
+### `bool`
 
 1 bit
 
-### char
+### `char`
 
-comme le C#, avec des guillements simple, UTF 4 octets (emoji aussi)
+Comme en C#, avec des guillemets simples, UTF 4 octets (emoji aussi).
 
-### tuple
+### `tuple`
 
-comme en python, peut avoir des éléments de taille différente
+Comme en Python, peut avoir des éléments de taille différente.
 
 ```rust
 let x: (i32, f64, u8) = (500, 6.4, 1);
@@ -379,12 +378,12 @@ let six_point_four = x.1;
 let one = x.2;
 ```
 
-### array
+### `array`
 
-Comme en C#, doit avoir des éléments de même taille, de taille fixe
+Comme en C#, doit avoir des éléments de même taille, de taille fixe.
 
 ```rust
-let a: [i32, 5] = [1, 2, 3, 4, 5];
+let a: [i32; 5] = [1, 2, 3, 4, 5];
 
 let first = a[0];
 let second = a[1];
@@ -392,26 +391,26 @@ let second = a[1];
 
 ### string literals
 
-immuable, sur le stack
+Immuable, sur le stack.
 
-### String
+### `String`
 
 ```rust
 let mut s = String::from("hello");
 
-s.push_str(", world!"); // push_str() appends a literal to a String
+s.push_str(", world!"); // push_str() ajoute un literal à une String
 
-println!("{}", s); // This will print `hello, world!`
+println!("{}", s); // Cela affichera `hello, world!`
 ```
 
 ## Annexe 2 : Stack vs Heap (aka Les mémoires)
 
 Un programme a accès à deux type de mémoire :
 
-- le Stack, qui consiste à une pile de données contigue (LIFO)
-- le Heap, qui consiste en un blob de données éparse (DTFYW :) )
+- Le Stack, qui consiste à une pile de données contiguë (LIFO)
+- Le Heap, qui consiste en un blob de données éparse (DTFYW :) )
 
-On ne peut mettre de la mémoire dans le Stack seulement si l’on connait à l’avance la taille des données, c’est possible avec des types tels que les int, float, bool, etc, mais impossible avec les String (Cf Annexe 1).
+On ne peut mettre de la mémoire dans le Stack seulement si l’on connait à l’avance la taille des données, c’est possible avec des types tels que les int, float, bool, etc, mais impossible avec les String [Cf Annexe 1](#annexe-1--type-de-données-en-rust).
 
 On utilise donc le Heap, et l’allocateur mémoire doit trouver un espace libre ou stocker nos données, ce qui est plus long.
 
