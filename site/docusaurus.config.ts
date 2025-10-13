@@ -61,7 +61,6 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      hideOnScroll: true,
       logo: {
         alt: "DVFL logo",
         src: "img/favicon.svg",
