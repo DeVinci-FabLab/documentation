@@ -95,6 +95,11 @@
   }
 
   .markdown {
+    text-align: justify;
+    tr {
+      text-align: center;
+    }
+
     code {
       background-color: var(--code-background-color);
     }
@@ -184,6 +189,7 @@
     background-color: var(--ifm-navbar-link-hover-color);
   }
 
+  /* == == == Footer == == == */
   @media (max-width: 996px) {
     body .footer__links {
       width: 100%;

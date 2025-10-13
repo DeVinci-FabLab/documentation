@@ -44,7 +44,7 @@ dotnet tool update -g docfx
 
 ### Étape 2 : Configurer l’espace de travail
 
-Supposons que votre projet a une structure simple comme ceci :
+Supposons que votre projet a une structure simple comme celle-ci :
 
 ```bash
 Example_project  <-- dossier racine
