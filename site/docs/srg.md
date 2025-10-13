@@ -150,7 +150,7 @@ Le DeVinci Fablab met de nombreuses ressources à votre disposition de manière 
 - **Soyez attentif à ce que vous faites.**
 - **Rendez le lieu meilleur que vous ne l’avez trouvé.**
 - **Prévenez quand quelque chose ne va pas.**
-- **Respectez le collectif.**
+- **Ne mettez personne en danger - pas même vous.**
 
 ## <FileText /> Pour aller plus loin : Chartes des espaces
 

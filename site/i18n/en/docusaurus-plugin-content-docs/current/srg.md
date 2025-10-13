@@ -149,7 +149,7 @@ The DeVinci Fablab provides many resources for free, but that is not a reason to
 - **Be attentive to what you are doing.**
 - **Leave the place better than you found it.**
 - **Report when something is wrong.**
-- **Respect the community.**
+- **Do not put anyone in danger - not even yourself.**
 
 ## <FileText /> To go further: Space Charters
 
