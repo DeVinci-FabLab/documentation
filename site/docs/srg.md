@@ -36,7 +36,7 @@ Chaque EPI est à utiliser selon le danger à éviter. Voici les grands types de
 
 - **Gants anti-coupures obligatoires**
 - **Lunettes de protection recommandées**
-- Ne jamais faire confiance uniquement à ses compétences : le Fab est un espace vivant, un moment de distraction est très vite arrivé.
+- Ne jamais faire confiance uniquement à ses compétences : le fablab est un espace vivant, un moment de distraction est très vite arrivé.
 
 #### Brûlures
 
@@ -57,7 +57,7 @@ Chaque EPI est à utiliser selon le danger à éviter. Voici les grands types de
 #### Bruit
 
 - Les outils très bruyants sont **à utiliser au -1**.
-- Si usage au Fab : vérifier qu’on ne gêne personne et **porter un casque anti-bruit**.
+- Si usage au fablab : vérifier qu’on ne gêne personne et **porter un casque anti-bruit**.
 
 #### Rotation rapide
 

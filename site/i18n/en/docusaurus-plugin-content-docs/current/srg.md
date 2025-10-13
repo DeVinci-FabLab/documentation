@@ -35,7 +35,7 @@ Each PPE should be used according to the hazard to be avoided. Here are the main
 
 - **Cut-resistant gloves are mandatory**
 - **Safety glasses recommended**
-- Never rely solely on your skills: the Fab is a lively space, and a moment of distraction can happen quickly.
+- Never rely solely on your skills: the fablab is a lively space, and a moment of distraction can happen quickly.
 
 #### Burns
 
@@ -56,7 +56,7 @@ Each PPE should be used according to the hazard to be avoided. Here are the main
 #### Noise
 
 - Very noisy tools must be **used on floor -1**.
-- If used in the Fab: check that you are not disturbing anyone and **wear hearing protection**.
+- If used in the fablab: check that you are not disturbing anyone and **wear hearing protection**.
 
 #### Fast rotation
 
