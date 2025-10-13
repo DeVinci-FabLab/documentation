@@ -40,27 +40,27 @@
     "description": "The title of the footer links column with title=Our Partners in the footer"
   },
   "link.item.label.Main website": {
-    "message": "Main website",
+    "message": "Site principal",
     "description": "The label of footer link with label=Main website linking to https://devinci-fablab.fr/"
   },
   "link.item.label.Our Services Hub": {
-    "message": "Our Services Hub",
+    "message": "Hub de nos services",
     "description": "The label of footer link with label=Our Services Hub linking to https://home.devinci-fablab.fr/"
   },
   "link.item.label.Request a training": {
-    "message": "Request a training",
+    "message": "Demander une formation",
     "description": "The label of footer link with label=Request a training linking to https://forms.office.com/e/MqVdQujzjf"
   },
   "link.item.label.Contribute to the site": {
-    "message": "Contribute to the site",
+    "message": "Contribuer au site",
     "description": "The label of footer link with label=Contribute to the site linking to https://github.com/DeVinci-FabLab/documentation?tab=contributing-ov-file"
   },
   "link.item.label.Suggest a feature": {
-    "message": "Suggest a feature",
+    "message": "Suggérer une fonctionnalité",
     "description": "The label of footer link with label=Suggest a feature linking to https://github.com/DeVinci-FabLab/documentation/issues/new?template=feature_request.md"
   },
   "link.item.label.Donate": {
-    "message": "Donate",
+    "message": "Faire un don",
     "description": "The label of footer link with label=Donate linking to https://www.helloasso.com/associations/devinci-fablab/formulaires/1"
   },
   "link.item.label.Email": {
