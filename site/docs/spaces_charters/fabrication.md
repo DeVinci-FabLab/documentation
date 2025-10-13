@@ -25,7 +25,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 ## <TriangleAlert /> Règles de sécurité
 
 - **Port obligatoire des EPI adaptés** à l’activité : lunettes, masque, casque anti-bruit, gants (sauf exceptions).
-- **Interdiction stricte de porter des vêtements amples ou accessoires lâches** (écharpes, bracelets, manches longues).
+- **Porter des vêtements adaptés** qui ne vous gênent pas, évitant notamment les accessoires susceptibles de s'accrocher aux machines (comme écharpes, bracelets, manches bouffantes, etc.).
 - **Cheveux longs attachés obligatoirement**.
 - **Ne jamais utiliser une machine sans formation préalable** ou validation d’un·e responsable.
 - **Toujours vérifier le bon fonctionnement des sécurités** des machines avant utilisation.
@@ -44,6 +44,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Signaler immédiatement toute panne, défaillance ou usure suspecte.
 - Utiliser des **dispositifs de maintien adaptés** (étau, serre-joints) pour les pièces à usiner.
 - Les **outils sont en libre-service**, mais doivent toujours **être rangés exactement à l’endroit d’où ils proviennent** (voir [SRG](../srg.md)).
+- Ne pas hésiter à renseigner les autres utilisateur·ice·s en cas de doute ou de question.
 
 ## <Wrench /> Matériel à disposition
 

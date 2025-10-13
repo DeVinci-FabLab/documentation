@@ -43,7 +43,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Utiliser uniquement les ciseaux de couture pour du tissu ou du fil** – jamais pour du cuir, papier, thermocollant, zip, etc.
 - Ne pas utiliser les tables pour autre chose que le travail textile.
 - **Remettre le film de protection** sur les tapis Cricut après usage, et **utiliser le tapis adapté** à chaque matière.
-- Respecter les éléments réservés à MDD (ne pas les utiliser).
+- Respecter les éléments réservés à [Maison DeVinci Durable (MDD)](https://www.instagram.com/maison_devinci/) (ne pas les utiliser).
 - Vérifier l’état des aiguilles et les changer si nécessaire (avec aide si besoin).
 - Contrôler l’état du fil pour éviter les bourrages ou ruptures.
 - **Signaler immédiatement tout dysfonctionnement**.

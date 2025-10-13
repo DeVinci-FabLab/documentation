@@ -57,6 +57,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Always cover the Saturn with its anti-UV lid when not in use.
 - **Post-it required** for any experiment needing resting time: name, surname, date, start and end time.
 - Any consumable or equipment (funnel, tank, spatula, etc.) is considered **single-use**: if it is no longer new, it must be discarded.
+- Do not hesitate to inform other users in case of doubt or questions.
 
 ## <Wrench /> Available Equipment
 

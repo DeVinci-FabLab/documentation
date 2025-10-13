@@ -44,7 +44,7 @@ If you are unsure about the accessibility or availability of a tool, **ask a ref
 
 - **Never block access** to emergency exits or safety devices.
 - **The specific rules for each area** (resin, textile, electronics, fabrication, etc.) fully apply.
-- **Repeated failure to follow the rules may have consequences.**
+- **Repeated failure** to follow the rules may have consequences such as temporary or permanent exclusion from the space.
 - **The Fablab is a shared space**: always act as you would want others to act.
 
 :::caution

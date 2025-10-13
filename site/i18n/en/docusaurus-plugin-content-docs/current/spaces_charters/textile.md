@@ -43,7 +43,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Use sewing scissors only for fabric or thread** – never for leather, paper, interfacing, zippers, etc.
 - Do not use the tables for anything other than textile work.
 - **Put the protective film back** on Cricut mats after use, and **use the mat suitable** for each material.
-- Respect items reserved for MDD (do not use them).
+- Respect items reserved for [Maison DeVinci Durable (MDD)](https://www.instagram.com/maison_devinci/) (do not use them).
 - Check the condition of needles and change them if necessary (ask for help if needed).
 - Check the condition of the thread to avoid jams or breakage.
 - **Immediately report any malfunction**.

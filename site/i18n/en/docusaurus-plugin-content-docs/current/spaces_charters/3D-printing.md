@@ -41,8 +41,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Prepare and slice STL files in advance.
 - After each filament loading, update the corresponding information on the printer.
 - Report any anomaly (clogged nozzle, irregular extrusion, etc.).
-- Never remove a part while hot: wait for the bed to cool or use a suitable spatula.
-- Store spools in a dry place to prevent moisture absorption.
+- Never remove a part while hot: wait several minutes for the bed to cool or use a suitable spatula.
 
 ## <Wrench /> Available Equipment
 

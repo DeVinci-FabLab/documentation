@@ -25,7 +25,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 ## <TriangleAlert /> Safety Rules
 
 - **Wearing appropriate PPE** for the activity is mandatory: goggles, mask, ear defenders, gloves (with some exceptions).
-- **Wearing loose clothing or accessories** (scarves, bracelets, long sleeves) is strictly prohibited.
+- **Wear appropriate clothing** that does not restrict your movement, avoiding accessories that could get caught in the machines (such as scarves, bracelets, puffed sleeves, etc.).
 - **Long hair must be tied back**.
 - **Never use a machine without prior training** or approval from a supervisor.
 - **Always check that the safety features** of machines are working properly before use.
@@ -44,6 +44,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Immediately report any breakdowns, malfunctions, or suspicious wear and tear.
 - Use **appropriate holding devices** (vices, clamps) for the parts to be machined.
 - **Tools are self-service**, but must always **be returned to exactly where they came from** (see [SSW](../srg.md)).
+- Do not hesitate to inform other users in case of doubt or questions.
 
 ## <Wrench /> Available Equipment
 

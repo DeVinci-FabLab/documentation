@@ -57,6 +57,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Couvrir systématiquement la Saturn avec son couvercle anti-UV hors usage.
 - **Post-it obligatoire** pour toute expérience nécessitant un temps de repos : nom, prénom, date, heure de début et fin.
 - Tout consommable ou matériel (entonnoir, bac, spatule…) est considéré **à usage unique** : s’il n’est plus neuf, il doit être jeté.
+- Ne pas hésiter à renseigner les autres utilisateur·ice·s en cas de doute ou de question.
 
 ## <Wrench /> Matériel à disposition
 

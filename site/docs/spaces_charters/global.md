@@ -44,7 +44,7 @@ Si vous avez un doute sur l’accessibilité ou la disponibilité d’un outil, 
 
 - **Ne jamais bloquer l’accès** aux issues de secours ou aux dispositifs de sécurité.
 - **Les règles spécifiques à chaque zone** (résine, textile, électronique, fabrication…) s’appliquent pleinement.
-- Le **non-respect répété** des règles peut entraîner des conséquences.
+- Le **non-respect répété** des règles peut entraîner des conséquences telles que l’exclusion temporaire ou définitive de l'espace.
 - **Le Fablab est un espace commun** : agissez toujours comme vous voudriez que les autres agissent.
 
 :::caution

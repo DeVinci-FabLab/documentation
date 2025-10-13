@@ -41,8 +41,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - Préparer et slicer les fichiers STL en amont.
 - Après chaque chargement de filament, mettez à jour l’information correspondante sur l’imprimante.
 - Signaler toute anomalie (buse bouchée, extrusion irrégulière…).
-- Ne jamais retirer une pièce à chaud : attendre que le plateau refroidisse ou utiliser une spatule adaptée.
-- Ranger les bobines dans un endroit sec pour éviter qu’elles prennent l’humidité.
+- Ne jamais retirer une pièce à chaud : attendre plusieurs minutes que le plateau refroidisse ou utiliser une spatule adaptée.
 
 ## <Wrench /> Matériel à disposition
 
