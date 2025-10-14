@@ -95,7 +95,9 @@
   }
 
   .markdown {
-    text-align: justify;
+    p {
+      text-align: justify;
+    }
     tr {
       text-align: center;
     }
