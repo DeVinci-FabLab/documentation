@@ -32,9 +32,14 @@
     --code-background-color: #2e2e32;
   }
 
-  :not(#docsearch-input):focus {
+  *:focus {
     color: var(--ifm-color-primary);
     outline: 3px solid var(--ifm-color-primary);
+  }
+
+  #docsearch-input:focus {
+    color: var(--ifm-font-color-base);
+    outline: none;
   }
 
   /* == == == DocSearch == == == */
@@ -113,6 +118,21 @@
     hr {
       background-color: var(--ifm-color-primary);
       margin-top: 40px;
+    }
+
+    /* == == == Tabs == == == */
+    .tabs__item:focus {
+      outline: none;
+    }
+
+    .tabs__item--active:hover {
+      background-color: rgb(from var(--ifm-color-primary-lightest) r g b / 0.1);
+    }
+
+    .tabs__item[aria-selected="false"]:hover {
+      border-bottom-left-radius: 0%;
+      border-bottom-right-radius: 0%;
+      border-bottom-color: rgb(from var(--ifm-font-color-base) r g b / 0.5);
     }
 
     /* == == == Headers == == == */
