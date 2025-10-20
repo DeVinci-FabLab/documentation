@@ -176,8 +176,12 @@
       text-decoration: underline dotted;
 
       &:hover {
-        color: var(--fab-pink);
         text-decoration: underline;
+      }
+
+      &:hover:not(:visited),
+      &:hover:not(:active) {
+        color: var(--fab-pink);
       }
 
       &:visited,
