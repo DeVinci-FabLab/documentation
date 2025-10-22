@@ -25,7 +25,9 @@
     "lucide-react": "^0.533.0",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "rehype-katex": "7",
+    "remark-math": "6"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.8.1",
@@ -50,5 +52,5 @@
   "engines": {
     "node": ">=18.0"
   },
-  "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971"
+  "packageManager": "pnpm@10.19.0"
 }
