@@ -1,5 +1,5 @@
 # Stage 1: Base image.
-FROM node:slim AS base
+FROM node:24-slim AS base
 ## Enable corepack as root first
 RUN corepack enable
 ## Set the working directory to `/app`.
