@@ -55,7 +55,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Ne jamais jeter de déchets liquides** dans un lavabo — même dilués.
 - Être présent·e pendant tout le cycle d’impression, ne pas laisser une impression sans surveillance.
 - Couvrir systématiquement la Saturn avec son couvercle anti-UV hors usage.
-- **Post-it obligatoire** pour toute expérience nécessitant un temps de repos : nom, prénom, date, heure de début et fin.
+- **Post-it obligatoire** pour toute expérience nécessitant un temps de repos : nom, prénom, date, heure de début et fin. Un travail laissé sans post-it sera considéré comme abandonné et pourra être jeté.
 - Tout consommable ou matériel (entonnoir, bac, spatule…) est considéré **à usage unique** : s’il n’est plus neuf, il doit être jeté.
 - Ne pas hésiter à renseigner les autres utilisateur·ice·s en cas de doute ou de question.
 

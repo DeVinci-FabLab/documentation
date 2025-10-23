@@ -55,7 +55,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Never pour liquid waste** into a sink — even diluted.
 - Be present during the entire print cycle, do not leave a print unattended.
 - Always cover the Saturn with its anti-UV lid when not in use.
-- **Post-it required** for any experiment needing resting time: name, surname, date, start and end time.
+- **Post-it required** for any experiment needing resting time: name, surname, date, start and end time. A work left without a post-it will be considered abandoned and may be discarded.
 - Any consumable or equipment (funnel, tank, spatula, etc.) is considered **single-use**: if it is no longer new, it must be discarded.
 - Do not hesitate to inform other users in case of doubt or questions.
 
