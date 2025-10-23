@@ -45,9 +45,7 @@ This is the official documentation site for **DeVinci FabLab**, a comprehensive 
       - [Local production build](#local-production-build)
       - [Using Docker](#using-docker)
   - [Documentation Structure](#documentation-structure)
-  - [Usage](#usage)
-    - [Available Commands](#available-commands)
-    - [Makefile Commands](#makefile-commands)
+  - [Makefile Commands](#makefile-commands)
   - [Docker Support](#docker-support)
     - [Development Environment](#development-environment)
     - [Production Environment](#production-environment)
@@ -186,22 +184,7 @@ Documentation/
 
 ---
 
-## Usage
-
-### Available Commands
-
-In the `site/` directory:
-
-| Command | Description |
-|---------|-------------|
-| `pnpm start` | Start development server |
-| `pnpm build` | Build for production |
-| `pnpm serve` | Serve production build |
-| `pnpm clear` | Clear cache |
-| `pnpm typecheck` | Run TypeScript type checking |
-| `pnpm write-translations` | Extract translatable strings |
-
-### Makefile Commands
+## Makefile Commands
 
 At the project root:
 
@@ -216,6 +199,7 @@ At the project root:
 | `make restart-prod-local` | Restart local production environment |
 | `make restart-prod` | Restart production environment |
 | `make clean` | Clean all packages and containers |
+| `make write-translations` | Extract translatable strings |
 
 ---
 

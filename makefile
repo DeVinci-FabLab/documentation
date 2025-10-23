@@ -65,3 +65,8 @@ clean:
 	rm -rf site/.pnpm-store
 	@echo "All packages and containers cleaned up"
 	@echo "To start the server again, run 'make dev' or 'make prod'"
+
+write-translations:
+	@echo "Extracting translatable strings"
+	cd site && pnpm write-translations
+	@echo "Translatable strings extracted"
