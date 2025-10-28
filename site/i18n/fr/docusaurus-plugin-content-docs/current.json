@@ -5,22 +5,14 @@
   },
   "sidebar.tutorialSidebar.category.3D Printing": {
     "message": "Impression 3D",
-    "description": "The label for category 3D Printing in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Laser and CNC": {
-    "message": "Laser et CNC",
-    "description": "The label for category Laser and CNC in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Electronic Hardware": {
-    "message": "Matériel électronique",
-    "description": "The label for category Electronic Hardware in sidebar tutorialSidebar"
+    "description": "The label for category '3D Printing' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.IT Courses": {
     "message": "Formations Informatiques",
-    "description": "The label for category IT Courses in sidebar tutorialSidebar"
+    "description": "The label for category 'IT Courses' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Spaces Charters": {
     "message": "Chartes des Espaces",
-    "description": "The label for category Spaces Charters in sidebar tutorialSidebar"
+    "description": "The label for category 'Spaces Charters' in sidebar 'tutorialSidebar'"
   }
 }
