@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+tags: [course, 3d-printing]
 ---
 
 # Presentation

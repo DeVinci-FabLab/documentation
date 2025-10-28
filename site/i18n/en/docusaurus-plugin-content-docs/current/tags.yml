@@ -1,3 +1,9 @@
+3d-printing:
+  label: '3D Printing'
+  permalink: '/3d-printing'
+  description: 'Docs related to 3D printing technologies and practices'
+
+
 charter:
   label: 'Charter'
   permalink: '/charter'
@@ -18,10 +24,25 @@ docker:
   permalink: '/docker'
   description: 'Docs related to Docker and containerization technologies'
 
+electronics:
+  label: 'Electronics'
+  permalink: '/electronics'
+  description: 'Docs related to electronics and circuitry'
+
+fabrication:
+  label: 'Fabrication'
+  permalink: '/fabrication'
+  description: 'Docs related to fabrication techniques and tools'
+
 info:
   label: 'Info'
   permalink: '/info'
   description: 'Docs related to informatics and technology'
+
+resin:
+  label: 'Resin'
+  permalink: '/resin'
+  description: 'Docs related to resin-based 3D printing technologies and practices'
 
 rust:
   label: 'Rust'
@@ -42,6 +63,11 @@ storage:
   label: 'Storage'
   permalink: '/storage'
   description: 'Docs related to storage solutions and best practices'
+
+textile:
+  label: 'Textile'
+  permalink: '/textile'
+  description: 'Docs related to textile technologies and practices'
 
 waste:
   label: 'Waste'

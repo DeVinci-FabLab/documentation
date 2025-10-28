@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+tags: [course, 3d-printing]
 ---
 
 # OrcaSlicer Découpage

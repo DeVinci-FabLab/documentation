@@ -4,7 +4,7 @@ pagination_label: Resin Space Charter
 sidebar_label: Resin
 description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab resin space.
 slug: resin-space-charter
-tags: [charter, safety, storage]
+tags: [charter, resin, safety, storage]
 last_update:
   date: 2025-07-31
   author: Dimitry Siebert, Eliott A. Roussille, François Teynier, Hugo Degioanni

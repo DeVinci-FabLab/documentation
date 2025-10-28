@@ -4,7 +4,7 @@ pagination_label: Charte de l’espace électronique
 sidebar_label: Électronique
 description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l’espace électronique du DeVinci Fablab.
 slug: electronic-space-charter
-tags: [charter, safety, storage]
+tags: [charter, electronics, safety, storage]
 last_update:
   date: 2025-08-04
   author: Eliott A. Roussille, Hugo Degioanni, Urbain Lantrès

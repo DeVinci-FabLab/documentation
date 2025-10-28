@@ -4,7 +4,7 @@ pagination_label: Fabrication Space Charter
 sidebar_label: Fabrication
 description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab fabrication space.
 slug: fabrication-space-charter
-tags: [charter, safety, storage]
+tags: [charter, fabrication, safety, storage]
 last_update:
   date: 2025-08-04
   author: Eliott A. Roussille

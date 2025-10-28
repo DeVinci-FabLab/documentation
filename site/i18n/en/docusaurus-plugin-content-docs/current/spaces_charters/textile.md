@@ -4,7 +4,7 @@ pagination_label: Textile Space Charter
 sidebar_label: Textile
 description: Charter describing the rules, best practices, and contacts for the DeVinci Fablab textile space.
 slug: textile-space-charter
-tags: [charter, safety, storage]
+tags: [charter, textile, safety, storage]
 last_update:
   date: 2025-07-31
   author: Eliott A. Roussille, Lenday Stawarski, Rebecca Levy, Sherylann Wilthien
