@@ -1,8 +1,8 @@
 ---
 title: C# vers PostgreSQL
-description: Ce support d’apprentissage vous permettra de créer et d’héberger un site web statique pour votre documentation. L’outil est développé pour un projet C# mais peut être utilisé pour tout autre projet, les articles étant rédigés en markdown.
+description: Ce support d'apprentissage vous permettra de connecter une application C# à une base de données PostgreSQL en utilisant Npgsql.
 slug: csharp-to-postgres
-tags: [course, info, csharp]
+tags: [course, info, csharp, sql]
 last_update:
   date: 2024-05-01
   author: Yann M. Vidamment (MorganKryze)
@@ -14,65 +14,94 @@ additional_contributors:
 
 ## Introduction
 
-Ce support d’apprentissage vous guidera dans le processus de connexion d’une application C# à une base de données PostgreSQL.
+Ce support d'apprentissage vous guidera dans le processus de connexion d'une application C# à une base de données PostgreSQL en utilisant le package Npgsql, le driver .NET le plus populaire pour PostgreSQL.
+
+**Objectifs d'apprentissage :**
+
+- Créer un projet C# et installer Npgsql
+- Se connecter à une base de données PostgreSQL
+- Exécuter des requêtes SQL (SELECT, INSERT, etc.)
+- Lire et afficher des données depuis la base
 
 :::caution
-Dans ce cours, nous partons du principe que vous avez déjà installé PostgreSQL sur votre machine. Si ce n’est pas le cas, consultez plutôt le matériel d’apprentissage [PostgreSQL](postgres-docker.md).
+Dans ce cours, nous partons du principe que vous avez déjà installé PostgreSQL sur votre machine. Si ce n'est pas le cas, consultez le cours [PostgreSQL avec Docker](postgres-docker.md).
 :::
 
-## Prérequis
+## Prérequis & Installation
 
-- Un éditeur de code (Visual Studio Code, NeoVim, etc.)
-- [.NET 6.0](https://dotnet.microsoft.com/download) ou version ultérieure
+### Connaissances préalables
 
-## Étape 1 : Configurer le projet
+- Notions de base en C#
+- Concepts SQL de base (CREATE, INSERT, SELECT)
 
-Nous allons commencer par créer une nouvelle application console C# de base.
+### Outils requis
+
+| Outil           | Version       | Lien                                                          | Description                                         |
+| --------------- | ------------- | ------------------------------------------------------------- | --------------------------------------------------- |
+| .NET SDK        | 6.0+          | [dotnet.microsoft.com](https://dotnet.microsoft.com/download) | Framework de développement                          |
+| PostgreSQL      | Toute version | [postgres-docker](postgres-docker.md)                         | Base de données (via Docker ou installation locale) |
+| Éditeur de code | -             | VS Code, NeoVim, etc.                                         | Pour éditer le code                                 |
+
+## Configuration du projet
+
+### Création du projet
+
+Créez une nouvelle application console C# :
 
 ```bash
 dotnet new console -n MyPostgresApp
 cd MyPostgresApp
 ```
 
-## Étape 2 : Ajouter le package Npgsql
+### Installation du package Npgsql
 
-Nous allons utiliser le package Npgsql pour nous connecter à la base de données PostgreSQL.
+Npgsql est le driver .NET pour PostgreSQL. Installez-le via NuGet :
 
 ```bash
 dotnet add package Npgsql
 ```
 
-## Étape 3 : Créer le contenu de la base de données
+## Création de la base de données
 
-(Ignorez cette étape si vous possédez déjà une base de données créée, par exemple avec un fichier d’initialisation.)
+:::note
+Ignorez cette étape si vous possédez déjà une base de données créée (par exemple avec un fichier d'initialisation Docker).
+:::
 
-Nous commençons par entrer dans la base de données PostgreSQL via le terminal. Remplacez `postgres` par le nom d’utilisateur que vous avez utilisé pour créer la base de données.
+### Connexion à PostgreSQL
+
+Entrez dans PostgreSQL via le terminal. Remplacez `postgres` par votre nom d'utilisateur :
 
 ```bash
 psql -h localhost -U postgres
 ```
 
-Ensuite, créez une nouvelle base de données et une table.
+### Créer la base et la table
 
 ```sql
 CREATE DATABASE mydatabase;
 ```
 
-Accédez à la nouvelle base de données.
+Accédez à la nouvelle base de données :
 
 ```sql
 \c mydatabase
 ```
 
-Créez une nouvelle table.
+Créez une table `customer` :
 
 ```sql
 CREATE TABLE customer (id SERIAL PRIMARY KEY, name VARCHAR(50));
 ```
 
-## Étape 4 : Se connecter à la base de données
+Quittez psql :
 
-Ouvrez le fichier nommé `Program.cs` et ajoutez le code suivant.
+```sql
+\q
+```
+
+## Connexion à la base de données
+
+Ouvrez le fichier `Program.cs` et ajoutez le code suivant :
 
 ```csharp
 using System;
@@ -97,54 +126,116 @@ class Program
 Remplacez `your_password` par le mot de passe que vous avez utilisé pour créer la base de données.
 :::
 
-## Étape 5 : Exécuter l’application
-
-Exécutez l’application.
+### Exécuter l'application
 
 ```bash
 dotnet run
 ```
 
-Vous devriez voir la version de PostgreSQL s’afficher dans la console.
+Vous devriez voir la version de PostgreSQL s'afficher dans la console.
 
-## Étape 8 : Ajouter un client
+## Ajouter un client (INSERT)
 
-Ajoutez le code suivant dans la méthode `Main`.
+Ajoutez le code suivant dans la méthode `Main`, après la vérification de version :
 
 ```csharp
-using var cmd = new NpgsqlCommand("INSERT INTO customer (name) VALUES ('John Doe')", con);
-cmd.ExecuteNonQuery();
+using var cmdInsert = new NpgsqlCommand("INSERT INTO customer (name) VALUES ('John Doe')", con);
+cmdInsert.ExecuteNonQuery();
+Console.WriteLine("Client ajouté avec succès");
 ```
 
-Exécutez à nouveau l’application.
+Exécutez à nouveau l'application :
 
 ```bash
 dotnet run
 ```
 
-## Étape 7 : Voir le contenu de la table
+## Lire le contenu de la table (SELECT)
 
-Ajoutez le code suivant dans la méthode `Main`.
+Ajoutez le code suivant dans la méthode `Main` :
 
 ```csharp
-using var cmd = new NpgsqlCommand("SELECT * FROM customer", con);
-using var reader = cmd.ExecuteReader();
+using var cmdSelect = new NpgsqlCommand("SELECT * FROM customer", con);
+using var reader = cmdSelect.ExecuteReader();
+
+Console.WriteLine("\nListe des clients :");
 while (reader.Read())
 {
     Console.WriteLine($"{reader.GetInt32(0)} {reader.GetString(1)}");
 }
 ```
 
-Exécutez à nouveau l’application.
+Exécutez l'application :
 
 ```bash
 dotnet run
 ```
 
-Vous devriez voir « 1 John Doe » s’afficher dans la console.
+Vous devriez voir "1 John Doe" (ou plus si vous avez exécuté plusieurs fois l'insertion).
 
-## Pour aller plus loin
+## Code complet
 
-- [Documentation Npgsql](https://www.npgsql.org/doc/index.html)
-- [Documentation PostgreSQL](https://www.postgresql.org/docs/current/index.html)
-- [Apprendre le SQL](https://roadmap.sh/sql)
+Voici le code `Program.cs` complet :
+
+```csharp
+using System;
+using Npgsql;
+
+class Program
+{
+    static void Main()
+    {
+        var cs = "Host=localhost;Username=postgres;Password=your_password;Database=mydatabase";
+        using var con = new NpgsqlConnection(cs);
+        con.Open();
+
+        // Vérifier la version de PostgreSQL
+        using var cmdVersion = new NpgsqlCommand("SELECT version()", con);
+        var version = cmdVersion.ExecuteScalar().ToString();
+        Console.WriteLine($"Version de PostgreSQL : {version}");
+
+        // Ajouter un client
+        using var cmdInsert = new NpgsqlCommand("INSERT INTO customer (name) VALUES ('John Doe')", con);
+        cmdInsert.ExecuteNonQuery();
+        Console.WriteLine("Client ajouté avec succès");
+
+        // Lire tous les clients
+        using var cmdSelect = new NpgsqlCommand("SELECT * FROM customer", con);
+        using var reader = cmdSelect.ExecuteReader();
+
+        Console.WriteLine("\nListe des clients :");
+        while (reader.Read())
+        {
+            Console.WriteLine($"ID: {reader.GetInt32(0)}, Nom: {reader.GetString(1)}");
+        }
+    }
+}
+```
+
+## Bonnes pratiques
+
+- **Chaînes de connexion** : Ne jamais hardcoder les mots de passe. Utilisez des variables d'environnement ou un fichier de configuration
+- **Using statements** : Toujours utiliser `using` pour les connexions et commandes SQL afin de libérer les ressources
+- **Requêtes paramétrées** : Utilisez des paramètres pour éviter les injections SQL :
+
+```csharp
+var cmd = new NpgsqlCommand("INSERT INTO customer (name) VALUES (@name)", con);
+cmd.Parameters.AddWithValue("name", "Jane Doe");
+cmd.ExecuteNonQuery();
+```
+
+- **Gestion des erreurs** : Ajoutez des try-catch pour gérer les exceptions de connexion
+
+## Aller plus loin
+
+- **Entity Framework Core** : ORM pour gérer automatiquement les requêtes SQL
+- **Dapper** : Micro-ORM léger et performant
+- **Transactions** : Garantir l'intégrité des données avec `BeginTransaction()`
+- **Async/Await** : Utilisez les versions asynchrones (`OpenAsync`, `ExecuteReaderAsync`, etc.)
+
+## Ressources
+
+- [Documentation Npgsql](https://www.npgsql.org/doc/index.html) - Documentation officielle du driver .NET
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/current/index.html) - Documentation complète PostgreSQL
+- [Learn SQL](https://roadmap.sh/sql) - Roadmap pour apprendre SQL
+- [ADO.NET Guide](https://docs.microsoft.com/dotnet/framework/data/adonet/) - Fondamentaux de l'accès aux données en .NET

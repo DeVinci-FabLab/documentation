@@ -1,6 +1,6 @@
 ---
 title: Create your project documentation
-description: This learning material will let you create and host a static website for your documentation. The tool is developed for a C# project but can be used for any other project as the articles are written in markdown.
+description: This course will let you create and host a static website for your documentation. The tool is developed for a C# project but can be used for any other project as the articles are written in markdown.
 slug: csharp-docs
 tags: [course, info, csharp]
 last_update:
@@ -14,56 +14,76 @@ additional_contributors:
 
 ## Introduction
 
-This article will guide you through the process of creating a documentation for your C# project using the tool [DocFX](https://dotnet.github.io/docfx/). Documentation is key to help user understand how to use the tools you create. It is also a good way to show the quality of your work.
+Documentation is key to help users understand how to use the tools you create. It is also a good way to showcase the quality of your work.
 
-:::caution
-In this learning material, we will assume that you have a basic knowledge of C# and that you have a project to document (even a simple console application).
+This article will guide you through the process of creating documentation for your C# project using the tool [DocFX](https://dotnet.github.io/docfx/).
+
+**Learning objectives:**
+
+- Install and configure DocFX for a C# project
+- Automatically generate API documentation from code
+- Customize documentation with additional sections and pages
+- Deploy documentation to GitHub Pages
+
+:::info
+Although this course uses C# as an example, DocFX can document any .NET project and the methodology applies to other documentation generators.
 :::
 
-## Prerequisites
+## Prerequisites & Installation
 
-- [.NET 6.0](https://dotnet.microsoft.com/download/dotnet/6.0) or later
-- A code editor (e.g. Visual Studio Code, NeoVim, Notepad +, etc.)
-- A C# project
+### Prior knowledge
 
-## Setup
+- Basic knowledge of C#
+- Have a C# project to document (even a simple console application)
 
-### Step 1: Install DocFX
+### Required tools
 
-Ensure that you have dotnet (C#) installed by running:
+| Tool        | Version | Link                                                                     | Description             |
+| ----------- | ------- | ------------------------------------------------------------------------ | ----------------------- |
+| .NET SDK    | 6.0+    | [dotnet.microsoft.com](https://dotnet.microsoft.com/download/dotnet/6.0) | Development framework   |
+| DocFX       | Latest  | Install via dotnet tool                                                  | Documentation generator |
+| Code editor | -       | VS Code, NeoVim, Notepad++, etc.                                         | For editing files       |
+
+### Installing DocFX
+
+Verify that dotnet is installed:
 
 ```bash
 dotnet --version
 ```
 
-Now, to install docfx, or update it, open any terminal and run the following command:
+Install or update DocFX:
 
 ```bash
 dotnet tool update -g docfx
 ```
 
-### Step 2: Setup workspace
+## Workspace setup
 
-We will assume that your project has a simple structure like this initially:
+### Initial project structure
+
+Assume that your project has a simple structure like this:
 
 ```bash
-Example_project  <-- root folder
+Example_project  # Root folder
 └───MyApp
     ├───bin
     ├───MyApp.csproj
     └───Program.cs
 ```
 
-Open a terminal to the root of the project (the end of your path should be `Example_project/`), and run the following command:
+### Initializing DocFX
+
+Navigate to the root folder (`Example_project/`) and run:
 
 ```bash
-docfx init -y -o  documentation
+docfx init -y -o documentation
 ```
 
-Now you should have a new folder called "documentation" in the root of your project. Your folder structure should look like this (files are specified with the dots):
+This will create a `documentation` folder at the root. Resulting structure:
 
 ```bash
-Example_project  <-- root
+Example_project  # root
 ├───documentation
 │   ├───docs
 │   │   ├───getting-started.md
@@ -78,7 +98,9 @@ Example_project  <-- root
     └───Program.cs
 ```
 
-Here should be the default content of `docfx.json`:
+### Configuring `docfx.json`
+
+Here is the default content of `docfx.json`:
 
 ```json
 {
@@ -117,7 +139,11 @@ Here should be the default content of `docfx.json`:
 }
 ```
 
-For a more convenient display, features and to target to the project, I recommend you to update the file to the version below. For more information, see the [official documentation](https://dotnet.github.io/docfx/reference/docfx-json-reference.html) of the references tags.
+:::tip
+For a more convenient display and to target your project, update the file with the version below. See the [official documentation](https://dotnet.github.io/docfx/reference/docfx-json-reference.html) of the reference tags for more information.
+:::
+
+**Recommended configuration:**
 
 ```json
 {
@@ -156,11 +182,9 @@ For a more convenient display, features and to target to the project, I recommen
 }
 ```
 
-### Step 3: [ Optional ] Update content
+### Advanced configuration (optional)
 
-:::note
-You may want to select the channel of the documentation you want to generate. For example, if you want to generate the documentation for the Debug or Release version only. Feel free to update `files` to Debug or Release and `TargetFramework` to your dotnet version(available in the `MyApp.csproj`).
-:::
+You can select the documentation channel (Debug or Release):
 
 ```json
 ...
@@ -181,7 +205,7 @@ You may want to select the channel of the documentation you want to generate. Fo
 ...
 ```
 
-Do not forget to regularly update your compiled files using the `dotnet build` command as code changes:
+Don't forget to regularly update your compiled files:
 
 ```bash
 dotnet build -c Debug
@@ -189,9 +213,9 @@ dotnet build -c Debug
 dotnet build -c Release
 ```
 
-### Step 4: Preview your docs
+### Preview your documentation
 
-Now, back on your terminal from the root, run the following command:
+From your terminal at the root, run:
 
 ```bash
 docfx build documentation/docfx.json --serve
@@ -204,53 +228,53 @@ The output should end like this:
 Serving ".../MyApp/documentation/_site" on http://localhost:8080. Press Ctrl+C to shut down.
 ```
 
-Your documentation is now available on [localhost:8080](http://localhost:8080) if you want to see the preview on localhost.
+Your documentation is now available on [localhost:8080](http://localhost:8080) if you want to see a local preview.
 
-## Customize your doc
+## Customize your documentation
 
-### Step 1: Add sections
+### Add sections
 
-By default, the only sections available are `Docs` and `Api Documentation`. You may want to add more sections to your documentation. To do so, you will have to do fe steps:
+By default, only the `Docs` and `Api Documentation` sections are available. Here's how to add a new `Articles` section:
 
-1. Add a new folder in the `documentation` folder. For example, `articles`.
-2. Inside `articles`, add a `index.md` file and a `toc.yml` file.
+1. Create an `articles` folder in `documentation`
+2. Inside, add `index.md` and `toc.yml`
 
-Here is an example of the `index.md` file:
+   **`index.md` file:**
 
-```markdown
-# Articles
+   ```markdown
+   # Articles
 
-This is the articles section. You can add articles to explain how to use your library.
-```
+   This is the articles section. You can add articles to explain how to use your library.
+   ```
 
-Here is an example of the `toc.yml` file:
+   **`toc.yml` file:**
 
-```yml
-items:
-  - name: Articles
-    href: index.md
-```
+   ```yml
+   items:
+     - name: Articles
+       href: index.md
+   ```
 
-:::note
-We added the `items` tag to the `toc.yml` file. This is the root of the table of contents and will remove the error `Incorrect Type. Expected "TOC"`.
-:::
+   :::note
+   The `items` tag is the root of the table of contents and removes the error `Incorrect Type. Expected "TOC"`.
+   :::
 
-3. Now, we need to update the `toc.yml` file in the `documentation` folder to add the new section. I recommend adding a homepage mention (will be the landing page when the section is clicked). Here is an example of the `toc.yml` file:
+3. Update `documentation/toc.yml`:
 
-```yml
-items:
-  - name: Docs
-    href: docs/
-  - name: API
-    href: api/
-  - name: Articles
-    href: articles/
-    homepage: articles/index.md
-```
+   ```yml
+   items:
+     - name: Docs
+       href: docs/
+     - name: API
+       href: api/
+     - name: Articles
+       href: articles/
+       homepage: articles/index.md
+   ```
 
-### Step 2: Add pages
+### Add pages
 
-Now that you know how to create new sections, to add pages you may just add markdown files to the sections folder, and add them to the `toc.yml` file. Here is an example of the `toc.yml` file:
+Add markdown files to the folder and reference them in `toc.yml`:
 
 ```yml
 items:
@@ -262,7 +286,7 @@ items:
     href: how_to_publish.md
 ```
 
-However you may also be able to create collapsible menu in the `toc.yml` file. Here is an example of the `toc.yml` file:
+**Collapsible menu:**
 
 ```yml
 items:
@@ -276,24 +300,10 @@ items:
         href: how_to_publish.md
 ```
 
-Or use another style and display the category name, and the pages without being collapsible:
+### Add logo and favicon
 
-```yml
-items:
-  - name: Getting Started
-    href: index.md
-  - name: Other pages
-    href: how_to_use.md
-    href: how_to_publish.md
-```
-
-### Step 3: See Markdown features support
-
-DocFX supports a lot of markdown features. All of them are listed in the [official documentation](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html).
-
-### Logo & favicon
-
-To add a logo or favicon to your documentation, start by adding them into the assets folder (if you have not, create it in the `documentation` folder). Then, update the `docfx.json` file to add the `logo` and `favicon` tags. Here is an example:
+1. Place files in `documentation/assets/`
+2. Update `docfx.json`:
 
 ```json
 ...
@@ -302,7 +312,7 @@ To add a logo or favicon to your documentation, start by adding them into the as
     "resource": ["assets/**"],
     "globalMetadata": {
       ...
-      "_appLogoPath": "assets/logo.jpg",
+      "_appLogoPath": "assets/logo.svg",
       "_appFaviconPath": "assets/favicon.ico",
       ...
     }
@@ -310,25 +320,23 @@ To add a logo or favicon to your documentation, start by adding them into the as
   }
 ```
 
-For both I recommend you using svg files so that the logo and favicon are scalable and will not lose quality.
+:::tip
+Use SVG files so that the logo and favicon remain sharp at all sizes.
+:::
 
-### Step 4: Add code documentation
+### Code documentation
 
-Coding in C#, you may be aware of the use of the `///` comments to document your code. This is a good practice to help other developers understand your code. DocFX will take these comments into account to generate accurate documentation. Please refer to the [official documentation](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) for more information.
+DocFX automatically generates documentation from `///` comments in your C# code. This is a good practice to help other developers understand your code. Please refer to the [official documentation for XML comments](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) for more information.
 
-For docfx to support these metadata, ensure that a documentation file is generated correctly. Add this line to your "\*\*.csproj" file, inside the "PropertyGroup" tag:
+**Enable XML documentation generation:**
+
+Add this line to your `*.csproj` file, inside `<PropertyGroup>`:
 
 ```xml
 <GenerateDocumentationFile>true</GenerateDocumentationFile>
 ```
 
-Here is a little troubleshooting if you have an error while building the documentation:
-
-- Check the version of your dotnet.
-- Update docfx.
-- Check the `docfx.json` path to your project (e.g. `../MyApp`).
-- Check if you have well put a `namespace` in your file.
-- Your `program.cs` will not be used in the documentation, so you will need to have at least on more class. Here is a quick example to copy/paste in a new file:
+**Example of documented code:**
 
 ```csharp
 namespace MyApp;
@@ -344,6 +352,8 @@ public class Point
     /// <summary>
     /// Initializes a new instance of the <c>Point</c> class.
     /// </summary>
+    /// <param name="x">The x-coordinate of the point.</param>
+    /// <param name="y">The y-coordinate of the point.</param>
     public Point(int x, int y)
     {
         this.x = x;
@@ -369,6 +379,7 @@ public class Point
     /// <summary>
     /// Returns a string that represents the current object.
     /// </summary>
+    /// <returns>A string that represents the current object.</returns>
     public override string ToString()
     {
         return $"({x}, {y})";
@@ -376,21 +387,27 @@ public class Point
 }
 ```
 
-Now your documentation is ready to be generated in the section `API` in the generated site (you may change all sections names in your `toc.yml` file at the root of your documentation folder).
+Now, your documentation is ready to be generated in the `API` section of the generated site (you can change all section names in your `documentation/toc.yml` file).
 
-## Deploy the doc
+## Deploy to GitHub Pages
 
-### Step 1: Setup GitHub Pages
+GitHub provides a service called GitHub Pages that allows you to host static websites directly from your repository. We will need to set up a few things before deploying the documentation.
 
-GitHub provides a service called GitHub Pages that allows you to host static websites directly from your repository. We will need to setup few things before deploying the documentation.
+### GitHub Pages setup
 
-First of all, go to your repository settings, then to the "Pages" section. Select "Deploy from branch", then select the branch "gh-pages" branch and the root folder. Then click on "Save". If you do not have a "gh-pages" branch, you will have to create one (it is better if it is empty at the beginning but it is not mandatory).
+1. Go to your repository settings
+2. "Pages" section
+3. Select "Deploy from a branch"
+4. Choose the "gh-pages" branch and the root folder
+5. Click "Save"
 
-### Step 2: Deployment to web
+:::note
+Create the `gh-pages` branch if it doesn't exist (preferably empty at the start).
+:::
 
-Then, you will have to create a new folder called `.github` at the root of your project. Inside this folder, create a new folder called `workflows`. Inside this folder, create a new file called `deploy_docs.yml`. This file will contain the workflow to generate and deploy the documentation on GitHub Pages.
+### GitHub Actions workflow
 
-Here is an example of the `deploy_docs.yml` file:
+Create `.github/workflows/deploy_docs.yml`:
 
 ```yml
 name: Deploy docs
@@ -419,17 +436,25 @@ jobs:
           publish_dir: docs/_site
 ```
 
-Push the changes and go to the "Actions" section of your repository. You should see a new workflow called "Deploy docs". Click on it to see the logs. If everything went well, you should see a "Deployed" message at the end of the logs.
+Push your changes. Go to the "Actions" section to see the logs. If everything went well, you should see "Deployed".
 
-Now, on every push on the main branch, the documentation will be generated and deployed on GitHub Pages.
+Now, on every push to the main branch, the documentation will be generated and deployed to GitHub Pages.
 
-:::note
-In your github repository description, click on "Edit" then for the url select the "GitHub Pages" url option. So that your documentation is directly accessible from your repository.
+:::tip
+In your GitHub repository description, select the "GitHub Pages" URL for direct access to the documentation.
 :::
 
-## Sources
+## Common errors
 
-- [DocFX documentation](https://dotnet.github.io/docfx/index.html)
-- [Useful but not official documentation](https://tehgm.net/blog/docfx-github-actions/)
-- [C# documentation comments](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
-- [DocFX markdown support](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)
+- **dotnet version**: Check with `dotnet --version`
+- **Outdated DocFX**: Update with `dotnet tool update -g docfx`
+- **Incorrect path**: Check the path in `docfx.json` (e.g., `../MyApp`)
+- **Missing namespace**: Add a `namespace` in your C# files
+- **Program.cs ignored**: The main file is not documented, create at least one additional class
+
+## Resources
+
+- [Official DocFX documentation](https://dotnet.github.io/docfx/index.html)
+- [C# XML comments](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) - Microsoft guide
+- [DocFX markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html) - Supported features
+- [DocFX with GitHub Actions](https://tehgm.net/blog/docfx-github-actions/) - Unofficial but useful guide

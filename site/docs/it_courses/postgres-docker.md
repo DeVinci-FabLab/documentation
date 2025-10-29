@@ -1,6 +1,6 @@
 ---
 title: PostgreSQL avec Docker
-description: Ce support d’apprentissage vous guidera dans le processus de configuration d’une base de données PostgreSQL à l’aide de Docker.
+description: Ce support d'apprentissage vous guidera dans le processus de configuration d'une base de données PostgreSQL à l'aide de Docker.
 slug: postgres-docker
 tags: [course, info, sql, docker]
 last_update:
@@ -14,24 +14,58 @@ additional_contributors:
 
 ## Introduction
 
-Ce support d’apprentissage vous guidera dans le processus de configuration d’une base de données PostgreSQL à l’aide de Docker. Docker est une plateforme permettant de développer, déployer et exécuter des applications dans des conteneurs. Les conteneurs sont des environnements légers, autonomes et exécutables qui embarquent tout ce dont une application a besoin pour fonctionner : le code, le runtime, les outils système, les bibliothèques et les paramètres.
+Docker est une plateforme permettant de développer, déployer et exécuter des applications dans des conteneurs. Les conteneurs sont des environnements légers, autonomes et exécutables qui embarquent tout ce dont une application a besoin pour fonctionner : le code, le runtime, les outils système, les bibliothèques et les paramètres.
 
-Docker sera particulièrement pratique par rapport à une installation traditionnelle de PostgreSQL, car il vous permettra d’exécuter la base de données dans un environnement isolé, sans avoir à l’installer sur votre machine.
+Ce guide vous aidera à configurer une base de données PostgreSQL avec Docker, ce qui est particulièrement pratique par rapport à une installation traditionnelle car vous pourrez exécuter la base de données dans un environnement isolé, sans avoir à l'installer directement sur votre machine.
 
-## Prérequis
+**Objectifs d'apprentissage :**
 
-- Un ordinateur.
-- De préférence un éditeur de code comme Visual Studio Code.
+- Comprendre les bases de Docker et Docker Compose
+- Configurer un conteneur PostgreSQL avec variables d'environnement
+- Utiliser un script d'initialisation pour créer des tables
+- Accéder et interagir avec PostgreSQL via psql
 
-## Étape 1 : Installer Docker
+## Prérequis & Installation
 
-Docker est disponible pour Windows, macOS et Linux. Vous pouvez télécharger l’installeur depuis le [site officiel](https://www.docker.com/products/docker-desktop).
+### Connaissances préalables
 
-## Étape 2 : Créer un conteneur PostgreSQL
+- Notions de base en ligne de commande
+- Concepts SQL de base (optionnel mais utile)
+
+### Outils requis
+
+| Outil           | Version  | Lien                                                         | Description                        |
+| --------------- | -------- | ------------------------------------------------------------ | ---------------------------------- |
+| Docker Desktop  | Dernière | [docker.com](https://www.docker.com/products/docker-desktop) | Plateforme de conteneurisation     |
+| Éditeur de code | -        | VS Code, etc.                                                | Pour éditer les fichiers de config |
+
+### Installation de Docker
+
+Docker est disponible pour Windows, macOS et Linux. Téléchargez l'installeur depuis le [site officiel](https://www.docker.com/products/docker-desktop) et suivez les instructions d'installation.
+
+### Vérification
+
+```bash
+docker --version
+docker-compose --version
+```
+
+## Configuration du conteneur PostgreSQL
 
 Docker Compose est un outil permettant de définir et d’exécuter des applications multi-conteneurs Docker. Avec Compose, vous utilisez un fichier YAML pour configurer les services de votre application.
 
-Créez un nouveau répertoire nommé `database` et ajoutez un fichier `docker-compose.yml` avec le contenu suivant :
+### Structure du projet
+
+Créez un répertoire `database` et ajoutez-y trois fichiers :
+
+```bash
+database/
+├── docker-compose.yml    # Configuration Docker Compose
+├── .env                  # Variables d'environnement
+└── init.sql              # Script d'initialisation
+```
+
+### Fichier `docker-compose.yml`
 
 ```yaml
 services:
@@ -55,7 +89,7 @@ volumes:
   data:
 ```
 
-Puis ajoutez un fichier `.env` dans le même répertoire avec le contenu suivant :
+### Fichier `.env`
 
 ```env
 DB_HOST=localhost
@@ -65,7 +99,11 @@ DB_NAME=mydatabase
 DB_PORT=5432
 ```
 
-Enfin, ajoutez le fichier `init.sql` dans le même répertoire avec le contenu suivant :
+:::warning
+Ne commitez jamais le fichier `.env` dans un dépôt public ! Ajoutez-le à `.gitignore`.
+:::
+
+### Fichier `init.sql`
 
 ```sql
 \c mydatabase
@@ -74,81 +112,116 @@ INSERT INTO customer (name) VALUES ('Alice');
 INSERT INTO customer (name) VALUES ('Bob');
 ```
 
-### Explication rapide
+### Explications de la configuration
 
-Les fichiers :
+**Fichiers :**
 
-- `docker-compose.yml` : fichier principal définissant la configuration du conteneur.
-- `.env` : contient les variables d’environnement pour le conteneur PostgreSQL (nom, utilisateur, mot de passe, port).
-- `init.sql` : script SQL exécuté au démarrage du conteneur, créant une table `customer` et insérant deux lignes.
+- **`docker-compose.yml`** : Définit la configuration du conteneur
+- **`.env`** : Variables d'environnement (nom, utilisateur, mot de passe, port)
+- **`init.sql`** : Script SQL exécuté au démarrage, créant une table `customer` et insérant deux lignes
 
-Configuration Docker :
+**Configuration Docker :**
 
-- `image: postgres:alpine` : exécute un conteneur PostgreSQL sur un OS `alpine`.
-- `restart` : si le conteneur s’arrête, il redémarre automatiquement.
-- `hostname` : nom d’hôte du conteneur.
-- `env_file` : chemin du fichier des variables d’environnement.
-- `environment` : variables d’environnement pour PostgreSQL.
-- `volumes` : `db` stocke les données de façon persistante, `init.sql` sera exécuté au démarrage.
-- `ports` : port exposé pour accéder à la base PostgreSQL (ici [localhost:5432](http://localhost:5432)).
+- **`image: postgres:alpine`** : Exécute PostgreSQL sur un OS Alpine (léger)
+- **`restart: always`** : Redémarre automatiquement le conteneur s'il s'arrête
+- **`hostname`** : Nom d'hôte du conteneur
+- **`env_file`** : Chemin du fichier des variables d'environnement
+- **`environment`** : Variables d'environnement pour PostgreSQL
+- **`volumes`** :
+  - `db` : Stocke les données de façon persistante
+  - `init.sql` : Sera exécuté au premier démarrage
+- **`ports`** : Port exposé pour accéder à la base (ici [`localhost:5432`](http://localhost:5432))
 
-## Étape 3 : Démarrer le conteneur PostgreSQL
+## Démarrer le conteneur PostgreSQL
 
-Ouvrez un terminal et placez-vous dans le répertoire `database`. Exécutez la commande suivante pour démarrer le conteneur PostgreSQL :
+Placez-vous dans le répertoire `database` et exécutez :
 
 ```bash
 docker-compose up -d
 ```
 
-Cette commande va créer et démarrer le conteneur PostgreSQL en arrière-plan. Pour vérifier qu’il est en cours d’exécution, utilisez :
+Cette commande crée et démarre le conteneur PostgreSQL en arrière-plan.
+
+### Vérifier que le conteneur est en cours d'exécution
 
 ```bash
 docker ps
 ```
 
-Vous devriez voir un conteneur postgres en cours d’exécution. À la fin des lignes, vous devriez voir une section "NAMES" avec le nom du conteneur, je vous recommande de le copier pour l’étape suivante.
+Vous devriez voir un conteneur postgres en cours d'exécution. Dans la colonne "NAMES", notez le nom du conteneur (probablement `database-db-1` si votre dossier s'appelle `database`).
 
-## Étape 4 : Accéder à la base de données PostgreSQL
+## Accéder à la base de données PostgreSQL
 
-Maintenant que la base de données est démarrée, nous allons essayer de nous y connecter manuellement à l’aide de l’outil en ligne de commande `psql`. Vous pouvez utiliser la commande suivante pour vous connecter à la base :
+Maintenant que la base de données est démarrée, connectez-vous manuellement avec l'outil en ligne de commande `psql` :
 
 ```bash
 docker exec -it database-db-1 psql -U postgres
 ```
 
 :::caution
-Ici, `database-db-1` est le nom du conteneur ; remplacez-le par le nom réel de votre conteneur si vous n’avez pas nommé votre répertoire de travail `database`.
+Remplacez `database-db-1` par le nom réel de votre conteneur si vous n'avez pas nommé votre répertoire de travail `database`.
 :::
 
-Maintenant que vous êtes connecté à la base de données PostgreSQL, vous pouvez exécuter des requêtes SQL. Par exemple, pour lister les bases de données :
+### Commandes psql utiles
+
+Une fois connecté à PostgreSQL, vous pouvez exécuter des requêtes SQL :
+
+**Lister les bases de données :**
 
 ```sql
 \l
 ```
 
-Pour vérifier que votre script SQL d’initialisation a bien été exécuté, vous pouvez lister les éléments de la table `customer`. Commencez par vous connecter à la base `mydatabase` :
+**Se connecter à une base de données :**
 
 ```sql
 \c mydatabase
 ```
 
-Ensuite listez les éléments de la table `customer` :
+**Lister les éléments de la table `customer` :**
 
 ```sql
 SELECT * FROM customer;
 ```
 
-## Étape 5 : Nettoyer
+Vous devriez voir les deux entrées créées par le script d'initialisation (Alice et Bob).
 
-Pour arrêter et supprimer le conteneur PostgreSQL :
+**Quitter psql :**
+
+```sql
+\q
+```
+
+## Arrêter et nettoyer
+
+### Arrêter le conteneur
 
 ```bash
 docker-compose down
 ```
 
-Cependant, pour effacer les données persistantes, pensez à supprimer le répertoire `db`. Sinon, les données seront conservées pour la prochaine exécution du conteneur. Réitérez ces étapes si vous modifiez le fichier `init.sql` avec de nouvelles données.
+### Supprimer les données persistantes
 
-## Pour aller plus loin
+Les données sont conservées dans le répertoire `db/`. Pour effacer complètement les données :
 
-- [Commandes PostgreSQL](https://tomcam.github.io/postgres/) : liste de commandes PostgreSQL et bonnes pratiques.
-- [Docker Compose](https://docs.docker.com/compose/) : documentation officielle de Docker Compose.
+```bash
+rm -rf db/
+```
+
+:::note
+Supprimez le dossier `db/` si vous modifiez le fichier `init.sql` et souhaitez réinitialiser la base avec de nouvelles données.
+:::
+
+## Bonnes pratiques
+
+- **Variables d'environnement** : Ne jamais exposer les mots de passe en clair, utilisez `.env` et `.gitignore`
+- **Volumes nommés** : Pour la production, préférez les volumes Docker nommés plutôt que les bind mounts
+- **Sauvegarde des données** : Pensez à sauvegarder régulièrement votre dossier `db/`
+- **Logs** : Consultez les logs avec `docker logs database-db-1` en cas de problème
+
+## Ressources
+
+- [Commandes PostgreSQL](https://tomcam.github.io/postgres/) - Liste de commandes et bonnes pratiques
+- [Documentation Docker Compose](https://docs.docker.com/compose/) - Guide officiel
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/) - Documentation complète
+- [Docker PostgreSQL Image](https://hub.docker.com/_/postgres) - Documentation de l'image officielle

@@ -1,6 +1,6 @@
 ---
-title: Rust – Basics
-description: A guide to discover the basics of Rust programming.
+title: Rust – the basics
+description: A guide to discover the fundamentals of Rust.
 slug: rust
 tags: [course, info, rust]
 last_update:
@@ -12,390 +12,422 @@ additional_contributors:
     avatar_url: https://github.com/UrbsKali.png
 ---
 
-> The goal of this training is to make you self-sufficient in Rust
-
-|      | Prerequisites          | Skills                |
-| ---- | ---------------------- | --------------------- |
-| Rust | Programming logic, IDE | Cargo, syntax, memory |
-
 ## Introduction
 
-Rust is a language aiming to replace low-level languages like C. It focuses on performance, concurrency, and above all, safety.
+Rust is a language that aims to replace low-level languages like C. It focuses on performance, concurrency, but above all, safety.
 
-Indeed, one of the biggest issues in C/C++ is that it’s hard to manage memory robustly without leaks.
+Indeed, one of the biggest problems with C/C++ is that it's difficult to have code that robustly manages memory without leaks. In Rust, code is secure by default, thanks to its borrowing system, which can be challenging to grasp.
 
-In Rust, code is safe by default thanks to its ownership and borrowing system, which can be tricky to grasp.
+Rust can be used for the same purposes as C/C++; it can be found in the Linux kernel, in Discord's backend, and in microcontrollers.
 
-Rust can be used for the same scenarios as C/C++; you’ll find it in the Linux kernel, in Discord’s backend, and in microcontrollers.
+**Learning objectives:**
 
-## Setup
+- Understand the fundamental concepts of Rust (ownership, borrowing, lifetime)
+- Master the syntax and basic structures
+- Be able to use Cargo to manage projects
+- Create a functional CLI application
 
-Recommended IDE: RustRover or VS Code: [Installer link](https://www.rust-lang.org/learn/get-started)
+:::info
+**Level**: Beginner • **Estimated duration**: 3-4 hours • **Practical project**: YouTube video downloader CLI application
+:::
 
-The installer will add `rustup` and `cargo` to your machine:
+## Prerequisites & Installation
 
-- `rustup` manages everything related to Rust on your system, including updates via `rustup update`
-- `cargo` generates projects, runs them, and publishes crates
+### Prior knowledge
 
-### Course outline
+- Basic programming logic
+- Familiarity with a development environment (IDE)
 
-In this training, we will build a CLI application to download YouTube videos. ([source code](https://gist.github.com/UrbsKali/67e09af49d42791a27a58e896677bcad))
+### Required tools
 
-Major steps:
+| Tool | Version | Link | Description |
+|------|---------|------|-------------|
+| Rust (rustup + cargo) | Latest stable | [rustup.rs](https://www.rust-lang.org/learn/get-started) | Complete Rust toolchain |
+| IDE | - | [VS Code](https://code.visualstudio.com/) or [RustRover](https://www.jetbrains.com/rust/) | Development environment |
 
-- Generate the project
+### Installation
 
-  ```shell
-  cargo new rust_course
-  ```
+The installer will put `rustup` and `cargo` on your computer:
 
-- Add dependencies
+- `rustup` manages everything related to Rust on your machine, including component updates with `rustup update`
+- `cargo` allows you to create projects, run them, and publish them
 
-  ```shell
-  cargo add rustube
-  ```
+### Installation verification
 
-- Write Rust code
-- Voilà!
+```bash
+rustc --version  # Should display the Rust compiler version
+cargo --version  # Should display the Cargo version
+```
 
-### Using `cargo`
+## Using Cargo
 
-- Create a project
+Cargo is Rust's project and dependency management tool.
 
-  ```bash
-  cargo new <project-name>
-  ```
+### Essential commands
 
-- Run a project
+```bash
+# Create a project
+cargo new <project-name>
 
-  ```bash
-  cargo run
-  ```
+# Run a project
+cargo run
 
-- Build a project
+# Compile a project
+cargo build [--release]
 
-  ```bash
-  cargo build [--release]
-  ```
+# Check (faster than compiling to check for errors)
+cargo check
+```
 
-- Check for errors (faster than full build)
+### The `Cargo.toml` file
 
-  ```bash
-  cargo check
-  ```
-
-### `Cargo.toml`
-
-Example `Cargo.toml`:
+Example `Cargo.toml` file:
 
 ```toml
 [package]
-name = "rust_course"
+name = "formation_rust"
 version = "0.1.0"
 edition = "2023"
 
 [dependencies]
-# none yet, but you get the idea
+# Add your dependencies here with: cargo add <package-name>
 ```
 
-When you create a project with `cargo`, a `Cargo.toml` ([Tom’s Obvious, Minimal Language](https://toml.io/fr/)) is automatically added to manage dependencies.
+When you create a project with `cargo`, a `Cargo.toml` (Tom's Obvious, Minimal Language) file is automatically added to the project to define and track dependencies.
 
-[More info](https://doc.rust-lang.org/cargo/reference/manifest.html)
+[More info on Cargo.toml](https://doc.rust-lang.org/cargo/reference/manifest.html)
 
-## Syntax and Basic Constructs
+## Syntax and basic structures
 
-### Semicolon or Not?
+### Semicolons or not?
 
-Rust requires semicolons to separate statements, but inside functions you may see lines without semicolons—those are treated as return expressions.
+Rust needs semicolons at the end of each line to separate statements, but you can see lines without semicolons in functions because if a line doesn't have a semicolon, it's considered a return.
 
-### Macro? What’s That?
+### Macro? What's that?
 
-A macro ends with `!` (e.g., `println!("hello")`). It’s not a regular function, but similar.
+A macro is an instruction that ends with `!` (e.g., `println!("hehe boi")`), it's not a classic function, but close.
 
-### Program Entry Point
+### Program entry point
 
-Every Rust program starts with a `main` function.
+A Rust program always starts with the `main` function.
 
-### Expression vs Statement
+### Expression vs statement
 
-- Expression → returns a value
-- Statement → does not return a value
+- **Expression** → returns a value
+- **Statement** → returns nothing
 
-### Structures
+### Data types
 
-- Function
+#### Integers
 
-  ```rust
-  fn greet(x: i32) {
-      println!("{}", x);
+| Signed integer | Unsigned integer |
+| -------------- | ---------------- |
+| i8             | u8               |
+| i16            | u16              |
+| i32            | u32              |
+| i64            | u64              |
+| i128           | u128             |
+| isize          | usize            |
+
+`size` is determined based on the CPU architecture (32 bits or 64 bits).
+
+:::tip
+Virtual separator: `1_000` represents 1000, which makes numbers easier to read and understand.
+:::
+
+#### Other types
+
+- **float**: `f32`, `f64`
+- **bool**: 1 bit
+- **char**: Like in C#, with single quotes, UTF 4 bytes (emojis too)
+- **tuple**: Like in Python, can have elements of different types
+
+```rust
+let x: (i32, f64, u8) = (500, 6.4, 1);
+let five_hundred = x.0;
+let six_point_four = x.1;
+let one = x.2;
+```
+
+- **array**: Like in C#, must have elements of the same type, fixed size
+
+```rust
+let a: [i32; 5] = [1, 2, 3, 4, 5];
+let first = a[0];
+let second = a[1];
+```
+
+- **string literals**: Immutable, on the stack
+- **String**: Mutable, on the heap
+
+```rust
+let mut s = String::from("hello");
+s.push_str(", world!"); // push_str() appends a literal to a String
+println!("{}", s); // Displays `hello, world!`
+```
+
+### Control structures
+
+#### Functions
+
+```rust
+fn hehe(x: i32) {
+  println!("{}", x);
+}
+
+fn number() -> i32 {
+  42  // No semicolon = return
+}
+```
+
+#### Assignment
+
+```rust
+let x = 42;       // Constant
+let mut y = 10;   // Mutable variable
+```
+
+#### Conditions
+
+```rust
+if x > 0 {
+  println!("strictly positive");
+} else if x == 0 {
+  println!("Zero");
+} else {
+  println!("strictly negative");
+}
+```
+
+Or in one line:
+
+```rust
+let condition = true;
+let x = if condition { 5 } else { 0 };
+```
+
+#### Loops
+
+**Infinite loop:**
+
+```rust
+loop {
+  println!("AAAAAAAAAA");
+}
+// Never stops
+```
+
+A loop can be an expression:
+
+```rust
+let mut i = 0;
+
+let y = loop {
+  if i == 10 {
+    break i + 5;
   }
-  fn get_number() -> i32 {
-      42
-  }
-  ```
+  i += 1;
+};
+// y equals 15
+```
 
-- Variable binding
+**Labeled loops:**
 
-  ```rust
-  let x = 42;       // Immutable
-  let mut y = 10;   // Mutable
-  ```
+By default, `break` terminates the innermost loop, but with labeled loops, you can terminate any already defined loop. The label MUST start with `'`.
 
-- Infinite loop
+```rust
+let mut i = 0;
 
-  ```rust
+'my_loop: loop {
   loop {
-      println!("Looping forever");
+    if i % 5 == 0 {
+      break 'my_loop;
+    } else {
+      break;
+    }
   }
-  // Won’t stop unless interrupted
-  ```
+  i += 1;
+}
+// i is 5
+```
 
-  A loop can be an expression:
+**While loop:**
 
-  ```rust
-  let mut i = 0;
+```rust
+let mut i = 5;
+while i > 0 {
+  i -= 1;
+  println!("{i}");
+}
+println!("Liftoff");
+```
 
-  let result = loop {
-      if i == 10 {
-          break i + 5;
-      }
-      i += 1;
-  };
-  // result == 15
-  ```
+**For loop:**
 
-  By default, `break` exits the innermost loop. With labels (starting with `'`), you can break out of specific loops:
+```rust
+let phrase = ["Thomas", "likes", "big", "hugs"];
+for word in phrase {
+  print!("{word} ");
+}
+// Displays "Thomas likes big hugs "
+```
 
-  ```rust
-  let mut i = 0;
+With ranges:
 
-  'outer: loop {
-      loop {
-          if i % 5 == 0 {
-              break 'outer;
-          } else {
-              break;
-          }
-      }
-      i += 1;
-  }
-  // i == 5
-  ```
+```rust
+for i in (1..4) {
+  println!("i={i}");
+}
+// i=1
+// i=2
+// i=3
+```
 
-- Conditional
+#### Scope
 
-  ```rust
-  if x > 0 {
-      println!("positive");
-  } else if x == 0 {
-      println!("zero");
-  } else {
-      println!("negative");
-  }
-  ```
+```rust
+let y = {
+  let x = 3;
+  x + 1
+};
+// y equals 4
+```
 
-  Or in one line:
+## Ownership (Ownership system)
 
-  ```rust
-  bool condition = true;
-  let x = if condition { 5 } else { 0 };
-  ```
+Rust's distinctive feature is its ownership system that allows it to be secure by default, AND PREVENTS COMPILATION WHEN IT SHOULD.
 
-- While loop
+### The three ownership rules
 
-  ```rust
-  let mut i = 5;
-  while i > 0 {
-      i -= 1;
-      println!("{}", i);
-  }
-  println!("Lift off!");
-  ```
+1. Every value has an owner
+2. There can only be one owner at a time
+3. When the owner disappears, so does the value
 
-- For loop
+This leads to compilation errors, whereas other languages wouldn't pose a problem. To understand the subtlety of ownership, you need to understand the different memories, the Stack and the Heap.
 
-  ```rust
-  let words = ["Rust", "is", "awesome"];
-  for word in words {
-      print!("{} ", word);
-  }
-  ```
+### Stack vs Heap
 
-  With ranges:
+A program has access to two types of memory:
 
-  ```rust
-  for i in 1..4 {
-      println!("i={}", i);
-  }
-  // i=1, i=2, i=3
-  ```
+- **The Stack**: contiguous data stack (LIFO - Last In First Out)
+- **The Heap**: sparse data blob (DTFYW - Do The F*** You Want)
 
-- Scope
+You can only put memory on the Stack if you know the data size in advance; this is possible with types such as int, float, bool, etc., but impossible with Strings.
 
-  ```rust
-  let y = {
-      let x = 3;
-      x + 1
-  };
-  // y == 4
-  ```
+We therefore use the Heap, and the memory allocator must find free space to store our data, which takes longer.
 
-## Ownership
+### Practical cases
 
-Rust’s key feature is its ownership system, which guarantees safety at compile time and prevents common bugs.
-
-Three ownership rules:
-
-- Every value has an owner.
-- Only one owner at a time.
-- When the owner goes out of scope, the value is dropped.
-
-This often leads to compile-time errors that other languages would only catch at runtime. To understand the subtleties of ownership, you need to understand the different memories, the Stack and the Heap (see Appendix 2).
-
-Stack vs Heap examples:
+**Variables on the Stack:**
 
 ```rust
 let x = 42;
-let y = x; // i32 is Copy, so x is still valid
-
-let s1 = String::from("hello");
-let s2 = s1; // Moves ownership; s1 is no longer valid
+let y = x;
 ```
 
-### Functions and Ownership
+In this case, `x` is fixed-size data, so on the Stack, it's therefore automatically copied (because copying data on the Stack is very fast).
 
-Passing a heap value into a function moves ownership, but stack values are copied.
+**Variables on the Heap:**
 
-## Borrowing and References
+```rust
+let x = String::from("hehe");
+let y = x;
+```
+
+But in this one, the variable `x` is stored on the Heap; since copying can be expensive, it's not done. Rust removes `x` and keeps `y`; we say ownership is transferred.
+
+### Function cases
+
+Similarly, putting a Heap variable into a function makes it lose ownership, but a Stack variable is only copied.
+
+## Solution to Ownership: References
 
 - `&` = reference
 - `*` = dereference
 
-Borrowing rules:
+### Reference rules
 
-- Either one mutable reference or any number of immutable references at a time.
-- References must always be valid.
+1. You can have one mutable reference OR n static references at any time
+2. A reference must always point to a value (it's not obvious)
 
-Prefer borrowing rather than moving large data:
+We prefer to pass variable references rather than the value itself; it's a system similar to pointers but simpler. There's the same modification system as classic variables. You can have one mutable reference at a time and as many classic references as you want.
 
 ```rust
 fn main() {
-    let mut s = String::from("hello");
-    append_world(&mut s);
-    println!("{}", s); // Prints "hello, world"
+    let mut x = String::from("hehe");
+    trust_me(&mut x);
+    println!("{}", x); // Displays "hehe ohoho"
 }
 
-fn append_world(s: &mut String) {
-    s.push_str(", world");
+fn trust_me(x: &mut String) {
+    x.push_str(" ohoho");
 }
 ```
 
-## Lifetimes
+## Lifetime (Lifetimes)
 
-Every reference has a scope called a lifetime. In example :
+Each variable has a limited lifetime, for example:
 
 ```rust
 {
   let x = 5;
-  // We can use x here
-} // x is no longer valid here
-// We cannot use x here
+  // Do things with x
+} // x gets dropped :(
+// Can't use x anymore
 ```
 
-Example of invalid code with functions:
+If we apply this with functions:
 
 ```rust
 fn main() {
-    let r = borrow_string();
-    println!("{}", r);
+    let x = dont_trust_me();
+    println!("{}", x);
 }
 
-fn borrow_string() -> &String {
-    let s = String::from("oops");
-    &s // error: returns reference to local variable
-} // The value of `s` is dropped here, so `&s` is invalid
+fn dont_trust_me() -> &String {
+    let x = String::from("oh no");
+    &x  // Return the reference
+} // But here x's value is lost
 ```
 
-Rust disallows returning references to values that go out of scope. Use owned return types or explicit lifetimes.
+In this case, the reference points to a non-existent value, which Rust doesn't allow → the code doesn't compile.
 
-**Solution : lifetime**
-The lifetimes are parameters added to specify the duration of a value’s validity. To fix the previous function, you should return an owned value instead of a reference.
+**Solution: lifetimes**, these are parameters we add to specify a value's lifetime. To fix the previous function, you should return an owned value rather than a reference.
 
-<important>**Trust the Compiler**</important>
+:::warning
+**TRUST THE COMPILER**
+:::
 
-## Appendix 1: Rust Data Types
+## Practical exercises
 
-### Integers
+| # | Task | Learning objective |
+|---|------|-------------------|
+| 1 | Create a CLI application to download YouTube videos | Master Cargo, dependencies, and basic syntax |
 
-| Signed | Unsigned |
-| ------ | -------- |
-| i8     | u8       |
-| i16    | u16      |
-| i32    | u32      |
-| i64    | u64      |
-| i128   | u128     |
-| isize  | usize    |
+### Project: YouTube Downloader CLI Application
 
-### Floats
+During this training, we'll create a CLI application to download YouTube videos. ([code link](https://gist.github.com/UrbsKali/67e09af49d42791a27a58e896677bcad))
 
-- f32
-- f64
+**Major steps:**
 
-### bool
+1. Project generation
 
-A 1-bit boolean.
+   ```shell
+   cargo new rust_course
+   ```
 
-### char
+2. Adding libraries
 
-4-byte Unicode scalar value (e.g., emoji).
+   ```shell
+   cargo add rustube
+   ```
 
-### Tuples
-
-Heterogeneous fixed-size group:
-
-```rust
-let tup: (i32, f64, u8) = (500, 6.4, 1);
-
-let five_hundred = tup.0;
-
-let (x, y, z) = tup;
-```
-
-### Arrays
-
-Homogeneous fixed-size:
-
-```rust
-let arr: [i32; 5] = [1, 2, 3, 4, 5];
-println!("{}", arr[0]);
-```
-
-### String Literals
-
-Immutable, stored on the stack.
-
-### String
-
-Heap-allocated, growable:
-
-```rust
-let mut s = String::from("hello");
-s.push_str(", world!");
-println!("{}", s); // Prints "hello, world!"
-```
-
-## Appendix 2: Stack vs Heap
-
-A program has access to two memory regions:
-
-- Stack: contiguous LIFO memory for fixed-size data.
-- Heap: dynamic, for data whose size isn’t known at compile time.
-
-Use the heap for types like `String`, vectors, etc., since stack allocations require compile-time known sizes.
+3. Beep Boop code in Rust
+4. TADA it's done
 
 ## Resources
 
-- [The Rust Book](https://doc.rust-lang.org/book/)
-- [Video version](https://www.youtube.com/playlist?list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8)
-- [Understanding memory](https://www.youtube.com/watch?v=_8-ht2AKyH4)
-- [FreeCodeCamp Full Rust Course](https://www.youtube.com/watch?v=BpPEoZW5IiY)
+- [The Rust Book](https://doc.rust-lang.org/book/) - Complete official documentation
+- [Rust Book in video](https://www.youtube.com/playlist?list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8) - Video version of the official book
+- [Understanding memories](https://www.youtube.com/watch?v=_8-ht2AKyH4) - Stack vs Heap explanation
+- [FreeCodeCamp Full Rust Course](https://www.youtube.com/watch?v=BpPEoZW5IiY) - Complete free course

@@ -14,24 +14,58 @@ additional_contributors:
 
 ## Introduction
 
-This learning material will guide you through the process of setting up a PostgreSQL database using Docker. Docker is a platform that allows you to develop, ship, and run applications in containers. Containers are lightweight, standalone, and executable packages that include everything needed to run an application, including the code, runtime, system tools, libraries, and settings.
+Docker is a platform that allows you to develop, ship, and run applications in containers. Containers are lightweight, standalone, and executable packages that include everything needed to run an application: code, runtime, system tools, libraries, and settings.
 
-Docker will be particularly convenient compared to a traditional installation of PostgreSQL as it will allow you to run the database in an isolated environment without having to install it on your machine.
+This guide will help you set up a PostgreSQL database with Docker, which is particularly convenient compared to a traditional installation as you can run the database in an isolated environment without having to install it directly on your machine.
 
-## Prerequisites
+**Learning objectives:**
 
-- A computer.
-- Preferably a code editor like Visual Studio Code.
+- Understand the basics of Docker and Docker Compose
+- Configure a PostgreSQL container with environment variables
+- Use an initialization script to create tables
+- Access and interact with PostgreSQL via psql
 
-## Step 1: Install Docker
+## Prerequisites & Installation
 
-Docker is available for Windows, macOS, and Linux. You can download the installer from the [official website](https://www.docker.com/products/docker-desktop).
+### Prior knowledge
 
-## Step 2: Create a PostgreSQL container
+- Basic command-line knowledge
+- Basic SQL concepts (optional but useful)
 
-Docker compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services.
+### Required tools
 
-Create a new directory named `database` and add a `docker-compose.yml` file with the following content:
+| Tool          | Version | Link                                                         | Description                  |
+| ------------- | ------- | ------------------------------------------------------------ | ---------------------------- |
+| Docker Desktop| Latest  | [docker.com](https://www.docker.com/products/docker-desktop) | Containerization platform    |
+| Code editor   | -       | VS Code, etc.                                                | For editing config files     |
+
+### Installing Docker
+
+Docker is available for Windows, macOS, and Linux. Download the installer from the [official website](https://www.docker.com/products/docker-desktop) and follow the installation instructions.
+
+### Verification
+
+```bash
+docker --version
+docker-compose --version
+```
+
+## Configure PostgreSQL container
+
+Docker Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application's services.
+
+### Project structure
+
+Create a `database` directory and add three files:
+
+```bash
+database/
+├── docker-compose.yml    # Docker Compose configuration
+├── .env                  # Environment variables
+└── init.sql              # Initialization script
+```
+
+### `docker-compose.yml` file
 
 ```yaml
 services:
@@ -55,7 +89,7 @@ volumes:
   data:
 ```
 
-Then add a `.env` file in the same directory with the following content:
+### `.env` file
 
 ```env
 DB_HOST=localhost
@@ -65,7 +99,11 @@ DB_NAME=mydatabase
 DB_PORT=5432
 ```
 
-Finally add the `init.sql` file in the same directory with the following content:
+:::warning
+Never commit the `.env` file to a public repository! Add it to `.gitignore`.
+:::
+
+### `init.sql` file
 
 ```sql
 \c mydatabase
@@ -74,83 +112,116 @@ INSERT INTO customer (name) VALUES ('Alice');
 INSERT INTO customer (name) VALUES ('Bob');
 ```
 
-### Quick explanation
+### Configuration explanations
 
-The files:
+**Files:**
 
-- `docker-compose.yml`: is the main file. It defines the container configuration.
-- `.env`: contains the environment variables for the PostgreSQL container (name, user, password, port).
-- `init.sql`: is a SQL script that will be executed when the container starts. It creates a `customer` table and inserts two rows.
+- **`docker-compose.yml`**: Defines the container configuration
+- **`.env`**: Environment variables (name, user, password, port)
+- **`init.sql`**: SQL script executed at startup, creating a `customer` table and inserting two rows
 
-The docker configuration:
+**Docker configuration:**
 
-- `image: postgres:alpine`: means that we will run a PostgreSQL container in an `alpine` OS.
-- `restart`: if the container stops, will restart automatically.
-- `hostname`: the hostname of the container.
-- `env_file`: the file to read environment variables from.
-- `environment`: the environment variables to set for the postgres.
-- `volumes`: `db` will store the data to be persistent and `init.sql` will be executed when the container starts.
-- `ports`: the port to expose the PostgreSQL database (here access at [localhost:5432](http://localhost:5432)).
+- **`image: postgres:alpine`**: Runs PostgreSQL on Alpine OS (lightweight)
+- **`restart: always`**: Automatically restarts the container if it stops
+- **`hostname`**: Container hostname
+- **`env_file`**: Path to the environment variables file
+- **`environment`**: Environment variables for PostgreSQL
+- **`volumes`**:
+  - `db`: Stores data persistently
+  - `init.sql`: Will be executed on first startup
+- **`ports`**: Exposed port to access the database (here [`localhost:5432`](http://localhost:5432))
 
-## Step 3: Start the PostgreSQL container
+## Start PostgreSQL container
 
-Open a terminal and navigate to the `database` directory. Run the following command to start the PostgreSQL container:
+Navigate to the `database` directory and run:
 
 ```bash
 docker-compose up -d
 ```
 
-This command will create and start the PostgreSQL container in the background. To verify that the container is running, you can use the following command:
+This command creates and starts the PostgreSQL container in the background.
+
+### Verify container is running
 
 ```bash
 docker ps
 ```
 
-You should see a postgres container running. At the end of the lines, you should see a section "NAMES" with the name of the container, I recommend you to copy it for the next step.
+You should see a postgres container running. In the "NAMES" column, note the container name (probably `database-db-1` if your folder is called `database`).
 
-## Step 4: Access the PostgreSQL database
+## Access PostgreSQL database
 
-Now that the database is running, we will try to manually connect to it using the `psql` command-line tool. You can use the following command to connect to the PostgreSQL database:
+Now that the database is running, connect manually with the `psql` command-line tool:
 
 ```bash
 docker exec -it database-db-1 psql -U postgres
 ```
 
 :::caution
-Here, `database-db-1` is the name of the container, you should replace it with the name of your container if you did not name your working directory `database`.
+Replace `database-db-1` with the actual name of your container if you didn't name your working directory `database`.
 :::
 
-Now that you are connected to the PostgreSQL database, you can run SQL queries. For example, you can list the databases using the following command:
+### Useful psql commands
+
+Once connected to PostgreSQL, you can execute SQL queries:
+
+**List databases:**
 
 ```sql
 \l
 ```
 
-To check that your initial SQL script was executed, you can list the elements in the `customer` table. Start by connecting to the `mydatabase` database:
+**Connect to a database:**
 
 ```sql
 \c mydatabase
 ```
 
-Then list the elements in the `customer` table:
+**List elements in `customer` table:**
 
 ```sql
 SELECT * FROM customer;
 ```
 
-## Step 5: Clean up
+You should see the two entries created by the initialization script (Alice and Bob).
 
-To stop and remove the PostgreSQL container, you can use the following command:
+**Exit psql:**
+
+```sql
+\q
+```
+
+## Stop and cleanup
+
+### Stop the container
 
 ```bash
 docker-compose down
 ```
 
-However, to erase the persistent data, consider removing the `db` directory. Else, the data will be kept for the next time you start the container.
+### Delete persistent data
 
-Go through the steps if you update the `init.sql` file with new data.
+Data is kept in the `db/` directory. To completely erase the data:
 
-## To go further
+```bash
+rm -rf db/
+```
 
-- [PostgreSQL commands](https://tomcam.github.io/postgres/): a list of PostgreSQL commands and good practices.
-- [Docker Compose](https://docs.docker.com/compose/): official documentation for Docker Compose.
+:::note
+Delete the `db/` folder if you modify the `init.sql` file and want to reinitialize the database with new data.
+:::
+
+## Best practices
+
+- **Environment variables**: Never expose passwords in plain text, use `.env` and `.gitignore`
+- **Named volumes**: For production, prefer Docker named volumes rather than bind mounts
+- **Data backup**: Remember to regularly backup your `db/` folder
+- **Logs**: Check logs with `docker logs database-db-1` in case of problems
+
+## Resources
+
+- [PostgreSQL commands](https://tomcam.github.io/postgres/) - List of commands and best practices
+- [Docker Compose documentation](https://docs.docker.com/compose/) - Official guide
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/) - Complete documentation
+- [Docker PostgreSQL Image](https://hub.docker.com/_/postgres) - Official image documentation
