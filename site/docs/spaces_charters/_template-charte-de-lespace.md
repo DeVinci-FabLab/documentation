@@ -1,9 +1,9 @@
 ---
-title: Charte de l’espace [nom de l’espace]
-pagination_label: Charte de l’espace [nom de l’espace]
-sidebar_label: [Nom de l’espace]
-description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l’espace [nom de l’espace] du DeVinci Fablab.
-slug: [nom-de-l’espace]-space-charter
+title: Charte de l'espace [nom de l'espace]
+pagination_label: Charte de l'espace [nom de l'espace]
+sidebar_label: [Nom de l'espace]
+description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace [nom de l'espace] du DeVinci Fablab.
+slug: [nom-de-l'espace]-space-charter
 tags: [charte, sécurité, rangement]
 last-update:
   date: 2025-07-31
@@ -21,9 +21,9 @@ additional_contributors:
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
 
-## <FileText /> Description de l’espace
+## <FileText /> Description de l'espace
 
-- Décrire brièvement à quoi sert cet espace, les activités principales qui s’y déroulent, ainsi que ses spécificités éventuelles.
+- Décrire brièvement à quoi sert cet espace, les activités principales qui s'y déroulent, ainsi que ses spécificités éventuelles.
 - **Gras** légèrement autorisé.
 
 ## <TriangleAlert /> Règles de sécurité
@@ -38,7 +38,7 @@ Lister clairement et simplement toutes les règles de sécurité obligatoires à
 
 ## <CheckSquare /> Bonnes pratiques et recommandations
 
-Lister les bonnes pratiques à suivre pour préserver le matériel, l’espace, et travailler efficacement :
+Lister les bonnes pratiques à suivre pour préserver le matériel, l'espace, et travailler efficacement :
 
 - Pratique 1
 - Pratique 2
@@ -58,7 +58,7 @@ Pas de **gras**.
 
 ## <Pin /> Rangement et nettoyage
 
-Indiquer clairement comment ranger le matériel, nettoyer l’espace après utilisation, et les habitudes à prendre pour maintenir l’espace agréable pour tout le monde :
+Indiquer clairement comment ranger le matériel, nettoyer l'espace après utilisation, et les habitudes à prendre pour maintenir l'espace agréable pour tout le monde :
 
 - Consigne 1
 - Consigne 2
@@ -68,7 +68,7 @@ Indiquer clairement comment ranger le matériel, nettoyer l’espace après util
 
 ## <Siren /> En cas de problème
 
-Préciser la démarche à suivre en cas de problème (incident, matériel cassé, besoin d’assistance) :
+Préciser la démarche à suivre en cas de problème (incident, matériel cassé, besoin d'assistance) :
 
 - Personne ou référent à contacter
 - Marche à suivre

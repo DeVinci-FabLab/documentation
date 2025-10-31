@@ -13,6 +13,8 @@ additional_contributors:
   - username: Eliott A. Roussille
     html_url: https://www.linkedin.com/in/eliott-roussille
     avatar_url: https://i.imgur.com/q7h7oQw.jpeg
+  - username: Léonie Chapelle
+    html_url: https://www.linkedin.com/in/l%C3%A9onie-chapelle-44a651234/
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
@@ -30,7 +32,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Never use a machine without prior training** or approval from a supervisor.
 - **Always check that the safety features** of machines are working properly before use.
 - **Never leave a machine running unattended.**
-- **Never wear gloves when using motorized rotary tools.**
+- **Never wear gloves when using motorized rotary tools or handling hot materials.**
 - **Be stable when cutting**: do not cut over a void; use **a vise or a holding device**.
 
 ## <CheckSquare /> Best Practices and Recommendations
@@ -62,7 +64,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Always clean the work area after use.**
 - **Clean up chips and dust** after cutting or sanding.
 - **Put each tool back in its place** immediately after use.
-- **Turn off and unplug machines** before leaving the area.
+- **Turn off and unplug tools** before leaving the area.
 
 ## <Siren /> In Case of Problem
 

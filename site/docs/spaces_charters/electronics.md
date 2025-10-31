@@ -1,8 +1,8 @@
 ---
-title: Charte de l’espace électronique
-pagination_label: Charte de l’espace électronique
+title: Charte de l'espace électronique
+pagination_label: Charte de l'espace électronique
 sidebar_label: Électronique
-description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l’espace électronique du DeVinci Fablab.
+description: Charte décrivant les règles, les bonnes pratiques et les contacts pour l'espace électronique du DeVinci Fablab.
 slug: electronic-space-charter
 tags: [charter, electronics, safety, storage]
 last_update:
@@ -24,34 +24,34 @@ additional_contributors:
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
 
 :::info
-L’espace électronique est géré et maintenu par l’association [**DaVinciBot (DVB)**](https://docs.davincibot.fr/). Pour toute question, problème ou demande de matériel, vous pouvez contacter un·e membre de DVB.
+L'espace électronique est géré et maintenu par l'association [**DaVinciBot (DVB)**](https://docs.davincibot.fr/). Pour toute question, problème ou demande de matériel, vous pouvez contacter un·e membre de DVB.
 :::
 
-## <FileText /> Description de l’espace
+## <FileText /> Description de l'espace
 
-- L’espace électronique est dédié à la conception, au prototypage et à la réparation de circuits électroniques.
+- L'espace électronique est dédié à la conception, au prototypage et à la réparation de circuits électroniques.
 - On y trouve notamment du matériel de soudure, des appareils de mesure (multimètres, oscilloscopes) ainsi que divers composants électroniques.
 
 ## <TriangleAlert /> Règles de sécurité
 
-- **Interdiction de manger ou boire dans l’espace électronique**, pour éviter tout risque d’électrocution ou d’endommagement du matériel.
+- **Interdiction de manger ou boire dans l'espace électronique**, pour éviter tout risque d'électrocution ou d'endommagement du matériel.
 - **Ne jamais laisser un fer à souder chaud sans surveillance.**
-- **Toujours utiliser un ventilateur d’extraction lors des soudures.**
+- **Toujours utiliser un ventilateur d'extraction lors des soudures.**
 - **Éviter tout contact avec des éléments chauds** (fer à souder, composants récemment soudés, pistolet thermique...).
-- Ne pas dépasser **320 °C pour souder** et **350 °C pour dessouder** — ou demander l’aide d’un·e référent·e si besoin.
+- Ne pas dépasser **320 °C pour souder** et **350 °C pour dessouder** — ou demander l'aide d'un·e référent·e si besoin.
 - **Ne jamais travailler sur un circuit sous tension supérieure à 24 V** sans supervision ou formation adaptée.
 
 ## <CheckSquare /> Bonnes pratiques et recommandations
 
 - Nettoyer la panne du fer à souder avant chaque usage.
-- Vérifier les réglages de température avant d’allumer une station de soudage.
+- Vérifier les réglages de température avant d'allumer une station de soudage.
 - Couper proprement les fils après soudure pour éviter tout court-circuit.
 - Tester les montages sur breadboard avant toute soudure définitive.
 - Respecter un **code couleur cohérent** pour les câbles (rouge = V+, noir = masse, etc.).
 - Manipuler les appareils de mesure (multimètre, oscilloscope…) avec précaution — demander conseil si nécessaire.
-- **Utiliser en priorité les composants déjà ouverts** avant d’en entamer de nouveaux.
-- Vérifier la polarité des composants avant soudure pour éviter les risques de court-circuit ou d’explosion (ex : condensateurs électrolytiques).
-- **Travailler sur une chaise reliée à la masse** (comme la grande chaise noire de l’espace) permet de minimiser les risques liés aux décharges électrostatiques.
+- **Utiliser en priorité les composants déjà ouverts** avant d'en entamer de nouveaux.
+- Vérifier la polarité des composants avant soudure pour éviter les risques de court-circuit ou d'explosion (ex : condensateurs électrolytiques).
+- **Travailler sur une chaise reliée à la masse** (comme la grande chaise noire de l'espace) permet de minimiser les risques liés aux décharges électrostatiques.
 - **Garder un espace de travail propre et organisé** pendant toute manipulation électronique.
 
 ## <Wrench /> Matériel à disposition
@@ -70,8 +70,8 @@ Les composants électroniques et le matériel de prototypage sont disponibles **
 ## <Pin /> Rangement et nettoyage
 
 - **Ranger chaque outil à sa place** immédiatement après utilisation.
-- **Nettoyer les stations de soudage** (résidus d’étain, brossage de la panne), puis **éteindre et débrancher**.
-- **Remettre tous les composants non utilisés** dans leur rangement d’origine.
+- **Nettoyer les stations de soudage** (résidus d'étain, brossage de la panne), puis **éteindre et débrancher**.
+- **Remettre tous les composants non utilisés** dans leur rangement d'origine.
 - **Ne pas mélanger** les composants pour garantir leur bon état.
 
 ## <Siren /> En cas de problème
@@ -84,7 +84,7 @@ Les composants électroniques et le matériel de prototypage sont disponibles **
 | Rôle ou fonction   | Nom            | Moyen de contact (discord) |
 | ------------------ | -------------- | -------------------------- |
 | Responsable espace | Urbain LANTRÈS | @urbanosaurus              |
-| Référent technique | Robin L’HYVER  | @robinmoon                 |
+| Référent technique | Robin L'HYVER  | @robinmoon                 |
 | Référent technique | Hugo DEGIOANNI | @loxa                      |
 
 ---

@@ -13,6 +13,8 @@ additional_contributors:
   - username: Eliott A. Roussille
     html_url: https://www.linkedin.com/in/eliott-roussille
     avatar_url: https://i.imgur.com/q7h7oQw.jpeg
+  - username: Léonie Chapelle
+    html_url: https://www.linkedin.com/in/l%C3%A9onie-chapelle-44a651234/
 ---
 
 import { PackageOpen, Pin, AlertTriangle, Siren } from 'lucide-react';
@@ -21,7 +23,7 @@ The DeVinci Fablab is a collective, open, and shared space. To ensure everyone c
 
 ## <PackageOpen /> Use of Resources and Equipment
 
-- **Do not use equipment that is not at your disposal.** If it’s not in the [Schrödinger Box](../srg#le-recyclage-des-projets), **do not touch it**.
+- **Do not use equipment that is not at your disposal.** If it's not in the [Schrödinger Box](../srg#le-recyclage-des-projets), **do not touch it**.
 - **Equipment never leaves the Fablab.** It cannot be borrowed for outside or personal use under any circumstances.
 - **Do not take tools home**—even for a short project, a repair, or “just for the weekend.”
 - **Turn off machines** when not in use.
@@ -38,7 +40,7 @@ If you are unsure about the accessibility or availability of a tool, **ask a ref
 - **A clean space is a usable space.**
   Think of those who will come after you, even if you are alone in the room.
 - **All equipment must be returned exactly where you found it.**
-  If it’s not clear, ask a referent.
+  If it's not clear, ask a referent.
 
 ## <AlertTriangle /> Respect for Usage Rules
 
@@ -55,7 +57,7 @@ The collective only works **if everyone does their part**.
 ## <Siren /> In Case of Doubt or Problem
 
 - **Contact a board member** or area referent.
-- There is **no shame in not knowing**, asking a question, or seeking help. On the contrary, it’s **a sign of good use of the space**.
+- There is **no shame in not knowing**, asking a question, or seeking help. On the contrary, it's **a sign of good use of the space**.
 
 ---
 

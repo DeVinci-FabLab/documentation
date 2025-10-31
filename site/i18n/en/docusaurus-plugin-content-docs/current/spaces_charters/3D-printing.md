@@ -15,6 +15,8 @@ additional_contributors:
     avatar_url: https://i.imgur.com/q7h7oQw.jpeg
   - username: François Teynier
     avatar_url: https://i.imgur.com/hnuX6jp.jpeg
+  - username: Léonie Chapelle
+    html_url: https://www.linkedin.com/in/l%C3%A9onie-chapelle-44a651234/
 ---
 
 import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 'lucide-react';
@@ -54,7 +56,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 ## <Pin /> Storage and Cleaning
 
-- **Clean the print surface** if necessary (residues, glue, etc.).
+- **Clean the print surface** if necessary (residues, etc.).
 - **Put away used tools** (spatulas, pliers, cutters) in their dedicated place.
 - **Store spools** on the rails under the printers or in the shelves provided for this purpose.
 

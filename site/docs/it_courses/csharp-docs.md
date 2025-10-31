@@ -326,7 +326,7 @@ Utilisez des fichiers SVG pour que le logo et le favicon restent nets à toutes 
 
 ### Documentation du code
 
-DocFX génère automatiquement la documentation depuis les commentaires `///` dans votre code C#. C’est une bonne pratique pour aider les autres développeurs à comprendre votre code. Veuillez vous référer à la [documentation officielle des commentaires XML](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) pour plus d’informations.
+DocFX génère automatiquement la documentation depuis les commentaires `///` dans votre code C#. C'est une bonne pratique pour aider les autres développeurs à comprendre votre code. Veuillez vous référer à la [documentation officielle des commentaires XML](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) pour plus d'informations.
 
 **Activer la génération de documentation XML :**
 
@@ -391,7 +391,7 @@ Maintenant, votre documentation est prête à être générée dans la section `
 
 ## Déploiement sur GitHub Pages
 
-GitHub propose un service appelé GitHub Pages permettant d’héberger des sites statiques directement depuis votre dépôt. Nous devrons configurer quelques éléments avant de déployer la documentation.
+GitHub propose un service appelé GitHub Pages permettant d'héberger des sites statiques directement depuis votre dépôt. Nous devrons configurer quelques éléments avant de déployer la documentation.
 
 ### Configuration de GitHub Pages
 

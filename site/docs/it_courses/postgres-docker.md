@@ -52,7 +52,7 @@ docker-compose --version
 
 ## Configuration du conteneur PostgreSQL
 
-Docker Compose est un outil permettant de définir et d’exécuter des applications multi-conteneurs Docker. Avec Compose, vous utilisez un fichier YAML pour configurer les services de votre application.
+Docker Compose est un outil permettant de définir et d'exécuter des applications multi-conteneurs Docker. Avec Compose, vous utilisez un fichier YAML pour configurer les services de votre application.
 
 ### Structure du projet
 

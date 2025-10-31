@@ -39,6 +39,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 - **Mask wearing is mandatory** for long manipulations or those generating vapors.
 - **Absolutely no food or drink** in the space.
 - **Any object in the space is considered toxic** (including tools, bottles, funnels), unless otherwise indicated.
+- **Objects labeled in purple** cannot **under any circumstances leave** the resin space.
 - **A glove removed = glove consumed**: put on a new pair.
 - **Ventilation is mandatory** during the use of resin or solvents.
 - **Never leave a chemical product open** or without a clear label.

@@ -20,7 +20,7 @@ import { Info, AlertTriangle, Trash2, Boxes, Lightbulb, FileText } from 'lucide-
 ## <Info /> Training Objectives
 
 - Use the DeVinci Fablab spaces in good conditions.
-- Know the association’s expectations towards its users.
+- Know the association's expectations towards its users.
 - Adopt a responsible, respectful, and collaborative attitude.
 
 ## <AlertTriangle /> Safety
@@ -108,10 +108,10 @@ Every tool, electronic part, project, etc. has its place:
 
 - Reserved for electronics.
 - **Mandatory sorting by value** for components (e.g., resistors).
-- Disorder in these storage areas can **damage circuits and waste everyone’s time**.
+- Disorder in these storage areas can **damage circuits and waste everyone's time**.
 
 :::tip
-If you have any doubts, don’t hesitate to look for yourself or ask; only experience will allow you to know everything.
+If you have any doubts, don't hesitate to look for yourself or ask; only experience will allow you to know everything.
 :::
 
 ### Project Management
@@ -124,7 +124,7 @@ With the aim of keeping as many work areas available as possible at all times, i
 
 :::warning
 **Academic projects (PIX, PIX2, etc.) are prohibited in project boxes.**
-They are reserved for members’ personal projects.
+They are reserved for members' personal projects.
 :::
 
 ## <Trash2 /> Waste
@@ -134,9 +134,9 @@ They are reserved for members’ personal projects.
 The DeVinci Fablab provides many resources for free, but that is not a reason to waste them. The general rule is that every consumable you take must serve a specific and thoughtful purpose.
 
 - **Take only what you need.**
-- Avoid unnecessary prints: it’s possible to print fun things, but it must be **justified** (gift, decoration, test…).
-- Same for electronics: don’t take a handful of components “just in case”.
-- **Report** if you break a tool! No problem, but if you don’t say anything, it becomes unusable for everyone.
+- Avoid unnecessary prints: it's possible to print fun things, but it must be **justified** (gift, decoration, test…).
+- Same for electronics: don't take a handful of components “just in case”.
+- **Report** if you break a tool! No problem, but if you don't say anything, it becomes unusable for everyone.
 
 ### Project Recycling
 

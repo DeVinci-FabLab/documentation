@@ -1,5 +1,5 @@
 ---
-title: LaTeX pour les maths
+title: $\LaTeX$ pour les maths
 description: Ce support de cours présente les bases de LaTeX pour rédiger des expressions mathématiques, ainsi que des astuces pour gagner en efficacité avec des snippets dans VS Code et Obsidian.
 slug: latex
 tags: [course, info, latex]
@@ -7,8 +7,6 @@ last_update:
   date: 2024-10-05
   author: Eliott A. Roussille
 ---
-
-# Formation $\LaTeX$ pour les maths
 
 ## Introduction
 
@@ -60,105 +58,158 @@ latex --version   # Doit afficher la version de TeX Live ou MiKTeX
 code --version    # VS Code installé
 ```
 
-## Rappels : écrire des maths en $\LaTeX$
+## Modes mathématiques
 
-`$ ... $` `\( ... \)`
-et `$$ ... $$` `\[ ... \]`
+$\LaTeX$ propose deux modes pour écrire des mathématiques :
 
-### Modes mathématiques
+- **Inline** (en ligne) : `$ ... $` ou `\( ... \)`
+- **Display** (bloc centré) : `$$ ... $$` ou `\[ ... \]`
 
-exemple d'une dingz à mettre au départ :
+**Exemple :**
 
-<!-- $$
-\displaystyle
-\boxed{
-\left(
-\begin{smallmatrix}
-\color{red}\displaystyle \sum_{i=1}^{n}\frac{\alpha_i x^{i}}{i!}
-      & \displaystyle \color{purple} \cancelto{0}{\int_{a}^{b} f(t)\,\mathrm{d}t}\\[4pt]
-\displaystyle \left.\frac{\partial^2 g}{\partial y^2}\right|_{y=0}
-      & \displaystyle \color{green}\sqrt{\beta^2+\gamma^2}
-\end{smallmatrix}
-\right)_{x=\hat{\theta}_{\scriptscriptstyle 0}}
-\!\cdot\!
-\vec{v}_{\lfloor\gamma\rfloor}
-\;+\;
-\overbrace{\lim_{x\to0^{+}}\sum_{k=0}^{\infty}\frac{(-1)^k x^{2k}}{(2k)!}}^{\cos x}
-\;=\;
-\color{blue}
-\frac{\Gamma\!\bigl(\tfrac{1}{2}\bigr)}{\sqrt{\pi}}
-}
-$$ -->
+```latex
+Le théorème de Pythagore s'écrit $a^2 + b^2 = c^2$ pour un triangle rectangle.
 
-insérer tableau de commandes de bases ensuite
+$$
+\int_{0}^{\infty} e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+$$
+```
 
-### Symboles et commandes usuelles
+Le théorème de Pythagore s'écrit $a^2 + b^2 = c^2$ pour un triangle rectangle.
 
-```LaTeX
+$$
+\int_{0}^{\infty} e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+$$
+
+:::tip
+Toujours charger `\usepackage{amsmath,amssymb,mathtools}` en préambule si vous utilisez LaTeX pur (pas nécessaire en Markdown).
+:::
+
+## Symboles et commandes usuelles
+
+### Opérateurs de base
+
+```latex
 $\frac{a}{b}$     % fraction
 $a_i,\; x^n$      % indices & exposants
 $\sqrt[n]{x}$     % racine n-ième
 $\sum_{k=0}^N$    % somme
-$\alpha,\beta$    % lettres grecques
+$\int_a^b$        % intégrale
+$\prod_{i=1}^n$   % produit
 ```
 
-::: tip
-Toujours charger `\usepackage{amsmath,amssymb,mathtools}` en préambule si $\LaTeX$
-:::
+### Lettres grecques
 
-ressources pour etre autonome
+```latex
+$\alpha, \beta, \gamma, \delta, \epsilon$
+$\theta, \lambda, \mu, \pi, \sigma$
+$\Omega, \Delta, \Gamma, \Phi$
+```
 
-[Detexify](https://detexify.kirelabs.org/classify.html)
-[MathJax Documentation](https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm)
-[MathJax Macros](https://docs.mathjax.org/en/latest/input/tex/macros/index.html)
+### Ensembles et relations
 
-## Snippets dans VS Code
+```latex
+$\in, \notin, \subset, \subseteq$
+$\cup, \cap, \emptyset$
+$\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$
+```
+
+### Délimiteurs adaptatifs
+
+```latex
+$\left( \frac{a}{b} \right)$
+$\left[ x + y \right]$
+$\left\{ \frac{1}{2} \right\}$
+```
+
+## Environnements mathématiques
+
+### Environnement `align`
+
+Pour aligner plusieurs équations :
+
+```latex
+\begin{align}
+  f(x) &= x^2 + 2x + 1 \\
+  &= (x + 1)^2
+\end{align}
+```
+
+### Environnement `cases`
+
+Pour les fonctions par morceaux :
+
+```latex
+f(x) = \begin{cases}
+  x^2 & \text{si } x \geq 0 \\
+  -x & \text{si } x < 0
+\end{cases}
+```
+
+### Matrices
+
+```latex
+\begin{pmatrix}
+  a & b \\
+  c & d
+\end{pmatrix}
+```
+
+## Ressources pour être autonome
+
+| Ressource                 | Description                                        | Lien                                                                                            |
+| ------------------------- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Detexify**              | Dessinez un symbole pour trouver la commande LaTeX | [detexify.kirelabs.org](https://detexify.kirelabs.org/classify.html)                            |
+| **MathJax Documentation** | Syntaxe TeX complète                               | [onemathematicalcat.org](https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm) |
+| **MathJax Macros**        | Liste des macros disponibles                       | [docs.mathjax.org](https://docs.mathjax.org/en/latest/input/tex/macros/index.html)              |
+
+## Snippets dans VS Code
 
 Les _snippets_ génèrent du code prédéfini grâce à un **raccourci** + **Tab**.
 
 ### Créer un snippet LaTeX global
 
-1. `Ctrl/Cmd + Shift + P` ➜ **Preferences: Configure User Snippets**.
-2. Choisir _latex.json_.
-3. Ajouter :
+1. `Ctrl/Cmd + Shift + P` ➜ **Preferences: Configure User Snippets**
+2. Choisir `latex.json` (ou `markdown.json` si vous utilisez Markdown)
+3. Ajouter :
 
 ```json
 "align environment": {
   "prefix": "ali",
   "body": [
     "\\begin{align}",
-    "  $1: \\placeholder{expression} \\",
+    "  $1 \\\\",
     "\\end{align}"
   ],
   "description": "Bloc align"
 }
 ```
 
-> Tapez `ali` + **Tab**, le bloc complet apparaît avec un curseur au bon endroit.
+Tapez `ali` + **Tab**, le bloc complet apparaît avec un curseur au bon endroit.
 
 ### Curseurs multiples & tab stops
 
 Utilisez `$1`, `$2` pour vos points d'arrêt ; VS Code navigue avec **Tab**.
 
-## Snippets & templates dans Obsidian
+**Exemple :**
 
-Latex Suite
-parler de comment intégrer les siens dedans, tuto avec variables, etc
-
-### Exemple de snippet _Templater_
-
-```tpl
-<%*
-const eq = tp.file.cursor();
-%>
-$$
-<%* eq %>
-$$
+```json
+"fraction": {
+  "prefix": "fr",
+  "body": "\\frac{$1}{$2}$0",
+  "description": "Fraction"
+}
 ```
 
-Tapez `<tp>` puis **Tab** ➜ un bloc affiché.
+## Snippets dans Obsidian
 
----
+### Extension Latex Suite
+
+Obsidian supporte l'extension **Latex Suite** qui fournit des snippets prédéfinis pour LaTeX.
+
+:::note
+Consultez la documentation de Latex Suite pour personnaliser vos snippets et créer des templates avec variables.
+:::
 
 ## Exercices pratiques
 
