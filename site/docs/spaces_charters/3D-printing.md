@@ -38,7 +38,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 - **S'assurer de sélectionner dans le slicer le filament correspondant à celui chargé sur l'imprimante**.
 - Ne pas toucher aux post-its sur les imprimantes.
-- S'assurer que le plateau est propre. Nettoyer si besoin avec de l'alcool isopropylique.
+- S'assurer que le plateau est propre. Nettoyer si besoin.
 - **Surveiller les premières couches** : si le filament n'adhère pas, arrêtez immédiatement l'impression.
 - Préparer et slicer les fichiers STL en amont.
 - Après chaque chargement de filament, mettez à jour l'information correspondante sur l'imprimante.
