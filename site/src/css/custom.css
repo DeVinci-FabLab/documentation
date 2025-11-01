@@ -42,6 +42,10 @@
     outline: none;
   }
 
+  details summary:focus {
+    outline: none;
+  }
+
   /* == == == DocSearch == == == */
   [data-theme="light"] .DocSearch {
     --docsearch-muted-color: var(--ifm-color-secondary-darkest);

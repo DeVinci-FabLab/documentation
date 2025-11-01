@@ -5,6 +5,7 @@ const sidebars: SidebarsConfig = {
     "intro",
     "safety",
     "srg",
+    "sewing",
     {
       type: "category",
       label: "Spaces Charters", // This label will be automatically translated
