@@ -134,6 +134,14 @@
     }
   }
 
+  .table-of-contents__link {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: translateX(4px);
+    }
+  }
+
   .markdown {
     p {
       text-align: justify;
