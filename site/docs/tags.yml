@@ -39,6 +39,11 @@ info:
   permalink: '/info'
   description: 'Docs related to informatics and technology'
 
+latex:
+  label: 'LaTeX'
+  permalink: '/latex'
+  description: 'Docs related to LaTeX typesetting system and its applications'
+
 resin:
   label: 'Résine'
   permalink: '/resin'
