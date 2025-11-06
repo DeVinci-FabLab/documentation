@@ -8,6 +8,7 @@ tags: [course, safety, storage, waste]
 last_update:
   date: 2025-08-05
   author: Association DeVinci Fablab
+toc_max_heading_level: 4
 ---
 
 # Sécurité, Rangement et Gaspillage (SRG) : Guide de bonnes pratiques au Fablab

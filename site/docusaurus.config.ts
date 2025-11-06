@@ -95,7 +95,7 @@ const config: Config = {
     },
     tableOfContents: {
       minHeadingLevel: 2,
-      maxHeadingLevel: 4,
+      maxHeadingLevel: 3,
     },
     footer: {
       links: [
@@ -194,6 +194,7 @@ const config: Config = {
         "csharp",
         "css",
         "json",
+        "latex",
         "markdown",
         "powershell",
         "python",

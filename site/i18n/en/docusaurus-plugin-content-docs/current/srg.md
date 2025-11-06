@@ -7,6 +7,7 @@ tags: [course, safety, storage, waste]
 last_update:
   date: 2025-08-05
   author: Association DeVinci Fablab
+toc_max_heading_level: 4
 ---
 
 # Safety, Storage and Waste (SSW) : Guide to Good Practices in the Fablab
