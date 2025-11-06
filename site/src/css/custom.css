@@ -1,13 +1,6 @@
+@import "katex/dist/katex.min.css";
+@import url("puffin.css");
 @import url("satoshi.css");
-
-@font-face {
-  font-family: "Puffin-Display-Soft-ExBd";
-  src: url("../../static/fonts/fonnts.com-Puffin_Display_Soft_ExBd.otf")
-    format("opentype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
 
 @layer custom {
   :root {
@@ -131,6 +124,18 @@
       background: var(--code-background-color);
       padding: 0.64px 0.48px;
       border-radius: 3.2px;
+    }
+  }
+
+  li a.menu__link {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      transform: translateX(4px);
     }
   }
 
