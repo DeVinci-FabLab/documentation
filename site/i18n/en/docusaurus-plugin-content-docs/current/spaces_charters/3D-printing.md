@@ -38,6 +38,7 @@ import { FileText, TriangleAlert, CheckSquare, Pin, Wrench, Siren, Phone } from 
 
 - **Make sure to select in the slicer the filament that matches the one loaded on the printer**.
 - Do not touch the post-its on the printers.
+- Do not remove the SD cards from the printers.
 - Make sure the bed is clean. Clean if necessary.
 - **Monitor the first layers**: if the filament does not adhere, stop the print immediately.
 - Prepare and slice STL files in advance.
