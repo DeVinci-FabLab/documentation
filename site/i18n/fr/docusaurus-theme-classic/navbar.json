@@ -10,5 +10,9 @@
   "item.label.Workshops": {
     "message": "Workshops",
     "description": "Navbar item with label Workshops"
+  },
+  "item.label.Internal Docs": {
+    "message": "Documentation Interne",
+    "description": "Navbar item with label Internal Docs"
   }
 }

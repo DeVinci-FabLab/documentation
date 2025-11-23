@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.internalSidebar.category.Maths": {
+    "message": "Mathématiques",
+    "description": "The label for category 'Maths' in sidebar 'internalSidebar'"
+  },
+  "sidebar.internalSidebar.category.Engineering Science": {
+    "message": "Sciences de l'Ingénieur",
+    "description": "The label for category 'Engineering Science' in sidebar 'internalSidebar'"
+  },
+  "sidebar.internalSidebar.category.IT": {
+    "message": "Informatique",
+    "description": "The label for category 'IT' in sidebar 'internalSidebar'"
+  }
+}
