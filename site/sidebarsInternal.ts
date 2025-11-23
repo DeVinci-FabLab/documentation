@@ -5,6 +5,13 @@ const sidebars: SidebarsConfig = {
     "intro",
     {
       type: "category",
+      label: "Engineering Science",
+      collapsed: true,
+      collapsible: true,
+      items: ["engineering_science/electricity"],
+    },
+    {
+      type: "category",
       label: "IT",
       collapsed: true,
       collapsible: true,

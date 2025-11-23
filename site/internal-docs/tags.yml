@@ -32,3 +32,8 @@ architecture:
   label: 'Architecture des ordinateurs'
   permalink: '/lecture-notes/it/architecture'
   description: 'Notes de cours et documents pédagogiques sur l architecture des ordinateurs'
+
+electricity:
+  label: 'Électricité'
+  permalink: '/lecture-notes/science-engineering/electricity'
+  description: 'Notes de cours et documents pédagogiques d électricité'
