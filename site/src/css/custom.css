@@ -56,6 +56,7 @@
     --code-background-color: #2e2e32;
   }
 
+  /* == == == Focus style == == == */
   *:focus {
     color: var(--ifm-color-primary);
     outline: 3px solid var(--ifm-color-primary);
@@ -127,6 +128,14 @@
     }
   }
 
+  /* == == == Secret Internal Documentation == == == */
+  html[data-internal-locked="true"] ul.theme-doc-sidebar-menu {
+    filter: blur(6px);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* == == == Transitions == == == */
   li a.menu__link {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
