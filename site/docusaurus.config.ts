@@ -78,13 +78,6 @@ const config: Config = {
           label: "Documentation",
         },
         {
-          type: "docSidebar",
-          sidebarId: "internalSidebar",
-          docsPluginId: "internal",
-          position: "left",
-          label: "Internal Docs",
-        },
-        {
           to: "workshops",
           position: "left",
           label: "Workshops",
@@ -212,24 +205,7 @@ const config: Config = {
       ],
     },
   } satisfies Preset.ThemeConfig,
-  plugins: [
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "internal",
-        path: "internal-docs",
-        routeBasePath: "internal-documentation",
-        sidebarPath: "./sidebarsInternal.ts",
-        remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
-        editUrl:
-          "https://github.com/DeVinci-FabLab/documentation/tree/main/site/",
-        editLocalizedFiles: true,
-        showLastUpdateTime: true,
-      },
-    ],
-    "docusaurus-plugin-sass",
-  ],
+  plugins: ["docusaurus-plugin-sass"],
 };
 
 export default config;
