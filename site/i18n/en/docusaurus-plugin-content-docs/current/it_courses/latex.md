@@ -4,7 +4,7 @@ description: This course material presents the basics of LaTeX for writing mathe
 slug: latex
 tags: [course, info, latex]
 last_update:
-  date: 2024-11-05
+  date: 2025-11-05
   author: Eliott A. Roussille
 ---
 import TabItem from '@theme/TabItem';
