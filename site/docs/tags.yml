@@ -1,80 +1,80 @@
 3d-printing:
   label: 'Impression 3D'
   permalink: '/3d-printing'
-  description: 'Docs related to 3D printing technologies and practices'
+  description: 'Documentation relative aux technologies et pratiques d impression 3D'
 
 
 charter:
   label: 'Charte'
   permalink: '/charter'
-  description: 'Docs related to charters and guidelines for various spaces'
+  description: 'Documentation relative aux chartes et aux règles de conduite'
 
 course:
   label: 'Formation'
   permalink: '/course'
-  description: 'Docs related to training and courses offered'
+  description: 'Documentation relative aux formations et cours proposés'
 
 csharp:
   label: 'C#'
   permalink: '/csharp'
-  description: 'Docs related to C# programming language and its applications'
+  description: 'Documentation relative au langage de programmation C# et à ses applications'
 
 docker:
   label: 'Docker'
   permalink: '/docker'
-  description: 'Docs related to Docker and containerization technologies'
+  description: 'Documentation relative à Docker et aux technologies de conteneurisation'
 
 electronics:
   label: 'Électronique'
   permalink: '/electronics'
-  description: 'Docs related to electronics and circuitry'
+  description: 'Documentation relative à l électronique et aux circuits'
 
 fabrication:
   label: 'Fabrication'
   permalink: '/fabrication'
-  description: 'Docs related to fabrication techniques and tools'
+  description: 'Documentation relative aux techniques et outils de fabrication'
 
 info:
   label: 'Info'
   permalink: '/info'
-  description: 'Docs related to informatics and technology'
+  description: 'Documentation relative à l informatique et à la technologie'
 
 latex:
   label: 'LaTeX'
   permalink: '/latex'
-  description: 'Docs related to LaTeX typesetting system and its applications'
+  description: 'Documentation relative au système de composition LaTeX et à ses applications'
 
 resin:
   label: 'Résine'
   permalink: '/resin'
-  description: 'Docs related to resin-based 3D printing technologies and practices'
+  description: 'Documentation relative aux technologies et pratiques d impression 3D à base de résine'
 
 rust:
   label: 'Rust'
   permalink: '/rust'
-  description: 'Docs related to Rust programming language and its applications'
+  description: 'Documentation relative au langage de programmation Rust et à ses applications'
 
 safety:
   label: 'Sécurité'
   permalink: '/safety'
-  description: 'Docs related to safety guidelines and best practices'
+  description: 'Documentation relative aux consignes de sécurité et aux bonnes pratiques'
 
 sql:
   label: 'SQL'
   permalink: '/sql'
-  description: 'Docs related to SQL databases and query languages'
+  description: 'Documentation relative aux bases de données SQL et aux langages de requête'
 
 storage:
   label: 'Stockage'
   permalink: '/storage'
-  description: 'Docs related to storage solutions and best practices'
+  description: 'Documentation relative aux solutions de stockage et aux bonnes pratiques'
 
 textile:
   label: 'Textile'
   permalink: '/textile'
-  description: 'Docs related to textile technologies and practices'
+  description: 'Documentation relative aux technologies et pratiques textiles'
 
 waste:
   label: 'Gaspillage'
   permalink: '/waste'
-  description: 'Docs related to waste management and recycling practices'
+  description: 'Documentation relative à la gestion des déchets et aux pratiques de recyclage'
