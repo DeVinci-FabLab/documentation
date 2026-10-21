@@ -10,7 +10,7 @@ const config: Config = {
   title: "DVFL Documentation",
   favicon: "img/favicon.ico",
 
-  url: "http://localhost:3000",
+  url: "https://docs.devinci-fablab.fr",
   baseUrl: "/",
 
   i18n: {
