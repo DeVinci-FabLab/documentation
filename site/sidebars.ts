@@ -62,6 +62,7 @@ const sidebars: SidebarsConfig = {
         "it_courses/postgres-docker",
         "it_courses/rust",
         "it_courses/unit-testing",
+        "it_courses/git&github",
       ],
     },
   ],
