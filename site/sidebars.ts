@@ -5,7 +5,7 @@ const sidebars: SidebarsConfig = {
     "intro",
     "safety",
     "srg",
-    "sewing",
+    "laser_cutter",
     {
       type: "category",
       label: "Spaces Charters", // This label will be automatically translated
@@ -29,15 +29,19 @@ const sidebars: SidebarsConfig = {
         "3d_printing/bambulab",
         "3d_printing/filament",
         "3d_printing/orcaslicer",
+        "3d_printing/blender",
       ],
     },
-    // {
-    //   type: "category",
-    //   label: "Laser and CNC",
-    //   collapsed: true,
-    //   collapsible: true,
-    //   items: ["CNC/snapmaker"],
-    // },
+     {
+       type: "category",
+       label: "Textile",
+       collapsed: true,
+       collapsible: true,
+       items: [
+         "sewing/introduction_sewing",
+         "sewing/embroidery",
+       ],
+    },
     // {
     //   type: "category",
     //   label: "Electronic Hardware",
